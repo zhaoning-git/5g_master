@@ -1,0 +1,18 @@
+[ 2020-03-08T17:52:32+08:00 ] 60.208.201.68 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-08T18:03:07+08:00 ] 60.208.201.68 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-08T18:58:33+08:00 ] 112.36.156.179 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-08T19:38:05+08:00 ] 112.36.156.179 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-08T20:32:09+08:00 ] 60.208.201.68 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-08T22:01:33+08:00 ] 112.36.156.179 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+

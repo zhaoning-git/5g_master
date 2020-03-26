@@ -1,0 +1,10 @@
+<?php
+//000000000000a:30:{s:2:"id";s:4:"8236";s:3:"uid";s:1:"0";s:5:"uname";s:15:"三分损益法";s:9:"region_id";s:1:"0";s:4:"type";s:1:"2";s:11:"is_supplier";s:1:"0";s:5:"title";s:69:"在诺坎普买到的位置看不到全场，皇家社会球迷抱怨";s:7:"content";s:1916:"<div >
+<p>在此前结束的一场西甲较量中，皇家社会客场0-1不敌巴塞罗那队，此前的各项赛事6连胜被终结。</p>
+<p><img src="https://img1.qunliao.info/fastdfs5/M00/02/D9/720x-/-/-/rB8CCl5m_oyAZ6zrAAnQGH2IdXU495.jpg?watermark/1/image/aHR0cDovL2ltZzEuZG9uZ3FpdWRpLmNvbS9mYXN0ZGZzMi9NMDAvMkEvRTIvQ2hPcU0xb1MtZVdBUERxM0FBQkE1VWdyQlQ4MTQyLnBuZz9pbWFnZVZpZXcyLzAvdy8xMjA=/dissolve/100/dx/14/dy/10" data-width="1920" data-height="1080" orig-src="https://img1.qunliao.info/fastdfs5/M00/02/D9/rB8CCl5m_oyAZ6zrAAnQGH2IdXU495.jpg?watermark/1/image/aHR0cDovL2ltZzEuZG9uZ3FpdWRpLmNvbS9mYXN0ZGZzMi9NMDAvMkEvRTIvQ2hPcU0xb1MtZVdBUERxM0FBQkE1VWdyQlQ4MTQyLnBuZz9pbWFnZVZpZXcyLzAvdy8zMjA=/dissolve/100/dx/38/dy/10"><span style="color: rgb(165, 165, 165);">图源：推特</span></p>
+<p>比赛结束后，一位名叫埃托-维耶纳的皇家社会球迷晒出了自己在诺坎普球场的座位，并进行了一番抱怨。</p>
+<p>埃托-维耶纳写道：“作为一名皇家社会球迷我感到很生气，这个位置甚至都看不到诺坎普的全景。这张票子是巴萨分配给皇家社会的客场座位，我花了49欧元，却买到了这么个位置。不过这个位置确实是售价最便宜的，再高一档的球票价格就是85欧元的了。”</p>
+<p>“我的观赛感受‘非常好’（他配上了一个愤怒的表情），这实在是一种新奇的体验。当球队在另一侧进行攻防的时候，我必须扒拉在栅栏上透过那些网格来看比赛。这票虽说便宜，好歹我也是花了钱的吧，这实在是令人难过。”</p>
+<p>“对了再说一句，巴萨的球迷们非常友好。我是穿着皇家社会的球衣来看球的，当我走出球场的时候，我身边走过的每一个巴萨球迷都和我打了招呼，他们祝贺皇家社会打进国王杯决赛并祝福我们赢得冠军。巴萨球迷真棒！”<br></p>
+</div>";s:5:"theme";s:0:"";s:6:"praise";s:1:"1";s:7:"reading";s:2:"15";s:5:"favor";s:1:"0";s:3:"map";s:0:"";s:4:"data";s:94:"https://img1.qunliao.info/fastdfs5/M00/02/D9/280x210/crop/-/rB8CCl5m_oyAZ6zrAAnQGH2IdXU495.jpg";s:6:"status";s:1:"1";s:7:"addtime";s:10:"1583808270";s:7:"old_uid";s:1:"0";s:6:"old_id";s:1:"0";s:8:"zcontent";s:0:"";s:7:"is_open";s:1:"1";s:6:"is_top";s:1:"0";s:8:"top_time";s:1:"0";s:7:"is_club";s:1:"0";s:7:"is_head";s:1:"0";s:6:"is_hot";s:1:"0";s:9:"index_mol";s:1:"1";s:8:"sel_type";s:5:"10000";s:10:"sqs_status";s:1:"0";s:10:"identifshi";s:1:"1";s:8:"userInfo";b:0;}
+?>

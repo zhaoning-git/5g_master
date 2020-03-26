@@ -1,0 +1,53 @@
+<admintpl file="header" />
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li><a href="{:U('Silvercoin/index')}">银币规则列表</a></li>
+      <li class="active"><a href="{:U('Silvercoin/addConfig')}">添加规则</a></li>
+      <li ><a href="{:U('Silvercoin/log')}">奖励记录</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Silvercoin/addConfig')}">
+      <fieldset>
+        
+        <div class="control-group">
+          <label class="control-label">名称</label>
+          <div class="controls">
+            <input type="text" name="title" <notempty name="info.id">readonly </notempty> value="{$info.title}">
+            <span class="form-required">*</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">奖励银币</label>
+          <div class="controls">
+            <input type="text" name="coin" value="{$info.coin}">
+            <span class="form-required">*</span>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">每日上限</label>
+          <div class="controls">
+            <input type="text" name="limit" value="{$info.limit}">
+            0是不限制
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label">说明</label>
+          <div class="controls">
+            <textarea name="remark" rows="2" cols="20" id="remark" class="inputtext" style="height: 100px; width: 500px;">{$info['remark']}</textarea>
+          </div>
+        </div>
+        
+      </fieldset>
+      <div class="form-actions">
+        <input type="hidden" name="id" value="{$info.id}">
+        <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+        <a class="btn" href="{:U('Silvercoin/index')}">{:L('BACK')}</a>
+      </div>
+    </form>
+  </div>
+  <script src="__PUBLIC__/js/common.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

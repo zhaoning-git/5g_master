@@ -1,0 +1,44 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+	<ul class="nav nav-tabs">
+		<li class="active"><a>资讯认证</a></li>
+	</ul>
+	<form method="post" class="form-horizontal js-ajax-form" action="{:U('Zixun/authSqs_do')}">
+		<fieldset>
+			<div class="control-group">
+				<label class="control-label">id</label>
+				<div class="controls">
+					<input type="text" name="id" value="{$data['id']}" readonly>
+					<span class="form-required">*</span>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">标题</label>
+				<div class="controls">
+					<input type="text" name="title" value="{$data['title']}" readonly>
+					<span class="form-required">*</span>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">认证</label>
+				<div class="controls">
+					<input type="radio" name="sqs_status" value="1">官方认证
+					<input type="radio" name="sqs_status" value="2">大神认证
+					<input type="radio" name="sqs_status" value="3">作者认证
+					<span class="form-required">*</span>
+				</div>
+			</div>
+		</fieldset>
+		<div class="form-actions">
+			<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+			<a class="btn" href="{:U('Zixun/index')}">{:L('BACK')}</a>
+		</div>
+
+	</form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

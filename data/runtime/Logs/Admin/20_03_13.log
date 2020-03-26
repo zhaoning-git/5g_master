@@ -1,0 +1,49 @@
+[ 2020-03-13T09:38:32+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+
+[ 2020-03-13T09:38:35+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+
+[ 2020-03-13T09:38:39+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+
+[ 2020-03-13T09:38:43+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='202.57.46.94',`last_login_time`='2020-03-13 09:38:43',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','3392745054','1584063523') [ RunTime:0.0016s ]
+
+[ 2020-03-13T18:44:41+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+NOTIC: [2] session_start(): open(/tmp/sess_njhghcjmj63cid1oi7n9o0g163, O_RDWR) failed: No space left on device (28) /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Common/functions.php 第 1263 行.
+
+[ 2020-03-13T18:44:44+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+NOTIC: [2] session_start(): open(/tmp/sess_njhghcjmj63cid1oi7n9o0g163, O_RDWR) failed: No space left on device (28) /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Common/functions.php 第 1263 行.
+
+[ 2020-03-13T18:44:48+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime

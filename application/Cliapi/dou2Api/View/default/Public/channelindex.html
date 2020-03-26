@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="__CSS__/swiper.min.css">
+<link rel="stylesheet" href="/Application/Dev/Static/css/mobile.ui.css">
+
+<title>频道页演示</title>
+<style>
+html,body,ul,li{ font-size:14px; padding:0px; margin:0px;list-style:none}
+#bodyHtml{ width:500px; background-color:#f5f5f5; margin:0 auto; padding:0 8px}
+/*slider*/
+#Area-slider ul li img{ width:100%; height:200px}
+/*Nav*/
+#Area-nav li{ display:inline-block; width:25%; text-align:center }
+#Area-nav li img{ display:block;width:80%; margin:0 auto; margin-top:8px; margin-bottom:8px}
+
+/*img*/
+#Area-img{ margin:15px 0}
+#Area-img .title{ border-bottom:1px solid #000; padding-bottom:10px}
+#Area-img img{ width:100%;  margin-top:8px; margin-bottom:8px}
+</style>
+
+</head>
+<body>
+
+<div id="bodyHtml"></div>
+<button type="button" onClick="localStorage.clear();Alert('储存清空了')" style="width:200px; line-height:80px; position:fixed;left:100px;top:48%">清空localStorage本地储存</button>
+<script src="/Application/Dev/Static/js/jquery.min.js"></script>
+<script src="__JS__/swiper.min.js"></script>
+<script src="/Application/Dev/Static/js/mobile.ui.js"></script>
+
+<script type="text/javascript">
+$(function(){
+
+var api = 'http://fish.service020.com/api/public/channel.json';
+var timestamp = Date.parse(new Date());
+var html = '';
+
+if (typeof(localStorage.channel_index) !== "undefined"  && localStorage.channel_time<timestamp-1800) { 
+   $('#bodyHtml').html(localStorage.channel_index); 
+    var swiper = new Swiper('.swiper-container', {
+		  pagination: '.swiper-pagination',
+		  paginationClickable: true
+	});
+   Alert('现在是本地储存记录的DOM节点，每1800秒更新一次')
+   return false;
+}  
+
+
+$.get(api,function(ret){
+	
+	if(ret.status == 0)  return false;
+	OpenLoad('页面加载中.....');
+	$.each(ret.dom, function(index, area){ 
+		
+			switch(area['type']){
+				
+			case 'slider':
+				//轮播
+				html+= '<div id="Area-slider" class="swiper-container">';
+				html+= '<ul class="swiper-wrapper">';
+				$.each(area.data, function(i, array){ 
+					html+= '<li class="swiper-slide"><img src="'+array['img']+'"></li>';
+				});
+				html+= '</ul>';
+				html+= '<div class="swiper-pagination"></div>';
+				html+= '</div>';
+				
+			  break;
+			  
+			  
+			case 'nav':
+			
+				html+= '<div id="Area-nav">'
+				html+= '<ul>'
+				$.each(area.data, function(i, array){ 
+					html+= '<li><img src="'+array['ico']+'"><span>'+array['title']+'</span></li>';
+				});
+				html+= '</ul>';
+				html+= '</div>';
+			
+			 
+			  break;
+			  
+			  
+			  case 'img':
+			  
+				html+= '<div id="Area-img">'
+				html+= '<div class="title">'+area['title']+'</div>';
+				$.each(area.data, function(i, array){ 
+					html+= '<li><img src="'+array['img']+'"></li>';
+				});
+				html+= '</div>';
+				
+			  break;
+			 
+			}
+			
+			$('#bodyHtml').html(html);
+			localStorage.channel_time = timestamp;
+			localStorage.channel_index = html;//将DOM节点保存到本地
+			Alert('通过遍历Json对象拼接的DOM插入到页面中')
+			//插入完成html后初始化swiper插件
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true
+			});
+			CloseLoad();
+		
+		});
+		
+	});
+
+});
+</script>
+
+</body>
+</html>

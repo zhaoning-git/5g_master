@@ -1,0 +1,78 @@
+<admintpl file="header" />
+
+</head>
+
+<body>
+
+  <div class="wrap">
+
+    <ul class="nav nav-tabs">
+
+      <li ><a href="{:U('Jifenduihuan/ynoindex')}">列表</a></li>
+
+      <li class="active"><a >编辑</a></li>
+
+    </ul>
+
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Jifenduihuan/yong_post')}">
+
+      <fieldset>
+
+      
+
+         <div class="control-group">
+        <label class="control-label">内容</label>
+        <div class="controls">
+          <script type="text/plain" id="content" name="content">{$data.content}</script>                
+        </div>
+      </div>
+
+
+        <div class="control-group">
+
+          <label class="control-label">状态</label>
+
+          <div class="controls">
+
+            <td>隐藏 <input type="radio" name="status" value="0" <?php if($data['status'] == 0){echo checked;}?>></td> 
+            <td>显示 <input type="radio" name="status" value="1" <?php if($data['status'] == 1){echo checked;}?>></td> 
+              <input type="hidden" name="id" value="{$data.id}">
+            <span class="form-required">*</span>
+
+          </div>
+
+        </div>
+
+      </fieldset>
+
+      <div class="form-actions">
+
+        <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+
+        <a class="btn" href="{:U('Car/index')}">{:L('BACK')}</a>
+
+      </div>
+
+    </form>
+
+  </div>
+
+  <script src="__PUBLIC__/js/common.js"></script>
+
+  <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+
+</body>
+
+</html>
+<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript">
+  
+  //编辑器
+        editorcontent = new baidu.editor.ui.Editor();
+        editorcontent.render('content');
+        try {
+          editorcontent.sync();
+        } catch (err) {}
+  
+</script>

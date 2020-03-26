@@ -1,0 +1,45 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Zhubo/index')}">列表</a></li>
+			<li class="active"><a >审核</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Zhubo/shenHeDo')}">
+		  <input type="hidden" name="id" value="{$data['id']}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">主播名称</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$data['name']}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">上传的图像</label>
+					<div class="controls">
+							<img src="{$data['url']}" id="thumb_preview" width="50" style="cursor: hand" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">审核状态</label>
+					<div class="controls">
+						<label class="radio inline" for="del1"><input type="radio" name="status" value="1" id="del1" <if condition="$data['status'] eq '1'">checked</if> >待审核</label>
+						<label class="radio inline" for="del2"><input type="radio" name="status" value="2" id="del2" <if condition="$data['status'] eq '2'">checked</if> >通过</label>
+						<label class="radio inline" for="del3"><input type="radio" name="status" value="3" id="del3" <if condition="$data['status'] eq '3'">checked</if> >驳回</label>
+					</div>
+				</div>
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="{:U('Zhubo/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+[ 2020-03-14T11:14:39+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0217s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='39.82.210.201',`last_login_time`='2020-03-14 11:14:39',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0011s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','659739337','1584155679') [ RunTime:0.0015s ]
+
+[ 2020-03-14T11:14:56+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2020-03-14T11:28:43+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2020-03-14T11:29:29+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2020-03-14T11:31:01+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+
+[ 2020-03-14T11:31:18+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+
+[ 2020-03-14T11:31:26+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'qq_1559481236697' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-03-14T11:31:39+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+
+[ 2020-03-14T11:31:47+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = '17777777777' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-03-14T12:46:25+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+
+[ 2020-03-14T12:46:32+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+
+[ 2020-03-14T12:46:37+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+
+[ 2020-03-14T12:46:43+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+
+[ 2020-03-14T12:46:57+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+
+[ 2020-03-14T12:47:16+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+
+[ 2020-03-14T12:49:46+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-14T12:50:35+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+
+[ 2020-03-14T12:50:41+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-14T12:52:11+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+
+[ 2020-03-14T12:52:18+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+
+[ 2020-03-14T12:52:24+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+
+[ 2020-03-14T12:52:31+08:00 ] 39.82.210.201 /index.php?g=Admin&[ 2020-03-14T13:06:19+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0006s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='39.82.210.201',`last_login_time`='2020-03-14 13:06:19',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0010s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','659739337','1584162379') [ RunTime:0.0012s ]
+
+[ 2020-03-14T13:06:25+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+
+[ 2020-03-14T13:06:29+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+
+[ 2020-03-14T13:06:36+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='202.57.46.94',`last_login_time`='2020-03-14 13:06:36',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','3392745054','1584162396') [ RunTime:0.0013s ]
+
+[ 2020-03-14T13:28:58+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Zixun&a=type_del&id=10033&type=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_club_type` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_club_type` SET `status`='1' WHERE ( id=10033 ) [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','操作标签：10033','3392745054','1584163738') [ RunTime:0.0011s ]
+
+[ 2020-03-14T13:29:05+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Zixun&a=type_del&id=10035&type=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_club_type` [ RunTime:0.0007s ]
+SQL: UPDATE `cmf_club_type` SET `status`='1' WHERE ( id=10035 ) [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','操作标签：10035','3392745054','1584163745') [ RunTime:0.0020s ]
+
+[ 2020-03-14T14:48:27+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Chargerules&a=do_edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_charge_rules` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_charge_rules` SET `name`='600金币',`coin`='600',`money`='6.00',`money_ios`='6.00',`product_id`='coin_600',`give`='0',`orderno`='0' WHERE `id` = 1 [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','修改充值规则：1','3392745054','1584168507') [ RunTime:0.0012s ]
+SQL: SELECT `id`,`coin`,`money`,`money_ios`,`product_id`,`give` FROM `cmf_charge_rules` ORDER BY orderno asc  [ RunTime:0.0003s ]
+
+[ 2020-03-14T14:48:36+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Chargerules&a=do_edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_charge_rules` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_charge_rules` SET `name`='3000金币',`coin`='3000',`money`='30.00',`money_ios`='30.00',`product_id`='coin_3000',`give`='0',`orderno`='1' WHERE `id` = 2 [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','修改充值规则：2','3392745054','1584168516') [ RunTime:0.0013s ]
+SQL: SELECT `id`,`coin`,`money`,`money_ios`,`product_id`,`give` FROM `cmf_charge_rules` ORDER BY orderno asc  [ RunTime:0.0003s ]
+
+[ 2020-03-14T14:48:43+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Chargerules&a=do_edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_charge_rules` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_charge_rules` SET `name`='9800金币',`coin`='9800',`money`='98.00',`money_ios`='98.00',`product_id`='coin_9800',`give`='200',`orderno`='2' WHERE `id` = 3 [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','修改充值规则：3','3392745054','1584168523') [ RunTime:0.0015s ]
+SQL: SELECT `id`,`coin`,`money`,`money_ios`,`product_id`,`give` FROM `cmf_charge_rules` ORDER BY orderno asc  [ RunTime:0.0003s ]
+
+[ 2020-03-14T14:48:55+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Chargerules&a=do_edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_charge_rules` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_charge_rules` SET `name`='38800金币',`coin`='38800',`money`='388.00',`money_ios`='388.00',`product_id`='coin_38800',`give`='500',`orderno`='3' WHERE `id` = 4 [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','修改充值规则：4','3392745054','1584168535') [ RunTime:0.0011s ]
+SQL: SELECT `id`,`coin`,`money`,`money_ios`,`product_id`,`give` FROM `cmf_charge_rules` ORDER BY orderno asc  [ RunTime:0.0002s ]
+
+[ 2020-03-14T14:49:03+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Chargerules&a=do_edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_charge_rules` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_charge_rules` SET `name`='58800金币',`coin`='58800',`money`='588.00',`money_ios`='588.00',`product_id`='coin_58800',`give`='1200',`orderno`='4' WHERE `id` = 5 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','修改充值规则：5','3392745054','1584168543') [ RunTime:0.0018s ]
+SQL: SELECT `id`,`coin`,`money`,`money_ios`,`product_id`,`give` FROM `cmf_charge_rules` ORDER BY orderno asc  [ RunTime:0.0004s ]
+

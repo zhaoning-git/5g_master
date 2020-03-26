@@ -1,0 +1,346 @@
+<extend name="Public/base"/>
+<block name="body">
+  <!--幻灯片-->
+  
+  <div class="swiper-container" style=" background-color:#fff">
+    <div class="swiper-wrapper">
+      <volist name="info[goods_photo]" id="vo">
+        <div class="swiper-slide" style="min-height:300px;"><img data-src="{$vo}" width="100%" class="swiper-lazy"></div>
+      </volist>
+    </div>
+    <div class="swiper-pagination swiper-pagination-c1"></div>
+  </div>
+  <!--/幻灯片-->
+  <div class="goods-info bg-white">
+    <ul>
+      <li class="goods-title">{$info.goods_title} </li>
+      <li class="price"><span>¥</span>{$info.goods_price}
+        <notempty name="info['is_hot']"><span class="badge badge-danger">热销</span></notempty>
+        <notempty name="info['is_new']"><span class="badge badge-warning">新品</span></notempty>
+        <notempty name="info['is_sell']"><span class="badge badge-info">促销</span></notempty>
+        <notempty name="info['is_best']"><span class="badge badge-success">精品</span></notempty>
+      </li>
+      <li>市场价：<span>¥</span><s>{$info.goods_market_price}</s></li>
+      <li>
+        <ul  class="avg-sm-3">
+          <li>浏览量:{$info.goods_view} </li>
+          <li class="col-33">月销量:{$info.goods_monthly_sales_count}件</li>
+          <li class="col-33">总销量:{$info.goods_all_sales_count}件</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="goods-other">
+    <ul>
+      <notempty name="info[service_show]">
+        <li class="ui-border-b">
+          <foreach name="info['service_show']" item="vo"> <span class="margin-right-xs"><i class="icon-uniE607"></i> {$vo}</span></foreach>
+        </li>
+      </notempty>
+      <notempty name="info[goods_score]">
+        <li class="ui-border-b"><span class="badge badge-xs badge-danger">送</span> 赠送积分{$info.goods_score|default='0'}点</li>
+      </notempty>
+      <notempty name="info[subsidy]">
+        <li onClick="$('#SubsidyBox').modal({keyboard : false, show : true})">
+          <volist name="info['subsidy']" id="vo"><span class="badge badge-xs badge-danger">促</span> {$vo.title}</volist>
+        </li>
+      </notempty>
+    </ul>
+  </div>
+  <notempty name="info['goods_spec']">
+    <hr>
+    <!--规格弹层-->
+    <div class="list-block goods_spec" style="margin:0px">
+      <ul>
+        <li  onclick="$('#param').modal({keyboard : false, show : true})" ><a href="javascript:void(0)" class="item-link item-content">
+          <div class="item-inner">
+            <div class="item-title">请选择尺寸和规格</div>
+          </div>
+          </a> </li>
+      </ul>
+    </div>
+    
+    <!--/规格弹层--> 
+  </notempty>
+  
+  <!--商品参数-->
+  
+  <egt name="info['attr_count']" value="1">
+    <hr>
+    <div class="title-block ui-border-b">商品参数</div>
+    <div class="goods_attr">
+      <ul class="ui-border-b avg-sm-2">
+        <volist name="info['attr']" id="vo">
+          <li>{$vo.attr_title}：{$vo.attr_value}</li>
+        </volist>
+      </ul>
+    </div>
+  </egt>
+  <notempty name="info['ping']">
+    <hr>
+    <div class="list-block media-list" style="margin:0px; position:relative">
+      <div class="title-block">商品评价</div>
+      <ul>
+        <volist name="info['ping']" id="vo">
+          <li><a href="javascript:void(0);" class="item-link item-content">
+            <div class="item-media"><img data-original="{$vo.user.avatar128}" width="75" class="lazy"></div>
+            <div class="item-inner"  style="background:none">
+              <div class="item-title-row">
+                <div class="item-title">{$vo.user.nickname}</div>
+                <div class="item-after">{$vo.create_time}</div>
+              </div>
+              <div class="item-subtitle text-red">
+                <for start="0" end="$vo['complex']"> <i class="icon-uniE608  text-warning"></i> </for>
+              </div>
+              <div class="item-text">{$vo.content}</div>
+            </div>
+            </a></li>
+        </volist>
+      </ul>
+      <a href="{:U('GoodsPing',array('goods_id'=>$info['id']))}" target="_blank" class="btn  btn-block">查看更多评论</a> </div>
+    <hr>
+  </notempty>
+  <notempty name="info[other_list]">
+    <div class="title-block ui-border-b">猜你喜欢</div>
+    <ul class="avg-sm-3 bg-white other_list">
+      <foreach name="info[other_list]" item="vo">
+        <li><a href="{:U('detail',array('id'=>$vo['id']))}"><img src="{$vo.goods_img|getThumbImageById=350,350}" width="100%" class="am-circle"/></a>
+          <div class="text-center">¥{$vo.goods_price}</div>
+        </li>
+      </foreach>
+    </ul>
+    <hr>
+  </notempty>
+  <notempty name="info[goods_content]">
+   <hr>
+    <div class="title-block  ui-border-b">商品详情</div>
+    <div class="goods_content white-bg text-center">
+      <volist name="info.goods_content" id="vo"> <img data-original="{$vo|getThumbImageById=1000,auto}" class="lazy"  style="max-width:100%"> </volist>
+    </div>
+  </notempty>
+  <div class='nomore ui-border-t'><i class='icon-uniF118'></i> 已经到底了</div>
+  </block>
+  
+  
+  
+  
+  <block name="footer"> 
+    <!--优惠-->
+    <div class="modal fade" id="SubsidyBox">
+      <div class="modal-dialog list-block">
+        <ul class="modal-body">
+          <volist name="info['subsidy']" id="vo">
+            <li class=" item-inner padding-left">{$vo.title} </li>
+          </volist>
+        </ul>
+        <div class="g-collapse">
+          <button type="button" data-dismiss="modal" class="btn btn-block btn-warning btn-xl">取消</button>
+        </div>
+        <input type="hidden" name="id" value="{$myadderss.id}">
+      </div>
+    </div>
+    <!--参数-->
+    <div class="modal fade diy-param-radio" id="param">
+      <div class="modal-dialog"> <img src="{$info.goods_img}" width="100" height="100" class="spec-img">
+        <div class="modal-body">
+          <div class="spec_content">
+            <p>价格:<span>¥</span><span class="spec-price text-danger">{$info.goods_price}</span></p>
+            <p>库存:<span class="spec-stock">{$info.goods_stock}</span> {$info.goods_unit}</p>
+          </div>
+          <a href="javascript:void(0)" data-dismiss="modal" class="close">x</a>
+          <form class="buy-form"  method="post" >
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <foreach name="info['goods_spec']" item="vo" key="k">
+                <tr class="tr">
+                  <td style="text-align:right" width="60" class="title">{$vo.name}</td>
+                  <td><foreach name="vo['value']" item="echo">
+                      <label class="ui-border-radius label-radio"  goods-id="{$info.id}">
+                        <input type="radio" name="spec[{$k}]" value="{$key}" data-title="{$echo}">
+                        {$echo}</label>
+                    </foreach></td>
+                </tr>
+              </foreach>
+              <tr>
+                <td style="text-align:right" width="60" class="title">数量</td>
+                <td class="number"><button type="button"  class="ui-border minus"><i class="icon-uniF068"></i></button>
+                  <input class="ui-border-b car-number" type="text" name="buy_num" value="1">
+                  <button type="button" class="ui-border plus"><i class="icon-uniF067"></i></button></td>
+              </tr>
+            </table>
+            <input type="hidden" name="goods_id" value="{$info.id}">
+          </form>
+        </div>
+        <div class="g-collapse">
+          <ul class="g">
+            <li class="u-sm-6"><a href="javascript:void(0)" class="btn btn-danger  btn-block  btn-xl buy-post"  data-type="buy">立即购买</a></li>
+            <li  class="u-sm-6"><a href="javascript:void(0)" class="btn btn-warning buy-post  btn-block  btn-xl  buy-post"  data-type="car">加入购物车</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="detali-foot">
+      <div class="g-collapse">
+        <ul class="g">
+          <li class="u-sm-2"><a href="{:U('Ucenter/Index/Collect',array('goods_id'=>$vo['id']))}" data-ajax="get" class="btn btn btn-block btn-xl" style="padding:5px 0 6px 0"><i class="icon-uniF08A"></i>
+            <div>收藏</div>
+            </a></li>
+          <li class="u-sm-5"><a href="javascript:void(0)" class="btn btn-danger  btn-block btn-xl" onClick="$('#param').modal({keyboard : false, show : true});">立即购买</a></li>
+          <li  class="u-sm-5"><a href="javascript:void(0)" class="btn btn-warning buy-post  btn-block  btn-xl"  data-type="car">加入购物车</a></li>
+        </ul>
+      </div>
+    </div>
+  </block>
+  
+  
+  
+<block name="script"> 
+<script type="text/javascript" src="__STATIC__/swiper/swiper.js"></script> 
+<script>
+var swiper = new Swiper('.swiper-container', {
+	pagination: '.swiper-pagination',
+	preloadImages: false,
+    lazyLoading: true,
+	spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false
+});
+
+$('.diy-param-radio label input[type="radio"]').on('click', function () {
+   OpenLoad
+   var goods_id = $(this).data('id');
+   setTimeout(function() {
+   var select_text = '';
+   var select_ids = '';
+   $(".diy-param-radio input[type='radio']").each(function(){
+	   var that = $(this);
+		   if(that.is(':checked')){
+			that.closest('label').addClass('check');
+			select_ids+=that.val();
+		   }else{
+			  that.closest('label').removeClass('check');
+		   }
+	});
+	$('#spec_select').html(select_text);
+	var target = 'shop/index/detail';
+	$.post(target,{ goods_id:{$info.id},sp_ids:'i_'+select_ids }, function(data){ 
+		if(data){
+			if(data.sp_img==0 || !data.sp_img){
+				$('.spec-img').attr('src',"{$info.goods_img}");
+			}else{
+				$('.spec-img').attr('src',data.sp_img);
+			}
+			$('.spec-price').text(data.goods_price);
+			$('.spec-stock').text(data.stock);
+		}
+	});
+  },10);
+});
+
+$(".buy-post").click(function(){ 
+	 var is_spec = "{$info.goods_spec}";
+	 var len = $("#param table .tr").length;
+	 var that = this;//定义全局变量
+	 var type = $(that).data('type');
+
+	 if(is_spec){	
+			$("#param table .tr").each(function(i, dom){
+					if(!$(this).find('input[type="radio"]').is(':checked')){
+						 Alert('请先选择“'+$(this).find('.title').text()+'”', 'default');
+						 $('#param').modal({keyboard : false, show : true})
+						 return false; 
+					}
+					if (i === len - 1){
+						 $.post("{:U('Shop/Order/RealBuy')}",$('.buy-form').find('input').serialize()+'&type='+type).success(function (ret) {
+							 if(ret.status == 1){
+								 if(ret.url){
+									  location.href = ret.url;
+								 }else{
+									 if(type == 'car'){
+										$('#param').modal('hide');
+										 Alert(ret.info,'success')
+									}else{
+										 location.href = ret.url;
+									}
+								 }
+							 }else{
+								 Alert(ret.info)
+							 }
+						 })
+					 }
+				})
+	 	 }else{
+			 $.post("{:U('Shop/Order/RealBuy')}",$('.buy-form').find('input').serialize()+'&type='+type).success(function (ret) {
+				   if(ret.status == 1){
+						 if(ret.url){
+							  location.href = ret.url;
+						 }else{
+							  if(type == 'car'){
+								  $('#param').modal('hide')
+								  Alert(ret.info,'success')
+							  }else{
+								   location.href = ret.url;
+							  }
+						 } 
+				   }else{
+					    Alert(ret.info)
+				   }
+			  })
+		 }
+	 })
+	 
+$(".car-number").keyup(function(event){ 
+	num = $(this).val()
+	if(isPInt(num)==false){
+		$(this).val(1);
+	}
+}); 
+$(".minus").on('click', function () {
+	num = $(this).closest('td').find(".car-number").val();
+	if(num>1){
+		$(this).closest('td').find(".car-number").val(num-1);
+	}
+});
+$(".plus").on('click', function () {
+	num = $(this).closest('td').find(".car-number").val();
+	$(this).closest('td').find(".car-number").val(parseInt(num)+1);
+});
+
+function isPInt(str) {
+    var g = /^[1-9]*[1-9][0-9]*$/;
+    return g.test(str);
+}
+
+$('#param').on('hide.zui.modal', function() {
+	//模态框关闭时重置规格选项
+  	$('#param input[type="radio"]').prop('checked',false).closest('label').removeClass('check');
+	
+})
+
+$(".goods_content img").click(function(){ 
+	var src = $(this).data('original')
+	wx.previewImage({
+		current: '{:Host()}'+src, // 当前显示图片的http链接
+		urls: [
+		 <volist name="info.goods_content" id="vo">
+		 '{:Host()}{$vo|getThumbImageById=1000,auto}',
+		 </volist>
+		] // 需要预览的图片http链接列表
+	});
+});
+
+
+$(".swiper-container img").click(function(){ 
+	var src = $(this).attr('src');
+	wx.previewImage({
+		current: src, // 当前显示图片的http链接
+		urls: [
+		 <volist name="info.goods_photo" id="vo">
+		 '{$vo}',
+		 </volist>
+		] // 需要预览的图片http链接列表
+	});
+})
+
+</script> 
+  </block>

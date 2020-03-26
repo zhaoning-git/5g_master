@@ -1,0 +1,86 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>反馈列表</a></li>
+			<li><a href="{:U('Fankui/add')}">添加反馈</a></li>
+		</ul>
+		<form class="js-ajax-form">
+			<input type="text" name="name" class='name' placeholder="请输入反馈用户进行查询">
+			<input type="button" id="btn" value="点击搜索">
+			<li><a href="{:U('Fankui/index')}">返回</a></li>
+		</form>
+		<form method="post" class="js-ajax-form tihuan">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>反馈用户</th>
+						<th>反馈内容</th>
+						<th>联系方式</th>
+						<th>处理情况</th>
+						<th>提交时间</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="data" item="vo">
+					<tr>
+						<td align="center">{$vo.id}</td>
+						<td>{$vo['user_nicename']}</td>
+						<td>{$vo['content']}</td>
+						<td>{$vo['mobile']}</td>
+						<td>
+							<if condition="$vo['status'] eq 0">
+								未处理
+								<else />
+								已处理
+							</if>
+						</td>
+						<td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+						<td align="center">
+						    <a href="{:U('Fankui/edit',array('id'=>$vo['id']))}" >处理</a>
+							|<a href="{:U('Fankui/del',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn" data-msg="您确定要删除该俱乐部吗？">删除</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>
+<script>
+	$(function () {
+		$("#btn").click(function () {
+			var name = $(".name").val();
+			$.ajax({
+				url: "{:U('Fankui/goSearch')}",
+				data:{name:name},
+				method:'post',
+				async:false,
+				dataType:'json',
+				success:function (res) {
+					var str = '';
+					str +="<table><thead><tr><th>ID</th><th>反馈用户</th><th>反馈内容</th><th>联系方式</th><th>处理状态</th></tr></thead><tbody>";
+
+					$.each(res.data,function(i,n){
+						str +="<tr>"
+								+ "<td>"+n['id']+"</td>"
+								+ "<td>"+n['user_nicename']+"</td>"
+								+ "<td>"+n['content']+"</td>"
+								+ "<td>"+n['mobile']+"</td>"
+								+ "<td>"+n['status']+"</td>"
+								+ "</tr>";
+					});
+					str +="</tbody></table>";
+					$('.table-hover').html(str);
+				}
+			})
+		})
+	})
+</script>

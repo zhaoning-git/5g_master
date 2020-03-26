@@ -1,0 +1,537 @@
+<extend name="Public/base" />
+<block name="body">
+  <div class="main-title"> {$page_title} </div>
+  <!-- 标签页导航 -->
+  <div class="with-padding">
+    <empty name="_GET['cid']">
+      <form action="__SELF__" method="get">
+        <table width="100%"  cellpadding="0" cellspacing="0" class="table  table-bordered" >
+          <tr>
+            <td width="20%">商品分类</td>
+            <td><button class="btn" type="button" id="Category_edit" style="display:none">{$info.category} <i class="icon-edit"></i></button>
+              <div id="Category">
+                <select size="8" name="cid"  style="height:200px; width:150px; margin-right:15px">
+                  <volist name="category" id="vo">
+                    <option  value="{$vo.id}">{$vo.title}</option>
+                  </volist>
+                </select>
+              </div></td>
+          </tr>
+        </table>
+        <div class="buttons text-center">
+          <button class="btn btn-primary disabled CategoryStart" type="button"  onClick="location.href='{:U('GoodsEdit',array('id'=>$info['id']),false,false)}/cid/'+$('#Category select:last').val()+'.html'">下一步，填写商品信息</button>
+          <a class="btn" href="javascript:history.go(-1)">返回</a> </div>
+      </form>
+      <else/>
+      <ul class="nav nav-secondary">
+        <li class="active"><a href="#tab1"  data-toggle="tab">基本信息</a></li>
+        <li><a href="#tab6"  data-toggle="tab">虚拟评论</a></li>
+      </ul>
+      <!-- 表单 -->
+      <form id="form" action="{:U('goodsEdit')}" method="post" class="form-horizontal" style=" margin-top:10px">
+        <table width="100%"  cellpadding="0" cellspacing="0">
+            <tr>
+          
+          <td valign="top"><!-- 基础文档模型 -->
+            
+            <div class="tab-content">
+              <div id="tab1" class="tab-pane active">
+                <table width="100%"  cellpadding="0" cellspacing="0" class="table  table-bordered" >
+                  <tr>
+                    <td>商品分类</td>
+                    <td colspan="3"><a class="btn" href="{:U('GoodsEdit',array('id'=>$info['id']))}">{$info.category} <i class="icon-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td  width="20%">商品名称</td>
+                    <td colspan="3"><input type="text" name="goods_title"  class="input-6" value="{$info.goods_title}" placeholder="商品名称"></td>
+                  </tr>
+                  <tr>
+                    <td>简短名称</td>
+                    <td colspan="3"><input type="text" name="goods_title_sm"  class="input-4" value="{$info.goods_title_sm}" placeholder="简短的标题描述商品">
+                      <span class="check-tips">(禁止关键字的堆砌，避免标题过长，用户看不到重点)</span></td>
+                  </tr>
+                  <tr>
+                    <td>商品简介</td>
+                    <td colspan="3"><textarea  name="goods_brief"  class="input-4" placeholder="位于主标题下方的次要描述文字">{$info.goods_brief}</textarea></td>
+                  </tr>
+                  <tr>
+                    <td>商品货号</td>
+                    <td colspan="3"><input type="text" name="goods_number"  class="input-4" value="{$info.goods_number}" placeholder="如果不输入系统将随机生成编号"></td>
+                  </tr>
+                  <tr>
+                    <td>价格</td>
+                    <td>销售价：
+                      <input type="text" name="goods_price"  class="input-1" value="{$info.goods_price}" placeholder="元"></td>
+                    <td>市场价：
+                      <input type="text" name="goods_market_price"  class="input-1" value="{$info.goods_market_price}" placeholder="元"></td>
+                    <td>可积分换购：
+                      <input type="number" name="goods_costs"  class="input-1" value="{$info.goods_costs}" min="0">
+                      点</td>
+                  </tr>
+                  <tr>
+                    <td>加入推荐</td>
+                    <td  colspan="3"><label class="checkbox">
+                        <input type="checkbox" name="is_best"  value="1" />
+                        精品</label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="is_new"  value="1"   />
+                        新品</label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="is_hot"  value="1"  />
+                        热销</label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="is_sell"  value="1"  />
+                        特惠</label></td>
+                  </tr>
+                  <tr>
+                    <td>是否免运费</td>
+                    <td  colspan="3"><label class="radio">
+                        <input type="radio" name="is_fare"  value="1"  />
+                        是</label>
+                      <label class="radio">
+                        <input type="radio" name="is_fare"  value="0"  />
+                        否</label></td>
+                  </tr>
+                  <notempty name="info['attr']">
+              	 <tr>
+                    <td colspan="4" class="text-center line">商品参数</td>
+                  </tr> 
+                  <volist name="info['attr']" id="field">
+                  <include file="../../../Application/Shop/View/default/Admin/_goods_key"/>
+                  </volist>
+                  </notempty>
+                  <notempty name="info['spec_list']">
+                   <tr>
+                    <td colspan="4" class="text-center line">商品规格设置</td>
+                  </tr> 
+                  <volist name="info['spec_list']" id="vo">
+                    <tr nc_type="spec_group_dl_{$key}" nctype="spec_group_dl"  colspan="3" spec_img="t" class="spec-bg">
+                      <td>{$vo.title}</td>
+                      <td nctype="sp_group_val" class="SpecBox" colspan="3"><ul class="spec">
+                          <foreach name="vo['each']" item="echo">
+                            <li>
+                            <div class="input-group">
+                                    <label class="input-group-addon" nctype="input_checkbox"><input nc_type="{$echo.id}" type="checkbox" name="spec[{$vo.id}][{$key}][is_check]" value="{$echo.spec_name}" <notempty name="echo['is_check']">checked</notempty>> </label>
+                                    <input type="hidden" name="spec[{$vo.id}][{$key}][id]" value="{$echo.id}">
+                                    <input type="hidden" name="spec[{$vo.id}][{$key}][tid]" value="{$info.tid}">
+                                    <input type="hidden" name="spec[{$vo.id}][{$key}][spec_id]" value="{$vo.id}">
+                                    <span nctype="pv_name">
+                                    <input type="text" name="spec[{$vo.id}][{$key}][spec_name]" placeholder="如:红色" value="{$echo.spec_name}" class="input-1 first-input">
+                                    </span>
+                              </div>
+                            </li>
+                          </foreach>
+                          <li>
+                          <div class=" SpecAddBox">
+                              <input type="hidden" name="tid" value="{$info.tid}">
+                              <input type="hidden" name="spec_id" value="{$vo.id}">
+                              <input type="text" name="spec_name" placeholder="填写创建" class="input-1 first-input">
+                              <button type="button" class=" btn btn-info" nctype="input_checkbox"  spec-type="post"><i class="icon-plus"></i></button>
+                          </div>
+                          </li>
+                        </ul></td>
+                    </tr>
+                  </volist>
+                  <tr  style="display: none;"  nc_type="spec_dl">
+                    <td>库存配置</td>
+                    <td colspan="3"><table width="100%" class="spec-bg spec_table text-center">
+                    <thead>
+                        <tr>
+                        <volist name="info['spec_list']" id="vo">
+                          <td nctype="1">{$vo.title}</td>
+                          </volist>
+                          <td><span class="red">*</span>价格</td>
+                          <td><span class="red">*</span>库存</td>
+                          <td>商家货号</td>
+                          <td>关联图片</td>
+                        </tr>
+                        </thead>
+                        <tbody nc_type="spec_table">
+                        
+                        </tbody>
+                      </table></td>
+                  </tr>
+                  </notempty>
+                  
+                  <tr>
+                    <td>商品相册 (最多5张)</td>
+                    <td colspan="3">{:W('Core/UploadMultiImage/render',array(array('id'=>'goods_photo','name'=>'goods_photo','value'=>$info['goods_photo'],'limit'=>5)))}</td>
+                  </tr>
+                  <tr>
+                    <td>商品描述</td>
+                    <td colspan="3">{:W('Core/Ueditor/editor',array('goods_content','goods_content',$info['goods_content'],'100%','400'))} </td>
+                  </tr> 
+                </table>
+                
+              </div>
+
+              <div id="tab6" class="tab-pane">
+                <table width="100%"  cellpadding="0" cellspacing="0" class="table  table-bordered" >
+                   <tr>
+                    <td width="20%">虚拟评论(每个评语一行)</td>
+                    <td><textarea name="ping" style="width:100%; height:400px">{$info.ping}</textarea></td>
+                  </tr>
+                </table>
+              </div>
+              <!--选项卡切换结束--> 
+              
+            </div></td>
+          <td width="190" valign="top"  style=" padding:0px 10px"><table width="100%" border="0" class="table table-hover table-bordered ">
+          <notempty name="info['brand_list']">
+              <tr>
+                <td>商品品牌</td>
+              </tr>
+              <tr>
+                <td><select name="goods_brand">
+                    <option value="0">请选择品牌</option>
+                    <volist name="info['brand_list']" id="vo">
+                      <option value="{$key}">{$vo}</option>
+                    </volist>
+                  </select></td>
+              </tr>
+              </notempty>
+              <tr>
+                <td>定时上架</td>
+              </tr>
+              <tr>
+                <td><input type="text" name="start_time"  class="input-2 time" readonly value="<notempty name="info[start_time]">{$info[start_time]|date='Y-m-d H:i:s',###}</notempty>" ></td>
+              </tr>
+              <tr>
+                <td>定时下架</td>
+              </tr>
+              <tr>
+                <td><input type="text" name="over_time"  readonly class="input-2 time"  value="<notempty name="info[over_time]">{$info[over_time]|date='Y-m-d H:i:s',###}</notempty>"></td>
+              </tr>
+              <tr>
+                <td>库存</td>
+              </tr>
+              <tr>
+                <td><input type="number" name="goods_stock"  class="input-1" value="{$info.goods_stock|default=C('DEFAULT_STOCK')}" placeholder="件"></td>
+              </tr>
+                </tr>
+              
+              <tr>
+                <td>商品重量</td>
+              </tr>
+              <tr>
+                <td><input type="text" name="goods_weight"  class="input-1" value="{$info.goods_weight}" placeholder="单位:kg">
+                  <span class="check-tips">(千克)</span></td>
+              </tr>
+              <tr>
+                <td>浏览量</td>
+              </tr>
+              <tr>
+                <td><input type="number" name="goods_view" class="input-1" value="{$info.goods_view}" min="0"></td>
+              </tr>
+              <tr>
+                <td>排序值</td>
+              </tr>
+              <tr>
+                <td><input type="number" name="goods_sort" class="input-1" value="{$info.goods_sort}" min="0"></td>
+              </tr>
+            </table></td>
+            </tr>
+          
+        </table>
+        <div class="buttons">
+          <input type="hidden" name="id" value="{$info.id}"/>
+          <input type="hidden" name="tid" value="{$info.tid}"/>
+          <input type="hidden" name="cid" value="{$info.cid|default='$_GET[cid]'}"/>
+          <button class="btn btn-primary ajax-post" type="submit" target-form="form-horizontal">确定</button>
+          <button class="btn ajax-continue" type="submit" target-form="form-horizontal"><i class="icon-plus"></i>继续添加(Ctrl+Enter)</button>
+          <a class="btn" href="javascript:history.go(-1)">返回</a> </div>
+      </form>
+     
+
+
+    </empty>
+  </div>
+</block>
+<block name="script">
+ <link href="__ZUI__/lib/datetimepicker/datetimepicker.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__ZUI__/lib/datetimepicker/datetimepicker.min.js"></script> 
+ 
+<link href="__STATIC__/webuploader/css/webuploader.css"  rel="stylesheet">
+<script charset="utf-8" src="__STATIC__/webuploader/js/webuploader.js"></script> 
+<script type="text/javascript">
+$('.time').datetimepicker({
+	weekStart: 1,
+	todayBtn:  1,
+	autoclose: 1,
+	todayHighlight: 1,
+	startView: 2,
+	forceParse: 0,
+	showMeridian: 1,
+	 language: "zh-CN",
+	format: "yyyy-mm-dd hh:ii"
+});
+
+$('.time').change(function () {
+	var fieldName = $(this).attr('data-field-name');
+	var dateString = $(this).val();
+	var date = new Date(dateString);
+	var timestamp = date.getTime();
+	$('[name=' + fieldName + ']').val(Math.floor(timestamp / 1000));
+});
+
+
+Think.setValue("is_best", "{$info.is_best}");
+Think.setValue("is_hot", "{$info.is_hot}");
+Think.setValue("is_new", "{$info.is_new}");
+Think.setValue("is_sell", "{$info.is_sell}");
+Think.setValue("is_fare", "{$info.is_fare}");
+Think.setValue("goods_brand", "{$info.goods_brand}");
+
+$('#Category_edit').click(function () {
+	$(this).hide()
+	$('#Category').show();
+})
+
+$(document).on('change','#Category select',function(){
+	OpenLoad();
+	var cid = $(this).children('option:selected').val();
+	$(this).nextAll('select').remove();
+	$('.CategoryStart').addClass('disabled');
+	if(!cid){
+		CloseLoad();
+		return false
+	}
+	$.post('__SELF__',{cid:cid,select:true}).success(function (json) {
+		CloseLoad();
+			 //遍历json数据
+			if(!json){
+				 $('.CategoryStart').removeClass('disabled');
+				 return false
+			}
+			var html = '<select name="cid"  size="8" style="height:200px; width:150px; margin-right:15px">'
+			$.each(json,function(index,array){
+				html+='<option  value="'+array['id']+'">'+array['title']+'</option>';
+			});
+			html+='</select>';
+			$("#Category").append(html)
+	});
+});
+$(function () {
+	function implode(x, list) {
+		var result = "";
+		for (var i = 0; i < list.length; i++) {
+			if (result == "") {
+				result += list[i];
+			} else {
+				result += ',' + list[i];
+			}
+		}
+		return result;
+	}
+
+	$('.oneplus-checkbox').change(function (e) {
+		var fieldName = $(this).attr('data-field-name');
+		var checked = $('.oneplus-checkbox[data-field-name=' + fieldName + ']:checked');
+		var result = [];
+		for (var i = 0; i < checked.length; i++) {
+			var checkbox = $(checked.get(i));
+			result.push(checkbox.attr('value'));
+		}
+		result = implode(',', result);
+		$('.oneplus-checkbox-hidden[data-field-name=' + fieldName + ']').val(result);
+	});
+})
+
+
+$('[spec-type="add"]').click(function () {
+	$(this).next('.SpecAddBox').show()
+	$(this).hide()
+})
+$('[spec-type="cancel"]').click(function () {
+	$(this).closest('.SpecAddBox').hide()
+	$(this).closest('.SpecBox').find('[spec-type="add"]').show()
+})
+$('[spec-type="post"]').click(function () {
+	var that = $(this);
+	var str = ''
+	query = that.closest('.SpecAddBox').find('input').serialize();
+	$.post("{:U('UserAddSpec')}",query).success(function (data) {
+		if(data.status == 1){
+			$('.first-input').val('');
+			str+= '<li>';
+			str+= '<div class="input-group">';
+            str+= '<label class="input-group-addon" nctype="input_checkbox"><input type="checkbox" name="is_check" value="'+data.data.spec_name+'"></label>';
+			str+= '<input type="hidden" name="spec_name" value="'+data.data.spec_id+'">';
+			str+= '<input type="text" name="spec_name" value="'+data.data.spec_name+'"  placeholder="规格名称" class="input-1">';
+			str+= '</div>';
+			str+= '</li>';
+			that.closest('.SpecBox ul').prepend(str)
+		}else{
+			Alert(data.info);
+		}      
+	});
+})
+ 
+// 按规格存储规格值数据
+var spec_group_checked = [<volist name="info['spec_list']" id="vo"><if condition="$i eq count($info['spec_list'])">''<else/>'',</if></volist>];
+var str = '';
+var V = new Array();
+<volist name="info['spec_list']" id="vo">
+	var spec_group_checked_{$key} = new Array();
+</volist>
+
+$(function(){
+	$('tr[nctype="spec_group_dl"]').on('click', 'label[nctype="input_checkbox"] > input[type="checkbox"]',function(){
+		into_array();
+		goods_stock_set();
+		goods_upload_set();
+	});
+});
+
+// 将选中的规格放入数组
+function into_array(){
+		<volist name="info['spec_list']" id="vo">
+		spec_group_checked_{$key} = new Array();
+		$('[nc_type="spec_group_dl_{$key}"]').find('input[type="checkbox"]:checked').each(function(){
+			i = $(this).attr('nc_type');
+			v = $(this).val();
+			c = null;
+			if ($(this).parents('tr:first').attr('spec_img') == 't') {
+				c = 1;
+			}
+			spec_group_checked_{$key}[spec_group_checked_{$key}.length] = [v,i,c];
+		});
+		spec_group_checked[{$key}] = spec_group_checked_{$key};
+		</volist>
+}
+
+// 生成库存配置
+function goods_stock_set(){
+    //  店铺价格 商品库存改为只读
+	
+    $('[nc_type="spec_dl"]').show();
+    str = '<tr>';
+	  {:recursionSpec(0,sizeof($info['spec_list']))}
+    if(str == '<tr>'){
+        //  店铺价格 商品库存取消只读
+				$('input[name="number"]').removeAttr('readonly','readonly')
+				$('input[name="stock"]').removeAttr('readonly','readonly')
+        $('[nc_type="spec_dl"]').hide();
+    }else{
+        $('tbody[nc_type="spec_table"]').empty().html(str).find('input[nc_type],img[nc_type]').each(function(){
+				$('input[name="number"]').attr('readonly','readonly')
+				$('input[name="stock"]').attr('readonly','readonly')
+                s = $(this).attr('nc_type');
+                try{ $(this).val(V[s]); $(this).attr('src',V[s]);}catch(ex){ $(this).val(''); $(this).attr('src','/Public/img/miui/com.android.gallery.png') };
+            }).end().find('input[nc_type],img[nc_type]').change(function(){
+			s = $(this).attr('nc_type');
+			if(V[s]=='/Public/img/miui/com.android.gallery.png'){
+				V[s] = '';
+			}else{
+				V[s] = $(this).val();
+			}
+				
+				
+             
+               
+				
+            });
+    }
+}
+
+//  编辑商品时处理JS
+$(function(){ 
+	var E_SP = new Array();
+	var E_SPV = new Array();
+	<volist name="info['spec_list']" id="vo">  <foreach name="vo['each']" item="echo">E_SP[{$echo.id}] = '{$echo.spec_name}';</foreach></volist>
+	<volist name="info['sp_check']" id="vo">E_SPV['{$key}'] = '{$vo}';</volist>;	V = E_SPV;
+	$('dl[nc_type="spec_dl"]').show();
+    into_array();	// 将选中的规格放入数组
+    str = '<tr>';
+	{:recursionSpec(0,sizeof($info['spec_list']))}
+    if(str == '<tr>'){
+		 //  店铺价格 商品库存取消只读
+		$('input[name="goods_sn"]').removeAttr('readonly','readonly')
+		$('input[name="number"]').removeAttr('readonly','readonly')
+        $('dl[nc_type="spec_dl"]').hide();
+    }else{
+        $('tbody[nc_type="spec_table"]').empty().html(str) .find('input[nc_type],img[nc_type]').each(function(){
+				$('input[name="number"]').attr('readonly','readonly')
+				$('input[name="stock"]').attr('readonly','readonly')
+				
+                s = $(this).attr('nc_type');
+                try{ 
+				$(this).val(E_SPV[s]);
+				if(!E_SPV[s]){ $(this).attr('src','/Public/img/miui/com.android.gallery.png'); }else{ $(this).attr('src',E_SPV[s]); }}catch(ex){ $(this).val(''); $(this).attr('src','/Public/img/miui/com.android.gallery.png') };
+            }).end().find('input[nc_type],img[nc_type]').change(function(){
+                s = $(this).attr('nc_type');
+                V[s] = $(this).val();
+			
+            });
+    }
+});
+
+function goods_upload_set(){
+	$(function() { 
+		$("[data-toggle=upimg]").each(function(){
+				var that = $(this);
+				var id = '#'+that.attr('id');;
+				var uploader_each  = WebUploader.create({
+					// swf文件路径
+					swf: 'Uploader.swf',
+					// 文件接收服务端。
+					server: ThinkPHP.IMG_UPLOAD_URL,
+					accept: {
+					fileNumLimit: 1,
+					extensions: ThinkPHP.IMG_UPLOAD_EXT,
+					mimeTypes: 'image/*',
+					fileSizeLimit : ThinkPHP.IMG_UPLOAD_SIZE,
+				},
+					pick: {'id': id, 'multi': false}
+				});
+				uploader_each.on('fileQueued', function (file) {
+					OpenLoad()
+					uploader_each.upload();
+				});
+				uploader_each.on('uploadProgress', function( file, percentage ) {
+					$('#LoadingBox p').text((percentage*100).toFixed(0)+'%')
+				});
+				/*上传失败*/
+				uploader_each.on('error', function (data) {
+					
+						if(data == 'F_DUPLICATE'){
+							 Alert('文件重复');
+						}
+						if(data == 'Q_EXCEED_SIZE_LIMIT'){
+							 Alert('文件大小超限'+ThinkPHP.IMG_UPLOAD_SIZE/1024/1024+'M');
+						}
+						if(data == 'Q_TYPE_DENIED'){
+							Alert('只允许上传'+ThinkPHP.IMG_UPLOAD_EXT+'后缀的文件');
+						}
+						CloseLoad();
+				})
+				uploader_each.on('uploadSuccess', function (file, ret) {
+					if (ret.status == 0) {
+						Alert(ret.info);
+					} else {
+						that.find('.sp_img').val(ret.data.file.id);
+						that.find('img').attr('src',ret.data.file.path);
+						that.find('.sp_img_path').val(ret.data.file.path);
+						
+						 $('tbody[nc_type="spec_table"]').find('input[nc_type]').each(function(){
+								s = $(this).attr('nc_type');
+								V[s] = $(this).val();
+						});
+						 $('tbody[nc_type="spec_table"]').find('img[nc_type]').each(function(){
+								s = $(this).attr('nc_type');
+								V[s] = $(this).attr('src');
+								
+						});
+					
+					}
+					CloseLoad();
+				});
+		});
+	});
+}
+into_array();
+goods_stock_set();
+goods_upload_set();
+highlight_subnav("{:U('Goods')}")
+</script> 
+</block>

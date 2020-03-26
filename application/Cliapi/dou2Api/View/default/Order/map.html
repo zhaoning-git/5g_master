@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link rel="stylesheet" href="__PUBLIC__/css/mobile.ui.css">
+<title>选择地图</title>
+<style type="text/css">
+*{ margin:0px;
+    padding:0px;
+}
+body,html{
+    font: 12px/16px Verdana, Helvetica, Arial, sans-serif; height:350px;
+}
+#X{
+	position: fixed;top:155px;left:0px; width:100%; height:1px; border-bottom:2px dotted red; z-index:999;
+}
+#Y{
+	position: fixed;left:50%;top:0px; width:2px; height:100%; border-right:2px dotted red; z-index:999; 
+}
+#container{
+	width:100%; height:310px;
+}
+#foot{ 
+	position:absolute; bottom:0px; left:0px; width:100%}
+</style>
+<script src="__PUBLIC__/js/jquery.js"></script>
+<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+<script>
+var geocoder, map, marker = null;
+
+var init = function() {
+   //判断是否支持 获取本地位置
+  if(navigator.geolocation){
+   		 navigator.geolocation.getCurrentPosition(showPosition);
+   }
+
+ function showPosition(position){
+		var lat=position.coords.latitude; 
+		var lng=position.coords.longitude;
+		map.panTo(new qq.maps.LatLng(lat, lng));
+  }
+	var container=document.getElementById("container");
+	 var map = new qq.maps.Map(container,{
+		disableDefaultUI: true ,   //禁止所有控件
+        center: new qq.maps.LatLng(39.916527,116.397128),
+        zoom: 15
+		
+    });
+	 geocoder = new qq.maps.Geocoder();
+
+	   function resetBounds() {
+        var bounds = map.getBounds();     //获取函数范围
+        if(bounds){ 
+		  var lat = parseFloat(bounds.getCenter().getLat().toFixed(5));
+		  var lng = parseFloat(bounds.getCenter().getLng().toFixed(5));
+		  var latLng = new qq.maps.LatLng(lat, lng);
+		  geocoder.getAddress(latLng);
+		  //设置服务请求成功的回调函数
+		  geocoder.setComplete(function(result) {
+			 		window.top.$('.modal-title-name').text(result.detail.address);
+			 		window.CityObj = result;
+		  });
+		  geocoder.setError(function() {
+			  window.top.Alert("系统无法该地区地址，请手动填写");
+		  });
+		      
+        }
+    }
+    //添加地图监听事件 如果位置改变 则触发函数 resetBounds
+    qq.maps.event.addListener(map, 'bounds_changed', resetBounds);
+
+}
+
+function success() {
+	   window.top.$('select[name="province"] option:contains('+window.CityObj.detail.addressComponents.province+')').prop("selected", true);
+	   window.top.$('select[name="city"]').html('<option value="'+window.CityObj.detail.addressComponents.city+'">'+window.CityObj.detail.addressComponents.city+'</option>').prop("disabled", false).prop("selected",true);  
+	   window.top.$('select[name="district"]').html('<option value="'+window.CityObj.detail.addressComponents.district+'">'+window.CityObj.detail.addressComponents.district+'</option>').prop("disabled", false).prop("selected",true); 
+	   window.top.$('input[name="area"]').val(window.CityObj.detail.addressComponents.province+','+window.CityObj.detail.addressComponents.city+','+window.CityObj.detail.addressComponents.district); 
+	   window.top.$('input[name="address"]').val(window.CityObj.detail.addressComponents.street+' '+window.CityObj.detail.addressComponents.streetNumber+' '+window.CityObj.detail.addressComponents.town);  
+	   window.top.$('input[name="map"]').val(window.CityObj.detail.location.lat+','+window.CityObj.detail.location.lng);  
+	   window.top.$('.modal-title-name').text(window.CityObj.detail.address);
+	   window.top.$('#triggermodal').modal('hide');
+}
+
+</script>
+</head>
+<body onload="init()">
+<div id="X"></div>
+<div id="Y"></div>
+<div id="container"></div>
+<div id="foot">
+<div class="g-collapse"><ul class="g"><li class="u-sm-6"><a href="javascript:void(0)" class="btn btn-warning  btn-block" onClick="window.top.$('#triggermodal').modal('hide')">取消</a></li><li  class="u-sm-6"><a href="javascript:void(0)" class="btn btn-danger buy-post  btn-block" onClick="success()">确定</a></li></ul></div></div>
+</body>
+</html>

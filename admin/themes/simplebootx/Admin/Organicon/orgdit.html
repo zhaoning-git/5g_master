@@ -1,0 +1,133 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Organicon/organ')}">列表</a></li>
+			<li class="active"><a >编辑</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Organicon/orauit')}">
+		   <input type="hidden" name="id" value="{$data['orid']}">
+		   <input type="hidden" name="user_id" value="{$data['user_id']}">
+			<fieldset>
+				
+
+				<div class="control-group">
+					<label class="control-label">运营者</label>
+					<div class="controls">
+						
+						<td align="center">{$data.operator}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+                <div class="control-group">
+					<label class="control-label">营业执照号</label>
+					<div class="controls">
+						
+						<td>{$data.licenumber}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">营业执照</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.licenses}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.licenses}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">组织机构代码证</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.barcodess}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.barcodess}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">认证公函</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.letters}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.letters}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">认证信息</label>
+					<div class="controls">
+						
+						<td align="center">{$data.information}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">所在地</label>
+					<div class="controls">
+						
+						<td align="center">{$data.location}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">机构名称</label>
+					<div class="controls">
+						
+						<td align="center">{$data.organization}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">组织机构代码</label>
+					<div class="controls">
+						
+						<td align="center">{$data.barcode}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">审核状态</label>
+					<div class="controls">
+						
+						 <if condition="$data['is_audit'] eq '1'">
+						 	<td align="center" ><b style="color:red">待审核</b></td>
+						 </if>
+						  <if condition="$data['is_audit'] eq '2'">
+						 	<td align="center" ><b style="color:red">已审核</b></td>
+						 </if>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				
+			</fieldset>
+			<div class="form-actions">
+                <if condition="$data['is_audit'] eq '1'">
+				  <button type="submit" class="btn btn-primary js-ajax-submit">审核</button>			
+				</if>
+				
+				<a class="btn" href="{:U('Organicon/organ')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<div id="ShowImage_Form" class="modal hide">         
+         <div class="modal-header">
+             <button data-dismiss="modal" class="close" type="button"></button>
+         </div>
+         <div class="modal-body">
+           <div id="img_show">
+           </div>
+         </div>
+    </div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	 <script src="__PUBLIC__/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	function showimage(source){
+      
+         $("#ShowImage_Form").find("#img_show").html("<img src='"+source+"' class='carousel-inner img-responsive img-rounded' />");
+
+         $("#ShowImage_Form").modal();
+
+     }
+</script>

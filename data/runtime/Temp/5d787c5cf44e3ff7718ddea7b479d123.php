@@ -1,0 +1,9 @@
+<?php
+//000000000000a:30:{s:2:"id";s:4:"7875";s:3:"uid";s:1:"0";s:5:"uname";s:22:"罗德里格没有斯6";s:9:"region_id";s:1:"0";s:4:"type";s:1:"2";s:11:"is_supplier";s:1:"0";s:5:"title";s:84:"萧涛涛：我暂时还无法为中国队效力，如果有机会我会好好考虑";s:7:"content";s:1371:"<div >
+<p>据秘鲁媒体libero.pe报道，近日，萧涛涛回到母队秘鲁体育大学的主场观看比赛，他的出现也成为了现场焦点。</p>
+<p><img src="https://img1.qunliao.info/fastdfs5/M00/02/66/720x-/-/-/rB8CCl5lruaAVLJpAAGjeg2AW60883.jpg?watermark/1/image/aHR0cDovL2ltZzEuZG9uZ3FpdWRpLmNvbS9mYXN0ZGZzMi9NMDAvMkEvRTIvQ2hPcU0xb1MtZVdBUERxM0FBQkE1VWdyQlQ4MTQyLnBuZz9pbWFnZVZpZXcyLzAvdy8xMjA=/dissolve/100/dx/14/dy/10" data-width="987" data-height="567" orig-src="https://img1.qunliao.info/fastdfs5/M00/02/66/rB8CCl5lruaAVLJpAAGjeg2AW60883.jpg?watermark/1/image/aHR0cDovL2ltZzEuZG9uZ3FpdWRpLmNvbS9mYXN0ZGZzMi9NMDAvMkEvRTIvQ2hPcU0xb1MtZVdBUERxM0FBQkE1VWdyQlQ4MTQyLnBuZz9pbWFnZVZpZXcyLzAvdy8xNjQ=/dissolve/100/dx/19/dy/10"><span class="tips_i">图片来源：libero.pe</span></p>
+<p>近日，萧涛涛回到了老东家秘鲁体育大学的主场观看比赛。中场休息时，萧涛涛和他的翻译出现在镜头中，当场还秀了几句流利的汉语。</p>
+<p>在接受采访时，萧涛涛谈到了为中国队效力的问题：“现在我在考虑自己的未来，我暂时还不能为中国队效力，不过如果有这个机会的话，我会好好考虑的。”</p>
+<p>此前有报道称，目前已经取得中国国籍的萧涛涛几乎缺席了恒大的全程冬训，已经被排除在球队新赛季的计划之外。</p>
+</div>";s:5:"theme";s:0:"";s:6:"praise";s:1:"0";s:7:"reading";s:1:"8";s:5:"favor";s:1:"0";s:3:"map";s:0:"";s:4:"data";s:94:"https://img1.qunliao.info/fastdfs5/M00/02/66/280x210/crop/-/rB8CCl5lr6GAb6FnAABln7SIdd0116.jpg";s:6:"status";s:1:"1";s:7:"addtime";s:10:"1583723030";s:7:"old_uid";s:1:"0";s:6:"old_id";s:1:"0";s:8:"zcontent";s:0:"";s:7:"is_open";s:1:"1";s:6:"is_top";s:1:"0";s:8:"top_time";s:1:"0";s:7:"is_club";s:1:"0";s:7:"is_head";s:1:"0";s:6:"is_hot";s:1:"0";s:9:"index_mol";s:1:"1";s:8:"sel_type";s:5:"10000";s:10:"sqs_status";s:1:"0";s:10:"identifshi";s:1:"1";s:8:"userInfo";b:0;}
+?>

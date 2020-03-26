@@ -1,0 +1,165 @@
+<admintpl file="header" />
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li><a href="{:U('Welfare/Welfareitem?type='.$type)}">{$title}奖品列表</a></li>
+      <li class="active"><a ><notempty name="info.id">编辑<else/>添加</notempty>{$title}奖品</a></li>
+      <li ><a href="{:U('Welfare/LotteryLog?type='.type)}">中奖记录</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Welfare/addLottery')}">
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label">奖品标题</label>
+          <div class="controls">
+            <input type="text" name="title" value="{$info.title}">
+            <span class="form-required">*</span>
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label">奖品类型</label>
+          <div class="controls">
+            <select name="type" required <notempty name="info.id">disabled</notempty> >
+               <option value="0">请选择奖品类型</option>
+               <Volist name="couponlist" id="vo">
+                 <option value="{$vo['type']}" <eq name="info.type" value="$vo['type']">selected</eq>>{$vo['title']}</option>
+               </Volist>			
+                 
+            </select>
+            <span class="form-required">*</span>
+          </div>
+        </div>
+
+        <div class="control-group jpjz" style="display:none;">
+          <label class="control-label">奖品价值</label>
+          <div class="controls">
+            <input type="text" name="cost" value="{$info.cost}">
+            <span class="form-required">* 支持固定值、多个值和范围值,多个值用","分割 范围用"-"分割 列如 2,4,6,8,10 或1-20</span>
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label">中奖概率</label>
+          <div class="controls">
+            <input type="text" name="chance" value="{$info.chance}" placeholder="">
+            <span class="form-required">* 请输入正整数,值越大中奖率越高,值为0则永远不中</span>
+          </div>
+        </div>
+        
+        <!--<div class="control-group">
+          <label class="control-label">说明</label>
+          <div class="controls">
+            <textarea name="remark" rows="2" cols="20" id="remark" class="inputtext" style="height: 100px; width: 500px;">{$info['remark']}</textarea>
+          </div>
+        </div>-->
+        
+      </fieldset>
+      <div class="form-actions">
+        <input type="hidden" name="welfare" value="{$type}">
+        <input type="hidden" name="id" value="{$info.id}">
+        
+        <notempty name="info.id">
+          <button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+        <else/>
+          <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+        </notempty>
+        <a class="btn" href="{:U('Welfare/Welfareitem?type='.$type)}">{:L('BACK')}</a>
+      </div>
+    </form>
+  </div>
+  <script src="__PUBLIC__/js/common.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+  <script>
+  	$("select[name='type']").change(function(){
+		var type = $(this).val();
+		setType(type);
+	});
+	
+	setType("{$info.type}");
+	
+	
+	function setType(type){
+		var that = $(".jpjz");
+		
+		if(type == '0'){
+			that.hide('normal');
+		}
+
+		else if(type == 'CouponGold'){
+			that.hide('normal',function(){
+				that.find('label').html('立减金额');
+			}).show('normal');
+		}
+		
+		else if(type == 'CouponJingcai'){
+			that.hide('normal',function(){
+		    	that.find('label').html('额外派发银币(%)');
+			}).show('normal');
+		}
+		
+		else if(type == 'CouponMerge'){
+			that.hide('normal',function(){
+		    	that.find('label').html('合并上限');
+			}).show('normal');
+		}
+		
+		else if(type == 'CouponDelay'){
+			that.hide('normal',function(){
+		    	that.find('label').html('延时天数');
+			}).show('normal');
+		}
+		
+		else if(type == 'CouponDikou'){
+			that.hide('normal',function(){
+		    	that.find('label').html('抵扣金额');
+			}).show('normal');
+		}
+
+		else if(type == 'CouponSilver'){
+			that.hide('normal',function(){
+		    	that.find('label').html('银币数量');
+			}).show('normal');
+		}
+
+		else if(type == 'CouponQuanyi'){
+			that.hide('normal',function(){
+		    	that.find('label').html('会员天数');
+			}).show('normal');
+		}
+                
+		else if(type == 'CouponHuiyuan_2' || type == 'CouponHuiyuan_3' || type == 'CouponHuiyuan_4' || type == 'CouponHuiyuan_5'){
+			that.hide('normal',function(){
+		    	    that.find('label').html('兑换会员月数');
+			}).show('normal');
+		}
+                
+		else if(type == 'CouponClubs'){
+			that.hide('normal',function(){
+		    	    that.find('label').html('俱乐部创建次数');
+			}).show('normal');
+		}
+                
+		else if(type == 'CouponSign'){
+			that.hide('normal',function(){
+		    	    that.find('label').html('补签卡数量');
+			}).show('normal');
+		}
+                
+		else if(type == 'CouponRename'){
+			that.hide('normal',function(){
+		    	    that.find('label').html('改名卡数量');
+			}).show('normal');
+		}
+                
+                
+                
+                
+                else{
+                  that.hide('normal');
+                }
+                
+	}
+	
+  </script>
+</body>
+</html>

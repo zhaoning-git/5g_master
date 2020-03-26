@@ -1,0 +1,62 @@
+<admintpl file="header" />
+
+</head>
+<body>
+    <div class="wrap">
+        <ul class="nav nav-tabs">
+            <li class="active"><a >礼物列表</a></li>
+            <li><a href="{:U('Gift/add')}">礼物添加</a></li>
+        </ul>
+        <form method="post" class="js-ajax-form" action="{:U('Gift/listorders')}">
+            <div class="table-actions">
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+            </div>
+
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th align="center">ID</th>
+                        <th>订单编号</th> 
+                        <!-- <th>分类</th> -->
+                        <th>总价</th>
+                        <th>用户</th>
+                        <th>状态</th>
+                      
+                       
+
+                        <th align="center">{:L('ACTIONS')}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <foreach name="lists" item="vo">
+                    <tr>
+                        <td align="center">{$vo.id}</td>
+                        <td>{$vo.dingdanbianhao}</td>
+                     
+                        <td>{$vo.zongjia}</td>
+                        <td>{$vo.uid}</td>
+                        <td>{$vo.status}</td>
+                      
+                     
+                   
+                   
+                   
+                    <td align="center">	
+                    
+                    <a href="{:U('Jifenduihuan/edit',array('id'=>1))}" >编辑</a>
+                    |
+                    <a href="{:U('Jifenduihuan/del',array('id'=>2))}" class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+                    </td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+            <div class="pagination">{$page}</div>
+            <div class="table-actions">
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+            </div>
+        </form>
+    </div>
+    <script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a>订单详情</a></li>
+    </ul>
+
+    <form method="post" class="js-ajax-form tihuan">
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr>
+                <th align="center">ID</th>
+                <th>订单号</th>
+                <th>商品名</th>
+                <th>商品图</th>
+                <th>所用金币</th>
+                <th>所用银币</th>
+                <th>参数</th>
+                <th>状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="data" item="vo">
+                <tr class="oid" oid="{$vo.order_no}">
+                    <td align="center">{$vo.id}</td>
+                    <td>{$vo.order_no}</td>
+                    <td>{$vo.shopname}</td>
+                    <td><img src="{$vo['img']}" width="50px;" alt="暂无图片"></td>
+                    <td>{$vo.jinbi}</td>
+                    <td>{$vo.yinbi}</td>
+                    <td>
+                        <foreach name="vo['gui_json']" item="voo">
+                            {$voo['attribute_name']}  :  {$voo['shuzhi']} &nbsp;;&nbsp;
+                        </foreach>
+                    </td>
+
+                    <td>
+                        <if condition="$vo['eva_status'] eq 1">
+                            已评价
+                            <elseif condition="$vo['eva_status'] eq 0"/>
+                            待评价
+                        </if>
+                    </td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        <h3>收货地址信息</h3>
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr>
+                <th>收货人</th>
+                <th>手机号</th>
+                <th>省</th>
+                <th>市</th>
+                <th>区</th>
+                <th>详细地址</th>
+                <th>备注信息</th>
+                <th align="center">{:L('ACTIONS')}</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{$address['dress_name']}</td>
+                    <td>{$address['mobile']}</td>
+                    <td>{$address['sheng']}</td>
+                    <td>{$address['shi']}</td>
+                    <td>{$address['qu']}</td>
+                    <td>{$address['detailed']}</td>
+                    <td>
+                        <div id="zhu"> {$address['beizhu']}</div>
+                    </td>
+                    <td align="center">
+                        <div id="btn" style="cursor:pointer;"><h5>备注订单信息</h5></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="layui-collapse">
+            <div class="pagination">{$page}</div>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            var content = prompt("输入");
+            var oid = $(".oid").attr('oid');
+            if (content !=='') {
+                $.ajax({
+                    url: "{:U('Order/addBeizhu')}",
+                    data:{content:content,oid:oid},
+                    method:'post',
+                    async:false,
+                    dataType:'json',
+                    success:function (res) {
+                        if(res.status == 1){
+                            alert('备注成功');
+                            window.location.reload();//刷新当前页面.
+                        }
+                    }
+                })
+            }
+
+        });
+
+    })
+</script>

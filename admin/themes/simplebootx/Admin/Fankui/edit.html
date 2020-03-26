@@ -1,0 +1,51 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Fankui/index')}">列表</a></li>
+			<li class="active"><a >处理</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Fankui/edit_do')}">
+		  <input type="hidden" name="id" value="{$info['id']}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">反馈人美名</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$info['user_nicename']}" readonly>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">反馈内容</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$info['content']}" readonly>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">联系方式</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$info['mobile']}" readonly>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">状态</label>
+					<div class="controls">
+						<label class="radio inline" for="del1"><input type="radio" name="status" value="0" id="del1" <if condition="$info['status'] eq '0'">checked</if> >未处理</label>
+						<label class="radio inline" for="del2"><input type="radio" name="status" value="1" id="del2" <if condition="$info['status'] eq '1'">checked</if> >处理</label>
+					</div>
+				</div>
+		
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="{:U('Fankui/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

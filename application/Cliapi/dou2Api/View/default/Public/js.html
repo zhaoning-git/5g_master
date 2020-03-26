@@ -1,0 +1,19 @@
+<script src="__PUBLIC__/js/jquery.js"></script>
+<script type='text/javascript' src='__PUBLIC__/js/mobile.ui.js' charset='utf-8'></script> 
+<script type='text/javascript' src='__STATIC__/lazyload/jquery.lazyload.min.js' charset='utf-8'></script>
+<script>
+ $("img.lazy").lazyload();
+$('.bar-header .fl').click(function(){
+	if($('form').is(".move")&&$('form').is(".remove")){
+		$('form').attr('class','move');
+		return false;
+	}
+	if($('form').is(".move")){
+		$('form').addClass('remove');
+	}else{
+		$('form').addClass('move');
+	}
+});
+
+</script> 
+<block name="script"></block>

@@ -1,0 +1,118 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>添加sku</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Sku/addAttrDo')}" enctype="multipart/form-data">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">实物商品选择</label>
+					<div class="controls">
+						<select name="goods" id="goods">
+							<option value="0">请选择</option>
+							<foreach name="shiInfo" item="vo">
+								<option value="{$vo.id}">{$vo.shopname}</option>
+							</foreach>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">属性分类</label>
+					<div class="controls">
+						<select name="shu" class="type">
+							<option value="0">请选择</option>
+						</select>
+						<select name="shu" class="attribute">
+							<option value="0">请选择</option>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+
+				</div>
+<!--				<div class="control-group" >-->
+<!--					<label class="control-label">可选值</label>-->
+<!--					<div class="controls" readonly>-->
+<!--						<input type="text" name="ku" class="type">-->
+<!--						<span class="form-required">*</span>-->
+<!--					</div>-->
+<!--				</div>-->
+
+				<div class="control-group">
+					<label class="control-label">库存</label>
+					<div class="controls">
+						<input type="text" name="ku">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="{:U('Sku/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>
+<script>
+	$(function(){
+		var url = "{:U('Sku/attrValList')}";
+		//商品 获取商品属性
+		$("#goods").change(function () {
+			var options=$("#goods option:selected").val();  //获取选中的项
+			alert(options);
+			$.ajax({
+				type:'post',
+				url:"{:U('Sku/goodsType')}",
+				data:{id:options},
+				dataType:'json',
+				success:function(data){ //请求成功回调函数
+					var address = data.data;
+					if(data.status == 1){ //判断状态码，200为成功
+						var option = '';
+						for(var i=0;i<address.length;i++){ //循环获取返回值，并组装成html代码
+							var shuzhi = address[i].attribute_name;
+							var id = address[i].id;
+							option +='<option value="'+id+'">'+shuzhi+'</option>';
+						}
+					}else{
+						var option = '<option>请选择</option>'; //默认值
+					}
+					$(".type").html(option); //js刷新第二个下拉框的值
+
+				},
+			});
+		});
+
+		//属性  获取属性值
+		$(".type").change(function(){ //监听下拉列表的change事件
+			var attribute=$(".type option:selected").attr('value');  //获取选中的项
+			$.ajax({
+				type:'post',
+				url:"{:U('Sku/attrValList')}",
+				data:{id:attribute},
+				dataType:'json',
+				success:function(data){ //请求成功回调函数
+					var address = data.data;
+					if(data.status == 1){ //判断状态码，200为成功
+						var option = '';
+						for(var i=0;i<address.length;i++){ //循环获取返回值，并组装成html代码
+							var shuzhi = address[i].shuzhi;
+							var id = address[i].id;
+							option +='<option value="'+id+'">'+shuzhi+'</option>';
+						}
+					}else{
+						var option = '<option>请选择</option>'; //默认值
+					}
+					$(".attribute").html(option); //js刷新第二个下拉框的值
+				},
+			});
+
+		});
+	});
+</script>

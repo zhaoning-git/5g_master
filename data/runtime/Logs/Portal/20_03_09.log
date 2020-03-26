@@ -1,0 +1,31 @@
+[ 2020-03-09T10:15:53+08:00 ] 39.82.211.234 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-09T11:38:54+08:00 ] 202.57.46.94 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-09T11:38:59+08:00 ] 202.57.46.94 /index.php?g=&m=AdminPage&a=add
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-09T11:40:54+08:00 ] 202.57.46.94 /index.php?g=&m=AdminPage&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+SQL: SHOW COLUMNS FROM `cmf_posts` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cmf_posts` (`post_type`,`post_title`,`type`,`post_keywords`,`post_excerpt`,`post_modified`,`post_status`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2','5G体育，银币送不停，大奖免费换','3','','','2020-03-09 11:38:59','1','<p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">•活动名称：5G体育，银币送不停，大奖免费换</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">•活动时间：即日起——2020年4月30日</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">•活动对象：全体用户</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">•活动奖励：银币</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">•奖励用途：银币可在“5G体育商城” 中免费兑换海量奖品；可在“限时奖励”中免费兑换限时奖品</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">•商品类型：点击【商城】查看花样“豪”礼；点击【我的】—【限时奖励】查看限时礼遇</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">•参与方式：</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">活动期间可通过以下途径获取海量银币</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">1.</span><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">点击【我的】按钮，在【福利】版块中通过“每日签到、幸运轮盘、黄金宝箱、神秘红包”每日可获取海量银币，上不封顶。</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">2. </span><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">点击【我的】按钮，在【我的资料】版块中通过“刷脸认证、绑定银行卡”及【修改资料】版块中通过“绑定QQ、绑定微信、绑定微博”合计至多可获取850枚银币。</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">3.</span><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">点击【我的】按钮，在【实名认证】版块中通过“真实姓名”输入及“身份证号码”输入、绑定，合计至多可获取200枚银币。</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">4.</span><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">点击【我的】按钮，在【俱乐部】版块中通过“发帖”每日至多可获取25枚银币；“回帖”每日至多可获取10银币；若所发布的帖子由于涉嫌违规、违法导致被删，将扣除50枚银币/贴。</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">5.</span><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">点击【我的】按钮，在【活动】版块中通过“邀请好友” 每日获取海量银币，上不封顶</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">6.</span><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">点击【首页】按钮，在【竞猜】版块“参与竞猜”，竞猜成功后，可获取等量银币。</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">7.</span><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">点击【直播】按钮，观看主播直播每日至多可获取8枚银币，参与直播录制每日至多可获取40枚银币。</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">8</span><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">．使用5G体育APP在线时长每达30分钟，赠送5枚银币，每日至多可获取25枚银币</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif\">&nbsp;</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif;color:#2F5496\">活动须知</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif;color:#2F5496\">※同一用户不允许以“多设备，多账号”等非正常形式多次参与本活动，一经发现，5G体育有权永久封停该账户一切权限。（同一设备、同一手机号、同一微信/QQ/微博/、同一IP均视为同一用户）</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif;color:#2F5496\">※银币发放时间将在用户完成对应任务的3个工作日内自动发放到个人账户中</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif;color:#2F5496\">※商品发货时间将在银币兑换-填写收款地址后15个工作日内发货</span></p><p><span style=\"font-family:&#39;微软雅黑&#39;,sans-serif;color:#2F5496\">※本活动最终解释权归5G体育所有</span></p><p><br/></p>','2020-03-09 11:40:54','1','{\"template\":\"page\",\"thumb\":\"\"}') [ RunTime:0.0354s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0009s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','添加页面：38','3392745054','1583725254') [ RunTime:0.0027s ]
+
+[ 2020-03-09T11:40:56+08:00 ] 202.57.46.94 /index.php?g=&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-09T14:40:53+08:00 ] 202.57.46.94 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-09T14:40:58+08:00 ] 202.57.46.94 /index.php?g=&m=AdminPage&a=edit&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+

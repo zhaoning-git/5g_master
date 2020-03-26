@@ -1,0 +1,48 @@
+<tr>
+<td >{$field.title}</td>
+<td colspan="3">
+<switch name="field.attr_type">
+    <case value="text">
+      <input type="text" name="attr[{$field.id}]" value="{$field.attr_value}" class="text input-4 form-control"/>
+    </case>
+    <case value="textarea">
+      <textarea name="attr[{$field.id}]" class="input-4">{$field.attr_value}</textarea>
+    </case>
+    <case value="select">
+      <select name="attr[{$field.id}]" style="width:auto;">
+        <volist name="field.preset" id="option">
+          <php>$selected = $field['attr_value']==$key ? 'selected' : ''; </php>
+          <option value="{$key}" {$selected}>{$option|htmlspecialchars}</option>
+        </volist>
+      </select>
+    </case>
+    <case value="radio">
+      <volist name="field.preset" id="option">
+        <php> $checked = $field['attr_value']==$option ? 'checked' : ''; </php>
+        <label  class="radio"><input name="attr[{$field.id}]" value="{$option}" type="radio"  {$checked} />{$option}</label>
+      </volist>
+    </case>
+     <case value="checkbox"> 
+      <php> $field['value_array'] = explode(',', $field['attr_value']); </php>
+      <volist name="field.preset" id="option">
+        <php> $checked = in_array($option,$field['value_array']) ? 'checked' : '';  </php>
+        <label>
+          <input type="checkbox" value="{$option}" class="oneplus-checkbox"  data-field-name="attr_{$field.id}" {$checked}/>
+          {$option|htmlspecialchars}</label>
+      </volist>
+      <input type="hidden" name="attr[{$field.id}]" class="oneplus-checkbox-hidden" data-field-name="attr_{$field.id}" value="{$field.attr_value}"/>
+    </case>
+    <case value="img">
+     	{:W('Core/UploadImage/render',array(array('id'=>'attr_'.$field['id'],'name'=>"attr[$field[id]]",'value'=>$field['attr_value'])))}
+    </case>
+    <case value="video">
+    	{:W('Core/UploadMedia/render',array(array('id'=>'attr_'.$field['id'],'name'=>"attr[$field[id]]",'value'=>$field['attr_value'])))}
+    </case>
+    <default/>
+    <span style="color: #f00;">错误：未知字段类型 {$field.attr_type}</span>
+    <input type="hidden" name="attr[{$field.id}]" value="{$field.value|htmlspecialchars}"/>
+  </switch>
+  <if condition="$field['subtitle']"> <span class="check-tips">（{$field.subtitle|htmlspecialchars}）</span> </if> 
+  
+</td>
+</tr>

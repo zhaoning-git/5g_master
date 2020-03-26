@@ -1,0 +1,232 @@
+<extend name="Public/base"/>
+<block name="body">
+  <script src="__STATIC__/pingpay/pingpp.js" type="text/javascript"></script>
+  <!--收货地址-->
+
+    <div  id="AddressBox" class="list-block">
+      <ul>
+        <li> <a href="javascript:void(0)" data-remote="{:U('Shop/Order/Address',array('oid'=>$CenterList['id']))}" data-toggle="modal" data-title="选择收货地址" class="item-link item-content">
+          <div class="item-inner">
+            <table width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td rowspan="3"><i class="icon icon-map-marker icon-md"></i></td>
+                  <td class="title">收货人：{$CenterList.address.truename} {$CenterList.address.mobile}</td>
+                  <td rowspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>收货地址：{$CenterList.address.address}</td>
+                </tr>
+                <tr>
+                  <td class="other">{$CenterList.address.town} {$CenterList.address.street_number}</td>
+                </tr>
+              </tbody>
+            </table>
+            <input type="hidden" name="aid" value="{$CenterList.address.id}">
+          </div>
+          </a></li>
+      </ul>
+    </div>
+
+  <div class="list-block center-list">
+    <ul>
+      <volist name="CenterList['goods']" id="vo">
+        <li class="item-content">
+          <div class="item-inner goods">
+            <table width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td rowspan="2" width="90"><img src="{:getThumbImageById($vo['goods_img'],240,240)}" data-image="{:get_cover($vo['goods_img'],'path')}" width="100%" data-caption="{$vo.goods_title}" data-toggle="lightbox"></td>
+                  <td colspan="2">{$vo.goods_title}</td>
+                </tr>
+                <tr>
+                  <td><span class="text-danger price" style="font-size:14px;" data-price="{$vo.goods_price}">¥{$vo.goods_price}</span></td>
+                  <td class="text-right">x{$vo.buy_num}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <notempty name="vo['goods_spec_json']">
+          <li>
+          <li  class="item-content">
+            <div class="item-inner">
+              <div class="item-title">商品规格</div>
+              <div class="item-after">
+                <foreach name="vo['goods_spec_json']" item="echo"><span style="margin-left:8px">{$echo.sp_val}</span></foreach>
+              </div>
+            </div>
+          </li>
+        </notempty>
+      </volist>
+      <li><a href="javascript:void(0);"  class="item-link item-content" <notempty name="CenterList.order_logistics_price">id="LogisticsButton"</notempty> data-key="{$key}">
+        <div class="item-inner">
+          <div class="item-title">配送费用</div>
+          <div class="item-after"><empty name="CenterList.order_logistics_price">免运费<else/>{$CenterList.order_logistics|arrConfig=PD_TYPE,###} {$CenterList.order_logistics_price}元</empty></div>
+        </div>
+        </a></li>
+      <notempty name="CenterList['subsidy_list']">
+         <li><a href="javascript:void(0);"  class="item-link item-content"  onClick="$('#SubsidyBox').modal({keyboard : false, show : true})">
+          <div class="item-inner">
+            <div class="item-title">享受优惠</div>
+            <div class="item-after">{$CenterList.order_subsidy_total}元</div>
+          </div>
+          </a>
+        </li>
+      </notempty>
+      <notempty name="StoreInfo['if_invoice']">
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title">发票抬头
+              <input style=" border:none" type="text" name="invoice[]" value="" placeholder="如需发票请填写">
+            </div>
+          </div>
+        </li>
+      </notempty>
+      <li class="item-content">
+        <div class="item-inner">
+          <div class="item-title">买家留言
+            <input style="border:none" type="text" name="order_exhort" value="" placeholder="选填,对商品品质或者样式的要求等">
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+<div class="title-block margin-top-sm cf"><span class="fl">请选择支付方式</span>  <span class="fr">账户余额:¥<span class="text-danger">{$UserInfo.score1}</span></span></div>
+  <div class="list-block media-list">
+      <ul>
+       <volist name="paylist" id="vo">
+              <li class="checkbox-block">
+                <label class="label-checkbox item-content">
+                <input type="radio" name="pay_way"   value="{$vo}" <eq name="vo" value="wx_pub">checked</eq>>
+                <span class="item-media"><i class="icon icon-form-checkbox"></i></span>
+                <div class="item-inner"> <img src="__PUBLIC__/img/pay/{$vo}-pay.png" height="50" > </div>
+                </label>
+              </li>
+            </volist>
+            <li class="cf center-price">
+            <div class="fr">
+     		 <button type="button" class="btn btn-danger btn-lg ok-pay" >提交订单</button>
+    		</div>
+   			 <div class="price fr"><span id="subtotal" class="text-danger">¥{$CenterList.order_total}</span>
+  		    <small>(含运费)</small></div></li>
+      </ul>
+    </div>
+    
+  
+  </block>
+  <block name="script">
+  <!--物流-->
+    <div class="modal fade" id="LogisticsBox">
+      <div class="modal-dialog list-block">
+        <form action="__SELF__" method="get" class="ChangeAddress">
+          <ul class="modal-body">
+            <volist name="CenterList.ship.type" id="vo">
+              <li class=" item-inner fc">
+                <label class="label-checkbox"> <input type="radio" name="pd"  value="{$key}"   <eq name="CenterList[order_logistics]" value="$key">checked</eq> > <span class="item-media fl"><i class="icon icon-form-checkbox"></i> <span class="title">{$key|arrConfig=PD_TYPE,###}</span></span> <span class="price">¥{$vo}</span></label>
+              </li>
+            </volist>
+          </ul>
+          <div class="g-collapse">
+            <ul class="g">
+              <li class="u-sm-6">
+              	 <input type="hidden" name="oid" value="{$CenterList.id}">
+                <button type="button" data-dismiss="modal" class="btn btn-block btn-danger btn-xl">取消</button>
+              </li>
+              <li  class="u-sm-6">
+                <button type="submit" class="btn btn-block btn-warning btn-xl"> 确定 </button>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!--优惠-->
+     <div class="modal fade" id="SubsidyBox">
+      <div class="modal-dialog list-block">
+          <ul class="modal-body">
+            <volist name="CenterList['subsidy_list']" id="vo">
+              <li class=" item-inner padding-left">{$i}、{$vo.title} </li>
+            </volist>
+          </ul>
+          <div class="g-collapse">
+            <ul class="g">
+              <li class="u-sm-6">
+                <button type="button" data-dismiss="modal" class="btn btn-block btn-danger btn-xl">取消</button>
+              </li>
+              <li  class="u-sm-6">
+                <button type="button"  data-dismiss="modal" class="btn btn-block btn-warning btn-xl"> 确定 </button>
+              </li>
+            </ul>
+          </div>
+          <input type="hidden" name="id" value="{$myadderss.id}">
+      </div>
+    </div>
+
+<script type="text/javascript">
+$(".ok-pay").click(function(){
+	var order_exhort = $("[name=order_exhort]").val();
+	var pay_way = $("[name='pay_way']:checked").val();
+	if(!pay_way){
+		 Alert('请选择支付方式','danger')
+		 return false;
+	}
+	
+	$.ajax({
+	   type: 'POST',
+	   url: '__SELF__',
+	   data: 'oid={$CenterList.id}&order_exhort='+order_exhort+'&pay_way='+pay_way,
+	   beforeSend:function(){
+			OpenLoad('正在处理订单...');
+	   },
+	   success: function(ret){
+		   
+		   
+		   if(ret.status == 1&&ret.url){
+		   		location.href = ret.url;
+		   }else if(ret.status == 1){
+			   if(pay_way == 'wx_pub'){
+					pingpp.createPayment(ret.data, function(result, error){
+						if (result == "success") {
+							Alert('支付完成','success',true,"{:U('PayOver')}");
+						} else if (result == "fail") {
+							alert('本次支付失败，请联系客服');
+						} else if (result == "cancel") {
+							 Alert('你取消了支付');
+						}
+					}); 
+			   }else{
+				   	Alert('支付完成','success',true,"{:U('PayOver')}");
+			   }
+			   return false;
+		   }else{
+			   Alert(ret.info,'danger')
+			   
+		   }
+	    },
+	    complete:function(){
+			CloseLoad();
+		},
+		error:function(){
+			alert('数据错误');
+		}
+	});
+	return false;
+})
+  
+  
+$(document).on('click','#LogisticsButton', function() {
+	  $('#LogisticsBox').modal({keyboard : false, show : true})
+ }); 
+</script> 
+</block>
+<block name="share">
+<script type="text/javascript">
+	wx.ready(function(){
+		wx.hideOptionMenu();
+		wx.hideAllNonBaseMenuItem();
+	});
+</script>
+</block>

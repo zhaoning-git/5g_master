@@ -1,0 +1,173 @@
+<admintpl file="header" />
+</head>
+<body>
+	<style type="text/css">
+        *{
+            margin: 0;
+            padding:0;
+        }
+       /* .wrap{
+            width: 600px;
+            margin: 0px auto;
+ 
+        }*/
+        .menu{
+            width: 600px;
+            height: 30px;
+            background: cornflowerblue;
+            position: sticky;
+            top:0px;
+        }
+        .menu ul li{
+            float: left;
+            list-style-type: none;
+            padding: 0 40px;
+        }
+        .content ul li img:hover{
+            transform: scale(1.2);/*当鼠标移动到图片上时实现放大功能*/
+        }
+        .content ul li{
+            height: 100px;
+            overflow: hidden;
+            border-bottom: 1px solid lavender;
+            background: white;
+            list-style-type: none;
+            transition-duration: 0.5s;
+            margin: 10px 10px 5px 0;
+ 
+        }
+        .content ul li:hover{
+            background-color: lavender;
+            transition-duration: 0.5s;
+        }
+        .content .left{
+            overflow: hidden;/*隐藏溢出图片内容*/
+            transition-duration: 0.5s;
+            width: 140px;
+            height:80px;
+            /*background: green;*/
+            float: left;
+            margin-right:20px;
+        }
+        .content .right{
+            width:400px ;
+            float: left;
+            /*background: pink;*/
+        }
+        .right_top{
+            height:60px;
+        }
+        .right_bottom{
+            margin_top:50px;
+        }
+        .right_bottom_left span{
+            color: darkgray;
+            font-size: 12px;
+        }
+        .pi{
+        	width: 100px;
+        	height: 100px;
+        	left: 80%;
+        	float:right;
+        	position: fixed;
+        }
+        .loading{
+            position: fixed;
+            display: none;
+            top: 50%;
+            left :50%;
+        }
+    </style>
+<div class="wrap">
+    <div class="loading" 
+       style="width: 100px; height: 100px ; background-color: red ;  z-index: 9999;">
+           <img src="__PUBLIC__/images/timg.gif" style="width: 100%; height: 100%">
+       </div>
+     
+	<ul class="nav nav-tabs">
+		<!-- <li><a href="{:U('Zixun/index')}">资讯列表</a></li> -->
+		<li class="active"><a>爬取数据列表</a></li>
+	</ul>
+	<!-- <foreach name="data" item="vo">
+		<td>{$vo.iii}</td>
+	 </foreach> -->
+        
+     <div class="content" >
+    	 <div class="pi"><button type="button" class="layui-btn">批量存库</button></div>
+	    	<ul id="content_test">
+			 	<foreach name="data.data.contentList" item="vo">
+			 		<a href="http://www.ppsport.com/article/news/{$vo.contentId}.html" target="_blank" >      
+			 			<li data_vv="http://www.ppsport.com/article/news/{$vo.contentId}.html" pic="{$vo['contentCover']}">
+		                <div class="left"><img src="{$vo['contentCover']}" alt=""></div>
+		                <div class="right">
+		                    <div class="right_top">
+		                        <h4>{$vo.contentTitle}</h4>
+		                    </div>
+		                    <div class="right_bottom">
+		                        <div class="right_bottom_left" urls="{$vo.iii}">
+		                            <!-- <span>诺伊尔</span>  <span>世界杯</span>  <span>德国</span> <span>|</span> -->
+		                             <span>{$vo.createTime}</span>
+		                        </div>
+		                    </div>
+		                    	 <a onClick="shan(this)" class="js-ajax-dialog-btn" data-msg="您确定要删除该帖子？"><i class="layui-icon">&#xe640;</i></a>
+                                <div class="layui-btn-group">
+
+                                </div>
+		                </div>
+		            </li>
+			  		</a> 
+			    </foreach>
+		 	   
+
+		 </ul>
+        <div id="warning"></div>	  
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+<script type="text/javascript">
+     var ids = '{$ids}';
+
+	var array = new Array();
+    var show = document.querySelector('.loading');
+	$("button").click(function(){
+        console.log('hhhh');
+        $("li").each(function(){
+        	array.push($(this).attr('data_vv'));
+     	 });
+      // console.log(array);return false;
+      let url = "{:U('zixun/chaku')}";
+		$.ajax({
+			 url:url,
+			 data:{da:array, ids:ids},
+			 beforeSend: function(){
+				show.style.display = 'block';
+			  },
+			 success:function(data){
+				show.style.display = 'none';
+				// console.log(data);
+				layer.msg(data.info);
+			 },
+			 error:function(data){
+				 layer.msg(data.info);
+			 }
+		});
+    });
+ 	
+	// var data = '{$data}';
+	// console.log(data);
+	function dian(e){
+    // $(document).ready(function(){
+		$('#content').each(function(){
+			console.log(99)
+  		});
+	}	
+	function shan(obj){
+		var par = $(obj).parent().parent().remove();
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Clubs/upGrade')}">列表</a></li>
+			<li class="active"><a >编辑</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Clubs/edit_upgrade_do')}">
+		  <input type="hidden" name="id" value="{$info['id']}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">等级</label>
+					<div class="controls">
+						<input type="text" name="level" value="{$info['level']}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">人数上限</label>
+					<div class="controls">
+						<input type="text" name="max_person" value="{$info['max_person']}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">所需金币</label>
+					<div class="controls">
+						<input type="text" name="need_gold_coin" value="{$info['need_gold_coin']}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">所需银币</label>
+					<div class="controls">
+						<input type="text" name="need_silver_coin" value="{$info['need_silver_coin']}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="{:U('Clubs/upGrade')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

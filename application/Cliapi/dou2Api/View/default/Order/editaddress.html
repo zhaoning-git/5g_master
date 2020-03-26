@@ -1,0 +1,152 @@
+<extend name="Public/base"/>
+<block name="body">
+<style>
+body,html,#ajax-page-container,form{ height:100%}
+</style>
+  <form action="{:U('EditAddress')}" method="post" class="form">
+    <div class="map-tip"><i class="icon-uniF06A"></i> 你可以平移或缩放地图，确定您大体位置</div>
+    <div id="container" style="height:40%; width:100%;"></div>
+    <table width="100%" border="0" class="ui-table ui-table-2 ui-border-tb address_edit white-bg" style="margin-top:10px">
+      <tr>
+        <td>地区<span class="text-danger">*</span></td>
+        <td><input style="width:100%" type="text" name="address" value="{$UserInfo.address}"  placeholder="包含省份、市(县)、区"></td>
+      </tr>
+      <tr>
+        <td>街道 <span class="text-danger">*</span></td>
+        <td><input style="width:100%" type="text" name="town"  value="{$UserInfo.town}"  placeholder="请填写正确的街道地址"></td>
+      </tr>
+       <tr>
+        <td>门牌号</td>
+        <td><input style="width:100%" type="text" name="street_number"  value="{$UserInfo.street_number}"  placeholder="楼号、门牌号"></td>
+      </tr>
+      <tr>
+        <td width="22%">收货人<span class="text-danger">*</span></td>
+        <td><input type="text" name="truename" value="{$UserInfo.truename}"  placeholder="收货人姓名"></td>
+      </tr>
+      <tr>
+        <td>手机<span class="text-danger">*</span></td>
+        <td><input type="text" name="mobile" value="{$UserInfo.mobile}"  placeholder="确保电话能联系到您"></td>
+      </tr>
+    </table>
+    <input type="hidden" name="province" value="{$UserInfo.province}">
+    <input type="hidden" name="city" value="{$UserInfo.city}">
+    <input type="hidden" name="district" value="{$UserInfo.district}">
+    <input type="hidden" name="map" value="{$UserInfo.map}">
+    <input type="hidden" name="oid" value="{:I('oid')}">
+    <div style="height:100px"></div>
+    <div id="AddressFooter">
+      <ul class="g g-collapse">
+        <li class="u-sm-6">
+          <button type="button"  class="btn btn-block btn-xl wechat_btn disabled" onClick="wechat_address()" disabled><i class="text-success icon-uniF1D7"></i> 常用收货地址</button>
+        </li>
+        <li class="u-sm-6">
+          <button type="submit" class="btn btn-block btn-primary focus btn-xl" data-ajax="post" data-info='{"desc":"核对好信息了吗？"}'><i class="icon-uniE60C"></i> 保存地址</button>
+        </li>
+      </ul>
+    </div>
+  </form>
+  
+
+</block>
+<block name="script"> 
+<script type="text/javascript">
+ 	OpenLoad('正在初始化地图');//必须确保腾讯地图的js加载完成才能让用户操作 
+</script> 
+<script src="__STATIC__/cx-select/jquery.cxselect.js"></script> 
+<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script> 
+<script type="text/javascript">
+window.onload = function() { 
+	$('#container').css('height',$(document).height()-325);
+	CloseLoad();
+
+wx.ready(function(){
+	$('.wechat_btn').removeClass('disabled').prop('disabled',false);
+});
+
+$(document).on("touchstart","#container",function(){
+	$(".focus").focus();//解决移动端焦点BUG
+})
+
+
+var container = document.getElementById("container");
+var centerDiv = document.getElementById("centerDiv");
+var center = new qq.maps.LatLng({$UserInfo.map});
+var map = new qq.maps.Map(container,{
+	center: center,
+	zoom: 17
+});
+
+
+var middleControl = document.createElement("div");
+	  middleControl.style.left = $(window).width()/2-10+"px";
+	  middleControl.style.top= $('#container').height()/2-18+'px';
+	  middleControl.style.position="relative";
+	  middleControl.style.width="36px";
+	  middleControl.style.height="36px";
+	  middleControl.style.zIndex="100000";
+	  middleControl.innerHTML ='<img src="https://www.cdlhome.com.sg/mobile_assets/images/icon-location.png" />';
+	  document.getElementById("container").appendChild(middleControl);
+	  $('input[name="map"]').val(map.getCenter());
+	  qq.maps.event.addListener(map, 'center_changed', function() {
+	  $('input[name="map"]').val(map.getCenter());
+	  codeLatLng(map.getCenter())
+ });
+ 
+geocoder = new qq.maps.Geocoder({
+	complete : function(result){
+		console.warn(result)
+		$('input[name="address"]').val(result.detail.addressComponents.province+ ' ' +result.detail.addressComponents.city+ ' ' +result.detail.addressComponents.district);
+		$('input[name="province"]').val(result.detail.addressComponents.province);
+		$('input[name="city"]').val(result.detail.addressComponents.city);
+		$('input[name="district"]').val(result.detail.addressComponents.district);
+		$('input[name="town"]').val(result.detail.addressComponents.town + ' ' + result.detail.addressComponents.street);
+		$('input[name="street_number"]').val(result.detail.addressComponents.streetNumber);
+		
+	}
+});
+
+function codeLatLng() {
+    //获取经纬度数值   按照,分割字符串 取出前两位 解析成浮点数
+    var input = $('input[name="map"]').val();
+    var latlngStr = input.split(",",2);
+    var lat = parseFloat(latlngStr[0]);
+    var lng = parseFloat(latlngStr[1]);
+    var latLng = new qq.maps.LatLng(lat, lng);
+    geocoder.getAddress(latLng);
+}
+}; 
+function wechat_address(){ 
+		OpenLoad('读取微信收货地址');
+        WeixinJSBridge.invoke('editAddress',{
+            "appId" : "{$wx.appid}", //2公众号名称，由商户传入
+            "timeStamp" : "{$wx.timestamp}", //时间戳 这里随意使用了一个值
+            "nonceStr" : "{$wx.noncestr}", //随机串
+            "signType" : "SHA1", //微信签名方式:sha1
+            "addrSign" : "{$wx.sign}", //微信签名
+            "scope"    : "jsapi_address"
+        },function(res){
+			CloseLoad();
+            if(res.err_msg == 'edit_address:ok'){
+				$('[name="name"]').val(res.userName);
+				$('[name="phone"]').val(res.telNumber);
+				$('input[name="province"]').val(res.proviceFirstStageName);
+				$('input[name="city"]').val(res.addressCitySecondStageName);
+				$('input[name="district"]').val(res.addressCountiesThirdStageName);
+				$('input[name="town"]').val(res.addressDetailInfo);
+				$('input[name="address"]').val(res.proviceFirstStageName + ' ' + res.addressCitySecondStageName + ' ' + res.addressCountiesThirdStageName);
+				$('input[name="zipcode"]').val(res.addressPostalCode);
+				$('input[name="street_number"]').val('');
+            }
+        });
+}
+
+</script> 
+</block>
+<block name="share"> 
+  <script type="text/javascript">
+	wx.ready(function(){
+		wx.hideOptionMenu();
+		wx.hideAllNonBaseMenuItem();
+	});
+</script> 
+</block>

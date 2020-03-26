@@ -1,0 +1,74 @@
+<extend name="Public/base"/>
+<block name="body">
+<style>
+#ajax-page-container{ height:100%; padding:0px; <if condition="!is_wechat()">padding-bottom:40px</if>}
+body,html{ height:100%}
+body{ padding:0 0 47px 0}
+</style>
+  <table width="100%" border="0" height="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="CategoryTab ui-border-r" valign="top"><ul style="overflow: auto;overflow-x: hidden;overflow-y:scroll; height:100%;">
+          <volist name="Category" id="vo">
+            <li onclick="getPage({$vo.id},this)" data-id="{$vo.id}" data-num="{$i}" class="C_{$vo.id} ui-border-b <eq name='i' value='1'>am-active</eq>">{$vo.title}</li>
+          </volist>
+        </ul></td>
+      <td valign="top" style="padding:8px 0 10px 10px;"  id="CategoryData">
+      <ul  style="overflow: auto;overflow-x: hidden; height:100%"></ul></td>
+    </tr>
+  </table>
+ </block>
+<block name="script">
+<script type="text/javascript">
+function getPage(cid,that) {
+	$.ajax({
+			async:true,
+			type: 'POST',
+			url: "__SELF__",
+			data : 'id='+cid,
+			cache:true,
+			dataType:'json',
+			beforeSend:function(){
+				$('.CategoryTab li').removeClass('am-active');
+				$('.C_'+cid).addClass('am-active');
+				OpenLoad();
+			},
+			success:function(data){
+				if(data.status == 0){
+					   Alert(data.info);
+					   CloseLoad();
+					   return false
+				 }
+				   var str = '';
+				   $.each(data,function(index,array){
+					   str += '<li>';
+					   str += '<a href="{:U("Goods")}?cid='+array['id']+'"><img class="round" src="'+array['icon']+'" />';
+					   str += array['title'];
+					   str += '</a>';
+					   str += '</li>';
+			  	 })
+				  $('#CategoryData ul').html(str);
+				
+			},
+			complete:function(){
+				CloseLoad();
+				var num = $(that).data('num')-5;
+				$('.CategoryTab ul').animate({scrollTop:num*50}, 'slow'); 
+			},
+			error:function(){
+				alert("请刷新页面");
+			}
+	});
+}; 
+<if condition="!is_wechat()">
+if(!$('#CategoryData ul').html()){
+		 getPage($('.CategoryTab li.am-active').data('id'));
+}
+<else/>
+setTimeout(function(){
+	if(!$('#CategoryData ul').html()){
+		 getPage($('.CategoryTab li.am-active').data('id'));
+	}
+},1);
+</if>
+</script> 
+</block>

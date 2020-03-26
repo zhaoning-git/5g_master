@@ -1,0 +1,78 @@
+<admintpl file="header" />
+</head>
+<body>
+    <div class="wrap">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="{:U('Brandcooperation/Brandcooperationshow')}">列表</a></li>
+            <li><a href="{:U('Brandcooperation/add')}">添加</a></li>
+        </ul>
+        <form method="post" class="js-ajax-form" action="{:U('Chargerules/listorders')}">
+          <div class="table-actions">
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+            </div>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                     
+                        <th align="center">ID</th>
+                        <th>姓名</th>
+                        <th>身份证号码</th>
+                        <th>营业执照</th>
+                        <th>组织机构代码</th>
+                        <th>法人身份证</th>
+                        <th>创建时间</th>
+                        
+
+                        <th align="center">{:L('ACTIONS')}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <foreach name="data" item="vo">
+                    <tr>
+                     
+                        <td align="center">{$vo.id}</td>
+                        <td>{$vo['name']}</td>
+                        <td>{$vo['id_number']}</td>
+                        <td><img style="max-height: 60px;" src="{$vo['business_license']}" alt="营业执照" /></td>
+                        <td><img style="max-height: 60px;" src="{$vo['organization_code']}" alt="组织机构代码" /></td>
+                        <td><img style="max-height: 60px;" src="{$vo['identity_card']}" alt="法人身份证" /></td>
+                        <td>{$vo['add_time']|date='Y-m-d H:i:s',###}</td>
+                        
+                        <td align="center">    
+                            <a href="{:U('Brandcooperation/edit',array('id'=>$vo['id']))}" >编辑</a>
+                            <a href="{:U('Brandcooperation/del',array('id'=>$vo['id']))}"  class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+                        </td>
+                    </tr>
+                    </foreach>
+                </tbody>
+            </table>
+            <div class="pagination">{$page}</div>
+                <div class="table-actions">
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+            </div>
+        </form>
+         <div id="laypage"></div>
+    </div>
+    <script src="__PUBLIC__/js/common.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/laypage/1.2/laypage.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+    var url = "{:U('Brandcooperation/Brandcooperationshow')}";
+     laypage({
+                 cont: 'laypage',//指向存放分页的容器，值可以是容器ID 
+                 pages: {$pageTo},//数据总数
+                 skin:'#5F8878',//皮肤
+                 curr: '{$dang}',//当前页
+                 jump: function ( e, first) {
+                     if (!first) {
+                          
+                         location.href=url+'&page='+e.curr;
+                         
+
+
+                    }
+                }
+            });
+
+</script>

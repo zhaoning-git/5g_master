@@ -1,0 +1,861 @@
+[ 2020-03-11T08:55:24+08:00 ] 39.82.210.201 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='39.82.210.201',`last_login_time`='2020-03-11 08:55:24',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','659739337','1583888124') [ RunTime:0.0016s ]
+
+[ 2020-03-11T09:41:22+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='202.57.46.94',`last_login_time`='2020-03-11 09:41:22',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','3392745054','1583890882') [ RunTime:0.0017s ]
+
+[ 2020-03-11T09:45:17+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Gift&a=listorderss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='1' WHERE `id` = 72 AND `type` = '实物' [ RunTime:0.0032s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2' WHERE `id` = 73 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='3' WHERE `id` = 88 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='4' WHERE `id` = 71 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='5' WHERE `id` = 87 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='6' WHERE `id` = 111 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='7' WHERE `id` = 112 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='8' WHERE `id` = 75 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='9' WHERE `id` = 84 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='10' WHERE `id` = 69 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 95 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 89 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 93 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='14' WHERE `id` = 57 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='15' WHERE `id` = 85 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='16' WHERE `id` = 86 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='17' WHERE `id` = 100 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='18' WHERE `id` = 115 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='19' WHERE `id` = 96 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='20' WHERE `id` = 98 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='21' WHERE `id` = 77 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='22' WHERE `id` = 76 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='23' WHERE `id` = 101 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='24' WHERE `id` = 99 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='25' WHERE `id` = 91 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='26' WHERE `id` = 53 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='27' WHERE `id` = 56 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='28' WHERE `id` = 74 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='29' WHERE `id` = 90 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='30' WHERE `id` = 92 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='31' WHERE `id` = 114 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='32' WHERE `id` = 113 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='33' WHERE `id` = 83 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='34' WHERE `id` = 97 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='35' WHERE `id` = 79 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='35' WHERE `id` = 70 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='235' WHERE `id` = 48 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='325' WHERE `id` = 52 AND `type` = '实物' [ RunTime:0.0016s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='353' WHERE `id` = 58 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='983' WHERE `id` = 29 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='995' WHERE `id` = 82 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='996' WHERE `id` = 80 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2342' WHERE `id` = 54 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2423' WHERE `id` = 28 AND `type` = '实物' [ RunTime:0.0010s ]
+
+[ 2020-03-11T09:45:34+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Gift&a=listorderss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='1' WHERE `id` = 72 AND `type` = '实物' [ RunTime:0.0036s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2' WHERE `id` = 73 AND `type` = '实物' [ RunTime:0.0018s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='3' WHERE `id` = 88 AND `type` = '实物' [ RunTime:0.0019s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='4' WHERE `id` = 71 AND `type` = '实物' [ RunTime:0.0017s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='5' WHERE `id` = 87 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='6' WHERE `id` = 111 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='7' WHERE `id` = 112 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='8' WHERE `id` = 75 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='9' WHERE `id` = 84 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='10' WHERE `id` = 69 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 95 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 89 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 93 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='14' WHERE `id` = 57 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='15' WHERE `id` = 85 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='16' WHERE `id` = 86 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='17' WHERE `id` = 100 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='18' WHERE `id` = 115 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='19' WHERE `id` = 96 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='20' WHERE `id` = 98 AND `type` = '实物' [ RunTime:0.0020s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='21' WHERE `id` = 77 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='22' WHERE `id` = 76 AND `type` = '实物' [ RunTime:0.0017s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='23' WHERE `id` = 101 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='24' WHERE `id` = 99 AND `type` = '实物' [ RunTime:0.0016s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='25' WHERE `id` = 91 AND `type` = '实物' [ RunTime:0.0016s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='26' WHERE `id` = 53 AND `type` = '实物' [ RunTime:0.0016s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='27' WHERE `id` = 56 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='28' WHERE `id` = 74 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='29' WHERE `id` = 90 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='30' WHERE `id` = 92 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='31' WHERE `id` = 114 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='32' WHERE `id` = 113 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='33' WHERE `id` = 83 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='34' WHERE `id` = 97 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='55' WHERE `id` = 70 AND `type` = '实物' [ RunTime:0.0018s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='35' WHERE `id` = 79 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='235' WHERE `id` = 48 AND `type` = '实物' [ RunTime:0.0018s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='325' WHERE `id` = 52 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='353' WHERE `id` = 58 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='983' WHERE `id` = 29 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='995' WHERE `id` = 82 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='996' WHERE `id` = 80 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2342' WHERE `id` = 54 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2423' WHERE `id` = 28 AND `type` = '实物' [ RunTime:0.0012s ]
+
+[ 2020-03-11T09:55:26+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Fankui&a=goSearch&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_fankui` [ RunTime:0.0004s ]
+SQL: SELECT f.id,u.user_nicename,f.uid,f.content,f.mobile,f.status FROM cmf_user_fankui f INNER JOIN cmf_users u on u.id = f.uid  WHERE u.user_nicename LIKE '%%'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: url /www/wwwroot/5g.appyunwei.cn/application/Common/Controller/AppframeController.class.php 第 27 行.
+NOTIC: [8] Undefined index: status /www/wwwroot/5g.appyunwei.cn/application/Common/Controller/AppframeController.class.php 第 28 行.
+
+[ 2020-03-11T09:55:28+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Fankui&a=goSearch&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_fankui` [ RunTime:0.0006s ]
+SQL: SELECT f.id,u.user_nicename,f.uid,f.content,f.mobile,f.status FROM cmf_user_fankui f INNER JOIN cmf_users u on u.id = f.uid  WHERE u.user_nicename LIKE '%%'  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: url /www/wwwroot/5g.appyunwei.cn/application/Common/Controller/AppframeController.class.php 第 27 行.
+NOTIC: [8] Undefined index: status /www/wwwroot/5g.appyunwei.cn/application/Common/Controller/AppframeController.class.php 第 28 行.
+
+[ 2020-03-11T09:55:28+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Fankui&a=goSearch&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_fankui` [ RunTime:0.0004s ]
+SQL: SELECT f.id,u.user_nicename,f.uid,f.content,f.mobile,f.status FROM cmf_user_fankui f INNER JOIN cmf_users u on u.id = f.uid  WHERE u.user_nicename LIKE '%%'  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: url /www/wwwroot/5g.appyunwei.cn/application/Common/Controller/AppframeController.class.php 第 27 行.
+NOTIC: [8] Undefined index: status /www/wwwroot/5g.appyunwei.cn/application/Common/Controller/AppframeController.class.php 第 28 行.
+
+[ 2020-03-11T10:19:35+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Gift&a=listorderss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0007s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='1' WHERE `id` = 72 AND `type` = '实物' [ RunTime:0.0024s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2' WHERE `id` = 73 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='3' WHERE `id` = 88 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='4' WHERE `id` = 71 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='5' WHERE `id` = 87 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='6' WHERE `id` = 111 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='7' WHERE `id` = 112 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='8' WHERE `id` = 75 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='9' WHERE `id` = 84 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='10' WHERE `id` = 69 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 95 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 89 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 93 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='15' WHERE `id` = 85 AND `type` = '实物' [ RunTime:0.0010s ]
+
+[ 2020-03-11T10:20:09+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Gift&a=listorderss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='1' WHERE `id` = 72 AND `type` = '实物' [ RunTime:0.0023s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2' WHERE `id` = 73 AND `type` = '实物' [ RunTime:0.0016s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='3' WHERE `id` = 88 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='4' WHERE `id` = 71 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='5' WHERE `id` = 87 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='6' WHERE `id` = 111 AND `type` = '实物' [ RunTime:0.0020s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='7' WHERE `id` = 112 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='8' WHERE `id` = 75 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='9' WHERE `id` = 84 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='10' WHERE `id` = 69 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 95 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 89 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 93 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='0' WHERE `id` = 85 AND `type` = '实物' [ RunTime:0.0017s ]
+
+[ 2020-03-11T10:55:11+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Gift&a=listorderss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='14' WHERE `id` = 85 AND `type` = '实物' [ RunTime:0.0029s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='0' WHERE `id` = 72 AND `type` = '实物' [ RunTime:0.0016s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='1' WHERE `id` = 73 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2' WHERE `id` = 88 AND `type` = '实物' [ RunTime:0.0018s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='3' WHERE `id` = 71 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='4' WHERE `id` = 87 AND `type` = '实物' [ RunTime:0.0018s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='5' WHERE `id` = 111 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='6' WHERE `id` = 112 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='7' WHERE `id` = 75 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='8' WHERE `id` = 84 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='9' WHERE `id` = 69 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='10' WHERE `id` = 95 AND `type` = '实物' [ RunTime:0.0016s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 89 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 93 AND `type` = '实物' [ RunTime:0.0022s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 57 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='15' WHERE `id` = 86 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='16' WHERE `id` = 100 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='17' WHERE `id` = 115 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='18' WHERE `id` = 96 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='19' WHERE `id` = 98 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='20' WHERE `id` = 77 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='21' WHERE `id` = 76 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='22' WHERE `id` = 101 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='23' WHERE `id` = 99 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='24' WHERE `id` = 91 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='25' WHERE `id` = 53 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='26' WHERE `id` = 56 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='27' WHERE `id` = 74 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='28' WHERE `id` = 90 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='29' WHERE `id` = 92 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='30' WHERE `id` = 114 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='31' WHERE `id` = 113 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='32' WHERE `id` = 83 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='33' WHERE `id` = 97 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='34' WHERE `id` = 79 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='55' WHERE `id` = 70 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='235' WHERE `id` = 48 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='325' WHERE `id` = 52 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='353' WHERE `id` = 58 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='983' WHERE `id` = 29 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='995' WHERE `id` = 82 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='996' WHERE `id` = 80 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2342' WHERE `id` = 54 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2423' WHERE `id` = 28 AND `type` = '实物' [ RunTime:0.0009s ]
+
+[ 2020-03-11T10:58:46+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Gift&a=listorderss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='0' WHERE `id` = 72 AND `type` = '实物' [ RunTime:0.0028s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='1' WHERE `id` = 73 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2' WHERE `id` = 88 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='3' WHERE `id` = 71 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='4' WHERE `id` = 87 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='5' WHERE `id` = 111 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='6' WHERE `id` = 112 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='7' WHERE `id` = 75 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='8' WHERE `id` = 84 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='9' WHERE `id` = 69 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='10' WHERE `id` = 95 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 89 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 93 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 57 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='14' WHERE `id` = 85 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='15' WHERE `id` = 86 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='16' WHERE `id` = 100 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='17' WHERE `id` = 115 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='18' WHERE `id` = 96 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='19' WHERE `id` = 98 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='20' WHERE `id` = 77 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='21' WHERE `id` = 76 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='22' WHERE `id` = 101 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='23' WHERE `id` = 99 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='24' WHERE `id` = 91 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='25' WHERE `id` = 53 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='26' WHERE `id` = 56 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='18' WHERE `id` = 74 AND `type` = '实物' [ RunTime:0.0021s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='17' WHERE `id` = 90 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='16' WHERE `id` = 92 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='15' WHERE `id` = 114 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='14' WHERE `id` = 113 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 83 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 97 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 79 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='55' WHERE `id` = 70 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='235' WHERE `id` = 48 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='325' WHERE `id` = 52 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='353' WHERE `id` = 58 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='983' WHERE `id` = 29 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='995' WHERE `id` = 82 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='996' WHERE `id` = 80 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2342' WHERE `id` = 54 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2423' WHERE `id` = 28 AND `type` = '实物' [ RunTime:0.0009s ]
+
+[ 2020-03-11T11:05:15+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Gift&a=listorderss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='0' WHERE `id` = 72 AND `type` = '实物' [ RunTime:0.0023s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='1' WHERE `id` = 73 AND `type` = '实物' [ RunTime:0.0016s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2' WHERE `id` = 88 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='3' WHERE `id` = 71 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='4' WHERE `id` = 87 AND `type` = '实物' [ RunTime:0.0016s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='5' WHERE `id` = 111 AND `type` = '实物' [ RunTime:0.0014s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='6' WHERE `id` = 112 AND `type` = '实物' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='7' WHERE `id` = 75 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='8' WHERE `id` = 84 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='9' WHERE `id` = 69 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='10' WHERE `id` = 95 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='10' WHERE `id` = 79 AND `type` = '实物' [ RunTime:0.0017s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 89 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 93 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 97 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 57 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 83 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='14' WHERE `id` = 85 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 113 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='15' WHERE `id` = 86 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='14' WHERE `id` = 114 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='15' WHERE `id` = 92 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='16' WHERE `id` = 100 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='16' WHERE `id` = 90 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='17' WHERE `id` = 115 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='17' WHERE `id` = 74 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='18' WHERE `id` = 96 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='19' WHERE `id` = 98 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='20' WHERE `id` = 77 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='21' WHERE `id` = 76 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='22' WHERE `id` = 101 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='23' WHERE `id` = 99 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='24' WHERE `id` = 91 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='19' WHERE `id` = 53 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='18' WHERE `id` = 56 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='55' WHERE `id` = 70 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='235' WHERE `id` = 48 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='325' WHERE `id` = 52 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='353' WHERE `id` = 58 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='983' WHERE `id` = 29 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='995' WHERE `id` = 82 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='996' WHERE `id` = 80 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2342' WHERE `id` = 54 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2423' WHERE `id` = 28 AND `type` = '实物' [ RunTime:0.0013s ]
+
+[ 2020-03-11T11:09:44+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Gift&a=listorderss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0007s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='0' WHERE `id` = 72 AND `type` = '实物' [ RunTime:0.0018s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='1' WHERE `id` = 73 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2' WHERE `id` = 88 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='3' WHERE `id` = 71 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='4' WHERE `id` = 87 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='5' WHERE `id` = 111 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='6' WHERE `id` = 112 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='7' WHERE `id` = 75 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='8' WHERE `id` = 84 AND `type` = '实物' [ RunTime:0.0007s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='9' WHERE `id` = 69 AND `type` = '实物' [ RunTime:0.0013s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='10' WHERE `id` = 79 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='34' WHERE `id` = 95 AND `type` = '实物' [ RunTime:0.0017s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='33' WHERE `id` = 89 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='11' WHERE `id` = 97 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='12' WHERE `id` = 83 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='32' WHERE `id` = 93 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='31' WHERE `id` = 57 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='13' WHERE `id` = 113 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='30' WHERE `id` = 85 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='14' WHERE `id` = 114 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='29' WHERE `id` = 86 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='15' WHERE `id` = 92 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='16' WHERE `id` = 90 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='28' WHERE `id` = 100 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='17' WHERE `id` = 74 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='27' WHERE `id` = 115 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='18' WHERE `id` = 56 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='26' WHERE `id` = 96 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='19' WHERE `id` = 53 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='25' WHERE `id` = 98 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='24' WHERE `id` = 77 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='23' WHERE `id` = 76 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='22' WHERE `id` = 101 AND `type` = '实物' [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='21' WHERE `id` = 99 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='20' WHERE `id` = 91 AND `type` = '实物' [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='55' WHERE `id` = 70 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='235' WHERE `id` = 48 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='325' WHERE `id` = 52 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='353' WHERE `id` = 58 AND `type` = '实物' [ RunTime:0.0009s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='983' WHERE `id` = 29 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='995' WHERE `id` = 82 AND `type` = '实物' [ RunTime:0.0008s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='996' WHERE `id` = 80 AND `type` = '实物' [ RunTime:0.0011s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2342' WHERE `id` = 54 AND `type` = '实物' [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2423' WHERE `id` = 28 AND `type` = '实物' [ RunTime:0.0009s ]
+
+[ 2020-03-11T11:44:08+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 6  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2020-03-11T11:55:01+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:03+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:04+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:04+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:06+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:07+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:08+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:10+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=index&menuid=544
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:11+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:12+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:12+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:19+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:20+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:20+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:22+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:22+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=index&menuid=544
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:23+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:23+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:32+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:32+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=indexlist&menuid=545
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_users`
+
+[ 2020-03-11T11:55:33+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=shux&menuid=564
+ERR: 1030:Got error [ 2020-03-11T13:25:28+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=del&id=116
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_duihuan` SET `sta`='0' WHERE ( id='116' ) [ RunTime:0.0032s ]
+
+[ 2020-03-11T14:14:39+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 6  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2020-03-11T14:19:04+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=del&id=117
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0007s ]
+SQL: UPDATE `cmf_duihuan` SET `sta`='0' WHERE ( id='117' ) [ RunTime:0.0027s ]
+
+[ 2020-03-11T14:33:22+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 2  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2020-03-11T14:33:29+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 4  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2020-03-11T14:33:34+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2020-03-11T14:33:54+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 3  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2020-03-11T14:38:25+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 1  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2020-03-11T14:38:46+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2020-03-11T14:40:48+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 4  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2020-03-11T14:41:01+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 3  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2020-03-11T14:41:03+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 1  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2020-03-11T14:42:07+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 4  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2020-03-11T14:42:14+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 2  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2020-03-11T14:42:17+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 1  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2020-03-11T14:42:35+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2020-03-11T14:43:01+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 3  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2020-03-11T14:43:03+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 1  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2020-03-11T14:46:45+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 1  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2020-03-11T14:59:58+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Gift&a=listorderss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='0' WHERE `id` = 104 AND `type` = '道具' [ RunTime:0.0038s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='3' WHERE `id` = 105 AND `type` = '道具' [ RunTime:0.0015s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='1' WHERE `id` = 25 AND `type` = '道具' [ RunTime:0.0298s ]
+SQL: UPDATE `cmf_duihuan` SET `sort`='2' WHERE `id` = 24 AND `type` = '道具' [ RunTime:0.0015s ]
+
+[ 2020-03-11T15:00:24+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2020-03-11T15:51:36+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2020-03-11T15:55:22+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=del&id=118
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_duihuan` SET `sta`='0' WHERE ( id='118' ) [ RunTime:0.0027s ]
+
+[ 2020-03-11T15:57:25+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 6  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2020-03-11T16:25:24+08:00 ] 39.82.210.201 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+

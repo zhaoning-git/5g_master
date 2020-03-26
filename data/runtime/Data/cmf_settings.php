@@ -1,0 +1,1 @@
+a:2:{s:16:"banned_usernames";s:0:"";s:7:"storage";a:2:{s:4:"type";s:5:"Local";s:5:"Qiniu";a:5:{s:9:"accessKey";s:40:"SSS_nqXLcYfxSr3hv0tMnoah17wTAH6B11aS4ieO";s:9:"secretKey";s:40:"VmWyXTcpw8xA3fcP5fFyJ9QyjM9fiKeA2KwDD6Ab";s:6:"domain";s:17:"qnsanyue.mbym.xyz";s:6:"bucket";s:5:"ceshi";s:6:"upHost";s:23:"http://up-z1.qiniup.com";}}}

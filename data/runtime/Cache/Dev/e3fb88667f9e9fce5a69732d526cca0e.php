@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><div><?php echo dump($info['data']);?></div>

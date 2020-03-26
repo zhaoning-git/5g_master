@@ -1,0 +1,45 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Jifenduihuan/shux')}">列表</a></li>
+			<li><a href="{:U('Jifenduihuan/addshux')}">添加</a></li>
+			
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Jifenduihuan/addshux')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">属性</label>
+					<div class="controls">
+						<input type="text" name="attribute_name">
+						
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">类型</label>
+					<div class="controls">
+						<select style="min-width: 100px;float: left;" name="cat_id" class="area-select" id='address' >
+                            <option value="0">请选择</option>
+                            <foreach name="cat" item="vo">
+
+                               <option value="{$vo.id}">{$vo.type}</option>
+                 
+                            </foreach>
+                        </select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="{:U('Jifenduihuan/shux')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

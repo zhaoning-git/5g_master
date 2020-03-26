@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="__CSS__/uikit.gradient.css"/>
+<link rel="stylesheet" href="__CSS__/mobile.ui.css">
+<link rel="stylesheet" href="__CSS__/app.css">
+<title>{$title}</title>
+<script src="__JS__/jquery.min.js"></script>
+<script type="text/javascript">
+	var ThinkPHP = window.Think = {
+		"ROOT": "__ROOT__", //当前网站地址
+		"APP": "__APP__", //当前项目地址
+		"PUBLIC": "__PUBLIC__", //项目公共目录地址
+		"DEEP": "{:C('URL_PATHINFO_DEPR')}", //PATHINFO分割符
+		"MODEL": "",
+		"VAR": ["{:C('VAR_MODULE')}", "{:C('VAR_CONTROLLER')}", "{:C('VAR_ACTION')}"],
+		'URL_MODEL': "__MODULE__",
+		'MODULE_PATH': "{:MODULE_PATH}",
+		'IMG': '__IMG__',
+		'IMG_UPLOAD_URL': "{:U('Core/File/uploadPicture')}",
+		'IMG_UPLOAD_SIZE': "{$Think.config.PICTURE_UPLOAD.maxSize}",
+		'IMG_UPLOAD_EXT': '{$Think.config.PICTURE_UPLOAD.exts}'
+		 
+	}
+</script>

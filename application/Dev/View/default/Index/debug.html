@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<include file="Public/head"/>
+</head>
+<body>
+	<!-- 头部 -->
+  	<include file="Public/header"/>
+
+   <table width="100%" border="0" class="uk-table">
+  <thead>
+    <tr align="center">
+      <th>访问url</th>
+      <th style="text-align:center">访问类型</th>
+      <th style="text-align:center">传递参数</th>
+       <th style="text-align:center">访问者</th>
+       <th style="text-align:center">IP</th>
+      <th style="text-align:center">时间</th>
+      
+    </tr>
+    </thead>
+    <tbody>
+     <volist name="list" id="vo">
+    <tr align="center">
+      <td align="left">{$vo.url}</td>
+      <td>{$vo.type}</td>
+      <td><a href="javascript:void(0);" data-title="接口数据" data-remote="{:U('Debug',array('id'=>$vo['id']))}" data-toggle="modal" style="color:#2BA3D4">点击查看</a></td>
+       <td>{$vo.ip}</td>
+       <td style="color: #F93">{$vo.uid|default='-'}<notempty name="vo.uid">({$vo.uid|get_nickname})</notempty></td>
+      <td>{$vo.create_time|date='Y-m-d H:i:s',###}</td>
+    </tr>
+    </volist>
+   </tbody>
+  </table>
+   <include file="Public/footer"/>
+    
+  <script type="text/javascript">
+	$("#add-field").click(function(){
+		var html = '';
+		html+='<tr>';
+		html+=' <td><div class="uk-form-icon"> <i class="uk-icon-clone"></i><input type="text" name="field[name][]"  class="uk-width-1-1"/></div></td>';
+		html+='<td><div class="uk-form-icon"> <i class="uk-icon-ellipsis-h"></i><input type="text" name="field[remark][]"  class="uk-width-1-1"/></div></td>';
+		html+='<td><div class="uk-form-icon"> <i class="uk-icon-pencil"></i><input type="text" name="field[value][]"  class="uk-width-1-1"/></div></td>';
+		html+=' <td> <button type="button" class="uk-button uk-button-danger uk-button-sm uk-round delete-field"><i class="uk-icon-close"></i></button></td>';
+		html+='</tr>';
+		$('#field-box').append(html);
+	}); 
+	
+	$(document).on('click','.delete-field',function(){
+		$(this).closest('tr').remove();
+	});
+  </script> 
+    
+</body>
+</html>

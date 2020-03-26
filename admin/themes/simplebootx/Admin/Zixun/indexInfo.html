@@ -1,0 +1,66 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>资讯列表</a></li>
+			<li><a href="{:U('Zixun/addMessage')}">添加资讯</a></li>
+		</ul>
+		<form method="post" class="js-ajax-form" >
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th width="150px;">标题</th>
+<!--						<th width="450px;">内容</th>-->
+<!--						<th>作者</th>-->
+						<th>认证</th>
+						<th>阅读量</th>
+						<th>点赞数量</th>
+						<th>收藏数量</th>
+						<th>发表时间</th>
+						<th>是否是爬取的数据</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="data" item="vo">
+					<tr>
+						<td align="center">{$vo.id}</td>
+						<td>{$vo['title']}</td>
+<!--						<td>{$vo['content']}</td>-->
+<!--						<td>{$vo['uname']}</td>-->
+						<td>
+							<if condition="$vo['sqs_status'] eq 1">官方认证
+							<elseif condition="$vo['sqs_status'] eq 2"/>大神认证
+							<elseif condition="$vo['sqs_status'] eq 3"/>作者认证
+							<else/>未认证
+							</if>
+						</td>
+						<td>{$vo['reading']}</td>
+						<td>{$vo['praise']}</td>
+						<td>{$vo['favor']}</td>
+						<td>{$vo.addtime|date="Y-m-d H:i:s",###}</td>
+						<td>
+							<if condition="$vo['identifshi'] eq 1">
+								√
+								<else/>
+								×
+							</if>
+						</td>
+						<td align="center">
+						    <a href="{:U('Zixun/detail',array('id'=>$vo['id']))}" >查看详情</a>
+						    | <a href="{:U('Zixun/authSqs',array('id'=>$vo['id']))}" >认证</a>
+						    | <a href="{:U('Zixun/del',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn" data-msg="您确定要删除该帖子？">删除</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

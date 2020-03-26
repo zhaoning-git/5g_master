@@ -1,0 +1,30 @@
+2019-05-24 00:43:08|ERROR|Home.getNearby|PDOException: FUNCTION mbzb0515.getDistance does not exist in /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/NotORM/NotORM/Result.php:240
+Stack trace:
+#0 /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/NotORM/NotORM/Result.php(774): NotORM_Result->query('SELECT uid,titl...', Array)
+#1 /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/NotORM/NotORM/Result.php(851): NotORM_Result->execute()
+#2 /www/wwwroot/mbzb0515.mbym.xyz/api/Appapi/Model/Home.php(284): NotORM_Result->fetchAll()
+#3 /www/wwwroot/mbzb0515.mbym.xyz/api/Appapi/Domain/Home.php(52): Model_Home->getNearby('0.0', '0.0', '1')
+#4 /www/wwwroot/mbzb0515.mbym.xyz/api/Appapi/Api/Home.php(365): Domain_Home->getNearby('0.0', '0.0', '1')
+#5 /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/PhalApi.php(57): Api_Home->getNearby()
+#6 /www/wwwroot/mbzb0515.mbym.xyz/api/public/index.php(14): PhalApi->response()
+#7 {main}
+2019-05-24 00:43:09|ERROR|Home.getNearby|PDOException: FUNCTION mbzb0515.getDistance does not exist in /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/NotORM/NotORM/Result.php:240
+Stack trace:
+#0 /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/NotORM/NotORM/Result.php(774): NotORM_Result->query('SELECT uid,titl...', Array)
+#1 /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/NotORM/NotORM/Result.php(851): NotORM_Result->execute()
+#2 /www/wwwroot/mbzb0515.mbym.xyz/api/Appapi/Model/Home.php(284): NotORM_Result->fetchAll()
+#3 /www/wwwroot/mbzb0515.mbym.xyz/api/Appapi/Domain/Home.php(52): Model_Home->getNearby('0.0', '0.0', '1')
+#4 /www/wwwroot/mbzb0515.mbym.xyz/api/Appapi/Api/Home.php(365): Domain_Home->getNearby('0.0', '0.0', '1')
+#5 /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/PhalApi.php(57): Api_Home->getNearby()
+#6 /www/wwwroot/mbzb0515.mbym.xyz/api/public/index.php(14): PhalApi->response()
+#7 {main}
+2019-05-24 00:43:21|ERROR|Home.getNearby|PDOException: FUNCTION mbzb0515.getDistance does not exist in /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/NotORM/NotORM/Result.php:240
+Stack trace:
+#0 /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/NotORM/NotORM/Result.php(774): NotORM_Result->query('SELECT uid,titl...', Array)
+#1 /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/NotORM/NotORM/Result.php(851): NotORM_Result->execute()
+#2 /www/wwwroot/mbzb0515.mbym.xyz/api/Appapi/Model/Home.php(284): NotORM_Result->fetchAll()
+#3 /www/wwwroot/mbzb0515.mbym.xyz/api/Appapi/Domain/Home.php(52): Model_Home->getNearby('0.0', '0.0', '1')
+#4 /www/wwwroot/mbzb0515.mbym.xyz/api/Appapi/Api/Home.php(365): Domain_Home->getNearby('0.0', '0.0', '1')
+#5 /www/wwwroot/mbzb0515.mbym.xyz/api/PhalApi/PhalApi.php(57): Api_Home->getNearby()
+#6 /www/wwwroot/mbzb0515.mbym.xyz/api/public/index.php(14): PhalApi->response()
+#7 {main}

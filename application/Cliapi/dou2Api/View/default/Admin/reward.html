@@ -1,0 +1,120 @@
+<extend name="Public/base"/>
+<block name="body">
+  
+  <!-- 标题栏 -->
+  
+  <div class="main-title">
+    <h2>{$Config['pname']}发放</h2>
+  </div>
+  <div class="clearfix with-padding">
+    <div class="pull-left">
+      <button class="btn ajax-post" url="{:U('Shop/post_reward',array('is_reward'=>1))}"  target-form="ids">发放{$Config['pname']}</button>
+      <button class="btn ajax-post" url="{:U('Shop/post_reward',array('is_reward'=>0))}"  target-form="ids">撤销{$Config['pname']}</button>
+    </div>
+    
+    <!-- 高级搜索 -->
+    
+    <div class="search-form  pull-right"  style="width:300px">
+      <div class="input-group">
+        <input type="text" name="nickname" class="search-input form-control input-6" value="{:I('nickname')}" placeholder="用户ID/用户昵称/订单ID">
+        <span class="input-group-btn"> <a class="btn btn-default" href="javascript:;" id="search" url="{:U('reward')}">搜索</a></span> </div>
+    </div>
+  </div>
+  
+  <!-- 数据列表 -->
+  
+  <div class="data-table with-padding" style="font-size:12px">
+    <table class="table table-bordered table-striped  tabel-center">
+      <thead>
+        <tr>
+          <th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+          <th class="">订单ID</th>
+          <th class="">买家</th>
+          <th class="">实收款</th>
+          <th class="">应付佣金</th>
+          <th class="">{$Config['pname']}计算</th>
+          <th class="">商品信息</th>
+          <th class="">状态</th>
+        </tr>
+      </thead>
+      <tbody>
+          <notempty name="list">
+        
+        <volist name="list" id="vo">
+          <tr>
+            <td><input class="ids" type="checkbox" name="ids[]" value="{$vo.id}"/></td>
+            <td>{$vo.id}</td>
+            <td><a href="{:U('User/adduser',array('uid'=>$vo['uid']))}" >{:get_nickname($vo[uid])}</a></td>
+            <td>{$vo.realprice} 元</td>
+            <td>{$vo[realprice]}X{$Config[scale]}% = <span class="text-danger">{$vo[reward]}</span>元</td>
+            <td><table width="100%">
+                <volist name="vo[user_tree]" id="user">
+                <php> $ifuser = M('Member')->where(array('uid'=>$user['uid'],'status'=>1))->find();</php>
+                  <if condition="!$ifuser">
+                      <tr>
+                      <td width="40">({$i})</td>
+                      <td colspan="7">该会员可能已被删除或禁用</td>
+                    </tr>
+                   <elseif condition="(!$ifuser[is_open]) AND ($Config[is_open])"/>
+                      <tr>
+                      <td  width="40">({$i})</td>
+                      <td><a href="{:U('User/adduser',array('uid'=>$user['uid']))}">{:get_nickname($user[uid])}</a></td>
+                      <td colspan="6">该会员还不是微商</td>
+                    </tr>
+                  <else/>
+                    <tr>
+                      <td  width="40">({$i})</td>
+                      <td><a href="{:U('User/adduser',array('uid'=>$user['uid']))}">{:get_nickname($user[uid])}</a></td>
+                      <td>=</td>
+                      <td><span class="text-danger">{$vo[reward]}</span></td>
+                      <td>X</td>
+                      <td>{$user[scale]}%</td>
+                      <td>=</td>
+                      <td><span class="text-danger">{$vo[reward]*$user[scale]/100}</span></td>
+                    </tr>
+                 
+                      </if>
+                </volist>
+              </table></td>
+            <td><volist name="vo[goods_info]" id="goods">
+                <div><a href="{:U('Home/Goods/goodsdetail',array('id'=>$goods[0]))}" target="_blank" title="{:get_GoodsInfo($goods[0],'title')}">{:msubstr(get_GoodsInfo($goods[0],'title'),0,15)}</a><span class="text-danger">X{$goods[1]}</span> {$goods[2]} {$goods[3]}</div>
+              </volist></td>
+            <td><eq name="vo[is_reward]" value="0"><a href="{:U('Shop/post_reward',array('ids'=>$vo[id],'is_reward'=>1))}" class="ajax-get confirm text-muted">未发放</a></eq>
+              <eq name="vo[is_reward]" value="1"><a href="{:U('Shop/post_reward',array('ids'=>$vo[id],'is_reward'=>0))}" class="ajax-get confirm text-success">已发放</a></eq></td>
+          </tr>
+        </volist>
+        <else/>
+      <td colspan="9" class="text-center"> aOh! 暂时还没有订单!</td>
+          </notempty>
+          </tbody>
+    </table>
+  </div>
+  <div class="with-padding"> {$_page} </div>
+</block>
+<block name="script">
+  <script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+  <script type="text/javascript">
+        //搜索功能
+        $("#search").click(function () {
+            var url = $(this).attr('url');
+            var query = $('.search-form').find('input').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+            query = query.replace(/^&/g, '');
+            if (url.indexOf('?') > 0) {
+                url += '&' + query;
+            } else {
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function (e) {
+            if (e.keyCode === 13) {
+                $("#search").click();
+                return false;
+            }
+        });
+        //导航高亮
+        highlight_subnav("{:U('shop/reward')}");
+    </script>
+</block>

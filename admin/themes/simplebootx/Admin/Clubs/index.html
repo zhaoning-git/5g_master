@@ -1,0 +1,157 @@
+<admintpl file="header" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+<style>
+	.bottmBox{width: 80%; display: block;}
+	.pagination{float: left;}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li {$index}><a href="{:U('Clubs/index')}">俱乐部列表</a></li>
+			<li ><a href="{:U('Clubs/add_club')}">创建俱乐部</a></li>
+			<li><a href="{:U('Clubs/mem_add')}">加入俱乐部</a></li>
+			<li {$Hotchat}><a href="{:U('Clubs/Hotchat')}">热聊俱乐部</a></li>
+			<li {$Gf}><a href="{:U('Clubs/Gf')}">官方俱乐部</a></li>
+			<li {$Hot}><a href="{:U('Clubs/Hot')}">热门推荐</a></li>
+		</ul>
+
+		<form class="js-ajax-form">
+			<input type="text" name="name" class='name' placeholder="请输入俱乐部名称进行查询">
+			<input type="button" id="btn" value="点击搜索">
+			<li><a href="{:U('Clubs/index')}">返回</a></li>
+		</form>
+
+		<form method="post" class="js-ajax-form tihuan">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>俱乐部名称</th>
+						<th>俱乐部头像</th>
+						<th>俱乐部等级</th>
+						<th>是否热门</th>
+						<th>所属标签分类</th>
+						<th>俱乐部状态</th>
+						<th>所拥有的金币</th>
+						<th>所拥有的银币</th>
+						<th>创建时间</th>
+						<th>修改时间</th>
+						<th>排序</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="data" item="vo">
+						<tr>
+							<td align="center">{$vo.id}</td>
+							<td>{$vo['name']}</td>
+							<td><img src="{$vo['url']}" style="height:20px"></td>
+							<td>{$vo['level']}</td>
+							<td>
+								<if condition="$vo['is_hot'] eq 0">
+									×
+									<else />
+									√
+								</if>
+							</td>
+							<td>{$vo['typename']}</td>
+							<td>
+								<if condition="$vo['is_del'] eq 0">
+									正在运行
+									<else />
+									已删除
+								</if>
+							</td>
+							<td>{$vo['gold_coin']}</td>
+							<td>{$vo['silver_coin']}</td>
+							<td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+							<td>{$vo.update_time|date="Y-m-d H:i:s",###}</td>
+							<td><input type="text" name="sort" value="{$vo.sort}" style="width: 40px;" data-id="{$vo.id}"></td>
+							<td align="center">
+								<a href="{:U('Clubs/xiugai',array('id'=>$vo['id']))}" >编辑</a>
+								<a href="{:U('Clubs/edit',array('id'=>$vo['id']))}" >审核</a>
+									<if condition="$vo['is_del'] eq '0'">
+										|<a href="{:U('Clubs/del',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn" data-msg="您确定要删除该俱乐部吗？">删除</a>
+									<else/>
+										|<a href="{:U('Clubs/enable',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn" data-msg="您确定要启用该俱乐部吗？">恢复</a>
+									</if>
+							</td>
+						</tr>
+					</foreach>
+					<tr>
+						<td colspan="11"><div class="pagination">{$page}</div></td>
+						<td class="noborder" style="border-left: none;border-right: none;border-bottom: none;">
+							<div class="layui-btn layui-btn-normal sort">排序</div>
+						</td>
+						<td style="border-left: none;border-right: none;border-bottom: none;"></td>
+					</tr>
+				</tbody>
+
+			</table>
+			<div class="bottmBox">
+				
+				
+		    </div>
+
+		</form>
+
+	</div>
+
+	<script src="__PUBLIC__/js/common.js"></script>
+    
+</body>
+
+</html>
+
+<script>
+    var strings = '';
+	$(function () {
+		$("#btn").click(function () {
+			var name = $(".name").val();
+			$.ajax({
+				url: "{:U('Clubs/goSearch')}",
+				data:{name:name},
+				method:'post',
+				async:false,
+				dataType:'json',
+				success:function (res) {
+					var str = '';
+					str +="<table><thead><tr><th>ID</th><th>俱乐部名称</th><th>俱乐部头像</th><th>俱乐部等级</th><th>所拥有的金币</th><th>所拥有的银币</th></tr></thead><tbody>";
+					$.each(res.data,function(i,n){
+						str +="<tr>"
+								+ "<td>"+n['id']+"</td>"
+								+ "<td>"+n['name']+"</td>"
+								+ "<td><img src='"+n['url']+"'width='50px;'></td>"
+								+ "<td>"+n['level']+"</td>"
+								+ "<td>"+n['gold_coin']+"</td>"
+								+ "<td>"+n['silver_coin']+"</td>"
+								+ "</tr>";
+					});
+					str +="</tbody></table>";
+					$('.table-hover').html(str);
+				}
+
+			})
+		});
+
+		$(".sort").click(function(){
+			var numArr = new Array();
+			var cid = new Array();
+			$('input[name="sort"]').each(function(){
+				// numArr[$(this).data('id')] = $(this).val();
+				numArr.push($(this).val());//添加至数组
+				cid.push($(this).data('id'));
+			});
+			
+			
+			
+			$.post("{:U('Clubs/upSort')}",{'sort':numArr,'cid':cid},function(res){
+
+			});
+			console.log(cid);
+            console.log(numArr);
+		});
+	})
+
+</script>

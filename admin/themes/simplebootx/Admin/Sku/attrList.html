@@ -1,0 +1,49 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>属性值列表</a></li>
+		</ul>
+
+		<form method="post" class="js-ajax-form tihuan">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>属性名称</th>
+						<th>商品类型</th>
+						<th>属性值列表</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="info" item="vo">
+					<tr>
+						<td align="center">{$vo.id}</td>
+						<td>{$vo['attribute_name']}</td>
+						<td>{$vo['catname']}</td>
+						<td>
+								<foreach  name="vo['attribute']" item="voo">
+									{$voo['shuzhi']} ,
+								</foreach>
+						</td>
+						<td align="center">
+						    <a href="{:U('Sku/edit_attr',array('id'=>$vo['id']))}" >编辑</a>
+						    |
+							<a href="{:U('Sku/del_attr',array('id'=>$vo['id']))}" >删除</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="form-actions">
+				<a class="btn" href="{:U('Sku/index')}">{:L('BACK')}</a>
+			</div>
+			<div class="pagination">{$page}</div>
+
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

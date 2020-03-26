@@ -1,0 +1,8 @@
+[ 2020-03-14T15:33:43+08:00 ] 124.133.43.122 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+

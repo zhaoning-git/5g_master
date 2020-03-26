@@ -1,0 +1,249 @@
+<block name="theme">
+
+
+<volist name="ThemeData" id="theme" key="k">
+
+
+<switch name="theme.type">
+  <case value="slider">
+  	<!--幻灯片-->
+    <div class="swiper-container swiper-slider-{$k}">     
+    <div class="swiper-wrapper">
+      <volist name="theme.data" id="vo">
+        <div class="swiper-slide"><a href="{$vo.link|default="javascript:void(0);"}"><img data-src="{$vo.img|getThumbImageById=1200,auto}" class="swiper-lazy" width="100%"></a></div>
+      </volist>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+	<script type='text/javascript' src='__STATIC__/swiper/swiper.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-slider-{$k}', {
+            pagination: '.swiper-slider-{$k} .swiper-pagination',
+            preloadImages: false,
+            lazyLoading: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+    
+        });
+    </script>
+    
+    
+  </case>
+    <case value="nav">
+    <!--导航图标-->
+    <div class="index-nav">
+    <ul class="avg-sm-5">
+      <volist name="theme.data" id="vo" mod="5">
+            <li><a href="{$vo.link|default="javascript:void(0);"}"><img src="{$vo.img}" width="100%"><span>{$vo.title}</span></a></li>
+      </volist>
+      </ul>
+  </div>
+    
+  
+  </case>
+  <case value="img">
+    <!--单图片-->
+   <div class="lh0">
+    	<a href="{$theme.data.0.link|default="javascript:void(0);"}"><img src="{$theme.data.0.img|getThumbImageById=900,auto}" width="100%"></a></div>
+  </case>
+  
+  <case value="goods_list">
+    <!--商品无限下拉-->
+    
+    <div class="index-goods-{$theme.data.0|default=2}">
+    <div class="header-text"> - 猜你喜欢 -</div>
+    <ul class="row no-gutter goods-ul g g-collapse">
+      <php> 
+      if($theme['data'][0] == 2){
+      	$witdh = $height = 400;
+      }else{
+     	 $witdh = $height = 700;
+         $height = 300;
+      }
+
+      $map['store_id'] = Store();
+      $map['status'] = 'success';
+      if($StoreInfo['limit_city'] && $UserInfo['city']){
+      		$map['is_city'] = 1;
+			$map['_string'] = 'FIND_IN_SET("'.$UserInfo['city'].'",goods_city)';
+	  }
+      $goods_list = arrList(M('ShopGoods')->where($map)->limit(6)->order('goods_sort desc')->field('id,goods_title,goods_img,goods_price,goods_agents_price,goods_view,goods_monthly_sales_count,goods_all_sales_count')->order('goods_sort desc')->select(),2,$witdh,$height);
+      
+       </php>
+      <volist name="goods_list" id="goods">
+      <eq name="theme.data.0" value="1">
+       	  <li  class="u-sm-12"><a href="{:U('Shop/Index/Detail',array('id'=>$goods['id']))}"> <img src="__PUBLIC__/img/empty.png" data-original="{$goods.goods_img}"  class="lazy" width="100%"><span>{$goods.goods_title}</span></a>
+          <p class="goods-price">￥{$goods.goods_price}</p>
+          <ul class="goods-title g">
+          <span class="u-sm-4">浏览量：{$goods.goods_view}</span>
+          <span class="u-sm-4">月销量：{$goods.goods_monthly_sales_count}</span>
+          <span class="u-sm-4"> 总销量：{$goods.goods_all_sales_count}</span>
+          </ul> 
+        </li>
+      </eq>
+      <eq name="theme.data.0" value="2">
+        <li  class="u-sm-6"><a href="{:U('Shop/Index/Detail',array('id'=>$goods['id']))}"> <img src="__PUBLIC__/img/empty.png" data-original="{$goods.goods_img}"  class="lazy" width="100%"></a>
+          <p class="goods-title"><a href="{:U('Shop/Index/Detail',array('id'=>$goods['id']))}">{$goods.goods_title}</a></p>
+          <p class="goods-price">￥{$goods.goods_price}</p>
+        </li>
+        </eq>
+        
+      </volist>
+    </ul>
+  </div>
+  <div class="infinite-scroll-preloader">
+         <div class="preloader"></div>
+  </div>
+  <script>
+window.index = false;
+$$(function(){ 
+	$(window).scroll(function(){
+		if(($("html").height()-$("body").scrollTop())<=document.documentElement.clientHeight+50){
+		function addItems(number) {
+		  // 生成新条目的HTML
+		  var html = '';
+		  $.post('{:U("Index")}',{ num:number}, function(data){ 
+			   if(data){
+				   $.each(data, function(key, json){
+					   var col = {$theme.data.0|default=2};
+					   if(col == 1){
+							html+='<li  class="u-sm-12"><a href="/shop/index/detail/id/'+json.id+'"> <img src="'+json.goods_img+'" width="100%"><span>'+json.goods_title+'</span></a>';
+							html+=' <p class="goods-price">￥'+json.goods_price+'</p>';
+						    html+='<ul class="goods-title g">';
+							html+='<span class="u-sm-4">浏览量：'+json.goods_view+'</span>';
+							html+='<span class="u-sm-4">月销量：'+json.goods_monthly_sales_count+'</span>';
+							html+='<span class="u-sm-4"> 总销量：'+json.goods_all_sales_count+'</span>';
+							html+='</ul> ';
+						   html+='</li>';
+					   
+					   }else{
+						   html+='<li  class="u-sm-6"><a href="/shop/index/detail/id/'+json.id+'"> <img src="'+json.goods_img+'" width="100%"></a>';
+						   html+='<p class="goods-title"><a href="/shop/index/detail/id/'+json.id+'">'+json.goods_title+'</a></p>';
+						   html+='<p class="goods-price">￥'+json.goods_price+'</p>';
+						   html+='</li>';
+					   }
+				   })
+					$('.index-goods-{$theme.data.0|default=2} .goods-ul').append(html);
+					window.index = false;
+				}else{
+					$('.infinite-scroll-preloader').html(NoMore);	
+				}
+		   });
+		}
+		// 如果正在加载，则退出
+		  if (window.index) return;
+		  window.index = true;
+		  setTimeout(function(){ var lastIndex = $('.index-goods-{$theme.data.0|default=2} .goods-ul li').length; addItems(lastIndex);},500)
+		}
+	});
+});
+</script>
+    
+  </case>
+  <case value="img_12">
+
+     <!--左1右2-->
+      <table width="100%" border="0" class="ui-table" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td width="50%" rowspan="2">
+              <a href="{$theme.data.0.link|default="javascript:void(0);"}"><img  src="{$theme.data.0.img|getThumbImageById=700,796}"  width="100%"></a></td>
+          <td width="50%"  valign="top">
+              <a href="{$theme.data.1.link|default="javascript:void(0);"}"><img  src="{$theme.data.1.img|getThumbImageById=700,400}" width="100%" ></a></td>
+        </tr>
+        <tr>
+          <td valign="middle">
+              <a href="{$theme.data.2.link|default="javascript:void(0);"}"><img  src="{$theme.data.2.img|getThumbImageById=700,400}" width="100%"></a></td>
+        </tr>
+      </tbody>
+    </table>
+   
+  </case>
+  
+    <case value="img_21">
+  
+    <table width="100%" border="0" class="ui-table ui-border-tb" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td width="50%" >
+              <a href="{$theme.data.0.link|default="javascript:void(0);"}"><img  src="{$theme.data.0.img|getThumbImageById=700,396}"  width="100%" ></a></td>
+          <td width="50%" rowspan="2"  valign="top" > 
+              <a href="{$theme.data.1.link|default="javascript:void(0);"}"><img  src="{$theme.data.1.img|getThumbImageById=700,800}" width="100%" ></a></td>
+        </tr>
+        <tr>
+          <td width="50%" style="padding:1px" class="ui-border-r">
+              <a href="{$theme.data.2.link|default="javascript:void(0);"}"><img  src="{$theme.data.2.img|getThumbImageById=700,396}" width="100%" ></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </case>
+  
+  <case value="img_more">
+  	<ul class="g g-collapse"><volist name="theme.data" id="vo"><li class="u-sm-6 ui-border-r" style="padding:1px"><a href="{$vo.link|default="javascript:void(0);"}"><img src="{$vo.img|getThumbImageById=1200,auto}"  width="100%"></a></li></volist></ul>
+  </case>
+  
+  
+  <case value="news">
+    <php> $newlist = arrList(M('News')->where(array('store_id'=>Store(),'status'=>1,'id'=>array('in',$theme['data'])))->order('sort desc')->field('id,title,img,view,create_time,description')->select(),2,250,200); </php>
+    <div class="list-block media-list news-list">
+    <ul>
+      <volist name="newlist" id="vo">
+        <li class="row"><a href="{:U('Shop/News/Detail',array('id'=>$vo['id']))}" class="item-link item-content">
+          <div class="item-media">
+            <img width="120" height="95" src="{$vo.img}" style="border-radius:0px">
+          </div>
+          <div class="item-inner">
+            <div class="item-title-row">
+              <div class="item-title" style="white-space:normal">{$vo.title}</div>
+            </div>
+            <div class="item-text">{$vo.description}</div>
+            <div class="item-subtitle"><i class="icon-uniF005"></i> {$vo.view} <i class="icon-uniF017"></i> {$vo.create_time}</div>
+          </div>
+          </a></li>
+      </volist>
+    </ul>
+  </div>
+  </case>
+  
+ <case value="goods">
+    <php>
+      $map['store_id'] = Store();
+      $map['status'] = 'success';
+      $map['id'] = array('in',$theme['data']);
+      if($StoreInfo['limit_city'] && $UserInfo['city']){
+      		$map['is_city'] = 1;
+			$map['_string'] = 'FIND_IN_SET("'.$UserInfo['city'].'",goods_city)';
+	  }
+      
+     $goods = arrList(M('ShopGoods')->where($map)->order('goods_sort desc')->field('id,goods_title,goods_img,goods_view,goods_monthly_sales_count,goods_brief,goods_price,goods_all_sales_count')->select(),2,250,200); </php>
+    <div class="list-block media-list news-list">
+    <ul>
+      <volist name="goods" id="vo">
+        <li class="row"><a href="{:U('Shop/Index/Detail',array('id'=>$vo['id']))}" class="item-link item-content">
+          <div class="item-media">
+            <img width="120" height="95" src="{$vo.goods_img}" style="border-radius:0px">
+          </div>
+          <div class="item-inner">
+            <div class="item-title-row">
+              <div class="item-title" style="white-space:normal; height:55px">{$vo.goods_title|msubstr=###,0,25}</div>
+            </div>
+            <div class="item-subtitle" style="color:#E70003; font-size:14px; text-align:left">¥{$vo.goods_price}</div>
+            <div class="item-subtitle">月销量:{$vo.goods_monthly_sales_count} 总销量:{$vo.goods_all_sales_count}</div>
+          </div>
+          </a></li>
+      </volist>
+    </ul>
+  </div>
+ 
+   
+  </case>
+  <case value="music"> <audio src="{$theme.data.0|get_media='path'}" controls>Your browser does not support the audio element.</audio></case>
+  <case value="video"> <video src="{$theme.data.0|get_media='path'}" width="100%" height="300" controls>Your browser does not support the audio element.</video></case>
+  <default/>
+  <span style="color: #f00;">错误：未知模板数据类型 {$label.label_type}</span>
+</switch>
+  <hr>
+</volist>
+</block>

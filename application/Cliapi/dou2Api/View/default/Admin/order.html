@@ -1,0 +1,172 @@
+<extend name="Public/base"/>
+<block name="body">
+  <div class="main-title">
+    {$page_title}
+  </div>
+  <form class="search-form hide">
+    <p>订单状态：
+      <select name="status" class="form-control">
+    	    <option value="">全部</option>
+            <option value="1">用户已付款</option>
+            <option value="2">已发货</option>
+            <option value="3">用户已确认收货,交易成功</option>
+            <option value="4">申请退货</option>
+            <option value="5">退货中</option>
+            <option value="6">退货完成</option>
+            <option value="7">退货请求被驳回</option>
+            <option value="8">已评论</option>
+          </select>
+    </p>
+    <p> 订单编号：
+      <input type="text" name="id"  value="{:I('id')}" class="input-2" placeholder="订单ID号搜索">
+    </p>
+
+    <p> 购买会员：
+      <input type="text" name="uid"  value="{:I('uid')}" class="input-2" placeholder="购买会员昵称、UID编号">
+    </p>
+    <p>下单时间：
+      <input type="text" id="time-start" name="b_time" class="input-2 Wdate" value="{:I('b_time')}" placeholder="某时间段的下单" />
+      <input type="text" id="time-end" name="e_time" class="input-2 Wdate" value="{:I('e_time')}" placeholder="截止时间" />
+    </p>
+     <p>订单金额：
+      <input type="text" name="start_price" class="input-1" value="{:I('start_price')}"  placeholder="元"/>
+      <input type="text" name="over_price" class="input-1" value="{:I('over_price')}" placeholder="元"/> (实付款)
+    </p>
+    <p>收件姓名：
+      <input type="text" name="name"  class="input-2" value="{:I('name')}" >
+    </p>
+    <p>收货地址：
+      <input type="text" name="address"  class="input-6" value="{:I('address')}">
+    </p>
+    <p>收货手机：
+      <input type="text" name="phone"  class="input-3" value="{:I('phone')}"> 
+    </p>
+    <p>
+      <button class="btn btn-primary" id="search" url="{:U('')}" >搜索</button> <a class="btn" href="{:U('Shop/order')}" >关闭</a>
+    </p>
+  </form>
+  
+  
+  <div class="clearfix diy-btn-list">
+    
+      <button  type="button"  class="btn" onclick="$('.search-form').toggle(400);">筛选</button>
+      <button class="btn" type="button"  data-remote="{:U('outorder_csv')}" data-toggle="modal" data-title="导出订单CSV">导出</button>
+      <button class="btn ajax-post confirm" url="{:U('oredrStatus',array('status'=>'-1'))}" target-form="ids">删除</button>
+    </div>
+
+  
+  <!-- 数据列表 -->
+  
+  <div class="data-table with-padding">
+    <table class="table table-bordered table-striped  table-center table-hover">
+      <thead>
+        <tr>
+          <th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+          <th class="">ID</th>
+          <th class="">店铺</th>
+          <th class="">商户</th>
+          <th class="">买家</th>  
+          <th class="">下单时间</th>
+          <th class="">订单总额</th>
+          <th class="">付款方式</th>
+          <th class="">订单状态</th>
+          <th class="">操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <notempty name="list">
+          <volist name="list" id="vo">
+            <tr class="tr <if condition="$vo[is_new]">danger</if>">
+              <td><input class="ids" type="checkbox" name="ids[]" value="{$vo.id}"/></td>
+              <td>{$vo.id}</td>
+              <td>{$vo.shop_name}</td>
+              <td>{$vo.uid|get_nickname}</td>
+              <td>{$vo.create_time|date='Y-m-d H:i:s',###}</td>
+              <td>{$vo.price}</td>
+              <td>{$vo.paytype}</td>
+              <td>{$vo.status}</td>
+              <td><a href="{:U('ShopInfo')}">订单详情</a> 取消订单</td>
+          </volist>
+          <else/>
+          <tr>
+            <td colspan="10" class="text-center">您暂时没有订单</td>
+          </tr>
+        </notempty>
+      </tbody>
+    </table>
+     {$_page}
+  </div>
+</block>
+<block name="script"> 
+  <script type="text/javascript">
+$(function(){
+	
+	Think.setValue("is_best", "{$_GET['is_best']}");
+	Think.setValue("is_star", "{$_GET['is_star']}");
+	Think.setValue("is_new", "{$_GET['is_new']}");
+	Think.setValue("is_take", "{$_GET['is_take']}");
+	Think.setValue("is_hot", "{$_GET['is_hot']}");
+	Think.setValue("is_sell", "{$_GET['is_sell']}");
+	Think.setValue("start_price", "{$_GET['start_price']}");
+	Think.setValue("over_price", "{$_GET['over_price']}");
+	Think.setValue("is_fare", "{$_GET['is_fare']}");
+	Think.setValue("status","{$_GET['status']|default=''}");
+	//搜索功能
+	$("#search").click(function(){
+		 
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input,select').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	
+	/*搜索状态检测,如果存在搜索内容，则展开搜索条件*/
+	$(".search-form").find("input,select").each(function(k, v){
+		 if (v.type == 'checkbox' || v.type == 'select') {
+			   if(v.checked == true){
+				  var other = $(this).val();
+			   }
+         }else{
+			   var text = $(this).val();
+		 }
+		if(text || other){
+			$('.search-form').show(400);
+		}
+	});
+
+	Calendar.setup({
+			weekNumbers: true,
+		    inputField : "time-start",
+		    trigger    : "time-start",
+		     dateFormat: "%Y-%m-%d %H:%M:%S",
+		    showTime: true,
+		    minuteStep: 1,
+		    onSelect   : function() {this.hide();}
+	});
+	Calendar.setup({
+			weekNumbers: true,
+		    inputField : "time-end",
+		    trigger    : "time-end",
+		    dateFormat: "%Y-%m-%d %H:%M:%S",
+		    showTime: true,
+		    minuteStep: 1,
+		    onSelect   : function() {this.hide();}
+	});
+
+    //回车自动提交
+    $('.search-form').find('input').keyup(function(event){
+        if(event.keyCode===13){
+            $("#search").click();
+        }
+    });
+
+})
+  highlight_subnav("{:U('shop/order')}");
+</script> 
+</block>

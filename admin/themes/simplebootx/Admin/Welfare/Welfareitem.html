@@ -1,0 +1,42 @@
+<admintpl file="header" />
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li class="active"><a >{$title}奖品列表</a></li>
+      <li><a href="{:U('Welfare/addLottery?type='.$type)}">添加{$title}奖品</a></li>
+      <li ><a href="{:U('Welfare/LotteryLog?type='.$type)}">中奖记录</a></li>
+    </ul>
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th align="center">ID</th>
+          <th>奖品名称</th>
+          <th>奖品价值</th>
+          <th>中奖概率</th>
+          <th>添加时间</th>
+          <th align="center">{:L('ACTIONS')}</th>
+        </tr>
+      </thead>
+      <tbody>
+      <foreach name="lists" item="vo">
+        <tr>
+          <td align="center">{$vo.id}</td>
+          <td>{$vo['title']}</td>
+          <td>{$vo['cost']}</td>
+          <td>{$vo['chance']}</td>
+          <td>{$vo['create_time_txt']}</td>
+          <td align="center">	
+            <a href="{:U('Welfare/addLottery',array('id'=>$vo['id'],'type'=>$type))}" >编辑</a>
+             |
+           <a href="{:U('Welfare/del',array('id'=>$vo['id'],'type'=>$type))}" class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+          </td>
+        </tr>
+      </foreach>
+      </tbody>
+    </table>
+    <div class="pagination">{$page}</div>
+
+  </div>
+  <script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

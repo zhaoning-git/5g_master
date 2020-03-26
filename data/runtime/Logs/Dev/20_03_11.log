@@ -1,0 +1,12 @@
+[ 2020-03-11T08:57:38+08:00 ] 39.82.210.201 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-11T11:56:44+08:00 ] 60.208.201.68 /index.php?g=Dev&m=Index&a=index
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_dev_api`
+

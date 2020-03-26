@@ -1,0 +1,47 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>关注的俱乐部列表</a></li>
+			<li ><a href="{:U('indexadmin/addMyClubs', ['uid'=>$uid])}">添加/取消关注</a></li>
+		</ul>
+
+		<form method="post" class="js-ajax-form" >
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">俱乐部ID</th>
+						<th>用户名</th>
+						<th>俱乐部</th>
+						<th>俱乐部图标</th>
+						<th>关注时间</th>
+						
+						<!-- <th align="center">{:L('ACTIONS')}</th> -->
+					</tr>
+				</thead>
+
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td align="center">{$vo.id}</td>
+						<td><img width="25" height="25" src="{$userinfo['avatar']}" />{$userinfo['user_nicename']?$userinfo['user_nicename']:$userinfo['user_login']}</td>
+						<td>{$vo.name}</td>
+						<td><img width="25" height="25" src="{$vo['path']}" /></td>
+						<td>{$vo.add_time|date='Y-m-d',###}</td>
+						
+						<!-- <td align="center">
+							<a href="{:U('indexadmin/edit',array('id'=>$vo['id']))}">取消关注</a>
+						</td> -->
+
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+		</form>
+
+	</div>
+ <script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

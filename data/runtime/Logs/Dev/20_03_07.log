@@ -1,0 +1,230 @@
+[ 2020-03-07T16:40:40+08:00 ] 125.33.179.46 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-07T16:51:53+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-07T17:19:31+08:00 ] 39.82.211.234 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-07T17:20:25+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-07T17:21:14+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-07T17:28:43+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-07T17:33:42+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0007s ]
+
+[ 2020-03-07T17:37:31+08:00 ] 125.33.179.46 /index.php?g=Dev&m=Index&a=App&id=253
+ERR: 1:Can't create/write to file '/tmp/#sql_b4a_0.MYD' (Errcode: 28)
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_dev_api`
+
+[ 2020-03-07T17:40:21+08:00 ] 39.82.211.234 /index.php?g=Dev&m=Index&a=App&id=288
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_dev_api`
+
+[ 2020-03-07T17:40:25+08:00 ] 39.82.211.234 /index.php?g=Dev&m=Index&a=App&id=288
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_dev_api`
+
+[ 2020-03-07T17:40:26+08:00 ] 39.82.211.234 /index.php?g=Dev&m=Index&a=App&id=288
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_dev_api`
+
+[ 2020-03-07T17:40:26+08:00 ] 39.82.211.234 /index.php?g=Dev&m=Index&a=App&id=288
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_dev_api`
+
+[ 2020-03-07T17:40:29+08:00 ] 39.82.211.234 /index.php?g=Dev&m=Index&a=App&id=288
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_dev_api`
+
+[ 2020-03-07T17:40:33+08:00 ] 39.82.211.234 /index.php?g=Dev&m=Index&a=App&id=99
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语�[ 2020-03-07T17:43:02+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-07T18:41:42+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0010s ]
+
+[ 2020-03-07T18:49:07+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-07T18:49:58+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-07T18:53:05+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-07T19:44:53+08:00 ] 39.82.211.234 /index.php?g=Dev&m=Index&a=Php&id=289
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_dev_api` SET `api_title`='商品评价列表',`api_url`='/Cliapi/Banner/EvaList',`api_type`='post',`api_token`='1',`api_category`='商城',`api_oauth`='zyz',`api_remark`='返回信息：
+&quot;id&quot;: &quot;评价id&quot;,
+&quot;goods_id&quot;: &quot;商品id&quot;,
+&quot;evaluate&quot;: &quot;文字评价&quot;,
+&quot;eva_pic&quot;: &quot;图片评价&quot;,
+&quot;create_time&quot;: &quot;评价时间&quot;,
+&quot;avatar&quot;: &quot;用户头像&quot;,
+&quot;user_nicename&quot;: &quot;用户名&quot;,
+&quot;shuxing&quot;: [		商品属性
+	{
+		&quot;shuzhi&quot;: &quot;红色&quot;,
+		&quot;attribute_name&quot;: &quot;颜色&quot;,
+		&quot;ids&quot;: &quot;10&quot;
+	},
+	{
+		&quot;shuzhi&quot;: &quot;m&quot;,
+		&quot;attribute_name&quot;: &quot;尺寸&quot;,
+		&quot;ids&quot;: &quot;11&quot;
+	}
+]',`id`='289',`create_time`='1583581493',`api_field`='[{\"name\":\"goods_id\",\"remark\":\"\\u5546\\u54c1id\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"1\",\"intro\":\"\"},{\"name\":\"type\",\"remark\":\"\\u8bbf\\u95ee\\u7c7b\\u578b\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"parem  \\u9ed8\\u8ba43\\u6761\\u6570\\u636e brenfd  \\u70b9\\u8fdb\\u53bb\\u7684 \\u5e26\\u5206\\u9875\"},{\"name\":\"p\",\"remark\":\"\\u7b2c\\u51e0\\u9875\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\"},{\"name\":\"r\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\"}]' WHERE `id` = 289 [ RunTime:0.0501s ]
+
+[ 2020-03-07T19:46:09+08:00 ] 39.82.211.234 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0007s ]
+
+[ 2020-03-07T21:27:33+08:00 ] 112.229.139.146 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-07T21:27:42+08:00 ] 112.229.139.146 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-07T21:29:50+08:00 ] 112.229.139.146 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-07T21:30:34+08:00 ] 112.229.139.146 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-07T21:30:51+08:00 ] 112.229.139.146 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-07T22:01:29+08:00 ] 112.229.139.146 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-07T22:43:23+08:00 ] 119.163.114.78 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-07T22:44:43+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-07T22:48:30+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+

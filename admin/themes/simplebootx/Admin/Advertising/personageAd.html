@@ -1,0 +1,87 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Advertising/personageAd')}">列表</a></li>
+			
+		
+		</ul>
+		<form method="post" class="js-ajax-form" action="{:U('Advertising/personageAdadd')}">
+		  <div class="table-actions">
+				<button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+			</div>
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+					 
+						<th align="center">ID</th>
+						<th>审核类型</th>
+						<th>推广信息</th>
+						<th>身份证正面</th>
+						<th>身份证反面</th>
+						<th>本人持身份证</th>
+						<th>姓名</th>
+						<th>身份证号</th>
+						<th>所属行业</th>
+						<th>审核状态</th>
+						<th>用户手机号</th>
+					
+
+						
+
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="data" item="vo">
+					<tr>
+					 
+						<td align="center">{$vo.singid}</td>
+						<if condition="$vo['types'] eq '1'">
+							<td align="center">个人</td>
+						</if>
+						<if condition="$vo['types'] eq '2'">
+							<td align="center">企业</td>
+						</if>
+						<td align="center">{$vo.buseiness}</td>
+						<td><img src="{:C('url')}{$vo.picardzname}" id="thumb1_preview" width="50" style="cursor: hand" /></td>
+						<td><img src="{:C('url')}{$vo.picardfnmaee}" id="thumb1_preview" width="50" style="cursor: hand" /></td>
+						<td><img src="{:C('url')}{$vo.picardselfcardname}" id="thumb1_preview" width="50" style="cursor: hand" /></td>
+						<td align="center">{$vo.singname}</td>
+						<td align="center">{$vo.card}</td>
+						<td align="center">{$vo.industry}</td>
+						<if condition="$vo['is_audit'] eq '1'">
+							<td align="center">待审核</td>
+						</if>
+						<if condition="$vo['is_audit'] eq '2'">
+							<td align="center">审核通过</td>
+						</if>
+						<td align="center">{$vo.mobile}</td>
+						<td align="center">	
+							
+     							   <a href="{:U('Advertising/personageAddetails',array('id'=>$vo['singid']))}" >详情</a>
+   						  
+     							   <a href="{:U('Advertising/Advertisingdel',array('id'=>$vo['singid']))}"  class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+   						    
+							
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+				<div class="table-actions">
+				<button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+			</div>
+		</form>
+		 <div id="laypage"></div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/laypage/1.2/laypage.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	
+
+</script>

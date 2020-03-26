@@ -1,0 +1,1185 @@
+[ 2020-03-08T09:52:50+08:00 ] 60.208.201.68 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0267s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='60.208.201.68',`last_login_time`='2020-03-08 09:52:50',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','1020315972','1583632370') [ RunTime:0.0011s ]
+
+[ 2020-03-08T09:59:18+08:00 ] 119.163.54.24 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-03-08T09:59:34+08:00 ] 119.163.54.24 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-03-08T09:59:43+08:00 ] 119.163.54.24 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-03-08T10:02:58+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2020-03-08T10:03:06+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+
+[ 2020-03-08T10:03:12+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+
+[ 2020-03-08T10:03:19+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-03-08T10:04:25+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-03-08T10:04:47+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-03-08T10:06:11+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-03-08T10:06:19+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='113.128.77.19',`last_login_time`='2020-03-08 10:06:19',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0010s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','1904233747','1583633179') [ RunTime:0.0019s ]
+
+[ 2020-03-08T10:08:59+08:00 ] 119.163.54.24 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='119.163.54.24',`last_login_time`='2020-03-08 10:08:59',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','2007184920','1583633339') [ RunTime:0.0015s ]
+
+[ 2020-03-08T11:48:26+08:00 ] 112.36.156.179 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='112.36.156.179',`last_login_time`='2020-03-08 11:48:26',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','1881447603','1583639306') [ RunTime:0.0016s ]
+
+[ 2020-03-08T14:07:20+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+
+[ 2020-03-08T14:07:23+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='113.128.77.19',`last_login_time`='2020-03-08 14:07:23',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0010s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','1904233747','1583647643') [ RunTime:0.0017s ]
+
+[ 2020-03-08T14:40:28+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+
+[ 2020-03-08T14:40:28+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+
+[ 2020-03-08T14:40:33+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0008s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='202.57.46.94',`last_login_time`='2020-03-08 14:40:33',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0191s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','3392745054','1583649633') [ RunTime:0.0014s ]
+
+[ 2020-03-08T16:59:58+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0006s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='202.57.46.94',`last_login_time`='2020-03-08 16:59:58',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','3392745054','1583657998') [ RunTime:0.0018s ]
+
+[ 2020-03-08T17:00:30+08:00 ] 202.57.46.94 /index.php?g=Admin&m=slide&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_slide_cat` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_slide` SET `slide_cid`='7',`slide_name`='引导页1',`slide_url`='',`slide_des`='',`slide_content`='',`slide_pic`='/data/upload/20200308/5e64b42be01b0.jpg' WHERE `slide_id` = '48' [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','编辑轮播','3392745054','1583658030') [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT `slide_pic`,`slide_url` FROM `cmf_slide` WHERE ( slide_status='1' and slide_cid='2'  ) ORDER BY listorder asc  [ RunTime:0.0004s ]
+
+[ 2020-03-08T17:00:41+08:00 ] 202.57.46.94 /index.php?g=Admin&m=slide&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_slide_cat` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_slide` SET `slide_cid`='7',`slide_name`='引导页2',`slide_url`='',`slide_des`='',`slide_content`='',`slide_pic`='/data/upload/20200308/5e64b4373dc69.jpg' WHERE `slide_id` = '49' [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','编辑轮播','3392745054','1583658041') [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT `slide_pic`,`slide_url` FROM `cmf_slide` WHERE ( slide_status='1' and slide_cid='2'  ) ORDER BY listorder asc  [ RunTime:0.0003s ]
+
+[ 2020-03-08T17:01:37+08:00 ] 202.57.46.94 /index.php?g=Admin&m=slide&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_slide_cat` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_slide` SET `slide_cid`='7',`slide_name`='引导页3',`slide_url`='',`slide_des`='',`slide_content`='',`slide_pic`='/data/upload/20200308/5e64b46f2b0fb.jpg' WHERE `slide_id` = '50' [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','编辑轮播','3392745054','1583658097') [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0006s ]
+SQL: SELECT `slide_pic`,`slide_url` FROM `cmf_slide` WHERE ( slide_status='1' and slide_cid='2'  ) ORDER BY listorder asc  [ RunTime:0.0003s ]
+
+[ 2020-03-08T17:01:49+08:00 ] 202.57.46.94 /index.php?g=Admin&m=slide&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_slide_cat` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_slide` SET `slide_cid`='7',`slide_name`='引导页4',`slide_url`='',`slide_des`='',`slide_content`='',`slide_pic`='/data/upload/20200308/5e64b47a6b572.jpg' WHERE `slide_id` = '51' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','编辑轮播','3392745054','1583658109') [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0005s ]
+SQL: SELECT `slide_pic`,`slide_url` FROM `cmf_slide` WHERE ( slide_status='1' and slide_cid='2'  ) ORDER BY listorder asc  [ RunTime:0.0003s ]
+
+[ 2020-03-08T17:51:46+08:00 ] 60.208.201.68 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0008s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='60.208.201.68',`last_login_time`='2020-03-08 17:51:46',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','1020315972','1583661106') [ RunTime:0.0017s ]
+
+[ 2020-03-08T17:53:07+08:00 ] 202.57.46.82 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0006s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='202.57.46.82',`last_login_time`='2020-03-08 17:53:07',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','3392745042','1583661187') [ RunTime:0.0018s ]
+
+[ 2020-03-08T18:03:49+08:00 ] 112.36.156.179 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+
+[ 2020-03-08T18:03:56+08:00 ] 112.36.156.179 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+
+[ 2020-03-08T18:06:15+08:00 ] 112.36.156.179 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='112.36.156.179',`last_login_time`='2020-03-08 18:06:15',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0192s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','1881447603','1583661975') [ RunTime:0.0011s ]
+
+[ 2020-03-08T18:09:59+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2020-03-08T18:10:31+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Menu&a=add&parentid=1&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2020-03-08T18:11:12+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Jifenduihuan' AND `action` = 'ynoindex' AND `data` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `parentid` FROM `cmf_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('1','用户协议','admin','Jifenduihuan','ynoindex','','','','1','1') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_auth_rule` WHERE `name` = 'admin/jifenduihuan/ynoindex' LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `cmf_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/jifenduihuan/ynoindex','admin','admin_url','用户协议') [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','添加菜单','1881447603','1583662272') [ RunTime:0.0013s ]
+
+[ 2020-03-08T18:11:18+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2020-03-08T18:13:52+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: 无法加载控制器:Jifenduihuan
+
+[ 2020-03-08T18:27:30+08:00 ] 60.208.201.68 /index.php?g=Admin&m=Level&a=experlevel_edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_experlevel` WHERE ( levelid='1' and id !='1' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Illegal offset type in isset or empty /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1015 行.
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+NOTIC: [2] Illegal offset type in isset or empty /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 445 行.
+SQL: UPDATE `cmf_experlevel` SET `levelname`='一级',`level_up`='49',`colour`='b2d65e',`thumb`='/data/upload/20200229/5e5a4d1244afe.png',`thumb_mark`='/data/upload/20200229/5e5a4d02079ef.png' WHERE `levelid` = 1 AND `id` = 1 [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: POST /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/LevelController.class.php 第 150 行.
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','修改会员等级：','1020315972','1583663250') [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cmf_experlevel` ORDER BY level_up asc  [ RunTime:0.0006s ]
+
+[ 2020-03-08T18:27:56+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: 无法加载控制器:Jifenduihuan
+
+[ 2020-03-08T18:35:36+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Jifenduihuan/yonadd.html
+
+[ 2020-03-08T18:41:41+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+
+[ 2020-03-08T18:42:14+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+
+[ 2020-03-08T18:42:35+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`content`,`status`) VALUES ('121212','0') [ RunTime:0.0032s ]
+
+[ 2020-03-08T18:42:49+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_agreement` SET `status`='0' WHERE ( id='2' ) [ RunTime:0.0151s ]
+
+[ 2020-03-08T18:44:01+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_agreement` SET `status`='0' WHERE ( id='2' ) [ RunTime:0.0024s ]
+
+[ 2020-03-08T18:44:57+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+
+[ 2020-03-08T18:45:06+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+
+[ 2020-03-08T18:45:31+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 2 [ RunTime:0.0019s ]
+
+[ 2020-03-08T18:49:04+08:00 ] 113.128.77.19 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='113.128.77.19',`last_login_time`='2020-03-08 18:49:04',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','1904233747','1583664544') [ RunTime:0.0013s ]
+
+[ 2020-03-08T18:55:15+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: id /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1478 行.
+SQL: UPDATE `cmf_agreement` SET `content`='11',`status`='1' WHERE ( id='' ) [ RunTime:0.0004s ]
+
+[ 2020-03-08T18:55:51+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: 无法加载控制器:Jifenduihuan
+
+[ 2020-03-08T18:56:00+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+
+[ 2020-03-08T18:56:39+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1479 行.
+SQL: UPDATE `cmf_agreement` SET `content`='21211',`status`='1' WHERE ( id='' ) [ RunTime:0.0003s ]
+
+[ 2020-03-08T18:57:49+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_agreement` SET `content`='11',`status`='1' WHERE `id` = 1 [ RunTime:0.0185s ]
+
+[ 2020-03-08T18:58:04+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`content`,`status`) VALUES ('aaa','0') [ RunTime:0.0018s ]
+
+[ 2020-03-08T19:00:39+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`content`,`status`) VALUES ('              
+asaaaaaa
+            ','0') [ RunTime:0.0079s ]
+
+[ 2020-03-08T19:03:00+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_agreement` SET `content`='              
+               11222      ',`status`='1' WHERE `id` = 1 [ RunTime:0.0022s ]
+
+[ 2020-03-08T19:03:09+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 4 [ RunTime:0.0022s ]
+
+[ 2020-03-08T19:03:13+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 3 [ RunTime:0.0025s ]
+
+[ 2020-03-08T19:13:37+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0008s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='202.57.46.94',`last_login_time`='2020-03-08 19:13:37',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0010s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','3392745054','1583666017') [ RunTime:0.0198s ]
+
+[ 2020-03-08T19:18:08+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;aasaaaa&lt;/p&gt;') [ RunTime:0.0024s ]
+
+[ 2020-03-08T19:22:04+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_agreement` SET `content`='&lt;p&gt;1111&lt;/p&gt;',`status`='0' WHERE `id` = 5 [ RunTime:0.0031s ]
+
+[ 2020-03-08T19:26:33+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: 无法加载控制器:Jifenduihuan
+
+[ 2020-03-08T19:26:43+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_agreement` SET `content`='&lt;p&gt;44444&lt;/p&gt;',`status`='0' WHERE `id` = 5 [ RunTime:0.0034s ]
+
+[ 2020-03-08T19:29:28+08:00 ] 60.208.201.68 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_agreement` SET `content`='&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;11222&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;color: rgb(149, 55, 52);&quot;&gt; 的说法都是&lt;/span&gt;&lt;/p&gt;',`status`='1' WHERE `id` = 1 [ RunTime:0.0022s ]
+
+[ 2020-03-08T19:31:22+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0006s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 5 [ RunTime:0.0386s ]
+
+[ 2020-03-08T19:31:34+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1422 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;asasas&lt;/p&gt;') [ RunTime:0.0019s ]
+
+[ 2020-03-08T19:32:18+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: syntax error, unexpected end of file, expecting variable (T_VARIABLE)
+
+[ 2020-03-08T19:32:20+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: syntax error, unexpected end of file, expecting variable (T_VARIABLE)
+
+[ 2020-03-08T19:32:20+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: syntax error, unexpected end of file, expecting variable (T_VARIABLE)
+
+[ 2020-03-08T19:32:21+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: syntax error, unexpected end of file, expecting variable (T_VARIABLE)
+
+[ 2020-03-08T19:33:08+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 6 [ RunTime:0.0028s ]
+
+[ 2020-03-08T19:33:18+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1422 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;asa&lt;/p&gt;') [ RunTime:0.0020s ]
+
+[ 2020-03-08T19:34:03+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-03-08T19:34:51+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;sasas&lt;/p&gt;') [ RunTime:0.0024s ]
+
+[ 2020-03-08T19:34:59+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 8 [ RunTime:0.0022s ]
+
+[ 2020-03-08T19:35:06+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 7 [ RunTime:0.0019s ]
+
+[ 2020-03-08T19:36:08+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+
+[ 2020-03-08T19:36:27+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+ERR: syntax error, unexpected end of file, expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2020-03-08T19:36:38+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+
+[ 2020-03-08T19:37:56+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+
+[ 2020-03-08T19:38:29+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+ERR: syntax error, unexpected end of file
+
+[ 2020-03-08T19:38:49+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+
+[ 2020-03-08T19:39:14+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0006s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 1 [ RunTime:0.0026s ]
+
+[ 2020-03-08T19:39:21+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+
+[ 2020-03-08T19:40:13+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: 无法加载控制器:Jifenduihuan
+
+[ 2020-03-08T19:40:15+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE)
+
+[ 2020-03-08T19:40:17+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE)
+
+[ 2020-03-08T19:40:18+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: syntax error, unexpected end of file, expecting variable (T_VARIABLE)
+
+[ 2020-03-08T19:40:31+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('1','&lt;p&gt;1212&lt;/p&gt;') [ RunTime:0.0024s ]
+
+[ 2020-03-08T19:40:39+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;111&lt;/p&gt;') [ RunTime:0.0025s ]
+
+[ 2020-03-08T19:40:43+08:00 ] 112.36.156.179 /index.php?g=Admin&m=jifenduihuan&a=ynoindex
+ERR: syntax error, unexpected end of file
+
+[ 2020-03-08T19:40:52+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;1212&lt;/p&gt;') [ RunTime:0.0235s ]
+
+[ 2020-03-08T19:41:08+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=ynoindex&menuid=577
+ERR: 无法加载控制器:Jifenduihuan
+
+[ 2020-03-08T19:41:15+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;1212&lt;/p&gt;') [ RunTime:0.0031s ]
+
+[ 2020-03-08T19:42:21+08:00 ] 202.57.46.82 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+
+[ 2020-03-08T19:42:24+08:00 ] 202.57.46.82 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+
+[ 2020-03-08T19:42:28+08:00 ] 202.57.46.82 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0008s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='202.57.46.82',`last_login_time`='2020-03-08 19:42:28',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','3392745042','1583667748') [ RunTime:0.0020s ]
+
+[ 2020-03-08T19:42:57+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 12 [ RunTime:0.0032s ]
+
+[ 2020-03-08T19:43:00+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 11 [ RunTime:0.0021s ]
+
+[ 2020-03-08T19:43:03+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 10 [ RunTime:0.0020s ]
+
+[ 2020-03-08T19:43:14+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;12&lt;/p&gt;') [ RunTime:0.0020s ]
+
+[ 2020-03-08T19:43:24+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;1212&lt;/p&gt;') [ RunTime:0.0023s ]
+
+[ 2020-03-08T19:45:09+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 14 [ RunTime:0.0026s ]
+
+[ 2020-03-08T19:45:12+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=13
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 13 [ RunTime:0.0325s ]
+
+[ 2020-03-08T19:45:19+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data /www/wwwroot/5g.appyunwei.cn/application/Admin/Controller/JifenduihuanController.class.php 第 1423 行.
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;121&lt;/p&gt;') [ RunTime:0.0019s ]
+
+[ 2020-03-08T19:45:40+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 15 [ RunTime:0.0020s ]
+
+[ 2020-03-08T19:45:45+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;1212&lt;/p&gt;') [ RunTime:0.0023s ]
+
+[ 2020-03-08T19:45:52+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-03-08T19:46:00+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=16
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 16 [ RunTime:0.0027s ]
+
+[ 2020-03-08T19:46:06+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-03-08T19:46:16+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yondel&id=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0006s ]
+SQL: DELETE FROM `cmf_agreement` WHERE `id` = 9 [ RunTime:0.0024s ]
+
+[ 2020-03-08T19:46:24+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_agreement` (`status`,`content`) VALUES ('0','&lt;p&gt;驱蚊器无&lt;/p&gt;') [ RunTime:0.0020s ]
+
+[ 2020-03-08T19:46:31+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-03-08T19:50:53+08:00 ] 112.36.156.179 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_agreement` SET `content`='&lt;p&gt;驱蚊器无&lt;/p&gt;',`status`='1' WHERE `id` = 17 [ RunTime:0.0029s ]
+
+[ 2020-03-08T20:21:40+08:00 ] 60.208.201.68 /index.php?g=Admin&m=Jifenduihuan&a=yonadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_agreement` LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2020-03-08T20:32:46+08:00 ] 202.57.46.94 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0006s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='202.57.46.94',`last_login_time`='2020-03-08 20:32:46',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0009s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','3392745054','1583670766') [ RunTime:0.0019s ]
+
+[ 2020-03-08T20:38:45+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Jifenduihuan&a=privacyedit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_privacy` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_privacy` SET `id`='1',`content`='<p>&nbsp; &nbsp; &nbsp; 我们重视用户的隐私，5G体育是一款提供体育资讯数据服务类的产品，为说明您在使用我们产品时会有可能使用或储存您的个人信息，我们将通过本指引向您阐述相关事宜。</p><p><br/></p><p>一、我们收集的信息</p><p>&nbsp; &nbsp; &nbsp; 在您使用5G体育服务过程中，我们会按照如下方式记录您在使用服务时主动提供或因为使用服务而产生的信息，用以向您提供服务、优化我们的服务以及保障您的账号安全。</p><p>1. 当您注册5G用户服务时，我们会验证您的昵称、头像、手机号码有效性，这些信息是为了帮助您完成5G体育用户注册，保护您的账号安全。手机号码信息是为满足法律法规的网络实名制要求。</p><p>2. 当您需要发表照片、评论、点赞等操作时，我们可能会您授权储存权限，发表的信息会储存在我们的服务器中，储存是实现这一功能所必需的，我们会以加密的方式储存您的隐私内容。</p><p>3. 为了您的资金及账户安全当您需要充值时，我们会把您的银行卡类型及账号、姓名、身份证、银行预留电话信息提交到第三方支付进行验证正确性。拒绝提供将不能完成充值，但不影响您使用其他功能服务。</p><p>二、信息的储存</p><p>1. 储存的地点</p><p>1.1 我们会按照法律法规规定，将境内收集的用户个人信息储存于中国境内。</p><p>2.信息储存的期限</p><p>2.1 手机号码： 若您需要使用5G服务，我们将一直保存您的手机号码，以保证您正常使用该功能与服务，当您注销5G账号后，我们也将删除相应的信息。</p><p>2.2 当您发送了内容，我们需要进行信息保存，以保证您正常使用，当您删除内容后，我们也将删除相应的信息。 当我们的产品或服务停止运营的情况时，我们将会以推送通知、站内信等形式告知您，并在一个合理的期间内删除您的个人信息。</p><p>三、信息的收集形式</p><p>1.当您注册5G体育账号时，我们会征求您的同意，以收集昵称、头像、手机号码等信息。</p><p>2.当您更换/设置用户头像时，我们会以询问弹窗的形式，征求您的同意，以收集照片、照相机权限等信息。</p><p>3.当您使用内容发布功能时，我们会默认后台储存的内容信息，以确保您可正常使用我们的产品服务。</p><p>四、我们如何使用Cookie和同类技术</p><p>1. 关于Cookie和同类技术</p><p>&nbsp; &nbsp; Cookie是包含字符串的小文件，在您登入和使用网站或其他网络内容时发送、存放在您的计算机、移动设备或其他装置内（通常经过加密）。Cookie同类技术是可用于与Cookie类似用途的其他技术，例如：Web Beacon、Proxy、嵌入式脚本等。 目前，我们主要使用Cookie收集您的个人信息。您知悉并同意，随着技术的发展和我们产品和服务的进一步完善，我们也可能会使用Cookie同类技术。</p><p>2. 我们如何使用Cookie和同类技术</p><p>&nbsp; &nbsp; 在您使用我们的产品与/或服务时，我们可能会使用Cookie和同类技术收集您的一些个人信息，包括：您访问网站的习惯、您的浏览信息、您的登录信息，Cookie和同类技术收集该类信息是为了您使用我们的产品与/或服务的必要、简化您重复操作的步骤（如注册、登录）、便于保存您的操作记录（如赛事筛选）、向您提供更切合您个人需要的服务内容和您可能更感兴趣的内容、保护您的信息和账号安全性、改善我们的产品和服务等。 如果您的浏览器允许，您可以通过您的浏览器的设置以管理、（部分/全部）拒绝Cookie与/或同类技术；或删除已经储存在您的计算机、移动设备或其他装置内的Cookie与/或同类技术，从而实现我们无法全部或部分追踪您的个人信息。您如需详细了解如何更改浏览器设置，请具体查看您使用的浏览器的相关设置页面。您理解并知悉：我们的某些产品/服务只能通过使用Cookie或同类技术才可得到实现，如您拒绝使用或删除的，您可能将无法正常使用我们的相关产品与/或服务或无法通过我们的产品与/或服务获得最佳的服务体验，同时也可能会对您的信息保护和账号安全性造成一定的影响。</p><p>五、信息的更新</p><p>1. 我们将尽一切可能采取适当的技术手段，保证您可以了解、更新和更正自己的注册信息或使用我们的服务时提供的其他用户信息。在了解、更新、更正和删除前述信息时，我们可能会要求您进行身份验证，以保障账户安全。</p><p>2. 如您需要更新、更正和删除您提交的用户信息时，可以通过访问5G体育服务的相关操作完成。一般情况下，您可随时修改自己提交的信息，但出于安全性和身份识别的考虑，您可能无法修改注册时提供的某些初始注册信息及验证信息。</p><p><br/></p><p>六、收集信息的使用</p><p>1. 为确保服务质量，我们可能记录相关信息以了解应用程序的运行情况，例如：使用应用程序的频率、崩溃数据、总体使用情况、性能数据以及应用程序的来源。我们不会将分析信息与您在应用程序中提供的任何个人身份信息相结合。</p><p>2. 如我们使用您的个人信息，超出了与收集时所声称的目的及具有直接或合理关联的范围，我们将在使用您的个人信息前，再次向您告知并征得您的明示同意。</p><p><br/></p><p>七、个人信息的安全</p><p>1. 我们不会主动共享或转让您的个人信息至5G体育以外的第三方，如存在其他共享或转让您的个人信息或您需要我们将您的个人信息共享或转让至5G体育外的第三方情形时，我们会直接或确认第三方征得您对上述行为的明示同意。</p><p>2. 我们不会对外公开披露其收集的个人信息，如必须公开披露时，我们会向您告知此次公开披露的目的、披露信息的类型及可能涉及的敏感信息，并征得您的明示同意。</p><p><br/></p><p>八、未成年人保护</p><p>&nbsp; &nbsp; 我们非常重视对未成年人个人信息的保护。根据相关法律法规的规定，若您是16周岁以下的未成年人，在使用5G服务前，应事先取得您的家长或法定监护人的书面同意。若您是未成年人的监护人，当您对您所监护的未成年人的个人信息有相关疑问时，请通过本隐私政策最后的联系方式与我们联系。</p><p><br/></p><p>九、《隐私政策》的修订</p><p>&nbsp; &nbsp; 随着我们服务范围的扩大或变更，我们可能会适时修订本隐私政策的相关条款，当政策条款发生变更时，我们会在客户端显著的位置或其他方式向您展示修订后的政策内容。请您注意，当您确认或继续使用产品时，我们才会按照更新后的政策执行。</p>',`update_time`='1583671125' WHERE `id` = 1 [ RunTime:0.0177s ]
+
+[ 2020-03-08T20:39:48+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Jifenduihuan&a=privacyedit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_privacy` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_privacy` SET `id`='1',`content`='<p>&nbsp; &nbsp; &nbsp; 我们重视用户的隐私，5G体育是一款提供体育资讯数据服务类的产品，为说明您在使用我们产品时会有可能使用或储存您的个人信息，我们将通过本指引向您阐述相关事宜。</p><p><br/></p><p>一、我们收集的信息</p><p>&nbsp; &nbsp; &nbsp; 在您使用5G体育服务过程中，我们会按照如下方式记录您在使用服务时主动提供或因为使用服务而产生的信息，用以向您提供服务、优化我们的服务以及保障您的账号安全。</p><p>1. 当您注册5G用户服务时，我们会验证您的昵称、头像、手机号码有效性，这些信息是为了帮助您完成5G体育用户注册，保护您的账号安全。手机号码信息是为满足法律法规的网络实名制要求。</p><p>2. 当您需要发表照片、评论、点赞等操作时，我们可能会您授权储存权限，发表的信息会储存在我们的服务器中，储存是实现这一功能所必需的，我们会以加密的方式储存您的隐私内容。</p><p>3. 为了您的资金及账户安全当您需要充值时，我们会把您的银行卡类型及账号、姓名、身份证、银行预留电话信息提交到第三方支付进行验证正确性。拒绝提供将不能完成充值，但不影响您使用其他功能服务。</p><p><br/></p><p>二、信息的储存</p><p>1. 储存的地点</p><p>1.1我们会按照法律法规规定，将境内收集的用户个人信息储存于中国境内。</p><p>2.信息储存的期限</p><p>2.1 手机号码： 若您需要使用5G服务，我们将一直保存您的手机号码，以保证您正常使用该功能与服务，当您注销5G账号后，我们也将删除相应的信息。</p><p>2.2 当您发送了内容，我们需要进行信息保存，以保证您正常使用，当您删除内容后，我们也将删除相应的信息。 当我们的产品或服务停止运营的情况时，我们将会以推送通知、站内信等形式告知您，并在一个合理的期间内删除您的个人信息。</p><p><br/></p><p>三、信息的收集形式</p><p>1.当您注册5G体育账号时，我们会征求您的同意，以收集昵称、头像、手机号码等信息。</p><p>2.当您更换/设置用户头像时，我们会以询问弹窗的形式，征求您的同意，以收集照片、照相机权限等信息。</p><p>3.当您使用内容发布功能时，我们会默认后台储存的内容信息，以确保您可正常使用我们的产品服务。</p><p><br/></p><p>四、我们如何使用Cookie和同类技术</p><p>1. 关于Cookie和同类技术</p><p>&nbsp; &nbsp; Cookie是包含字符串的小文件，在您登入和使用网站或其他网络内容时发送、存放在您的计算机、移动设备或其他装置内（通常经过加密）。Cookie同类技术是可用于与Cookie类似用途的其他技术，例如：Web Beacon、Proxy、嵌入式脚本等。 目前，我们主要使用Cookie收集您的个人信息。您知悉并同意，随着技术的发展和我们产品和服务的进一步完善，我们也可能会使用Cookie同类技术。</p><p>2. 我们如何使用Cookie和同类技术</p><p>&nbsp; &nbsp; &nbsp; 在您使用我们的产品与/或服务时，我们可能会使用Cookie和同类技术收集您的一些个人信息，包括：您访问网站的习惯、您的浏览信息、您的登录信息，Cookie和同类技术收集该类信息是为了您使用我们的产品与/或服务的必要、简化您重复操作的步骤（如注册、登录）、便于保存您的操作记录（如赛事筛选）、向您提供更切合您个人需要的服务内容和您可能更感兴趣的内容、保护您的信息和账号安全性、改善我们的产品和服务等。 如果您的浏览器允许，您可以通过您的浏览器的设置以管理、（部分/全部）拒绝Cookie与/或同类技术；或删除已经储存在您的计算机、移动设备或其他装置内的Cookie与/或同类技术，从而实现我们无法全部或部分追踪您的个人信息。您如需详细了解如何更改浏览器设置，请具体查看您使用的浏览器的相关设置页面。您理解并知悉：我们的某些产品/服务只能通过使用Cookie或同类技术才可得到实现，如您拒绝使用或删除的，您可能将无法正常使用我们的相关产品与/或服务或无法通过我们的产品与/或服务获得最佳的服务体验，同时也可能会对您的信息保护和账号安全性造成一定的影响。</p><p><br/></p><p>五、信息的更新</p><p>1. 我们将尽一切可能采取适当的技术手段，保证您可以了解、更新和更正自己的注册信息或使用我们的服务时提供的其他用户信息。在了解、更新、更正和删除前述信息时，我们可能会要求您进行身份验证，以保障账户安全。</p><p>2. 如您需要更新、更正和删除您提交的用户信息时，可以通过访问5G体育服务的相关操作完成。一般情况下，您可随时修改自己提交的信息，但出于安全性和身份识别的考虑，您可能无法修改注册时提供的某些初始注册信息及验证信息。</p><p><br/></p><p>六、收集信息的使用</p><p>1. 为确保服务质量，我们可能记录相关信息以了解应用程序的运行情况，例如：使用应用程序的频率、崩溃数据、总体使用情况、性能数据以及应用程序的来源。我们不会将分析信息与您在应用程序中提供的任何个人身份信息相结合。</p><p>2. 如我们使用您的个人信息，超出了与收集时所声称的目的及具有直接或合理关联的范围，我们将在使用您的个人信息前，再次向您告知并征得您的明示同意。</p><p><br/></p><p>七、个人信息的安全</p><p>1. 我们不会主动共享或转让您的个人信息至5G体育以外的第三方，如存在其他共享或转让您的个人信息或您需要我们将您的个人信息共享或转让至5G体育外的第三方情形时，我们会直接或确认第三方征得您对上述行为的明示同意。</p><p>2. 我们不会对外公开披露其收集的个人信息，如必须公开披露时，我们会向您告知此次公开披露的目的、披露信息的类型及可能涉及的敏感信息，并征得您的明示同意。</p><p><br/></p><p>八、未成年人保护</p><p>&nbsp; &nbsp; &nbsp; 我们非常重视对未成年人个人信息的保护。根据相关法律法规的规定，若您是16周岁以下的未成年人，在使用5G服务前，应事先取得您的家长或法定监护人的书面同意。若您是未成年人的监护人，当您对您所监护的未成年人的个人信息有相关疑问时，请通过本隐私政策最后的联系方式与我们联系。</p><p><br/></p><p>九、《隐私政策》的修订</p><p>&nbsp; &nbsp; &nbsp; 随着我们服务范围的扩大或变更，我们可能会适时修订本隐私政策的相关条款，当政策条款发生变更时，我们会在客户端显著的位置或其他方式向您展示修订后的政策内容。请您注意，当您确认或继续使用产品时，我们才会按照更新后的政策执行。</p>',`update_time`='1583671188' WHERE `id` = 1 [ RunTime:0.0145s ]
+
+[ 2020-03-08T20:42:11+08:00 ] 202.57.46.94 /index.php?g=Admin&m=Jifenduihuan&a=yong_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_agreement` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_agreement` SET `content`='&lt;p&gt;第1条&lt;/p&gt;&lt;p&gt;5G体育的各项服务的所有权及经营运作权归其所属公司所有。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;第2条&lt;/p&gt;&lt;p&gt;5G体育有权在必要时修改服务条款.如果用户继续使用网络服务，则视为接受服务条款的变动。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;第3条&lt;/p&gt;&lt;p&gt;5G体育将在为用户提供服务的过程中，竭尽可能地维护和完善5G体育提供的各种服务。用户在使用5G体育服务过程中自行承担风险，5G体育不担保服务一定能满足用户的要求，也不担保服务不会受中断，对服务的及时性，安全性，出错发生都不作担保。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;第4条&lt;/p&gt;&lt;p&gt;任何用户在登录5G体育和接受5G体育提供的各种服务过程中不得采用任何非正当手段，包括但不限于利用程序错误等行为，5G体育保留对违反者采取一切手段，直至追究法律责任的权利。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;第5条&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;用户在5G体育注册成功须妥善保管您的用户名和密码，不得告诉他人，否则因此产生的风险和损失由用户自行承担。用户要对以用户名单独承担发布内容的责任。用户需对自己在网上的行为承担法律责任。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;第6条&lt;/p&gt;&lt;p&gt;用户及5G体育任一方的任何争议和质疑，均需及时告知对方，并尽可能友好协商解决。如协商不成，任一方可提请广州仲裁委员会申请仲裁。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;第7条&lt;/p&gt;&lt;p&gt;5G体育数据资讯收集自各足球报刊及足球网站，所有资讯只供球迷参加中国体育彩票投注参考、参加5G体育社区竞猜游戏参考及中央电视五台等类似游艺活动参考，请勿使用于任何非法赌博活动。用户非法使用中所涉及到的法律责任，由使用者自行承担。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;第8条&lt;/p&gt;&lt;p&gt;5G体育将尽善意努力以提供及时有效的信息，但并不保证所有信息并无错讹和谬误，用户在使用5G体育之服务时应自行甄别。5G体育不承担用户据5G体育所披露信息或5G体育广告客户提供的服务而参与各项营利性活动而产生的费用和损失。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;第9条&lt;/p&gt;&lt;p&gt;本网站所提供一切数据只供用于球迷参考浏览及中国足球彩票参考资讯， 各位浏览者必须留意本身所处之地区及相关法律，不得利用本网站所提供的信息进行任何非法活动。 否则，任何情况下导致触犯所属地区之法律，浏览者须自行承担责任。所有本网站内刊载之广告，均为广告客户的个人意见及表达方式，与本站无任何关系。在本网站链接的广告， 无论是免费、付费还是公益广告，其广告网站内容一律不得违反国家现行的法律、法规和主管部门的有关规定，不得涉及反动、 迷信、淫秽、赌博等有害内容；拒绝为任何博彩性质的公司进行广告链接。 如有违背，我们有权随时删除有关的广告，并保留与有关部门合作追究的权力和义务。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;第10条&lt;/p&gt;&lt;p&gt;5G体育向用户支付费用的同时，5G体育将按国家规定的个税标准代为扣缴应由用户自行承担的个人所得税。用户应提供身份证资料供5G体育代扣代缴之用。如果用户不能及时提供，5G体育有权延期支付，不构成任何违约。用户确保提供资料的真实、准确性，由此产生的税务问题，用户承担全部责任。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;第11条&lt;/p&gt;&lt;p&gt;本服务条款未尽事项由5G体育作出最终解释、补充，或另行约定附则。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`status`='1' WHERE `id` = 17 [ RunTime:0.0198s ]
+
+[ 2020-03-08T21:58:15+08:00 ] 112.36.156.179 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+
+[ 2020-03-08T21:58:27+08:00 ] 112.36.156.179 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###3071a1ed2ebc5698a29cecdb7718abbb',`invite_id`='0',`lat`='0.000000',`lng`='0.000000',`level`='1',`level_start_time`='0',`level_end_time`='0',`user_nicename`='admin',`user_email`='admin@qq.com',`user_url`='http://livenewtest.yunbaozhibo.com',`avatar`='',`avatar_thumb`='',`sex`='0',`birthday`='',`sf_card`='',`sf_img`='',`sf_is_verify`='0',`signature`='',`last_login_ip`='112.36.156.179',`last_login_time`='2020-03-08 21:58:27',`create_time`='2016-03-07 08:47:52',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`gold_coin`='10000',`silver_coin`='0',`daynum`='0',`mobile`='',`token`='ddb3d2225c60aa376b94196d47001ac6',`expiretime`='1524440444',`consumption`='0',`votes`='0.00',`votestotal`='0',`province`='',`city`='',`wx`='',`qq`='',`weibo`='',`isrecommend`='0',`openid`='',`login_type`='phone',`iszombie`='0',`isrecord`='0',`iszombiep`='0',`issuper`='0',`ishot`='1',`goodnum`='0',`source`='pc',`type`='0',`third_token`='',`organicon`='0',`wemedia`='0',`teamligent`='0',`specialist`='0',`lunpan_num`='0',`baoxiang_num`='0',`redbag_num`='0' WHERE `id` = '1' [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0010s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','后台登陆','1881447603','1583675907') [ RunTime:0.0020s ]
+

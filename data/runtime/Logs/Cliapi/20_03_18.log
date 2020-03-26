@@ -1,0 +1,190 @@
+[ 2020-03-18T00:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-18T00:00:06+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-18T00:01:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:02:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:03:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:04:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:05:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:06:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:07:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:08:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:09:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:10:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_show`
+
+[ 2020-03-18T00:10:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:11:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:12:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:13:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:14:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:15:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:16:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:17:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:18:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T00:19:01[ 2020-03-18T21:10:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:11:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:12:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:13:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:14:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:15:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:16:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:17:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:18:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:19:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:20:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:20:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:21:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:22:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:23:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:24:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:25:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:26:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:27:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:28:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:29:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:30:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:30:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:31:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:32:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:33:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:34:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:35:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T21:36:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+E[ 2020-03-18T23:53:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-18T23:55:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T23:56:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T23:57:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T23:58:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-18T23:59:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+

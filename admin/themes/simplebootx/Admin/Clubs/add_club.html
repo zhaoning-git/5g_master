@@ -1,0 +1,190 @@
+<admintpl file="header" />
+
+</head>
+
+<body>
+
+	<div class="wrap">
+
+		<ul class="nav nav-tabs">
+
+			<li><a href="{:U('Clubs/index')}">俱乐部列表</a></li>
+
+			<li class="active"><a>创建俱乐部</a></li>
+			<li><a href="{:U('Clubs/mem_add')}">加入俱乐部</a></li>
+		</ul>
+
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Clubs/add_club_do')}" enctype="multipart/form-data">
+
+			<fieldset>
+
+				<div class="control-group">
+
+					<label class="control-label">创建者id</label>
+
+					<div class="controls">
+
+						<input type="text" name="uid">
+
+						<span class="form-required">*</span>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label">俱乐部名称</label>
+
+					<div class="controls">
+
+						<input type="text" name="name">
+
+						<span class="form-required">*</span>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">俱乐部图像</label>
+					<div class="controls">
+						<button type="button" class="layui-btn" id="test1">
+							<i class="layui-icon">&#xe67c;</i>上传图片
+						</button>
+						<div class="layui-upload-list">
+							<input type="hidden" name="headimg" value="">
+							<img class="layui-upload-img" width="100px" height="100px" id="demo1">
+							<p id="demoText"></p>
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="control-group">
+
+					<label class="control-label">俱乐部类别</label>
+
+					<div class="controls">
+
+						<select name="type" id="">
+
+							<option value="0">请选择</option>
+
+							<foreach name="type" item="vo">
+
+								<option value="{$vo.id}">{$vo.name}</option>
+
+							</foreach>
+
+						</select>
+
+						<span class="form-required">*</span>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">是否热门</label>
+					<div class="controls">
+						<label class="radio inline" for="hot1"><input type="radio" name="is_hot" value="0" id="hot1" checked>否</label>
+						<label class="radio inline" for="hot2"><input type="radio" name="is_hot" value="1" id="hot2" >是</label>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">热聊推荐</label>
+					<div class="controls">
+						<label class="radio inline" for="hotchat1"><input type="radio" name="is_hotchat" value="0" id="hotchat1" checked>否</label>
+						<label class="radio inline" for="hotchat2"><input type="radio" name="is_hotchat" value="1" id="hotchat2" >是</label>
+					</div>
+				</div>
+
+
+
+
+				<div class="control-group">
+
+					<label class="control-label">坐标位置（经度）</label>
+
+					<div class="controls">
+
+						<input type="text" name="longitude" placeholder="117.409796">
+
+						<span class="form-required">*</span>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label">坐标位置（纬度）</label>
+
+					<div class="controls">
+
+						<input type="text" name="latitude" placeholder="36.947599">
+
+						<span class="form-required">*</span>
+
+					</div>
+
+				</div>
+
+			</fieldset>
+
+			<div class="form-actions">
+
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+
+				<a class="btn" href="{:U('Clubs/index')}">{:L('BACK')}</a>
+
+			</div>
+
+
+
+		</form>
+
+	</div>
+
+	<script src="__PUBLIC__/js/common.js"></script>
+
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+
+	<script src="__PUBLIC__/layui/layui.js"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+	<script>
+		layui.use('upload', function(){
+		  var upload = layui.upload;
+		   
+		  //执行实例
+		  var uploadInst = upload.render({
+			elem: '#test1' //绑定元素
+			,url: '{:U("Clubs/uploadPic")}' //上传接口
+			,done: function(res){
+				console.log(res);
+				$("#demo1").attr('src',res.path);
+				$("input[name='headimg']").val(res.pid);
+			  //上传完毕回调
+			}
+			,error: function(){
+			  //请求异常回调
+			}
+		  });
+		});
+	</script>	
+
+	
+
+</body>
+
+</html>
+
+
+
+
+

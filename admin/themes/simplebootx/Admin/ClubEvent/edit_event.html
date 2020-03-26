@@ -1,0 +1,39 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('ClubEvent/index')}">赛事列表</a></li>
+			<li class="active"><a >审核</a></li>
+			<li ><a href="{:U('ClubEvent/clubJoinEventList')}">俱乐部加入赛事列表</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('ClubEvent/edit_events_do')}">
+		  <input type="hidden" name="id" value="{$eventInfo['id']}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">赛事名称</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$eventInfo['name']}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">赛事状态</label>
+					<div class="controls">
+						<label class="radio inline" for="del1"><input type="radio" name="status" value="0" id="del1" <if condition="$eventInfo['status'] eq '0'">checked</if> >禁用</label>
+						<label class="radio inline" for="del2"><input type="radio" name="status" value="1" id="del2" <if condition="$eventInfo['status'] eq '1'">checked</if> >运行</label>
+					</div>
+				</div>
+		
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="{:U('ClubEvent/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

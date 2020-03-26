@@ -1,0 +1,154 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Advertising/personageAd')}">列表</a></li>
+			<li class="active"><a >编辑</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Car/edit_post')}">
+		   <input type="hidden" name="id" value="{$car['id']}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">审核类型</label>
+					<div class="controls">
+						
+						<if condition="$data['types'] eq '1'">
+							<td align="center">个人</td>
+						</if>
+						<if condition="$data['types'] eq '2'">
+							<td align="center">企业</td>
+						</if>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">推广信息</label>
+					<div class="controls">
+						
+						<td align="center">{$data.buseiness}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+                <div class="control-group">
+					<label class="control-label">身份证正面</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.picardzname}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.picardzname}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">身份证反面</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.picardfnmaee}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.picardfnmaee}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">本人持身份证</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.picardselfcardname}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.picardselfcardname}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">姓名</label>
+					<div class="controls">
+						
+						<td align="center">{$data.singname}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">身份证号</label>
+					<div class="controls">
+						
+						<td align="center">{$data.card}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">所属行业</label>
+					<div class="controls">
+						
+						<td align="center">{$data.industry}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">用户手机号</label>
+					<div class="controls">
+						
+						<td align="center">{$data.mobile}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">审核状态</label>
+					<div class="controls">
+						
+						 <if condition="$data['is_audit'] eq '1'">
+						 	<td align="center" ><b style="color:red">待审核</b></td>
+						 </if>
+						  <if condition="$data['is_audit'] eq '2'">
+						 	<td align="center" ><b style="color:red">已审核</b></td>
+						 </if>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<!-- <div class="control-group">
+					<label class="control-label">图片</label>
+					<div class="controls">
+						<div>
+							<input type="hidden" name="thumb" id="thumb2" value="{$car['thumb']}">
+							<a href="javascript:void(0);" onclick="flashupload('thumb_images', '附件上传','thumb2',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+								<if condition="$car['thumb'] neq ''">
+										<img src="{:sp_get_asset_upload_path($car['thumb'])}" id="thumb2_preview" width="135" style="cursor: hand" />
+								<else/>
+										<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb2_preview" width="135" style="cursor: hand" />
+								</if>
+							</a>
+							<input type="button" class="btn btn-small" onclick="$('#thumb2_preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb2').val('');return false;" value="取消图片">
+						</div>
+						<span class="form-required"></span>
+					</div>
+				</div> -->
+				
+				
+			</fieldset>
+			<div class="form-actions">
+                <if condition="$data['is_audit'] eq '1'">
+				  <button type="submit" class="btn btn-primary js-ajax-submit">审核</button>			
+				</if>
+				
+				<a class="btn" href="{:U('Advertising/personageAd')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<div id="ShowImage_Form" class="modal hide">         
+         <div class="modal-header">
+             <button data-dismiss="modal" class="close" type="button"></button>
+         </div>
+         <div class="modal-body">
+           <div id="img_show">
+           </div>
+         </div>
+    </div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	 <script src="__PUBLIC__/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	function showimage(source){
+      
+         $("#ShowImage_Form").find("#img_show").html("<img src='"+source+"' class='carousel-inner img-responsive img-rounded' />");
+
+         $("#ShowImage_Form").modal();
+
+     }
+</script>

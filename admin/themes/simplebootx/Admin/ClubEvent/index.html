@@ -1,0 +1,46 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+	<ul class="nav nav-tabs">
+		<li class="active"><a>赛事列表</a></li>
+		<li ><a href="{:U('ClubEvent/add_event')}">添加赛事</a></li>
+		<li ><a href="{:U('ClubEvent/clubJoinEventList')}">俱乐部加入赛事列表</a></li>
+	</ul>
+	<form method="post" class="js-ajax-form" >
+		<table class="table table-hover table-bordered">
+			<thead>
+			<tr>
+				<th align="center">ID</th>
+				<th>赛事名称</th>
+				<th>赛事状态</th>
+				<th align="center">{:L('ACTIONS')}</th>
+			</tr>
+			</thead>
+			<tbody>
+			<foreach name="data" item="vo">
+				<tr>
+					<td align="center">{$vo.id}</td>
+					<td>{$vo['ename']}</td>
+					<td>
+						<if condition="$vo['status'] eq 0">
+							已禁用
+							<else />
+							正在角逐
+						</if>
+					</td>
+					<td align="center">
+						<a href="{:U('ClubEvent/edit_event',array('id'=>$vo['id']))}" >编辑</a>
+						|<a href="{:U('ClubEvent/del_event',array('id'=>$vo['id']))}" >删除</a>
+					</td>
+				</tr>
+			</foreach>
+			</tbody>
+		</table>
+		<div class="pagination">{$page}</div>
+
+	</form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

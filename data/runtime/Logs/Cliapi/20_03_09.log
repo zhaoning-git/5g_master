@@ -1,0 +1,1317 @@
+[ 2020-03-09T00:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T01:00:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T02:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T02:30:04+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Client error: `GET https://new.qq.com/zt/template/?id=SPO2019092100321300` resulted in a `403 Forbidden` response:
+<html>
+<head><title>403 Forbidden</title></head>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr> (truncated...)
+
+
+[ 2020-03-09T03:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T04:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T05:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T06:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T06:40:04+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Client error: `GET https://new.qq.com/zt/template/?id=SPO2019092100321300` resulted in a `403 Forbidden` response:
+<html>
+<head><title>403 Forbidden</title></head>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr> (truncated...)
+
+
+[ 2020-03-09T07:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T07:30:04+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Client error: `GET https://new.qq.com/zt/template/?id=SPO2019092100321300` resulted in a `403 Forbidden` response:
+<html>
+<head><title>403 Forbidden</title></head>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr> (truncated...)
+
+
+[ 2020-03-09T08:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T09:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T09:12:57+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Conversion&a=deduction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Conversion&a=deduction','{\"id\":\"\",\"goods_id\":\"\",\"order_no\":\"\",\"_uid\":\"\",\"_sign\":\"\"}','post','1583716377','39.82.211.234') [ RunTime:0.0004s ]
+
+[ 2020-03-09T09:16:07+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Public&a=userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+NOTIC: [2] Declaration of Cliapi\Controller\PublicController::theme() should be compatible with Think\Controller::theme($theme) /www/wwwroot/5g.appyunwei.cn/application/Cliapi/Controller/PublicController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0015s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Public&a=userLogin','{\"loginstring\":\"13326898427\",\"password\":\"123456\",\"type\":\"\"}','post','1583716566','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '13326898427' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`user_login`,`user_pass`,`invite_id`,`lat`,`lng`,`level`,`level_start_time`,`level_end_time`,`user_nicename`,`user_email`,`user_url`,`avatar`,`avatar_thumb`,`sex`,`birthday`,`sf_card`,`sf_img`,`sf_is_verify`,`signature`,`last_login_ip`,`last_login_time`,`create_time`,`user_activation_key`,`user_status`,`score`,`user_type`,`gold_coin`,`silver_coin`,`daynum`,`mobile`,`token`,`expiretime`,`consumption`,`votes`,`votestotal`,`province`,`city`,`wx`,`qq`,`weibo`,`isrecommend`,`openid`,`login_type`,`iszombie`,`isrecord`,`iszombiep`,`issuper`,`ishot`,`goodnum`,`source`,`type`,`third_token`,`organicon`,`wemedia`,`teamligent`,`specialist`,`lunpan_num`,`baoxiang_num`,`redbag_num` FROM `cmf_users` WHERE `id` = '27543' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2020-03-09 09:16:06',`last_login_ip`='39.82.211.234' WHERE `id` = '27543' [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_user_token` SET `token`='d81e908fc3eaa9be1b65bea2111dcfb421e1277f',`time`='1583716566',`ip`='39.82.211.234' WHERE `uid` = 27543 [ RunTime:0.0005s ]
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/f8ad7b21ebaccc2a782bc05aab8ac9b1.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/fd916ae9a8d98d5c416a4992561a1642.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/1616a1a2106f39ecf5187f5846bd87e7.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/38c2dfe8df8646a9027d2a47e96b6f5b.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/2a66216509a293ad79f0b646ee65f91a.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/0895590ecdae048534f69cf19c969ee8.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT u.*,c.uid,c.ip,c.token FROM cmf_users u left JOIN cmf_user_token c ON c.uid = u.id  WHERE u.id = '27543' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_user_verify` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_user_verify` WHERE `uid` = 27543  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_relation` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_user_relation` WHERE `uid` = 27543 AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_user_relation` WHERE `uid` = 27543 AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_show` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_show` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_level` [ RunTime:0.0008s ]
+SQL: SELECT `medal_img` FROM `cmf_user_level` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cmf_user_level` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_binding` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_binding` WHERE `user_id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_advertising` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_advertising` WHERE `user_id` = 27543 AND ( is_audit=2 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:16:33+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=CreateChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=CreateChat','{\"name\":\"\\u6d4b\\u8bd5\\u7fa4\\u804a1\",\"tags\":\"\\u5a31\\u4e50\",\"image\":\"53\",\"remark\":\"\\u4e09\\u5341\\u591a\\u5c81\\u591a\",\"jingdu\":\"1232\",\"weidu\":\"12323\",\"_uid\":\"27543\",\"_sign\":\"595915b5b32483dbd2b21d67d7ca1972\"}','post','1583716593','39.82.211.234') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/5g.appyunwei.cn/application/Common/Model/GroupChatModel.class.php 第 38 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat` WHERE `name` = '测试群聊1' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-03-09T09:16:42+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=CreateChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0011s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=CreateChat','{\"name\":\"\\u6d4b\\u8bd5\\u7fa4\\u804a2\",\"tags\":\"\\u5a31\\u4e50\",\"image\":\"53\",\"remark\":\"\\u4e09\\u5341\\u591a\\u5c81\\u591a\",\"jingdu\":\"1232\",\"weidu\":\"12323\",\"_uid\":\"27543\",\"_sign\":\"595915b5b32483dbd2b21d67d7ca1972\"}','post','1583716602','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/5g.appyunwei.cn/application/Common/Model/GroupChatModel.class.php 第 38 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat` WHERE `name` = '测试群聊2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-03-09T09:16:51+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=CreateChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0010s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=CreateChat','{\"name\":\"\\u6d4b\\u8bd52\",\"tags\":\"\\u5a31\\u4e50\",\"image\":\"53\",\"remark\":\"\\u4e09\\u5341\\u591a\\u5c81\\u591a\",\"jingdu\":\"1232\",\"weidu\":\"12323\",\"_uid\":\"27543\",\"_sign\":\"595915b5b32483dbd2b21d67d7ca1972\"}','post','1583716611','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/5g.appyunwei.cn/application/Common/Model/GroupChatModel.class.php 第 38 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat` WHERE `name` = '测试2' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_picture` [ RunTime:0.0009s ]
+SQL: SELECT `path` FROM `cmf_picture` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_group_chat` (`name`,`tags`,`image`,`remark`,`jingdu`,`weidu`,`uid`,`status`,`addtime`,`max_num`) VALUES ('测试2','娱乐','http://5g.appyunwei.cn','三十多岁多','1232','12323','27543','1','1583716611','200') [ RunTime:0.0171s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_group_chat` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_group_chat_user` WHERE `ql_id` = 16 AND `status` < 2  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat_user` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-03-09T09:17:02+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=CreateChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=CreateChat','{\"name\":\"\\u6d4b1212\",\"tags\":\"\\u5a31\\u4e50\",\"image\":\"53\",\"remark\":\"\\u4e09\\u5341\\u591a\\u5c81\\u591a\",\"jingdu\":\"1232\",\"weidu\":\"12323\",\"_uid\":\"27543\",\"_sign\":\"595915b5b32483dbd2b21d67d7ca1972\"}','post','1583716622','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/5g.appyunwei.cn/application/Common/Model/GroupChatModel.class.php 第 38 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat` WHERE `name` = '测1212' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_picture` [ RunTime:0.0009s ]
+SQL: SELECT `path` FROM `cmf_picture` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `cmf_group_chat` (`name`,`tags`,`image`,`remark`,`jingdu`,`weidu`,`uid`,`status`,`addtime`,`max_num`) VALUES ('测1212','娱乐','http://5g.appyunwei.cn','三十多岁多','1232','12323','27543','1','1583716622','200') [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_group_chat` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_group_chat_user` WHERE `ql_id` = 17 AND `status` < 2  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat_user` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:20:54+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=info&id=17&_uid=27543&_sign=50431f363f7a14f8e42e5aa9a8fe7d80
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=info&id=17&_uid=27543&_sign=50431f363f7a14f8e42e5aa9a8fe7d80','{\"id\":\"17\",\"_uid\":\"27543\",\"_sign\":\"50431f363f7a14f8e42e5aa9a8fe7d80\"}','get','1583716854','39.82.211.234') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_group_chat` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_group_chat_user` WHERE `ql_id` = 17 AND `status` < 2  [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:30:05+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Client error: `GET https://new.qq.com/zt/template/?id=SPO2019092100321300` resulted in a `403 Forbidden` response:
+<html>
+<head><title>403 Forbidden</title></head>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr> (truncated...)
+
+
+[ 2020-03-09T09:32:37+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=GroupChat&a=addChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+ERR: 无法加载控制器:GroupChat
+
+[ 2020-03-09T09:32:39+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=GroupChat&a=addChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+ERR: 无法加载控制器:GroupChat
+
+[ 2020-03-09T09:32:40+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=GroupChat&a=addChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+ERR: 无法加载控制器:GroupChat
+
+[ 2020-03-09T09:32:40+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=GroupChat&a=addChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+ERR: 无法加载控制器:GroupChat
+
+[ 2020-03-09T09:36:28+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=GroupChat&a=addChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+ERR: 无法加载控制器:GroupChat
+
+[ 2020-03-09T09:36:31+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=GroupChat&a=addChat
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+ERR: 无法加载控制器:GroupChat
+
+[ 2020-03-09T09:37:05+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=inList&_uid=27543&_sign=32f1479306a172aaccc1689796034b57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=inList&_uid=27543&_sign=32f1479306a172aaccc1689796034b57','{\"_uid\":\"27543\",\"_sign\":\"32f1479306a172aaccc1689796034b57\"}','get','1583717825','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_user` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat_user` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`ql_id`,`uid`,`user_nickname`,`status`,`addtime` FROM `cmf_group_chat_user` WHERE `uid` = 27543 ORDER BY addtime ASC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_group_chat` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-03-09T09:38:18+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=Msglog
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=Msglog','{\"ql_id\":\"15\",\"_uid\":\"27543\",\"_sign\":\"53b546a0e7f293fa043c7a4279b6d745\"}','post','1583717898','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_group_chat` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_user` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat_user` WHERE `ql_id` = 15 AND `uid` = 27543 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_msg` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat_msg` WHERE `toid` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`toid`,`is_group`,`content`,`data`,`addtime` FROM `cmf_group_chat_msg` WHERE `toid` = 15 ORDER BY addtime DESC LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2020-03-09T09:39:59+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=sendTogroup
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=sendTogroup','{\"id\":\"15\",\"type\":\"w\",\"data\":\"q\",\"content\":\"\\u4f60\\u597d\\u5e05\",\"_uid\":\"27543\",\"_sign\":\"3d302d85a8fc1b9d5462db4b9f380a4f\"}','post','1583717999','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_group_chat` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_user` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat_user` WHERE `ql_id` = 15 AND `status` < 2 AND `uid` = 27543 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_group_chat_user` WHERE `ql_id` = 15 AND `status` < 2  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_msg` [ RunTime:0.0008s ]
+SQL: INSERT INTO `cmf_group_chat_msg` (`uid`,`toid`,`data`,`content`,`is_group`,`addtime`) VALUES ('27543','15','{\"type\":\"w\",\"data\":\"q\",\"content\":\"\\u4f60\\u597d\\u5e05\"}','你好帅','1','1583717999') [ RunTime:0.0020s ]
+NOTIC: [2] stream_socket_client(): unable to connect to tcp://127.0.0.1:1236 (Connection refused) /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Com/Gateway.class.php 第 827 行.
+ERR: Can not connect to tcp://127.0.0.1:1236 Connection refused
+
+[ 2020-03-09T09:40:02+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=sendTogroup
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=sendTogroup','{\"id\":\"15\",\"type\":\"w\",\"data\":\"q\",\"content\":\"\\u4f60\\u597d\\u5e05\",\"_uid\":\"27543\",\"_sign\":\"3d302d85a8fc1b9d5462db4b9f380a4f\"}','post','1583718002','39.82.211.234') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_group_chat` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_user` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat_user` WHERE `ql_id` = 15 AND `status` < 2 AND `uid` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_group_chat_user` WHERE `ql_id` = 15 AND `status` < 2  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_msg` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_group_chat_msg` (`uid`,`toid`,`data`,`content`,`is_group`,`addtime`) VALUES ('27543','15','{\"type\":\"w\",\"data\":\"q\",\"content\":\"\\u4f60\\u597d\\u5e05\"}','你好帅','1','1583718002') [ RunTime:0.0018s ]
+NOTIC: [2] stream_socket_client(): unable to connect to tcp://127.0.0.1:1236 (Connection refused) /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Com/Gateway.class.php 第 827 行.
+ERR: Can not connect to tcp://127.0.0.1:1236 Connection refused
+
+[ 2020-03-09T09:42:48+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Websocket&a=Msglog
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Websocket&a=Msglog','{\"ql_id\":\"15\",\"_uid\":\"27543\",\"_sign\":\"53b546a0e7f293fa043c7a4279b6d745\"}','post','1583718168','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_group_chat` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_user` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat_user` WHERE `ql_id` = 15 AND `uid` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_msg` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_group_chat_msg` WHERE `toid` = 15 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`toid`,`is_group`,`content`,`data`,`addtime` FROM `cmf_group_chat_msg` WHERE `toid` = 15 ORDER BY addtime DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_group_chat_msg` [ RunTime:0.0005s ]
+SQL: SELECT `image` FROM `cmf_group_chat` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `avatar` FROM `cmf_users` WHERE `id` = '27543' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `image` FROM `cmf_group_chat` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `avatar` FROM `cmf_users` WHERE `id` = '27543' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:44:25+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=onslife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=onslife','{\"_uid\":\"\"}','post','1583718265','39.82.211.234') [ RunTime:0.0003s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:44:26+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=onslife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0010s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=onslife','{\"_uid\":\"\"}','post','1583718266','39.82.211.234') [ RunTime:0.0003s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:44:26+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=onslife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=onslife','{\"_uid\":\"\"}','post','1583718266','39.82.211.234') [ RunTime:0.0003s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:44:27+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=onslife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=onslife','{\"_uid\":\"\"}','post','1583718267','39.82.211.234') [ RunTime:0.0002s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:44:37+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=onslife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=onslife','{\"_uid\":\"27543\"}','post','1583718277','39.82.211.234') [ RunTime:0.0004s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:45:16+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=User&a=woinformation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=User&a=woinformation','{\"type\":\"official \",\"_uid\":\"27543\",\"_sign\":\"e96766aa970b7a2e9af8944f2d9ccd69\"}','post','1583718316','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: store /www/wwwroot/5g.appyunwei.cn/application/Cliapi/Controller/UserController.class.php 第 452 行.
+
+[ 2020-03-09T09:45:19+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=User&a=woinformation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=User&a=woinformation','{\"type\":\"official \",\"_uid\":\"27543\",\"_sign\":\"e96766aa970b7a2e9af8944f2d9ccd69\"}','post','1583718319','39.82.211.234') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = 'd81e908fc3eaa9be1b65bea2111dcfb421e1277f' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: store /www/wwwroot/5g.appyunwei.cn/application/Cliapi/Controller/UserController.class.php 第 452 行.
+
+[ 2020-03-09T09:45:49+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0012s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718349','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:45:57+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718357','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:45:58+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718358','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:46:01+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718361','39.82.211.234') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:46:03+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718363','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:46:03+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718363','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:46:11+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718371','39.82.211.234') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:47:54+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718474','39.82.211.234') [ RunTime:0.0003s ]
+
+[ 2020-03-09T09:49:04+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0011s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718544','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:49:05+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718545','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:49:06+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718546','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:49:07+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718547','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2020-03-09T09:49:08+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718548','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2020-03-09T09:49:59+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718599','39.82.211.234') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2020-03-09T09:50:00+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718600','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:50:00+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718600','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:50:00+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0010s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718600','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2020-03-09T09:50:25+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718625','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:50:53+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718653','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:51:17+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0010s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718677','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:52:00+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718720','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2020-03-09T09:52:02+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718722','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:53:58+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0011s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718838','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+ERR: NOAUTH Authentication required.
+
+[ 2020-03-09T09:55:26+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0015s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718926','39.82.211.234') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:55:31+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u54ed\\u6492\"}','post','1583718931','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%哭撒%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2020-03-09T09:56:24+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=reisos
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=reisos','{\"_uid\":\"27543\",\"shopname\":\"\\u77ed\\u8896\"}','post','1583718984','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_duihuan` WHERE `shopname` LIKE '%短袖%' AND `type` = '实物' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`jinbi`,`yingbi`,`miaoshu`,`shopname`,`img`,`sta`,`type`,`typefenid`,`paymentren`,`figure_img`,`product`,`hots`,`cat_id`,`sort`,`recom` FROM `cmf_duihuan` WHERE `shopname` LIKE '%短袖%' AND `type` = '实物' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2020-03-09T09:57:16+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=onslife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=onslife','{\"_uid\":\"27543\"}','post','1583719036','39.82.211.234') [ RunTime:0.0004s ]
+
+[ 2020-03-09T10:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T10:04:54+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Banner&a=Evaluate
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Banner&a=Evaluate','{\"order_no\":\"\",\"goods_id\":\"\",\"evaluate\":\"\",\"eva_pic\":\"\",\"_uid\":\"\",\"_sign\":\"\"}','post','1583719494','39.82.211.234') [ RunTime:0.0005s ]
+
+[ 2020-03-09T10:06:36+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Public&a=userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+NOTIC: [2] Declaration of Cliapi\Controller\PublicController::theme() should be compatible with Think\Controller::theme($theme) /www/wwwroot/5g.appyunwei.cn/application/Cliapi/Controller/PublicController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0010s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Public&a=userLogin','{\"loginstring\":\"15550010516\",\"password\":\"000000\",\"type\":\"1\"}','post','1583719595','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '15550010516' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_pass`,`invite_id`,`lat`,`lng`,`level`,`level_start_time`,`level_end_time`,`user_nicename`,`user_email`,`user_url`,`avatar`,`avatar_thumb`,`sex`,`birthday`,`sf_card`,`sf_img`,`sf_is_verify`,`signature`,`last_login_ip`,`last_login_time`,`create_time`,`user_activation_key`,`user_status`,`score`,`user_type`,`gold_coin`,`silver_coin`,`daynum`,`mobile`,`token`,`expiretime`,`consumption`,`votes`,`votestotal`,`province`,`city`,`wx`,`qq`,`weibo`,`isrecommend`,`openid`,`login_type`,`iszombie`,`isrecord`,`iszombiep`,`issuper`,`ishot`,`goodnum`,`source`,`type`,`third_token`,`organicon`,`wemedia`,`teamligent`,`specialist`,`lunpan_num`,`baoxiang_num`,`redbag_num` FROM `cmf_users` WHERE `id` = '27529' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2020-03-09 10:06:35',`last_login_ip`='39.82.211.234' WHERE `id` = '27529' [ RunTime:0.0447s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `uid` = 27529 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27529 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_user_token` SET `token`='16697dee6ee71fb938895e261c0757cc3e3f8ebc',`time`='1583719596',`ip`='39.82.211.234' WHERE `uid` = 27529 [ RunTime:0.0003s ]
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/a24973407163b1dde01cb7dbeffb104c.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/6fb9456a46742c023551b94cc10cd644.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/9e9c67d884e7093f2016b847a6ec923f.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/9dd33640f0d36b979c90c249eb71d16e.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/d3640d47f14c2f7d90505275c4b1262a.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/af9f80204c94396de0ffa216635e4d88.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT u.*,c.uid,c.ip,c.token FROM cmf_users u left JOIN cmf_user_token c ON c.uid = u.id  WHERE u.id = '27529' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_user_verify` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_user_verify` WHERE `uid` = 27529  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_relation` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_user_relation` WHERE `uid` = 27529 AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_user_relation` WHERE `uid` = 27529 AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_show` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_show` WHERE `uid` = 27529 LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_level` [ RunTime:0.0009s ]
+SQL: SELECT `medal_img` FROM `cmf_user_level` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cmf_user_level` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_binding` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_binding` WHERE `user_id` = 27529 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_advertising` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_advertising` WHERE `user_id` = 27529 AND ( is_audit=2 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-03-09T10:09:12+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Specialist&a=attention
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0010s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Specialist&a=attention','{\"spe_id\":\"\",\"_uid\":\"\",\"_sign\":\"\"}','post','1583719752','39.82.211.234') [ RunTime:0.0003s ]
+
+[ 2020-03-09T10:09:36+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Order&a=add_order
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Order&a=add_order','{\"amount\":\"\",\"pay_way\":\"\",\"_uid\":\"\",\"_sign\":\"\"}','post','1583719776','39.82.211.234') [ RunTime:0.0003s ]
+
+[ 2020-03-09T10:12:36+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Public&a=userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+NOTIC: [2] Declaration of Cliapi\Controller\PublicController::theme() should be compatible with Think\Controller::theme($theme) /www/wwwroot/5g.appyunwei.cn/application/Cliapi/Controller/PublicController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Public&a=userLogin','{\"loginstring\":\"13326898427\",\"password\":\"123456\",\"type\":\"\"}','post','1583719956','39.82.211.234') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '13326898427' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`user_login`,`user_pass`,`invite_id`,`lat`,`lng`,`level`,`level_start_time`,`level_end_time`,`user_nicename`,`user_email`,`user_url`,`avatar`,`avatar_thumb`,`sex`,`birthday`,`sf_card`,`sf_img`,`sf_is_verify`,`signature`,`last_login_ip`,`last_login_time`,`create_time`,`user_activation_key`,`user_status`,`score`,`user_type`,`gold_coin`,`silver_coin`,`daynum`,`mobile`,`token`,`expiretime`,`consumption`,`votes`,`votestotal`,`province`,`city`,`wx`,`qq`,`weibo`,`isrecommend`,`openid`,`login_type`,`iszombie`,`isrecord`,`iszombiep`,`issuper`,`ishot`,`goodnum`,`source`,`type`,`third_token`,`organicon`,`wemedia`,`teamligent`,`specialist`,`lunpan_num`,`baoxiang_num`,`redbag_num` FROM `cmf_users` WHERE `id` = '27543' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2020-03-09 10:12:36',`last_login_ip`='39.82.211.234' WHERE `id` = '27543' [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_user_token` SET `token`='5c3fcf419492510ca53f11b1ab515d432198477f',`time`='1583719956',`ip`='39.82.211.234' WHERE `uid` = 27543 [ RunTime:0.0003s ]
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/f8ad7b21ebaccc2a782bc05aab8ac9b1.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/fd916ae9a8d98d5c416a4992561a1642.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/1616a1a2106f39ecf5187f5846bd87e7.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/38c2dfe8df8646a9027d2a47e96b6f5b.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/2a66216509a293ad79f0b646ee65f91a.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/0895590ecdae048534f69cf19c969ee8.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT u.*,c.uid,c.ip,c.token FROM cmf_users u left JOIN cmf_user_token c ON c.uid = u.id  WHERE u.id = '27543' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_user_verify` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_user_verify` WHERE `uid` = 27543  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_relation` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_user_relation` WHERE `uid` = 27543 AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_user_relation` WHERE `uid` = 27543 AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_show` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_show` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0163s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_level` [ RunTime:0.0007s ]
+SQL: SELECT `medal_img` FROM `cmf_user_level` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cmf_user_level` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_binding` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_binding` WHERE `user_id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_advertising` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_advertising` WHERE `user_id` = 27543 AND ( is_audit=2 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-03-09T10:12:54+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=User&a=famie
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=User&a=famie','{\"type\":\"person \",\"_uid\":\"27543\",\"_sign\":\"e960a47c883b3af3bf3308284e123968\"}','post','1583719974','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2020-03-09T10:12:57+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=User&a=famie
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0008s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=User&a=famie','{\"type\":\"person \",\"_uid\":\"27543\",\"_sign\":\"e960a47c883b3af3bf3308284e123968\"}','post','1583719977','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2020-03-09T10:13:00+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=User&a=famie
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=User&a=famie','{\"type\":\"person \",\"_uid\":\"27543\",\"_sign\":\"e960a47c883b3af3bf3308284e123968\"}','post','1583719980','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2020-03-09T10:13:01+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=User&a=famie
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=User&a=famie','{\"type\":\"person \",\"_uid\":\"27543\",\"_sign\":\"e960a47c883b3af3bf3308284e123968\"}','post','1583719981','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2020-03-09T10:13:09+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=User&a=famie
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0011s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=User&a=famie','{\"type\":\"person\",\"_uid\":\"27543\",\"_sign\":\"e960a47c883b3af3bf3308284e123968\"}','post','1583719989','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_users` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `user_nicename`,`avatar`,`level` FROM `cmf_users` ORDER BY level desc LIMIT 0,8   [ RunTime:0.0005s ]
+
+[ 2020-03-09T10:14:51+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Welfare&a=inLottery
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Welfare&a=inLottery','{\"_uid\":\"27543\",\"_sign\":\"b63163b5f37ef8702f42fb41a1fb7203\"}','post','1583720091','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_lottery` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cmf_lottery_log` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_lottery_log` WHERE `uid` = 27543 AND `status` = 0 AND `welfare` = 'luckturn' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-03-09T10:22:24+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Anch&a=createRoom
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Anch&a=createRoom','{\"type\":\"\",\"_uid\":\"\",\"_sign\":\"\"}','post','1583720544','39.82.211.234') [ RunTime:0.0003s ]
+
+[ 2020-03-09T10:22:43+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Anch&a=createRoom
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Anch&a=createRoom','{\"type\":\"1\",\"_uid\":\"27543\",\"_sign\":\"f666eef4fcb12da134b84cc707475c41\"}','post','1583720563','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '27543' AND `user_status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_anchor_ruzhu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_anchor_ruzhu` WHERE `uid` = 27543 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_zhibo` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_zhibo` WHERE `uid` = 27543 AND `anchor_id` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-03-09T10:22:45+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Anch&a=createRoom
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Anch&a=createRoom','{\"type\":\"1\",\"_uid\":\"27543\",\"_sign\":\"f666eef4fcb12da134b84cc707475c41\"}','post','1583720565','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '27543' AND `user_status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_anchor_ruzhu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_anchor_ruzhu` WHERE `uid` = 27543 AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_zhibo` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_zhibo` WHERE `uid` = 27543 AND `anchor_id` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-03-09T10:22:46+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Anch&a=createRoom
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Anch&a=createRoom','{\"type\":\"1\",\"_uid\":\"27543\",\"_sign\":\"f666eef4fcb12da134b84cc707475c41\"}','post','1583720566','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '27543' AND `user_status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_anchor_ruzhu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_anchor_ruzhu` WHERE `uid` = 27543 AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_zhibo` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_zhibo` WHERE `uid` = 27543 AND `anchor_id` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-03-09T10:26:39+08:00 ] 39.82.211.234 /index.php?g=Cliapi&m=Anch&a=createRoom
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Anch&a=createRoom','{\"type\":\"1\",\"_uid\":\"27543\",\"_sign\":\"f666eef4fcb12da134b84cc707475c41\"}','post','1583720799','39.82.211.234') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `token` = '5c3fcf419492510ca53f11b1ab515d432198477f' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '27543' AND `user_status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_anchor_ruzhu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_anchor_ruzhu` WHERE `uid` = 27543 AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_zhibo` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_zhibo` WHERE `uid` = 27543 AND `anchor_id` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_zhibo` [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_zhibo` (`uid`,`anchor_id`,`room_no`,`begin_time`,`video_path`,`la_puth`,`status`,`type`) VALUES ('27543','3','87065','1583720799','rtmp://tuiliu.zyzyz.top/playzhan/test1?auth_key=1583722599-0-0-9832c687df16754717b9accd5776b7cc','http://laliu.zyzyz.top/playzhan/test1.flv?auth_key=1583722599-0-0-dee31a009e3019055d293ecf614216fc','1','1') [ RunTime:0.0017s ]
+
+[ 2020-03-09T11:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T11:20:40+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Server error: `GET https://www.dongqiudi.com/article/1360215` resulted in a `502 Bad Gateway` response:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" (truncated...)
+
+
+[ 2020-03-09T12:00:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T12:30:30+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Server error: `GET https://www.dongqiudi.com/article/1360273` resulted in a `502 Bad Gateway` response:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" (truncated...)
+
+
+[ 2020-03-09T13:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T13:10:14+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Client error: `GET https://new.qq.com/zt/template/?id=SPO2019092100321300` resulted in a `403 Forbidden` response:
+<html>
+<head><title>403 Forbidden</title></head>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr> (truncated...)
+
+
+[ 2020-03-09T14:00:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T14:10:15+08:00 ] 124.133.43.122 /index.php?g=Cliapi&m=Public&a=userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [2] Declaration of Cliapi\Controller\PublicController::theme() should be compatible with Think\Controller::theme($theme) /www/wwwroot/5g.appyunwei.cn/application/Cliapi/Controller/PublicController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0009s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api_debug` (`uid`,`url`,`data`,`type`,`create_time`,`ip`) VALUES ('0','http://5g.appyunwei.cn/index.php?g=Cliapi&m=Public&a=userLogin','{\"loginstring\":\"13326898427\",\"password\":\"123456\",\"type\":\"1\"}','post','1583734215','124.133.43.122') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `mobile` = '13326898427' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`user_login`,`user_pass`,`invite_id`,`lat`,`lng`,`level`,`level_start_time`,`level_end_time`,`user_nicename`,`user_email`,`user_url`,`avatar`,`avatar_thumb`,`sex`,`birthday`,`sf_card`,`sf_img`,`sf_is_verify`,`signature`,`last_login_ip`,`last_login_time`,`create_time`,`user_activation_key`,`user_status`,`score`,`user_type`,`gold_coin`,`silver_coin`,`daynum`,`mobile`,`token`,`expiretime`,`consumption`,`votes`,`votestotal`,`province`,`city`,`wx`,`qq`,`weibo`,`isrecommend`,`openid`,`login_type`,`iszombie`,`isrecord`,`iszombiep`,`issuper`,`ishot`,`goodnum`,`source`,`type`,`third_token`,`organicon`,`wemedia`,`teamligent`,`specialist`,`lunpan_num`,`baoxiang_num`,`redbag_num` FROM `cmf_users` WHERE `id` = '27543' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_users` SET `last_login_time`='2020-03-09 14:10:15',`last_login_ip`='124.133.43.122' WHERE `id` = '27543' [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_user_token` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`last_login_time` FROM `cmf_users` WHERE `id` = 27543 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_user_token` SET `token`='861c1492594fdf99a02ec3e1566b6e38dc23d472',`time`='1583734215',`ip`='124.133.43.122' WHERE `uid` = 27543 [ RunTime:0.0003s ]
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/0895590ecdae048534f69cf19c969ee8.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/f8ad7b21ebaccc2a782bc05aab8ac9b1.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/fd916ae9a8d98d5c416a4992561a1642.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/1616a1a2106f39ecf5187f5846bd87e7.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/38c2dfe8df8646a9027d2a47e96b6f5b.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/2a66216509a293ad79f0b646ee65f91a.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(/www/wwwroot/5g.appyunwei.cn/data/runtime/Temp/0895590ecdae048534f69cf19c969ee8.php): No such file or directory /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT u.*,c.uid,c.ip,c.token FROM cmf_users u left JOIN cmf_user_token c ON c.uid = u.id  WHERE u.id = '27543' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_user_verify` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_user_verify` WHERE `uid` = 27543  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_user_relation` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_user_relation` WHERE `uid` = 27543 AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_user_relation` WHERE `uid` = 27543 AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_show` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_show` WHERE `uid` = 27543 LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT `option_value` FROM `cmf_options` WHERE ( option_name='configpub' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_user_level` [ RunTime:0.0009s ]
+SQL: SELECT `medal_img` FROM `cmf_user_level` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cmf_user_level` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_binding` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_binding` WHERE `user_id` = 27543 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_advertising` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_advertising` WHERE `user_id` = 27543 AND ( is_audit=2 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-03-09T15:00:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T16:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T16:54:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: syntax error, unexpected '=', expecting ']'
+
+[ 2020-03-09T17:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T18:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T18:10:06+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Client error: `GET https://new.qq.com/zt/template/?id=SPO2019092100321300` resulted in a `403 Forbidden` response:
+<html>
+<head><title>403 Forbidden</title></head>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr> (truncated...)
+
+
+[ 2020-03-09T19:00:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T20:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T20:40:05+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Server error: `GET https://www.dongqiudi.com/article/1360776` resulted in a `502 Bad Gateway` response:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" (truncated...)
+
+
+[ 2020-03-09T20:46:50+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=User&a=getAward
+ERR: 非法操作:getAward
+
+[ 2020-03-09T20:46:50+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=User&a=getAward
+ERR: 非法操作:getAward
+
+[ 2020-03-09T20:50:27+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Server error: `GET https://www.dongqiudi.com/article/1360780` resulted in a `502 Bad Gateway` response:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" (truncated...)
+
+
+[ 2020-03-09T21:00:04+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T22:00:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-09T23:00:03+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+

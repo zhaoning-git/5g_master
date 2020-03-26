@@ -1,0 +1,108 @@
+<admintpl file="header" />
+
+
+
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <ul class="nav nav-tabs">
+
+            <li class="active"><a href="{:U('Jifenduihuan/privacy')}">隐私列表</a></li>
+
+         <!--    <li><a href="{:U('Jifenduihuan/privacyadd')}">隐私添加</a></li> -->
+
+        </ul>
+
+        <form method="post" class="js-ajax-form" action="{:U('Gift/listorders')}">
+
+            <div class="table-actions">
+
+               
+
+            </div>
+
+
+
+            <table class="table table-hover table-bordered">
+
+                <thead>
+
+                    <tr>
+
+                        <th align="center">ID</th>
+
+                        <th>隐私内容</th> 
+
+
+
+                        <th align="center">{:L('ACTIONS')}</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                <foreach name="data" item="vo">
+
+                    <tr>
+
+                        <td align="center">{$vo.id}</td>
+
+                        <td>{$vo['content']}</td>
+
+                        
+
+                       
+
+                     
+
+                  <td align="center">
+
+                    
+
+                    <a href="{:U('Jifenduihuan/privacyedit',array('id'=>$vo['id']))}" >编辑</a>
+
+                    |
+
+                    <a href="{:U('Jifenduihuan/del',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+
+
+
+                  </td>
+
+                    </tr>
+
+                </foreach>
+
+                </tbody>
+
+            </table>
+
+            <div class="pagination">{$page}</div>
+
+            <div class="table-actions">
+
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+
+            </div>
+
+        </form>
+
+
+
+    </div>
+
+    <script src="__PUBLIC__/js/common.js"></script>
+
+    <script src="__PUBLIC__/layui/layui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+
+</body>
+
+</html>
+

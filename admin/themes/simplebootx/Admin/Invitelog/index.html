@@ -1,0 +1,41 @@
+<admintpl file="header" />
+
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li><a href="{:U('Inviteconfig/index')}">奖励列表</a></li>
+      <li><a href="{:U('Inviteconfig/setConfig')}">添加邀请奖励规则</a></li>
+      <li class="active"><a href="{:U('Invitelog/index')}">奖励记录</a></li>
+    </ul>
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th align="center">ID</th>
+          <th>用户</th>
+          <th>邀请等级</th>
+          <th>邀请数量</th>
+          <th>奖励数量</th>
+          <th>升级完成数</th>
+          <th>升级时间</th>
+        </tr>
+      </thead>
+      <tbody>
+      <foreach name="lists" item="vo">
+        <tr>
+          <td align="center">{$vo.id}</td>
+          <td>{$vo['nickname']}</td>
+          <td>{$vo['level']}</td>
+          <td>{$vo['invite_num']}</td>
+          <td>{$vo['coin_num']}</td>
+          <td>{$vo['up_num']}</td>
+          <td>{$vo['up_time']}</td>
+        </tr>
+      </foreach>
+      </tbody>
+    </table>
+    <div class="pagination">{$page}</div>
+
+  </div>
+  <script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<admintpl file="header" />
+<style>
+input{
+    width:500px;
+}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Classify/edit')}">球队编辑</a></li>
+			
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Classify/edit')}">
+		   <input type="hidden" name="id" value="{$data['id']}">
+		  
+			<fieldset>
+
+				<div class="control-group">
+					<label class="control-label">球队名称</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$data['name']}" >
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">世界排名</label>
+					<div class="controls">
+						<input type="text" name="world_rank" value="{$data['world_rank']}" >
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">总身价（亿欧）</label>
+					<div class="controls">
+						<input type="text" name="count_money" value="{$data['count_money']}" >
+						<span class="form-required">*</span>
+					</div>
+				</div>
+                <div class="control-group">
+					<label class="control-label">联系方式</label>
+					<div class="controls">
+						<input type="text" name="number" value="{$data['number']}" >
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">创建时间</label>
+					<div class="controls">
+						<input type="text" name="create_time" value="{$data['create_time']}" >
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">球队分类</label>
+					<div class="controls">
+						<select name="event_id">
+						    <option value="0">默认分类</option>
+						   <volist name="classify" id="vo">
+							     <option value="{$vo.id}" <if condition="$data['event_id'] eq $vo['id']">selected</if> >{$vo.name}</option>
+							 </volist>					 
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="{:U('Classify/classifyshow')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

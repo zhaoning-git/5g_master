@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=UTF-8"utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>æ‡‚çƒå¸ä¾µæƒæŠ•è¯‰ â€” æ‡‚çƒå¸</title>
+    <script type="text/javascript" src="../static1.dongqiudi.com/web-new/static/js/jQuery.1.11.min.js" tppabs="https://static1.dongqiudi.com/web-new/static/js/jQuery.1.11.min.js"></script>
+    <!-- FILE UPLOAD -->
+    <script type="text/javascript" src="../static1.dongqiudi.com/web-new/assets/js/jQuery-File-Upload/js/vendor/jquery.ui.widget.js" tppabs="https://static1.dongqiudi.com/web-new/assets/js/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="../static1.dongqiudi.com/web-new/assets/js/jQuery-File-Upload/js/jquery.iframe-transport.js" tppabs="https://static1.dongqiudi.com/web-new/assets/js/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="../static1.dongqiudi.com/web-new/assets/js/jQuery-File-Upload/js/jquery.fileupload.js" tppabs="https://static1.dongqiudi.com/web-new/assets/js/jQuery-File-Upload/js/jquery.fileupload.js"></script>
+    <link rel="stylesheet" href="../static1.dongqiudi.com/web-new/web/css/style.css-2018102201.css" tppabs="https://static1.dongqiudi.com/web-new/web/css/style.css?2018102201">
+    <link rel="shortcut icon" href="https://static1.dongqiudi.com/web-new/web/images/fav.ico" type="image/x-icon">
+    <style>
+        .complaint {
+            padding: 80px 0 60px 0;
+            width: 900px;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        .cplt-desc {
+            margin: 20px 0;
+            line-height: 22px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .cplt-form .requir:before {
+            content: '*';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            line-height: 40px;
+            color: #e24848;
+            font-size: 18px;
+        }
+
+        .cplt-form dl {
+            margin-top: 20px;
+        }
+
+        .cplt-form dl dt {
+            position: relative;
+            height: 38px;
+            line-height: 38px;
+            padding-left: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 1px solid #ededed;
+        }
+
+        .cplt-form dl dt:before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -9px;
+            content: ' ';
+            float: left;
+            width: 5px;
+            height: 18px;
+            background: #16b13a;
+        }
+
+        .cplt-form dl dd {
+            padding: 30px 0 0 25px;
+        }
+
+        .cplt-form dl dd section {
+            position: relative;
+            min-height: 40px;
+            margin-bottom: 30px;
+        }
+
+        .cplt-form .cplt-form-tit {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-left: 8px;
+            max-width: 125px;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .cplt-form .cplt-form-content {
+            margin-left: 160px;
+        }
+
+        .cplt-form .cplt-form-content input[type="text"] {
+            width: 550px;
+            height: 40px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px 14px;
+            background: #f7f7f7;
+            border: 1px solid #e8e8e8;
+            font-size: 14px;
+        }
+
+        .cplt-form .cplt-form-content textarea {
+            width: 550px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px 14px;
+            background: #f7f7f7;
+            border: 1px solid #e8e8e8;
+            font-size: 14px;
+        }
+
+        .cplt-form button {
+            display: block;
+            width: 230px;
+            height: 54px;
+            line-height: 54px;
+            margin: 60px auto 0 auto;
+            background: #16b13a;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cplt-form-content label{
+            display:inline-block;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .cplt-radio{
+            display:none;
+        }
+
+        .cplt-radio-span{
+            background-color:#fff;
+            border:1px solid rgba(0,0,0,0.15);
+            border-radius:100%;
+            display:inline-block;
+            height:16px;
+            margin-right:5px;
+            margin-top:-1px;
+            vertical-align:middle;
+            width:16px;
+            line-height:1;
+            background: #f7f7f7;
+        }
+
+        .cplt-radio:checked + .cplt-radio-span:after{
+            background-color:#57ad68;
+            border-radius:100%;
+            content:"";
+            display:inline-block;
+            height:12px;
+            margin:2px;
+            width:12px
+        }
+
+        .cplt-upload-btn {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+            background-color: #f7f7f7;
+            border: 1px solid #e8e8e8;
+            background-image: url("../img1.dongqiudi.com/fastdfs2/M00/1C/CC/ChNy21nnI7KAGmWKAAAEcKfpE00337.png")/*tpa=http://img1.dongqiudi.com/fastdfs2/M00/1C/CC/ChNy21nnI7KAGmWKAAAEcKfpE00337.png*/;
+            background-position: center;
+            background-size: 50px;
+            background-repeat: no-repeat;
+        }
+
+        .cplt-upload-btn input {
+            display: none;
+        }
+
+        .cplt-upload-img-preview {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 20px 15px 0;
+            vertical-align: top;
+            border: 1px solid #e8e8e8;
+        }
+
+        .cplt-upload-img-preview i {
+            position: absolute;
+            top: -7px;
+            right: -7px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #16b13a;
+            background-image: url("../img1.dongqiudi.com/fastdfs2/M00/1C/CC/ChNy21nnI8SATGm0AAAERmywFbc728.png")/*tpa=http://img1.dongqiudi.com/fastdfs2/M00/1C/CC/ChNy21nnI8SATGm0AAAERmywFbc728.png*/;
+            background-size: contain;
+        }
+
+        .cplt-upload-img-preview img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .cplt-upload-desc {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .cplt-form-idimg {
+            position: relative;
+            height: 100px;
+        }
+
+        .cplt-form-idimg img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+        }
+
+        .cplt-form-imgdesc {
+            margin-left: 120px;
+            height: 100%;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .cplt-form-imgdesc a {
+            display: block;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 11px;
+            text-align: center;
+            background: #16b13a;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cplt-form-imgdesc input {
+            display: none;
+        }
+
+        .cplt-alert {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: auto;
+            box-sizing: border-box;
+            width: 400px;
+            height: 300px;
+            background: #fafafa;
+            color: #333;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .cplt-alert img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .cplt-text-tit {
+            height: 28px;
+            line-height: 28px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .cplt-text-stit {
+            height: 28px;
+            line-height: 28px;
+            font-size: 16px;
+        }
+
+        .cplt-alert a {
+            display: block;
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            margin: 20px auto 0 auto;
+            background: #16b13a;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div class="header_main">
+        <div class="header_left">
+                            <a href="index.htm" tppabs="https://www.dongqiudi.com/" class="logo"><img src="../static1.dongqiudi.com/web-new/web/images/logo.png-20170622.png" tppabs="https://static1.dongqiudi.com/web-new/web/images/logo.png?20170622" style="width:120px;padding-top:5px;" alt=""></a>
+                        <a href="index.htm" tppabs="https://www.dongqiudi.com/" class="nav" sensors-name="home">é¦–é¡µ</a>
+                            <a href="live.htm" tppabs="https://www.dongqiudi.com/match" class="nav" sensors-name="match">æ¯”èµ›</a>
+                <a href="data.htm" tppabs="https://www.dongqiudi.com/data" class="nav" sensors-name="data">æ•°æ®</a>
+                <a href="app.htm" tppabs="https://www.dongqiudi.com/app" class="nav" sensors-name="app">APP</a>
+                <a href="javascript:if(confirm('http://hao.dongqiudi.com/home  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://hao.dongqiudi.com/home'" tppabs="http://hao.dongqiudi.com/home" target="_blank" class="nav" sensors-name="dqh">æ‡‚çƒå·</a>
+                <a href="live.htm" tppabs="https://www.dongqiudi.com/live" class="nav" id="live_nav" style="display:none"  sensors-name="dqh">ä¸»æ’­åå°</a>
+                    </div>
+        <div class="header_right">
+                                                <a href="user/login.htm" tppabs="https://www.dongqiudi.com/user/login" class="login">ç™»å½•</a>
+                                    </div>
+        <a href="javascript:if(confirm('https://www.dongqiudi.com/news/197534.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.dongqiudi.com/news/197534.html'" tppabs="https://www.dongqiudi.com/archive/197534.html" class="ad_click">å¹¿å‘Šåˆä½œ</a>
+    </div>
+</div>
+<div class="complaint">
+    <p class="cplt-desc">æ‡‚çƒå¸ä½œä¸ºä¸­ç«‹çš„ç½‘ç»œæœåŠ¡æä¾›è€…ï¼Œæ”¶åˆ°ç¬¦åˆè¦æ±‚çš„æŠ•è¯‰é€šçŸ¥åï¼Œå°†æŒ‰ç…§ç›¸å…³æ³•å¾‹æ³•è§„çš„è§„å®šåŠæ—¶å—ç†ï¼Œè¯·åŠ¡å¿…å®Œæ•´ã€å‡†ç¡®ã€çœŸå®å¡«å†™ä»¥ä¸‹ä¿¡æ¯ï¼Œä»¥æé«˜æŠ•è¯‰è¢«å—ç†çš„æˆåŠŸç‡ã€‚</p>
+    <form class="cplt-form" name="cplt-form">
+        <dl>
+            <dt>æŠ•è¯‰å†…å®¹</dt>
+            <dd>
+                <section>
+                    <label class="cplt-form-tit requir">æŠ•è¯‰åˆ†ç±»</label>
+                    <div class="cplt-form-content">
+                        <label>
+                            <input class="cplt-radio" type="radio" name="type" value="1" requir>
+                            <span class="cplt-radio-span"></span>å†…å®¹æ¶‰åŠæŠ„è¢­
+                        </label>
+                        <label>
+                            <input class="cplt-radio" type="radio" name="type" value="2" requir>
+                            <span class="cplt-radio-span"></span>å†…å®¹æ¶‰åŠä¾µçŠ¯çŸ¥è¯†äº§æƒ
+                        </label>
+                        <label>
+                            <input class="cplt-radio" type="radio" name="type" value="3" requir>
+                            <span class="cplt-radio-span"></span>å†…å®¹æ¶‰å«Œä¾µçŠ¯åèª‰/å•†èª‰/éšç§æƒ
+                        </label>
+                        <label>
+                            <input class="cplt-radio" type="radio" name="type" value="4" requir>
+                            <span class="cplt-radio-span"></span>å…¶ä»–
+                        </label>
+                    </div>
+                </section>
+                <section>
+                    <label class="cplt-form-tit requir">ä¾µæƒ/è¿æ³•å†…å®¹é“¾æ¥</label>
+                    <div class="cplt-form-content"><input type="text" name="url" reg="[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?" requir/></div>
+                </section>
+                <section>
+                    <label class="cplt-form-tit requir">æŠ•è¯‰æè¿°</label>
+                    <div class="cplt-form-content"><textarea name="content" maxlength="500" requir></textarea></div>
+                </section>
+                <section>
+                    <label class="cplt-form-tit">å…¶ä»–è¯æ˜</label>
+                    <div class="cplt-form-content">
+                        <div class="cplt-upload-btn" id="fileupload-wrap">
+                            <input type="file" id="fileupload">
+                            <input id="fileupload-other-imgs" style="display:none;" name="other_img">
+                        </div>
+                        <p class="cplt-upload-desc">æ”¯æŒ.jpg .jpeg .bmp .gifæ ¼å¼ç…§ç‰‡ï¼Œå¤§å°ä¸è¶…è¿‡2Mã€‚</p>
+                    </div>
+                </section>
+            </dd>
+        </dl>
+        <dl>
+            <dt>è”ç³»æ–¹å¼</dt>
+            <dd>
+                <section>
+                    <label class="cplt-form-tit requir">è”ç³»äººå§“å</label>
+                    <div class="cplt-form-content"><input type="text" name="name" maxlength="20" requir/></div>
+                </section>
+                <section>
+                    <label class="cplt-form-tit requir">èº«ä»½è¯å·</label>
+                    <div class="cplt-form-content"><input type="text" name="idcard" reg="(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)" maxlength="18" requir/></div>
+                </section>
+                <section>
+                    <label class="cplt-form-tit requir">èº«ä»½è¯ç…§ç‰‡</label>
+                    <div class="cplt-form-content cplt-form-idimg">
+                        <img src="../img1.dongqiudi.com/fastdfs2/M00/1C/CC/ChNy21nnI6OAONJXAABtnweflWA691.png" tppabs="http://img1.dongqiudi.com/fastdfs2/M00/1C/CC/ChNy21nnI6OAONJXAABtnweflWA691.png" />
+                        <div class="cplt-form-imgdesc">
+                            <p>è¯·å‚ç…§å·¦ä¾§ç¤ºä¾‹ï¼Œæ‰‹æŒèº«ä»½è¯ä»¶æ‹æ‘„</br>èº«ä»½è¯ä¸Šçš„ä¿¡æ¯æ¸…æ™°å¯è§</br>å¤§å°ä¸è¶…è¿‡2M</p>
+                            <a>ä¸Šä¼ èº«ä»½è¯ç…§ç‰‡</a>
+                            <input id="fileupload-idcard-url" style="display:none;" name="card_img" requir>
+                            <input type="file" id="fileupload-idcard">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <label class="cplt-form-tit requir">æ‰‹æœºå·</label>
+                    <div class="cplt-form-content"><input type="text" name="phone_tel" reg="^1[3|4|5|8][0-9]\d{8}$" maxlength="11" requir/></div>
+                </section>
+                <section>
+                    <label class="cplt-form-tit requir">è”ç³»äººé‚®ç®±</label>
+                    <div class="cplt-form-content"><input type="text" name="email" reg="^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$" maxlength="64" requir/></div>
+                </section>
+            </dd>
+        </dl>
+        <button id="cplt-submit-btn">æäº¤æŠ•è¯‰</button>
+    </form>
+    <script type="text/javascript">
+        var ajaxLock = false;
+        $('#cplt-submit-btn').on('click', function(e) {
+            e.preventDefault();
+
+            if(ajaxLock) {
+                return;
+            }
+
+            //check form valid
+            var form = $('.cplt-form');
+            var formDom = form[0];
+            var paramList = form.find('input:text,input:radio,textarea');
+            var paramValue;
+            var paramDom;
+            var regExp;
+
+            for(var i = 0; i < paramList.length; i++) {
+                paramDom = paramList[i];
+                paramValue = formDom[paramDom.name].value;
+
+                //æ ¡éªŒå¿…å¡«
+                if(paramDom.hasAttribute('requir') && (!paramValue || paramValue == '')) {
+                    if(Object.prototype.toString.call(formDom[paramList[i].name]).indexOf('List') >= 0) {
+                        formDom[paramDom.name][0].focus();
+                    } else {
+                        formDom[paramDom.name].focus();
+                    }
+                    alert('è¯·å¡«å†™å¿…å¡«ä¿¡æ¯');
+                    return;
+                }
+
+                regExp = paramDom.getAttribute('reg');
+                //æ ¡éªŒæ­£åˆ™
+                if(paramValue != '' && regExp) {
+                    regExp = new RegExp(regExp);
+                    if(!regExp.test(paramValue)) {
+                        formDom[paramDom.name].focus();
+
+                        alert('è¯·æ­£ç¡®å¡«å†™' + $(formDom[paramDom.name]).parents('section').find('label.cplt-form-tit').text());
+                        return;
+                    }
+                }
+            }
+
+            var formDataList = form.serializeArray();
+            var newObj = {};
+            for(var i = 0; i < formDataList.length; i++) {
+                newObj[formDataList[i].name] = formDataList[i].value;
+            }
+
+            ajaxLock = true;
+            $.post('/v2/feedback/send', newObj, function(res) {
+                ajaxLock = false;
+                
+                if(res.code != 0) {
+                    alert(res.message);
+                    return;
+                }
+
+                var mask = $('#mask');
+                if(mask) {
+                    mask.html('').append('<div class="cplt-alert"><img src="../img1.dongqiudi.com/fastdfs2/M00/1C/40/ChOqM1nl2m6ACJPjAAAWXO405mo751.jpg"/*tpa=http://img1.dongqiudi.com/fastdfs2/M00/1C/40/ChOqM1nl2m6ACJPjAAAWXO405mo751.jpg*//><p class="cplt-text-tit">æäº¤æˆåŠŸ</p><p class="cplt-text-stit">ç­‰å¾…å·¥ä½œäººå‘˜å®¡æ ¸</p><a href="index.htm"/*tpa=https://www.dongqiudi.com/*/>ç¡®å®š</a></div>');
+                }
+                
+                $('#mask').show();
+            });
+
+        });
+
+        $('#fileupload-wrap').on('click', function(e) {
+            e.preventDefault();
+            $('#fileupload-wrap').find('input').click();
+        });
+
+        $('#fileupload-wrap input').on('click', function(e) {
+            e.stopPropagation();
+        });
+
+        $('.cplt-form-imgdesc a').on('click', function(e) {
+            e.preventDefault();
+            $('#fileupload-idcard').click();
+        });
+
+        $('#fileupload-idcard').on('click', function(e) {
+            e.stopPropagation();
+        });
+
+        $('.cplt-form-content').delegate('i', 'click', function(e) {
+            var parent = $(e.target).parent();
+            var url = parent.find('img').attr('src');
+            var nowImgs = $('#fileupload-other-imgs').val();
+            $('#fileupload-other-imgs').val(nowImgs.replace(url + ';', ''));
+
+            parent.remove();
+        });
+
+        //å…¶ä»–è¯æ˜ å›¾ç‰‡ä¸Šä¼ åˆå§‹åŒ–
+        $('#fileupload').fileupload({
+            url: '/v2/upload/image',
+            formData: {folder: ''},
+            autoUpload: true,
+            accept: 'image/*',
+            dataType: 'json',
+            disableImageResize: /Android(?!.*Chrome)|Opera/.test(window.navigator.userAgent),
+            previewMaxWidth: 100,
+            previewMaxHeight: 100,
+            previewCrop: true,
+            add: function (e, data) {
+                var nowImgsList = $('#fileupload-other-imgs').val().split(';');
+                if(nowImgsList.length >= 10) {
+                    alert('æœ€å¤šä¸Šä¼ 9å¼ å›¾ç‰‡ã€‚');
+                    return;
+                }
+                data.submit();
+            },
+            done: function (e, data) {
+                var url = data.result[0].url;
+
+                var nowImgs = $('#fileupload-other-imgs').val();
+                $('#fileupload-other-imgs').val(nowImgs + url + ';');
+                $('#fileupload-wrap').before('<div class="cplt-upload-img-preview"><i></i><img src="' + url + '" /></div>');
+
+            }
+        });
+        
+        //èº«ä»½è¯ç…§ç‰‡ å›¾ç‰‡ä¸Šä¼ åˆå§‹åŒ–
+        $('#fileupload-idcard').fileupload({
+            url: '/v2/upload/image',
+            formData: {folder: ''},
+            autoUpload: true,
+            accept: 'image/*',
+            dataType: 'json',
+            disableImageResize: /Android(?!.*Chrome)|Opera/.test(window.navigator.userAgent),
+            previewMaxWidth: 100,
+            previewMaxHeight: 100,
+            previewCrop: true,
+            add: function (e, data) {
+                data.submit();
+            },
+            done: function (e, data) {
+                var url = data.result[0].url;
+                $('.cplt-form-idimg img').attr('src', url);
+                $('#fileupload-idcard-url').val(url);
+            }
+        });
+    </script>
+</div>
+<div id="footer">
+    <div class="footer_main">
+        <dl class="list_1">
+                            <dt>æ‡‚çƒå¸ | All Football App</dt>
+                <dd><a href="javascript:if(confirm('https://www.dongqiudi.com/news/5855.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.dongqiudi.com/news/5855.html'" tppabs="https://www.dongqiudi.com/archive/5855.html">å…³äºæ‡‚çƒå¸</a></dd>
+                <dd><a href="javascript:if(confirm('http://hr.dongqiudi.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://hr.dongqiudi.com/'" tppabs="http://hr.dongqiudi.com/" target="_blank">åŠ å…¥æˆ‘ä»¬</a></dd>
+                <dd><a href="app.htm" tppabs="https://www.dongqiudi.com/app">å®¢æˆ·ç«¯ä¸‹è½½</a></dd>
+                <dd><a href="complain.htm" tppabs="https://www.dongqiudi.com/complain">ä¾µæƒæŠ•è¯‰</a></dd>
+                <dd><a href="javascript:if(confirm('https://www.dongqiudi.com/news/197534.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.dongqiudi.com/news/197534.html'" tppabs="https://www.dongqiudi.com/archive/197534.html">å¹¿å‘ŠæŠ•æ”¾</a></dd>
+                <dd>è”ç³»æ–¹å¼ï¼š010-82333001</dd>
+                    </dl>
+        <dl class="list_2">
+                            <dt>å…³æ³¨</dt>
+                <dd><a href="javascript:if(confirm('http://weibo.com/ballpure  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/ballpure'" tppabs="http://weibo.com/ballpure" target="_balnk">å®˜æ–¹å¾®åš</a></dd>
+                <dd><a href="javascript:if(confirm('https://www.dongqiudi.net/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.dongqiudi.net/'" tppabs="https://www.dongqiudi.net/" target="_blank">å°æ¸¸æˆ</a></dd>
+                    </dl>
+        <dl class="list_4">
+                            <dt>å‹æƒ…é“¾æ¥</dt>
+                <dd><a href="javascript:if(confirm('http://all.football/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://all.football/'" tppabs="http://all.football/" target="_balnk">ALL FOOTBALL</a></dd>
+                <dd><a href="javascript:if(confirm('http://dongqiudi.com/bbs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://dongqiudi.com/bbs'" tppabs="http://dongqiudi.com/bbs" target="_balnk">å½±è§†èµ„æºä¸‹è½½</a></dd>
+                <dd><a href="javascript:if(confirm('http://m.kuaidi100.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://m.kuaidi100.com/'" tppabs="http://m.kuaidi100.com/" target="_balnk">å¿«é€’æŸ¥è¯¢</a></dd>
+               <!--  <dd><a href="https://www.hupu.com" target="_balnk">è™æ‰‘ç½‘</a></dd> -->
+                <dd><a href="javascript:if(confirm('http://www.letterfan.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.letterfan.com/'" tppabs="http://www.letterfan.com/" target="_balnk">ä¿¡è™«åœ°å¸¦</a></dd>
+                <dd><a href="javascript:if(confirm('http://live.qq.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://live.qq.com/'" tppabs="http://live.qq.com/" target="_balnk">ä¼é¹…ç›´æ’­</a></dd>
+                <dd><a href="index.htm" tppabs="https://www.dongqiudi.com/subject/" target="_balnk">Dç«™</a></dd>
+                    </dl>
+        <dl class="list_3">
+                            <dd>äº¬ICPè¯ 150469å·</dd>
+                                <dd>äº¬ICPå¤‡ 14042073å·-3</dd>
+                                <dd><a target="_blank" href="javascript:if(confirm('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020789  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020789'" tppabs="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020789" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../static1.dongqiudi.com/web-new/web/images/beian.png" tppabs="https://static1.dongqiudi.com/web-new/web/images/beian.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">äº¬å…¬ç½‘å®‰å¤‡ 11010802020789å·</p></a></dd>
+                <dd><img src="../img1.dongqiudi.com/fastdfs3/M00/9F/2F/ChO2w10VihCAJPzBAAMN-R1b3c8074.jpg" tppabs="https://img1.dongqiudi.com/fastdfs3/M00/9F/2F/ChO2w10VihCAJPzBAAMN-R1b3c8074.jpg" style="width:16px;position:relative;top:2px;margin-right:5px;float:left;"><a target="_blank" href="javascript:if(confirm('https://activity-static.dongqiudi.com/yingyezhizhao.jpg  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://activity-static.dongqiudi.com/yingyezhizhao.jpg'" tppabs="https://activity-static.dongqiudi.com/yingyezhizhao.jpg">è¥ä¸šæ‰§ç…§</a> </dd>
+                <dd><a target="_blank" href="javascript:if(confirm('https://static1.dongqiudi.com/web-new/web/images/shipinjingying.jpg  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://static1.dongqiudi.com/web-new/web/images/shipinjingying.jpg'" tppabs="https://static1.dongqiudi.com/web-new/web/images/shipinjingying.jpg">é£Ÿå“ç»è¥è®¸å¯è¯</a> </dd>
+                
+                                    <dd>
+                        è¿æ³•å’Œä¸è‰¯ä¿¡æ¯ä¸¾æŠ¥</br>
+                        ä¸¾æŠ¥é‚®ç®±ï¼š<a target="_blank" href="mailto:jubao@dongqiudi.com">jubao@dongqiudi.com</a></br>
+                        ä¸¾æŠ¥ç”µè¯ï¼š<a target="_blank">010-82333001</a>
+                    </dd>
+                                    </dl>
+    </div>
+</div>
+<div id="mask">
+    <div id="pop">
+        <a href="#" class="close"></a>
+            <h3><span class="icon_sad"></span> éå¸¸æŠ±æ­‰ï¼</h3>
+            <p></p>
+            <a href="#" class="btn"></a>
+    </div>
+</div>
+<div id="blink">
+    <div id="popUp">
+     <p></p>
+    </div>
+</div>
+<div id="ctr">
+    <div class="code"></div>
+    <span class="icon_qr"></span>
+    <a href="#" class="b_t"></a>
+</div>
+<script src="../static1.dongqiudi.com/web-new/web/js/common.js-20180105" tppabs="https://static1.dongqiudi.com/web-new/web/js/common.js?20180105"></script>
+</body>
+</html>

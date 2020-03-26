@@ -1,0 +1,188 @@
+<admintpl file="header" />
+
+
+
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <ul class="nav nav-tabs">
+
+            <li class="active"><a >商品列表</a></li>
+
+            <li><a href="{:U('Jifenduihuan/index')}">商品添加</a></li>
+
+            <li><a href="{:U('Jifenduihuan/shiindex')}">商品实物排序</a></li>
+            <li><a href="{:U('Jifenduihuan/teindex')}">特权排序</a></li>
+            <li><a href="{:U('Jifenduihuan/xianindex')}">限量排序</a></li>
+            <li><a href="{:U('Jifenduihuan/daoindex')}">道具排序</a></li>
+            <li><a href="{:U('Jifenduihuan/xuindex')}">虚拟物品排序</a></li>
+            <li><a href="{:U('Jifenduihuan/liindex')}">礼物排序</a></li>
+             <li><a href="{:U('Jifenduihuan/xinindex')}">实物新品排序</a></li>
+            <li><a href="{:U('Jifenduihuan/hotindex')}">实物热门排序</a></li>
+            
+
+
+        </ul>
+
+        <form method="post" class="js-ajax-form" action="{:U('Gift/listorders')}">
+
+            <div class="table-actions">
+
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+
+            </div>
+
+
+
+            <table class="table table-hover table-bordered">
+
+                <thead>
+
+                    <tr>
+
+                        <th align="center">ID</th>
+
+                        <th>商品名称</th> 
+
+                        <th>货号</th>
+
+                        <th>商品类型</th>
+
+                        <th>分类</th>
+
+                        <th>是否支持新品首发/热门/推荐</th>
+
+                        <th>下属类型</th>
+
+                        <th>商品图片</th>
+
+                      
+
+                        <th>sku库存</th>
+
+                        <th>商品价格(金币)</th>
+
+                        <th>商品价格(银币)</th>
+
+
+
+                        <th align="center">{:L('ACTIONS')}</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                <foreach name="lists" item="vo">
+
+                    <tr>
+
+                        <td align="center">{$vo.id}</td>
+
+                        <td>{$vo['shopname']}</td>
+
+                        <td>{$vo['huohao']}</td>
+
+                        <td>{$vo['type']}</td>
+
+                        <td>{$vo['typename']}</td>
+
+                        <td>
+
+                            
+
+
+                            <if condition="$vo['product'] eq 1">是</if>
+
+                            <if condition="$vo['product'] eq 0">否</if>|
+                             <if condition="$vo['hots'] eq 1">是</if>
+
+                            <if condition="$vo['hots'] eq 0">否</if>|
+                             <if condition="$vo['recom'] eq 1">是</if>
+
+                            <if condition="$vo['recom'] eq 0">否</if>
+
+
+
+                        </td>
+
+                        <td>{$vo['zifenlei']}</td>
+
+                        <td><img width="25" height="25" src="{$vo['img']}" /></td>
+
+                     
+
+                        <td>
+
+                            <if condition="$vo['sku_status'] eq 1">
+
+                                <a href="{:U('Jifenduihuan/ku',array('id'=>$vo['id']))}" >查看sku库存</a>
+
+                                <elseif/>
+
+                            </if>
+
+                        </td>
+
+                     
+
+                        <td>{$vo['jinbi']}</td>
+
+                        <td>{$vo['yingbi']}</td>
+
+                  <td align="center">
+
+                    
+
+                    <a href="{:U('Jifenduihuan/edit',array('id'=>$vo['id']))}" >编辑</a>
+
+                    | <a href="{:U('Jifenduihuan/evalist',array('id'=>$vo['id']))}" >查看评价</a>
+
+                    |
+
+                    <a href="{:U('Jifenduihuan/peisku',array('id'=>$vo['id']))}" >配置sku</a>
+
+                    |
+
+                    <a href="{:U('Jifenduihuan/del',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+
+
+
+                  </td>
+
+                    </tr>
+
+                </foreach>
+
+                </tbody>
+
+            </table>
+
+            <div class="pagination">{$page}</div>
+
+            <div class="table-actions">
+
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+
+            </div>
+              
+        </form>
+
+
+
+    </div>
+
+    <script src="__PUBLIC__/js/common.js"></script>
+
+    <script src="__PUBLIC__/layui/layui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+
+</body>
+
+</html>
+

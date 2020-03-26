@@ -1,0 +1,190 @@
+[ 2020-03-07T14:45:51+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2020-03-07T16:07:27+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Goods&a=revoms&menuid=576
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Goods/revoms.html
+
+[ 2020-03-07T16:07:30+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Goods&a=revoms&menuid=576
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Goods/revoms.html
+
+[ 2020-03-07T16:10:22+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Goods&a=revomsadd
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Goods/revomsadd.html
+
+[ 2020-03-07T16:19:52+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Goods&a=revoms_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_inform` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_inform` SET `content`='1由于疫情期间，我们不发货，下完单就是不发货，',`status`='1' WHERE `id` = 1 [ RunTime:0.0036s ]
+
+[ 2020-03-07T16:20:01+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Goods&a=revoms_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_inform` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/wwwroot/5g.appyunwei.cn/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_inform` SET `content`='由于疫情期间，我们不发货，下完单就是不发货，',`status`='1' WHERE `id` = 1 [ RunTime:0.0022s ]
+
+[ 2020-03-07T16:20:08+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Goods&a=revomsadd
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Goods/revomsadd.html
+
+[ 2020-03-07T16:23:05+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Goods&a=revomsadd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_inform` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_inform` (`content`,`status`) VALUES ('asassa','0') [ RunTime:0.0026s ]
+
+[ 2020-03-07T16:25:26+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Goods&a=revomsdel&id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_inform` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_inform` WHERE `id` = 2 [ RunTime:0.0028s ]
+
+[ 2020-03-07T16:34:29+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2020-03-07T16:37:15+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2020-03-07T16:41:35+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2020-03-07T16:42:31+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2020-03-07T16:53:12+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2020-03-07T17:50:13+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2020-03-07T17:53:14+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=dong
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_coupon` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_coupon` WHERE `shop_type` = 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2020-03-07T17:56:17+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=del&id=107
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001668s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_duihuan` SET `sta`='0' WHERE ( id='107' ) [ RunTime:0.0472s ]
+
+[ 2020-03-07T17:56:25+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=del&id=108
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_duihuan` SET `sta`='0' WHERE ( id='108' ) [ RunTime:0.0713s ]
+
+[ 2020-03-07T17:56:31+08:00 ] 39.82.211.234 /index.php?g=Admin&m=Jifenduihuan&a=del&id=109
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_duihuan` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_duihuan` SET `sta`='0' WHERE ( id='109' ) [ RunTime:0.0053s ]
+

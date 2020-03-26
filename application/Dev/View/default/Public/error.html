@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>跳转提示</title>
+<link rel="stylesheet" href="__UI__/css/ui-base.css">
+<if condition="C('THEME')"><link rel="stylesheet" href="__UI__/theme/{:C('THEME')}.css"></if>
+<style>
+body {
+	background:#f5f5f5; padding-top:100px
+}
+</style>
+</head>
+<body>
+<div class="am-text-center am-container"> <span  class="am-icon-btn am-default am-icon-frown-o" style="width:160px; height:160px; font-size:160px"></span>
+  <div class="am-container-box"> <p class="error"><?php echo($error); ?></p>
+  <a class="am-btn am-btn-primary am-radius am-btn-block" href="<?php echo($jumpUrl); ?>">我知道了</a> 
+   <a class="am-btn am-btn-default am-radius am-btn-block" href="{:U('Home')}">回到首页</a>
+  </div></div>
+</body>
+</html>

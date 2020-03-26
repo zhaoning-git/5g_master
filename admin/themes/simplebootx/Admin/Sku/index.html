@@ -1,0 +1,41 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>实物类型列表</a></li>
+		</ul>
+
+		<form method="post" class="js-ajax-form tihuan">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>商品名</th>
+						<th>类型名称</th>
+						<th>属性数量</th>
+						<th>属性列表</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr id="{$vo.id}">
+						<td align="center">{$vo.id}</td>
+						<td>{$vo['shopname']}</td>
+						<td>{$vo['type']}</td>
+						<td>{$vo['sum']}</td>
+						<td>
+							<button><a href="{:U('Sku/attrList',array('id'=>$vo['id']))}">属性列表</a></button>
+						</td>
+
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

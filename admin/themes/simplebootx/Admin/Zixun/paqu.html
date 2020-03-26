@@ -1,0 +1,55 @@
+<admintpl file="header" />
+</head>
+<body>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<div class="wrap">
+
+		<form method="post" class="form-horizontal js-ajax-form" enctype="multipart/form-data">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">输入路径</label>
+					<div class="controls">
+						<input type="text" name="url" class="url">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">类型</label>
+					<div class="controls">
+						<input type="radio" name="type" value="1">足球
+						<input type="radio" name="type" value="2">篮球
+						<span class="form-required">*</span>
+					</div>
+				</div>
+			<p style="color:red">温馨提示：足球使用PP体育的数据路径，篮球使用新浪体育的数据路径</p>
+			</fieldset>
+			<div class="form-actions">
+				<button class="btn btn-primary js-ajax-submit">点击获取</button>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	<script src="__PUBLIC__/layui/layui.js"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+</body>
+</html>
+<script>
+$(function () {
+	//点击获取
+	$(".js-ajax-submit").click(function () {
+		var type = $('input:radio:checked').val();
+		var url = $('.url').val();
+		$.ajax({
+			type:'post',
+			url:"{:U('Zixun/paqu_do')}",
+			data:{type:type,url:url},
+			dataType:'json',
+			success:function(data){ //请求成功回调函数
+       			alert(data.info);
+				location.reload();
+			},
+		});
+	})
+})
+</script>

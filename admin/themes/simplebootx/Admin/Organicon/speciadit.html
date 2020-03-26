@@ -1,0 +1,155 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Organicon/specialist')}">列表</a></li>
+			<li class="active"><a >编辑</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Organicon/speciaauit')}">
+		   <input type="hidden" name="id" value="{$data['ids']}">
+		   <input type="hidden" name="user_id" value="{$data['user_id']}">
+			<fieldset>
+				
+
+				<div class="control-group">
+					<label class="control-label">专家昵称</label>
+					<div class="controls">
+						
+						<td align="center">{$data.speciname}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+                <div class="control-group">
+					<label class="control-label">介绍</label>
+					<div class="controls">
+						
+						<td>{$data.introduce}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				 <div class="control-group">
+					<label class="control-label">微博号</label>
+					<div class="controls">
+						
+						<td>{$data.microblog}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">相关证明</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.certificates}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.certificates}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">头像</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.portraits}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.portraits}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label">百家号</label>
+					<div class="controls">
+						
+						<td align="center">{$data.wasno}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">性别</label>
+					<div class="controls">
+						
+						 <if condition="$data['sexs'] eq '0'">
+						 	<td align="center" ><b style="color:red">男</b></td>
+						 </if>
+						  <if condition="$data['sexs'] eq '1'">
+						 	<td align="center" ><b style="color:red">女</b></td>
+						 </if>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">其他知名app名称</label>
+					<div class="controls">
+						
+						<td align="center">{$data.restapp}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">账号</label>
+					<div class="controls">
+						
+						<td align="center">{$data.untnumber}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">用户手机号</label>
+					<div class="controls">
+						
+						<td align="center">{$data.mobiles}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">类型</label>
+					<div class="controls">
+						
+						<td align="center">{$data.types}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">审核状态</label>
+					<div class="controls">
+						
+						 <if condition="$data['is_audit'] eq '1'">
+						 	<td align="center" ><b style="color:red">待审核</b></td>
+						 </if>
+						  <if condition="$data['is_audit'] eq '2'">
+						 	<td align="center" ><b style="color:red">已审核</b></td>
+						 </if>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				
+			</fieldset>
+			<div class="form-actions">
+                <if condition="$data['is_audit'] eq '1'">
+				  <button type="submit" class="btn btn-primary js-ajax-submit">审核</button>			
+				</if>
+				
+				<a class="btn" href="{:U('Organicon/organ')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<div id="ShowImage_Form" class="modal hide">         
+         <div class="modal-header">
+             <button data-dismiss="modal" class="close" type="button"></button>
+         </div>
+         <div class="modal-body">
+           <div id="img_show">
+           </div>
+         </div>
+    </div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	 <script src="__PUBLIC__/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	function showimage(source){
+      
+         $("#ShowImage_Form").find("#img_show").html("<img src='"+source+"' class='carousel-inner img-responsive img-rounded' />");
+
+         $("#ShowImage_Form").modal();
+
+     }
+</script>

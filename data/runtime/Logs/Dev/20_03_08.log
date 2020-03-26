@@ -1,0 +1,758 @@
+[ 2020-03-08T09:18:32+08:00 ] 60.208.201.68 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T09:19:08+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T09:42:23+08:00 ] 111.14.95.165 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-08T09:50:15+08:00 ] 125.33.179.46 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T10:08:21+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T10:15:59+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T10:48:57+08:00 ] 113.128.77.19 /index.php?g=Dev
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0012s ]
+
+[ 2020-03-08T10:49:51+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: field /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 60 行.
+SQL: INSERT INTO `cmf_dev_api` (`api_title`,`api_url`,`api_type`,`api_token`,`api_category`,`api_oauth`,`api_remark`,`id`,`create_time`) VALUES ('获取直播等级','/Cliapi/User/getLevel','post','1','用户','337131470@qq.com','{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;成功&quot;,
+    &quot;data&quot;: {
+        &quot;level&quot;: &quot;2&quot;,
+        &quot;thumb&quot;: &quot;http://5g.appyunwei.cn/data/upload/20200229/5e5a4e2f0a689.jpg&quot;,
+        &quot;now_empiric&quot;: 0,
+        &quot;next_empiric&quot;: 149
+    }
+}','0','1583635791') [ RunTime:0.0007s ]
+
+[ 2020-03-08T10:52:33+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=Php&id=330
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: field /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 60 行.
+SQL: UPDATE `cmf_dev_api` SET `api_title`='获取直播等级',`api_url`='/Cliapi/User/getLevel',`api_type`='post',`api_token`='1',`api_category`='直播',`api_oauth`='337131470@qq.com',`api_remark`='{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;成功&quot;,
+    &quot;data&quot;: {
+        &quot;level&quot;: &quot;2&quot;,
+        &quot;thumb&quot;: &quot;http://5g.appyunwei.cn/data/upload/20200229/5e5a4e2f0a689.jpg&quot;,
+        &quot;now_empiric&quot;: 0,
+        &quot;next_empiric&quot;: 149
+    }
+}',`id`='330',`create_time`='1583635953' WHERE `id` = 330 [ RunTime:0.0008s ]
+
+[ 2020-03-08T10:54:08+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T11:02:08+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T11:03:00+08:00 ] 111.14.95.165 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T11:04:23+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T11:06:28+08:00 ] 119.163.114.78 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T11:07:27+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T11:18:13+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T11:18:57+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T11:24:24+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T11:28:45+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T11:43:23+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: field /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 60 行.
+SQL: INSERT INTO `cmf_dev_api` (`api_title`,`api_url`,`api_type`,`api_token`,`api_category`,`api_oauth`,`api_remark`,`id`,`create_time`) VALUES ('获取银行列表','/Cliapi/User/getBankList','post','0','用户','lrg','{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;成功&quot;,
+    &quot;data&quot;: {
+        &quot;_list&quot;: [
+            {
+                &quot;id&quot;: &quot;1&quot;,
+                &quot;name&quot;: &quot;建设银行&quot;,
+                &quot;addtime&quot;: null
+            },
+            {
+                &quot;id&quot;: &quot;2&quot;,
+                &quot;name&quot;: &quot;工商银行&quot;,
+                &quot;addtime&quot;: null
+            },
+            {
+                &quot;id&quot;: &quot;3&quot;,
+                &quot;name&quot;: &quot;中国银行&quot;,
+                &quot;addtime&quot;: null
+            }
+        ]
+    }
+}','0','1583639003') [ RunTime:0.0008s ]
+
+[ 2020-03-08T11:47:23+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T11:48:07+08:00 ] 112.36.156.179 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T11:53:35+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=Php&id=331
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: field /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 60 行.
+SQL: UPDATE `cmf_dev_api` SET `api_title`='获取银行列表',`api_url`='/Cliapi/User/getBankList',`api_type`='post',`api_token`='0',`api_category`='其他',`api_oauth`='lrg',`api_remark`='{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;成功&quot;,
+    &quot;data&quot;: {
+        &quot;_list&quot;: [
+            {
+                &quot;id&quot;: &quot;1&quot;,
+                &quot;name&quot;: &quot;建设银行&quot;,
+                &quot;addtime&quot;: null
+            },
+            {
+                &quot;id&quot;: &quot;2&quot;,
+                &quot;name&quot;: &quot;工商银行&quot;,
+                &quot;addtime&quot;: null
+            },
+            {
+                &quot;id&quot;: &quot;3&quot;,
+                &quot;name&quot;: &quot;中国银行&quot;,
+                &quot;addtime&quot;: null
+            }
+        ]
+    }
+}',`id`='331',`create_time`='1583639615' WHERE `id` = 331 [ RunTime:0.0008s ]
+
+[ 2020-03-08T11:54:18+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-08T11:58:03+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T11:58:10+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T12:00:35+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=Php&id=330
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: field /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 60 行.
+SQL: UPDATE `cmf_dev_api` SET `api_title`='获取直播等级',`api_url`='/Cliapi/User/getLevel',`api_type`='post',`api_token`='1',`api_category`='直播',`api_oauth`='337131470@qq.com',`api_remark`='{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;成功&quot;,
+    &quot;data&quot;: {
+        &quot;level&quot;: &quot;2&quot;,  当前等级
+        &quot;thumb&quot;: &quot;http://5g.appyunwei.cn/data/upload/20200229/5e5a4e2f0a689.jpg&quot;, 等级图标
+        &quot;now_empiric&quot;: 0,   当前累积经验
+        &quot;next_empiric&quot;: 149  升级所需经验
+    }
+}',`id`='330',`create_time`='1583640035' WHERE `id` = 330 [ RunTime:0.0007s ]
+
+[ 2020-03-08T12:07:51+08:00 ] 60.208.201.68 /index.php?g=Dev&m=Index&a=Php&id=331
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: field /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 60 行.
+SQL: UPDATE `cmf_dev_api` SET `api_title`='获取银行列表',`api_url`='/Cliapi/User/getBankList',`api_type`='post',`api_token`='1',`api_category`='其他',`api_oauth`='lrg',`api_remark`='{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;成功&quot;,
+    &quot;data&quot;: {
+        &quot;_list&quot;: [
+            {
+                &quot;id&quot;: &quot;1&quot;,
+                &quot;name&quot;: &quot;建设银行&quot;,
+                &quot;addtime&quot;: null
+            },
+            {
+                &quot;id&quot;: &quot;2&quot;,
+                &quot;name&quot;: &quot;工商银行&quot;,
+                &quot;addtime&quot;: null
+            },
+            {
+                &quot;id&quot;: &quot;3&quot;,
+                &quot;name&quot;: &quot;中国银行&quot;,
+                &quot;addtime&quot;: null
+            }
+        ]
+    }
+}',`id`='331',`create_time`='1583640471' WHERE `id` = 331 [ RunTime:0.0006s ]
+
+[ 2020-03-08T12:08:14+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0007s ]
+
+[ 2020-03-08T12:10:19+08:00 ] 112.36.156.179 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T12:12:36+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T12:21:01+08:00 ] 125.33.179.46 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T12:25:48+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T12:28:55+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T12:29:00+08:00 ] 112.36.156.179 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0008s ]
+
+[ 2020-03-08T12:29:31+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-08T12:31:10+08:00 ] 60.208.201.68 /index.php?g=Dev&m=Index&a=Php&id=110
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_dev_api` SET `api_title`='获取评论列表',`api_url`='/Cliapi/Show/getCommlist',`api_type`='post',`api_token`='1',`api_category`='帖子',`api_oauth`='mdy',`api_remark`='说明:
+1.系统分页参数:p
+2.每页返回数量参数:r
+   _list',`id`='110',`create_time`='1583641870',`api_field`='[{\"name\":\"show_id\",\"remark\":\"\\u5e16\\u5b50ID\",\"value\":\"\",\"type\":\"\\u6570\\u5b57\",\"is_must\":\"1\",\"intro\":\"\"},{\"name\":\"parent_id\",\"remark\":\"\\u8bc4\\u8bbaID\",\"value\":\"\",\"type\":\"\\u6570\\u5b57\",\"is_must\":\"0\",\"intro\":\"\\u4e0a\\u7ea7\\u8bc4\\u8bbaID,\\u82e5\\u662f\\u4e00\\u7ea7\\u8bc4\\u8bba\\u5219\\u4e3a0\"}]' WHERE `id` = 110 [ RunTime:0.0007s ]
+
+[ 2020-03-08T12:33:35+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T12:37:52+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T12:38:25+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=Php&id=330
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: field /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 60 行.
+SQL: UPDATE `cmf_dev_api` SET `api_title`='获取直播等级',`api_url`='/Cliapi/User/getLevel',`api_type`='post',`api_token`='1',`api_category`='直播',`api_oauth`='337131470@qq.com',`api_remark`='{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;成功&quot;,
+    &quot;data&quot;: {
+        &quot;level&quot;: &quot;2&quot;,  当前等级
+        &quot;thumb&quot;: &quot;http://5g.appyunwei.cn/data/upload/20200229/5e5a4e2f0a689.jpg&quot;, 等级图标
+
+        &quot;empiric_percentage&quot;: 67, //百分比
+        &quot;now_empiric&quot;: 0,   当前累积经验
+        &quot;next_empiric&quot;: 149  升级所需经验
+    }
+}',`id`='330',`create_time`='1583642305' WHERE `id` = 330 [ RunTime:0.0007s ]
+
+[ 2020-03-08T12:58:59+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=Php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api` (`api_title`,`api_url`,`api_type`,`api_token`,`api_category`,`api_oauth`,`api_remark`,`id`,`create_time`,`api_field`) VALUES ('解绑银行卡','/Cliapi/User/untyingBank','post','1','用户','lrg','{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;成功&quot;,
+    &quot;data&quot;: null
+}','0','1583643539','[{\"name\":\"uid\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u7528\\u6237id\"},{\"name\":\"account\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u8981\\u89e3\\u7ed1\\u7684\\u94f6\\u884c\\u5361\\u53f7\"}]') [ RunTime:0.0006s ]
+
+[ 2020-03-08T13:03:38+08:00 ] 111.14.95.165 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T13:10:29+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T13:12:20+08:00 ] 60.208.201.68 /index.php?g=Dev&m=Index&a=Php&id=110
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_dev_api` SET `api_title`='获取评论列表',`api_url`='/Cliapi/Show/getCommlist',`api_type`='post',`api_token`='1',`api_category`='帖子',`api_oauth`='mdy',`api_remark`='说明:
+1.系统分页参数:p
+2.每页返回数量参数:r
+   _list
+
+&quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;22&quot;,
+            &quot;show_id&quot;: &quot;资讯ID&quot;,
+            &quot;show_uid&quot;: &quot;资讯作者ID&quot;,
+            &quot;parent_id&quot;: &quot;0&quot;,
+            &quot;uid&quot;: &quot;发表评论用户ID&quot;,
+            &quot;nickname&quot;: &quot;发表评论用户昵称&quot;,
+            &quot;avatar&quot;: 发表评论用户头像&quot;,
+            &quot;content&quot;: &quot;评论内容&quot;,
+            &quot;data&quot;: 评论图片,
+            &quot;create_time&quot;: &quot;评论时间&quot;,
+            &quot;post_table&quot;: &quot;Show&quot;,
+            &quot;url&quot;: &quot;&quot;,
+            &quot;zan&quot;: &quot;评论的点赞数量&quot;,
+            &quot;status&quot;: &quot;1&quot;,
+            &quot;read_state&quot;: &quot;0&quot;,
+            &quot;time&quot;: &quot;41分钟前&quot;
+        }
+    ],
+    &quot;is_last&quot;: 1',`id`='110',`create_time`='1583644340',`api_field`='[{\"name\":\"show_id\",\"remark\":\"\\u5e16\\u5b50ID\",\"value\":\"\",\"type\":\"\\u6570\\u5b57\",\"is_must\":\"1\",\"intro\":\"\"},{\"name\":\"parent_id\",\"remark\":\"\\u8bc4\\u8bbaID\",\"value\":\"\",\"type\":\"\\u6570\\u5b57\",\"is_must\":\"0\",\"intro\":\"\\u4e0a\\u7ea7\\u8bc4\\u8bbaID,\\u82e5\\u662f\\u4e00\\u7ea7\\u8bc4\\u8bba\\u5219\\u4e3a0\"}]' WHERE `id` = 110 [ RunTime:0.0016s ]
+
+[ 2020-03-08T13:40:22+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T13:51:58+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api` (`api_title`,`api_url`,`api_type`,`api_token`,`api_category`,`api_oauth`,`api_remark`,`id`,`create_time`,`api_field`) VALUES ('修改密码','/Cliapi/User/updatePassword','post','1','用户','lrg','{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;操作成功，请使用您的新密码登陆吧&quot;,
+    &quot;data&quot;: null
+}','0','1583646718','[{\"name\":\"_uid\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u7528\\u6237id\"},{\"name\":\"old_password\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u65e7\\u5bc6\\u7801\"},{\"name\":\"new_password\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u65b0\\u5bc6\\u7801\"}]') [ RunTime:0.0009s ]
+
+[ 2020-03-08T15:15:57+08:00 ] 113.128.77.19 /index.php?g=Dev&m=Index&a=php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_dev_api` (`api_title`,`api_url`,`api_type`,`api_token`,`api_category`,`api_oauth`,`api_remark`,`id`,`create_time`,`api_field`) VALUES ('银币提现','/Cliapi/User/silverCoinCash','post','1','用户','lrg','{
+    &quot;status&quot;: 1,
+    &quot;info&quot;: &quot;发起提现审核成功&quot;,
+    &quot;data&quot;: null
+}','0','1583651757','[{\"name\":\"_uid\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u7528\\u6237id\"},{\"name\":\"account\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u94f6\\u884c\\u5361\\u53f7\"},{\"name\":\"idcard_num\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u8eab\\u4efd\\u8bc1\\u53f7\"},{\"name\":\"mobile\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u624b\\u673a\\u53f7\"},{\"name\":\"silver_coin\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u63d0\\u73b0\\u94f6\\u5e01\"},{\"name\":\"name\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\\u59d3\\u540d\"}]') [ RunTime:0.0010s ]
+
+[ 2020-03-08T15:33:27+08:00 ] 112.36.156.179 /index.php?g=Dev&m=Index&a=Php&id=289
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 66 行.
+SQL: UPDATE `cmf_dev_api` SET `api_title`='商品评价列表',`api_url`='/Cliapi/Banner/EvaList',`api_type`='post',`api_token`='1',`api_category`='商城',`api_oauth`='zyz',`api_remark`='返回信息：
+&quot;id&quot;: &quot;评价id&quot;,
+&quot;goods_id&quot;: &quot;商品id&quot;,
+&quot;evaluate&quot;: &quot;文字评价&quot;,
+&quot;eva_pic&quot;: &quot;图片评价&quot;,
+&quot;create_time&quot;: &quot;评价时间&quot;,
+&quot;avatar&quot;: &quot;用户头像&quot;,
+&quot;user_nicename&quot;: &quot;用户名&quot;,
+&quot;shuxing&quot;: [		商品属性
+	{
+		&quot;shuzhi&quot;: &quot;红色&quot;,
+		&quot;attribute_name&quot;: &quot;颜色&quot;,
+		&quot;ids&quot;: &quot;10&quot;
+	},
+	{
+		&quot;shuzhi&quot;: &quot;m&quot;,
+		&quot;attribute_name&quot;: &quot;尺寸&quot;,
+		&quot;ids&quot;: &quot;11&quot;
+	}
+]',`id`='289',`create_time`='1583652807',`api_field`='[{\"name\":\"goods_id\",\"remark\":\"\\u5546\\u54c1id\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"1\",\"intro\":\"\"},{\"name\":\"p\",\"remark\":\"\\u7b2c\\u51e0\\u9875\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":null,\"intro\":\"\"},{\"name\":\"r\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\"}]' WHERE `id` = 289 [ RunTime:0.0010s ]
+
+[ 2020-03-08T15:45:07+08:00 ] 112.36.156.179 /index.php?g=Dev&m=Index&a=Php&id=289
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 66 行.
+SQL: UPDATE `cmf_dev_api` SET `api_title`='商品评价列表',`api_url`='/Cliapi/Banner/EvaList',`api_type`='post',`api_token`='0',`api_category`='商城',`api_oauth`='zyz',`api_remark`='返回信息：
+&quot;id&quot;: &quot;评价id&quot;,
+&quot;goods_id&quot;: &quot;商品id&quot;,
+&quot;evaluate&quot;: &quot;文字评价&quot;,
+&quot;eva_pic&quot;: &quot;图片评价&quot;,
+&quot;create_time&quot;: &quot;评价时间&quot;,
+&quot;avatar&quot;: &quot;用户头像&quot;,
+&quot;user_nicename&quot;: &quot;用户名&quot;,
+&quot;shuxing&quot;: [		商品属性
+	{
+		&quot;shuzhi&quot;: &quot;红色&quot;,
+		&quot;attribute_name&quot;: &quot;颜色&quot;,
+		&quot;ids&quot;: &quot;10&quot;
+	},
+	{
+		&quot;shuzhi&quot;: &quot;m&quot;,
+		&quot;attribute_name&quot;: &quot;尺寸&quot;,
+		&quot;ids&quot;: &quot;11&quot;
+	}
+]',`id`='289',`create_time`='1583653507',`api_field`='[{\"name\":\"goods_id\",\"remark\":\"\\u5546\\u54c1id\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"1\",\"intro\":\"\"},{\"name\":\"p\",\"remark\":\"\\u7b2c\\u51e0\\u9875\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":null,\"intro\":\"\"},{\"name\":\"r\",\"remark\":\"\",\"value\":\"\",\"type\":\"\\u5b57\\u7b26\\u4e32\",\"is_must\":\"0\",\"intro\":\"\"}]' WHERE `id` = 289 [ RunTime:0.0007s ]
+
+[ 2020-03-08T15:49:41+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T15:59:25+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T16:03:30+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T16:04:44+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T16:05:38+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T16:06:18+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T16:34:02+08:00 ] 111.14.95.165 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T16:49:08+08:00 ] 119.163.114.78 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0007s ]
+
+[ 2020-03-08T16:51:39+08:00 ] 119.163.114.78 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0007s ]
+
+[ 2020-03-08T17:49:42+08:00 ] 60.208.201.68 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 123000 /www/wwwroot/5g.appyunwei.cn/application/Dev/Controller/IndexController.class.php 第 29 行.
+
+[ 2020-03-08T17:49:49+08:00 ] 60.208.201.68 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0008s ]
+
+[ 2020-03-08T17:57:06+08:00 ] 125.33.179.46 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T18:06:56+08:00 ] 112.36.156.179 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T18:21:18+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T18:26:49+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T18:52:32+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0006s ]
+
+[ 2020-03-08T19:46:30+08:00 ] 125.33.179.46 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T21:32:18+08:00 ] 60.208.201.68 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0004s ]
+
+[ 2020-03-08T21:33:51+08:00 ] 125.33.179.46 /index.php?g=Dev&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+
+[ 2020-03-08T21:37:27+08:00 ] 60.208.201.68 /index.php?g=Dev&m=index&a=getSign
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cmf_dev_api_debug` [ RunTime:0.0005s ]
+

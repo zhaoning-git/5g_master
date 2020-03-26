@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <include file="Public/head"/>
+</head>
+<body>
+  <!-- 头部 -->
+<include file="Public/header"/>
+<!-- /头部 -->
+
+
+<!-- 主体 -->
+<style>
+  #add-field{margin-top:-1px}
+  .uk-nav-header{text-transform: none;}
+</style>
+<table class="main-table" width="100%" border="0" style="margin-top:30px;">
+  <tr>
+    <td valign="top" style="border-right:1px solid #eee;" width="175">
+      <div class="hbox" style=" width:175px; min-height:750px;  overflow:auto;">
+        <ul class="uk-nav uk-nav-side" data-uk-nav="">
+          <volist name="list" id="vo">
+            <li class="uk-nav-header" style="font-size:17px; font-weight:500">{$key}</li>
+            <Volist name="vo" id="sub">
+              <li class="<eq name="_GET['id']" value="$sub['id']"> active</eq>">
+                <a href="{:U('Php',array('id'=>$sub['id']))}" style="font-size:13px">
+                  <span style="color:#999">└</span> {$sub.api_title}
+                </a> 
+              </li>
+            </Volist>
+            <li class="uk-nav-divider"></li>
+          </volist>
+        </ul>
+      </div>
+      <!--<div style="height:180px"></div>-->
+    </td>
+    <td style="padding:0px 15px" valign="top">
+      <form action="__SELF__" method="post"  class="uk-form edit-api">
+        <a href="{:U('php')}"  class="uk-button uk-button-success uk-radius" style="margin-bottom:10px">新添加接口</a>
+        <div class="uk-panel">
+          <div class=" uk-panel-box">
+            <table class="uk-table" width="100%">
+              <caption>接口基本信息</caption>
+              <tr>
+                <td width="18%">接口名称：</td>
+                <td width="82%"><input type="text" name="api_title" style="width:300px" value="{$info.api_title}"/></td>
+              </tr>
+              <tr>
+                <td>接口网址：</td>
+                <td><input type="text" name="api_url" style="width:350px" value="{$info.api_url}"/></td>
+              </tr>
+              <tr>
+                <td>接口类型</td>
+                <td>
+                  <select name="api_type" style="width:90px">
+                    <option value="get" <eq name="info.api_type" value="get">selected="selected"</eq>>Get</option>
+                    <option value="post" <eq name="info.api_type" value="post">selected="selected"</eq>>Post</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>需要用户令牌</td>
+                <td>
+                  <label class="uk-radio-inline">
+                    <input type="radio" value="1" name="api_token" <eq name="info.api_token" value="1">checked</eq>>需要
+                  </label>
+                  <label class="uk-radio-inline">
+                    <input type="radio" name="api_token" value="0" <eq name="info.api_token" value="0">checked</eq>>不需要
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>接口分组</td>
+                <td><input type="text" name="api_category" style="width:200px" value="{$info.api_category}"/></td>
+              </tr>
+              <tr>
+                <td>接口作者</td>
+                <td><input type="text" name="api_oauth" style="width:100px"  value="{$info.api_oauth}"/></td>
+              </tr>
+              <tr>
+                <td>接口说明</td>
+                <td><textarea name="api_remark" rows="2" cols="20" style="height: 100px; width: 500px;">{$info.api_remark}</textarea></td>
+              </tr>
+              
+              
+              
+              
+            </table>
+          </div>
+        </div>
+        <div class="uk-panel" style="margin-top:20px">
+          <div class=" uk-panel-box">
+            <table class="uk-table" width="100%">
+              <caption>接口字段管理</caption>
+              <thead>
+                <tr>
+                  <th>字段名</th>
+                  <th>类型</th>
+                  <th>字段意义</th>
+                  <th>演示值</th>
+                  <th>必填</th>
+                  <th>说明</th>
+                  <th>删除</th>
+                </tr>
+              </thead>
+              <tbody  id="field-box">
+              <volist name="info.api_field" id="vo">
+                <tr>
+                  <!--字段名-->
+                  <td>
+                    <div class="uk-form-icon">
+                      <i class="uk-icon-clone"></i>
+                      <input type="text" name="field[name][]" value="{$vo.name}" class="uk-width-1-1"/>
+                    </div>
+                  </td>
+
+                  <!--字段类型-->
+                  <td>
+                    <div class="uk-form-icon">
+                      <select name="field[type][]" style="width:90px">
+                        <option value="字符串" <eq name="vo.type" value="字符串">selected</eq>>字符串</option>
+                        <option value="数字" <eq name="vo.type" value="数字">selected</eq>>数字</option>
+                        <option value="邮箱" <eq name="vo.type" value="邮箱">selected</eq>>邮箱</option>
+                        <option value="手机" <eq name="vo.type" value="手机">selected</eq>>手机</option>
+                        <option value="日期" <eq name="vo.type" value="日期">selected</eq>>日期</option>
+                        <option value="文本" <eq name="vo.type" value="文本">selected</eq>>文本</option>
+                      </select>
+                    </div>
+                  </td>
+
+                  <!--字段意义-->
+                  <td>
+                    <div class="uk-form-icon">
+                      <i class="uk-icon-ellipsis-h"></i>
+                      <input type="text" name="field[remark][]" value="{$vo.remark}" class="uk-width-1-1"/>
+                    </div>
+                  </td>
+
+                  <!--演示值-->
+                  <td>
+                    <div class="uk-form-icon">
+                      <i class="uk-icon-pencil"></i>
+                      <input type="text" name="field[value][]" value='{$vo.value}' class="uk-width-1-1"/>
+                    </div>
+                  </td>
+
+                  <!--是否必填-->
+                  <td>
+                    <div class="uk-form-icon" style="width:66px;padding-top:4px;">
+                      <label class="uk-radio-inline">
+                        <input type="radio" value="1" name="field[is_must][{$key}]" <eq name="vo.is_must" value="1">checked</eq>>是
+                      </label>
+                      <label class="uk-radio-inline">
+                        <input type="radio" value="0" name="field[is_must][{$key}]" <eq name="vo.is_must" value="0">checked</eq>>否
+                      </label>
+                    </div>
+                  </td>
+
+                  <!--说明-->
+                  <td>
+                    <div class="uk-form-icon">
+                      <textarea name="field[intro][]">{$vo.intro}</textarea>
+                    </div>
+                  </td>
+
+                  <!--删除字段-->
+                  <td>
+                    <button type="button" class="uk-button uk-button-danger uk-button-sm uk-round delete-field">
+                      <i class="uk-icon-close"></i>
+                    </button>
+                  </td>
+                </tr>
+              </volist>
+              </tbody>
+              <tr>
+                <td colspan="4" style="padding:10px; padding-bottom:0px; text-align:center; border:none">
+              <php>$inums = empty($info['api_field'])?0:$key+1;</php>
+              <button data-inum="{$inums}" id="add-field" type="button" class="uk-button uk-button-block uk-button-default">
+                <i class="uk-icon-pencil"></i> 添加字段
+              </button>
+              </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="uk-g" style=" padding-top:20px">
+          {:W('Core/Ueditor/editor',array('api_remark','api_remark',$info['api_remark'],'100%','300px'))}
+        </div>
+        <div class="uk-g" style="margin-top:10px; overflow:hidden">
+          <input type="hidden" name="id" value="{$info.id}" />
+          <button type="submit" data-ajax="post" class="uk-button uk-button-primary uk-fl uk-radius">确定提交</button>
+          <notempty name="info.id"> <a href="{:U('App',array('id'=>$info['id']))}" target="_blank" class="uk-button uk-button-default uk-fl uk-radius" style="margin-left:20px">调试接口</a></notempty>
+          <a href="{:U('DelApi',array('id'=>$info['id']))}" data-ajax="get" class="uk-button uk-fr uk-button-danger uk-radius" data-info='{"title":"温馨提示","desc":"确定要删除该接口吗？看好了，别删错了","button":"确定"}'>删除接口</a> 
+        </div>
+      </form>
+    </td>
+  </tr>
+</table>
+<div class="uk-cf"></div>
+
+<!-- /主体 -->
+
+<!-- 底部 -->
+<include file="Public/footer"/>
+<!-- /底部 -->
+
+<script type="text/javascript">
+  $("#add-field").click(function () {
+      var inum = $(this).data('inum');
+      var html = '';
+      html += '<tr>';
+      html += ' <td><div class="uk-form-icon"> <i class="uk-icon-clone"></i><input type="text" name="field[name][]"  class="uk-width-1-1"/></div></td>';
+
+      html += ' <td><div class="uk-form-icon">' +
+              '<select name="field[type][]" style="width:60px">' +
+              '<option value="字符串">字符串</option>' +
+              '<option value="数字">数字</option>' +
+              '<option value="邮箱">邮箱</option>' +
+              '<option value="手机">手机</option>' +
+              '<option value="日期">日期</option>' +
+              '<option value="文本">文本</option>' +
+              '</select>' +
+              '</div></td>';
+
+      html += '<td><div class="uk-form-icon"> <i class="uk-icon-ellipsis-h"></i><input type="text" name="field[remark][]"  class="uk-width-1-1"/></div></td>';
+
+      html += '<td><div class="uk-form-icon"> <i class="uk-icon-pencil"></i><input type="text" name="field[value][]"  class="uk-width-1-1"/></div></td>';
+
+
+      html += '<td><div class="uk-form-icon" style="width:66px;padding-top:4px;">' +
+              '<label class="uk-radio-inline"><input type="radio" value="1" name="field[is_must][' + inum + ']"> 是 </label> ' +
+              '<label class="uk-radio-inline"><input type="radio" value="0" name="field[is_must][' + inum + ']" checked> 否 </label>' +
+              '</div></td>';
+
+
+<!--说明-->
+      html += '<td><div class="uk-form-icon"><textarea name="field[intro][]"></textarea></div></td>';
+
+
+      html += ' <td> <button type="button" class="uk-button uk-button-danger uk-button-sm uk-round delete-field"><i class="uk-icon-close"></i></button></td>';
+
+
+      html += '</tr>';
+      $(this).data('inum', inum + 1);
+      $('#field-box').append(html);
+  });
+
+  $(document).on('click', '.delete-field', function () {
+      $(this).closest('tr').remove();
+  });
+</script> 
+</body>
+</html>

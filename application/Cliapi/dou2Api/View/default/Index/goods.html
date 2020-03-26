@@ -1,0 +1,28 @@
+<extend name="Public/base"/>
+<block name="body"><div class="screening" <if condition="is_wechat()">style="top:0px"</if>>
+  <ul class="ui-border-b">
+    <li class="ui-border-r" data-field="create_time" data-order="desc">综合</li>
+    <li class="ui-border-r" data-field="goods_all_sales_count" data-order="desc">销量</li>
+    <li class="ui-border-r" data-field="goods_price" data-order="asc">价格 <i class="icon icon-minus"></i></li>
+    <li data-list="list">列表 <i class="icon icon-th-large"></i></li>
+  </ul>
+  </div>
+  <div class="index-goods-2 goods-list" style=" margin-top:42px">
+    <ul class="row no-gutter goods-ul g g-collapse">
+      <volist name="Goods" id="vo">
+        <li  class="u-sm-6"><a href="{:U('Shop/Index/Detail',array('id'=>$vo['id']))}"> <img src="__PUBLIC__/img/empty.png" data-original="{$vo.goods_img}"  class="lazy" width="100%"></a>
+          <p class="goods-title"><a href="{:U('Shop/Index/Detail',array('id'=>$vo['id']))}">{$vo.goods_title}</a></p>
+          <p class="goods-price">￥{$vo.goods_price}</p>
+        </li>
+      </volist>
+    </ul>
+  </div>
+  <div class="infinite-scroll-preloader"></div>
+</block>
+<block name="script">
+  <script type="text/javascript">
+	var cid = "{$_GET['cid']|op_t}";
+	var url = "{:U('Shop/Index/Goods')}";
+</script>
+  <script type="text/javascript" src="__JS__/goods.js"></script>
+</block>

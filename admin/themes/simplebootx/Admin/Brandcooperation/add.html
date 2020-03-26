@@ -1,0 +1,93 @@
+<admintpl file="header" />
+
+</head>
+
+<body>
+
+	<div class="wrap">
+
+		<ul class="nav nav-tabs">
+
+			<li><a href="{:U('Brandcooperation/Brandcooperationshow')}">品牌合作列表</a></li>
+
+			<li class="active"><a>添加品牌</a></li>
+
+			
+
+		</ul>
+
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Brandcooperation/add')}">
+
+			<fieldset>
+
+				<div class="control-group">
+
+					<label class="control-label">姓名</label>
+
+					<div class="controls">
+
+						<input type="text" name="name">
+
+						<span class="form-required">*</span>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label">身份证号码</label>
+
+					<div class="controls">
+
+						<input type="text" name="id_number">
+
+						<span class="form-required">*</span>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">营业执照</label>
+					<div class="controls">
+						<input type="file" name="business_license"  >
+						<span class="form-required">*</span>
+					</div>
+				</div>
+                <div class="control-group">
+                    <label class="control-label">组织机构代码</label>
+                    <div class="controls">
+                        <input type="file" name="organization_code"  >
+                        <span class="form-required">*</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">法人身份证</label>
+                    <div class="controls">
+                        <input type="file" name="identity_card" >
+                        <span class="form-required">*</span>
+                    </div>
+                </div>
+
+			</fieldset>
+
+			<div class="form-actions">
+
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+
+				<a class="btn" href="{:U('Brandcooperation/Brandcooperationshow')}">{:L('BACK')}</a>
+
+			</div>
+
+		</form>
+
+	</div>
+
+	<script src="__PUBLIC__/js/common.js"></script>
+
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+
+</body>
+
+</html>

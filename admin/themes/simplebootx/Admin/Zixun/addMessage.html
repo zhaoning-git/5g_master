@@ -1,0 +1,194 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Zixun/indexInfo')}">资讯列表</a></li>
+			<li class="active"><a>添加资讯及俱乐部发帖</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Zixun/add_message_do')}" enctype="multipart/form-data">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">用户</label>
+					<div class="controls">
+						<select class="area-select" name="uid">
+							<option value="0">请选择</option>
+							<foreach name="userInfo" item="vo">
+								<option value="{$vo.id}">{$vo.id}----{$vo.user_nicename}</option>
+							</foreach>
+
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">标题</label>
+					<div class="controls">
+						<input type="text" name="title">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">资讯整体类型</label>
+					<div class="controls">
+						<select class="area-select" id="bigType" name="index_mol">
+							<option value="0">请选择</option>
+							<option value="1">足球</option>
+							<option value="2">篮球</option>
+							<option value="4">俱乐部</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">资讯标签类型</label>
+					<div class="controls">
+						<select class="area-select" id="type" name="sel_type">
+							<option>请选择</option>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+
+				<div class="control-group clubs" style="display: none">
+					<label class="control-label">哪个俱乐部发出的</label>
+					<div class="controls">
+						<select class="area-select" id="is_club" name="is_club">
+							<foreach name="clubInfo" item="vo">
+								<option value="{$vo.id}">{$vo.name}</option>
+							</foreach>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">内容</label>
+					<div class="controls">
+						<input type="text" name="content">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">话题</label>
+					<div class="controls">
+						<input type="text" name="theme">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">资源图片</label>
+					<div class="controls">
+						<button type="button" class="layui-btn" id="test2">上传</button>
+						<blockquote class="layui-elem-quote layui-quote-nm" style="margin-top: 10px;">
+							预览图：
+							<div class="layui-upload-list" id="demo2"></div>
+							<input type="hidden" name="data" class="layui-input">
+						</blockquote>
+					</div>
+				</div>
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="{:U('Zixun/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	<script src="__PUBLIC__/layui/layui.js"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+</body>
+</html>
+<script>
+	$(function(){
+		var url = "{:U('Zixun/biaoQian')}";
+		$("#bigType").change(function () {
+			var options=$("#bigType option:selected").val();  //获取选中的项
+			if(options == 4){
+				$(".clubs").show();//显示div
+			}else{
+				$(".clubs").hide();//显示div
+			}
+			$.ajax({
+				type:'post',
+				url:url,
+				data:{mol:options},
+				dataType:'json',
+				success:function(data){ //请求成功回调函数
+					var info = data.data;
+
+					if(data.status == 1){ //判断状态码，200为成功
+						var option = '';
+						for(var i=0;i<info.length;i++){ //循环获取返回值，并组装成html代码
+							var name = info[i].name;
+							var id = info[i].id;
+							option +='<option value="'+id+'">'+name+'</option>';
+						}
+					}else{
+						var option = '<option>请选择</option>'; //默认值
+					}
+
+					$("#type").html(option); //js刷新第二个下拉框的值
+
+				},
+			});
+		});
+
+		//多图片上传
+		layui.use('upload', function(){
+			var $ = layui.jquery
+					,layer = layui.layer
+					,upload = layui.upload;
+
+			//多图片上传
+			upload.render({
+				elem: '#test2'
+				,url:'{:U("Zixun/uploadPic")}'
+				,multiple: true
+				,before: function(obj){
+					obj.preview(function(index, file, result){
+						// $('#demo2').append('<div><img width="100px;" src="'+ result +'" alt="'+ file.name +'" class="layui-upload-img"><span class="close">×</span></div>')
+					});
+				}
+				,done: function(res){
+					//上传完毕
+					$('#demo2').append('<div><img width="100px;" pid="'+res.pid+'" aaa="'+ res.src +'" src="/data/upload/showData/'+res.src+'" class="layui-upload-img"><span class="close">×</span></div>');
+					var pic_url =$('[name=data]').val()+','+res.pid;
+					$('[name=data]').val(pic_url);
+					// layer.msg(res.msg);
+				}
+			});
+			$(document).on('click','.close',function(){
+				var url=$(this).prev().attr('aaa');
+				var arr=$('[name=data]').val().split(',');
+				//数组去空
+				var arr2 = $.grep(arr, function(n) {return $.trim(n).length > 0;});
+				//被删除的图片 id
+				var del_id=$(this).prev().attr('pid');
+				$.ajax({
+					type:'post',
+					url:'{:U("Zixun/delPic")}',
+					data:{key:url},
+					dataType:'json',
+					success:function(data){ //请求成功回调函数
+						layer.msg(data.info);
+							// console.log(data);
+					},
+				});
+				for(var i=0;i<arr2.length;i++) {
+					//判断元素是否存在于数组中  存在则删除
+					var is_exit = $.inArray(del_id,arr2);
+					if(is_exit !== -1) {
+						var new_val = arr.splice(is_exit, 1).join();
+						$('[name=data]').val(new_val);
+					}
+				}
+				$(this).parent('div').remove();
+			});
+
+		})
+	});
+
+</script>

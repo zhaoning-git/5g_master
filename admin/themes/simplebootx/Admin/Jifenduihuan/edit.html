@@ -1,0 +1,419 @@
+<admintpl file="header" />
+
+ <style>
+
+        .container {
+
+            width: 60%;
+
+            margin: 10% auto 0;
+
+            background-color: #f0f0f0;
+
+            padding: 2% 5%;
+
+            border-radius: 10px
+
+        }
+
+
+
+        ul {
+
+            padding-left: 20px;
+
+        }
+
+
+
+            ul li {
+
+                line-height: 2.3
+
+            }
+
+
+
+        a {
+
+            color: #20a53a
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+  <div class="wrap">
+
+    <ul class="nav nav-tabs">
+
+
+
+      <li class="active"><a >积分兑换设置</li>
+
+     
+
+    </ul>
+
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Jifenduihuan/xiugai')}" enctype="multipart/form-data">
+
+ 
+
+       
+
+        <div class="control-group">
+
+          <label class="control-label">商品名</label>
+
+          <div class="controls">
+
+            <input type="text" name="shopname" value="{$findduihuan.shopname}">
+
+            <input type="hidden" name="id" value="{$findduihuan.id}">
+
+  
+
+            <span class="form-required">*</span>
+
+          </div>
+
+        </div>
+
+         <div class="control-group">
+
+          <label class="control-label">商品类型</label>
+
+          <div class="controls">
+
+          <select style="min-width: 100px;float: left;" name="type" onchange="jump(value)">
+
+	                <option value="礼物" <if condition="$findduihuan['type'] eq '礼物'"> selected</if> >礼物</option>
+
+				    <option value="特权"  <if condition="$findduihuan['type'] eq '特权'"> selected </if> >特权 </option>
+
+					<option value="道具" <if condition="$findduihuan['type'] eq '道具'"> selected </if> >道具</option>
+
+					<option value="虚拟物品" <if condition="$findduihuan['type'] eq '虚拟物品'"> selected </if> >虚拟物品</option>
+
+					<option value="实物" <if condition="$findduihuan['type'] eq '实物'"> selected </if> >实物</option>
+
+					<!-- <option value="限量" <if condition="$findduihuan['type'] eq '限量'"> selected </if> >限量</option> -->
+
+			</select>
+
+			 <select id="select1"    <if condition="$findduihuan['type'] eq '特权'">  style="min-width: 100px;float: left;" <else/> style="min-width: 100px;display: none;float: left;" </if>  name="llll">
+
+			 	
+
+			 	<foreach name="cmf_coupon" item="vo">
+
+	                <option value="{$vo.id}" <if condition="$findduihuan['typefenid'] eq $vo['id']"> selected </if> >{$vo.title}</option>
+
+	             </foreach>   
+
+				 
+
+		
+
+			</select>
+
+			<select id="select2" <if condition="$findduihuan['type'] eq '道具'">  style="min-width: 100px;float: left;" <else/> style="min-width: 100px;display: none;float: left;" </if> name="dddd">
+
+	            	<foreach name="cmf_coupontow" item="vo">
+
+	                  <option value="{$vo.id}" <if condition="$findduihuan['typefenid'] eq $vo['id']">{$vo.title}</option>
+
+	                </foreach>   
+
+				 
+
+		    </select>
+
+            <span class="form-required">*</span>
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="control-group">
+
+          <label class="control-label">商品图片</label>
+
+          
+
+          <div class="controls">
+
+          	<foreach name="img" item="vo">
+
+            <img src="{$vo}" width="10%">
+
+             </foreach> 
+
+        
+
+          </div>
+
+          
+
+        </div>
+
+        
+
+        
+
+        
+
+         <div class="control-group">
+
+          <label class="control-label">修改图片</label>
+
+          <div class="controls">
+
+            <input type="file" name="file[]" multiple="multiple">
+
+       </div>
+
+        </div>
+
+        
+
+        
+
+       <!--  <div class="control-group">
+
+          <label class="control-label">描述</label>
+
+          <div class="controls">
+
+            <input type="text" name="miaoshu" value="{$findduihuan.miaoshu}">
+
+    
+
+            <span class="form-required" >*</span>
+
+          </div>
+
+        </div> -->
+
+          <div class="control-group">
+            <label class="control-label">详情</label>
+            <div class="controls">
+              <script type="text/plain" id="content" name="miaoshu">{$findduihuan.miaoshu}</script>                
+            </div>
+        </div>
+
+        
+
+        <div class="control-group">
+
+          <label class="control-label">金币</label>
+
+          <div class="controls">
+
+            <input type="text" name="jinbi" value="{$findduihuan.jinbi}">
+
+            <span class="form-required">*</span>
+
+          </div>
+
+        </div>
+
+          <div class="control-group">
+
+          <label class="control-label">新品首发</label>
+
+          <div class="controls">
+
+         <td> 是 <input type="radio"  name="product"  value="1" <?php if($findduihuan['product']==1) echo 'checked' ?> ></td>
+
+
+
+
+
+           <td> 否 <input type="radio"  name="product"  value="0" <?php if($findduihuan['product']==0) echo 'checked' ?> ></td>
+
+         <!--    <span class="form-required">*</span> -->
+
+
+
+          </div>
+
+        </div>
+
+           
+
+          
+
+           
+
+          
+
+
+
+        
+
+       
+
+        <div class="control-group">
+
+          <label class="control-label">热门推荐</label>
+
+          <div class="controls">
+
+         <td> 是 <input type="radio"  name="hots"  value="1" <?php if($findduihuan['hots']==1) echo 'checked' ?> ></td>
+
+
+
+
+
+           <td> 否 <input type="radio"  name="hots"  value="0" <?php if($findduihuan['hots']==0) echo 'checked' ?> ></td>
+
+         <!--    <span class="form-required">*</span> -->
+
+
+
+          </div>
+
+        </div>
+
+
+        <div class="control-group">
+
+          <label class="control-label">商品推荐</label>
+
+          <div class="controls">
+
+         <td> 是 <input type="radio"  name="recom"  value="1" <?php if($findduihuan['recom']==1) echo 'checked' ?> ></td>
+           <td> 否 <input type="radio"  name="recom"  value="0" <?php if($findduihuan['recom']==0) echo 'checked' ?> ></td>
+
+         <!--    <span class="form-required">*</span> -->
+
+
+
+          </div>
+
+        </div>
+
+          <div class="control-group">
+
+          <label class="control-label">限量首发</label>
+
+          <div class="controls">
+
+           <td> 是 <input type="radio"  name="quantity"  value="1" <?php if($findduihuan['quantity']==1) echo 'checked' ?> ></td>
+           
+           <td> 否 <input type="radio"  name="quantity"  value="0" <?php if($findduihuan['quantity']==0) echo 'checked' ?> ></td>
+
+         <!--    <span class="form-required">*</span> -->
+
+
+
+          </div>
+
+        </div>
+
+          <div class="control-group">
+
+          <label class="control-label">银币</label>
+
+          <div class="controls">
+
+            <input type="text" name="yingbi" value="{$findduihuan.yingbi}">
+
+            <span class="form-required">*</span>
+
+          </div>
+
+        </div>
+
+
+
+        
+
+        
+
+        <!--<div class="control-group">
+
+          <label class="control-label">说明</label>
+
+          <div class="controls">
+
+            <textarea name="remark" rows="2" cols="20" id="remark" class="inputtext" style="height: 100px; width: 500px;">{$info['remark']}</textarea>
+
+          </div>
+
+        </div>-->
+
+        
+
+  
+
+      <div class="form-actions">
+
+       
+
+     
+
+          <button type="submit" class="" value="设置">设置</button>
+
+     
+
+      
+
+      </div>
+
+
+
+    </form>
+
+  </div>
+
+
+
+</body>
+<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+  <script>
+  //编辑器
+        editorcontent = new baidu.editor.ui.Editor();
+        editorcontent.render('content');
+        try {
+          editorcontent.sync();
+        } catch (err) {}
+        
+function jump(dd){
+
+	if(dd=='特权'){
+
+//	 	alert(dd)
+
+	 	document.getElementById("select1").style.display='block';
+
+	 	document.getElementById("select2").style.display='none';
+
+	}else if(dd=='道具'){
+
+//	 	alert(dd)
+
+	 	document.getElementById("select2").style.display='block';
+
+	 	document.getElementById("select1").style.display='none';
+
+	}else{
+
+		document.getElementById("select1").style.display='none';
+
+		document.getElementById("select2").style.display='none';
+
+	}
+
+}
+
+</script>
+
+</html>

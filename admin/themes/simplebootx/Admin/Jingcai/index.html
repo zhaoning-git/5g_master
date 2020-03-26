@@ -1,0 +1,186 @@
+<admintpl file="header" />
+</head>
+<style type="text/css">
+body, td, th {
+	font-size: 14px;
+}
+</style>
+<body>
+<style>
+    input{
+        width:500px;
+    }
+    .form-horizontal textarea{
+        width:500px;
+    }
+    .nav-tabs>.current>a{
+        color: #95a5a6;
+        cursor: default;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-bottom-color: transparent;
+    }
+    .nav li
+    {
+        cursor:pointer
+    }
+    .nav li:hover
+    {
+        cursor:pointer
+    }
+    .hide{
+        display:none;
+    }
+	  input{width: 190px;}
+  </style>
+<div class="wrap js-check-wrap">
+  <ul class="nav nav-tabs js-tabs-nav">
+    <li><a>发起方</a></li>
+    <li><a>参与方</a></li>
+  </ul>
+  <form method="post" class="form-horizontal js-ajax-form" action="{:U('Jingcai/index')}">
+    <div class="js-tabs-content"> 
+      <!-- 发起方 -->
+      <div>
+        <fieldset>
+          <div class="control-group">
+            <label class="control-label">固定底注范围</label>
+            <div class="controls">
+              <input type="text" name="post[fq_dizhu_fw_1]" value="{$config['fq_dizhu_fw_1']}" style="width:80px;">
+              -
+              <input type="text" name="post[fq_dizhu_fw_2]" value="{$config['fq_dizhu_fw_2']}" style="width:80px;">
+              <label class="radio inline"> 
+				<input type="radio" value="fw" name="post[fq_dizhu_radio]" 
+                <eq name="config['fq_dizhu_radio']" value="fw">checked="checked"</eq>
+                <empty name="config">checked</empty>
+                >生效 
+		      </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">浮动底注%</label>
+            <div class="controls">
+              <input type="text" name="post[fq_dizhu_fd]" value="{$config['fq_dizhu_fd']}" style="width:190px;">
+              <label class="radio inline">
+				<input type="radio" value="fd" name="post[fq_dizhu_radio]" 
+                <eq name="config['fq_dizhu_radio']" value="fd">checked="checked"</eq>
+                >生效 
+		      </label>
+            </div>
+          </div>
+		  <!--发起次数-->
+          <div class="control-group">
+            <label class="control-label">发起次数</label>
+            <div class="controls">
+              <input type="text" name="post[fq_cs_gd]" value="{$config['fq_cs_gd']}" style="width:190px;">
+              <label class="radio inline">
+			    <input type="radio" value="gd" name="post[fq_cs_radio]" 
+                <eq name="config['fq_cs_radio']" value="gd">checked="checked"</eq>
+                <empty name="config">checked</empty>
+                >生效 
+			  </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">浮动次数%</label>
+            <div class="controls">
+              <input type="text" name="post[fq_cs_fd]" value="{$config['fq_cs_fd']}" style="width:190px;">
+              <label class="radio inline">
+			    <input type="radio" value="fd" name="post[fq_cs_radio]" 
+                <eq name="config['fq_cs_radio']" value="fd">checked="checked"</eq>
+                >生效 </label>
+            </div>
+          </div>
+	
+		  <!--参与人数-->
+          <div class="control-group">
+            <label class="control-label">参与人数</label>
+            <div class="controls">
+              <input type="text" name="post[fq_rs_gd]" value="{$config['fq_rs_gd']}" style="width:190px;">
+              <label class="radio inline">
+			    <input type="radio" value="gd" name="post[fq_rs_radio]" 
+                <eq name="config['fq_rs_radio']" value="gd">checked="checked"</eq>
+                <empty name="config">checked</empty>
+                >生效 
+			  </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">浮动人数%</label>
+            <div class="controls">
+              <input type="text" name="post[fq_rs_fd]" value="{$config['fq_rs_fd']}" style="width:190px;">
+              <label class="radio inline">
+			    <input type="radio" value="fd" name="post[fq_rs_radio]" 
+                <eq name="config['fq_rs_radio']" value="fd">checked="checked"</eq>
+                >生效 </label>
+            </div>
+          </div>
+	
+	
+	
+          <div class="control-group">
+            <label class="control-label">结算输上限</label>
+            <div class="controls">
+              <input type="text" name="post[fq_js_shu]" value="{$config['fq_js_shu']}">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">结算赢上限</label>
+            <div class="controls">
+              <input type="text" name="post[fq_js_ying]" value="{$config['fq_js_ying']}">
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <!-- 参与方 -->
+      <div>
+        <fieldset>
+          <div class="control-group">
+            <label class="control-label">固定底注范围</label>
+            <div class="controls">
+              <input type="text" name="post[cy_dizhu_fw_1]" value="{$config['cy_dizhu_fw_1']}" style="width:80px;">
+              -
+              <input type="text" name="post[cy_dizhu_fw_2]" value="{$config['cy_dizhu_fw_2']}" style="width:80px;">
+              <label class="radio inline">
+				<input type="radio" value="fw" name="post[cy_dizhu_radio]" 
+                <eq name="config['cy_dizhu_radio']" value="fw">checked="checked"</eq>
+                <empty name="config">checked</empty>
+                >生效 
+			  </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">浮动底注%</label>
+            <div class="controls">
+              <input type="text" name="post[cy_dizhu_fd]" value="{$config['cy_dizhu_fd']}" style="width:190px;">
+              <label class="radio inline">
+				<input type="radio" value="fd" name="post[cy_dizhu_radio]" 
+                <eq name="config['cy_dizhu_radio']" value="fd">checked="checked"</eq>
+                >生效
+		      </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">结算输上限</label>
+            <div class="controls">
+              <input type="text" name="post[cy_js_shu]" value="{$config['cy_js_shu']}">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">结算赢上限</label>
+            <div class="controls">
+              <input type="text" name="post[cy_js_ying]" value="{$config['cy_js_ying']}">
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary js-ajax-submit">{:L('SAVE')}</button>
+    </div>
+  </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

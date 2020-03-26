@@ -1,0 +1,6 @@
+[ 2020-03-11T09:01:13+08:00 ] 39.82.210.201 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2020-03-11T16:17:06+08:00 ] 154.17.7.184 /index.php?a=display&templateFile=README.md
+ERR: 模板不存在:themes/simplebootx/Portal/Index/README.md.html
+

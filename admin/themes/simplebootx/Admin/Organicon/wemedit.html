@@ -1,0 +1,117 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Organicon/wemedia')}">列表</a></li>
+			<li class="active"><a >编辑</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Organicon/wemeauit')}">
+		   <input type="hidden" name="id" value="{$data['ids']}">
+		   <input type="hidden" name="user_id" value="{$data['user_id']}">
+			<fieldset>
+				
+
+				<div class="control-group">
+					<label class="control-label">认证信息</label>
+					<div class="controls">
+						
+						<td align="center">{$data.information}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+                <div class="control-group">
+					<label class="control-label">姓名</label>
+					<div class="controls">
+						
+						<td>{$data.names}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				 <div class="control-group">
+					<label class="control-label">身份证号</label>
+					<div class="controls">
+						
+						<td>{$data.idnumber}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">手机号</label>
+					<div class="controls">
+						
+						<td>{$data.mobiles}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">用户手机号</label>
+					<div class="controls">
+						
+						<td>{$data.yonmobile}</td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">手持身份证</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.cardselfs}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.cardselfs}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">图片证明</label>
+					<div class="controls">
+						
+						<td><img src="{:C('url')}{$data.proves}" id="thumb1_preview" width="50" style="cursor: hand" onclick="showimage('{:C('url')}{$data.proves}');"/></td>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">审核状态</label>
+					<div class="controls">
+						
+						 <if condition="$data['is_audit'] eq '1'">
+						 	<td align="center" ><b style="color:red">待审核</b></td>
+						 </if>
+						  <if condition="$data['is_audit'] eq '2'">
+						 	<td align="center" ><b style="color:red">已审核</b></td>
+						 </if>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				
+			</fieldset>
+			<div class="form-actions">
+                <if condition="$data['is_audit'] eq '1'">
+				  <button type="submit" class="btn btn-primary js-ajax-submit">审核</button>			
+				</if>
+				
+				<a class="btn" href="{:U('Organicon/organ')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<div id="ShowImage_Form" class="modal hide">         
+         <div class="modal-header">
+             <button data-dismiss="modal" class="close" type="button"></button>
+         </div>
+         <div class="modal-body">
+           <div id="img_show">
+           </div>
+         </div>
+    </div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	 <script src="__PUBLIC__/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	function showimage(source){
+      
+         $("#ShowImage_Form").find("#img_show").html("<img src='"+source+"' class='carousel-inner img-responsive img-rounded' />");
+
+         $("#ShowImage_Form").modal();
+
+     }
+</script>

@@ -1,0 +1,8 @@
+<?php
+//000000000000a:30:{s:2:"id";s:4:"7492";s:3:"uid";s:1:"0";s:5:"uname";s:30:"英格兰狼队足球俱乐部";s:9:"region_id";s:1:"0";s:4:"type";s:1:"2";s:11:"is_supplier";s:1:"0";s:5:"title";s:78:"同呼吸，共抗疫！狼队主场号召全球人民团结共同抵御疫情";s:7:"content";s:1019:"<div >
+<p>在昨天狼队主场与布莱顿的英超比赛现场，我们打出了“同呼吸，共抗疫！Together we fight, we united.”的标语。随着新冠疫情在世界各地爆发，我们也希望借助体育的力量让大家团结起来，共同抵御疫情。<span style="letter-spacing: 0px;"> </span></p>
+<p><img src="https://img1.qunliao.info/fastdfs5/M00/01/D4/720x-/-/-/rB8CCl5ka5WASDKQAAd5EQYMq7A642.jpg" data-width="1314" data-height="852" orig-src="https://img1.qunliao.info/fastdfs5/M00/01/D4/rB8CCl5ka5WASDKQAAd5EQYMq7A642.jpg"></p>
+<p>狼队股东复星在3月1日正式启动了抗击新冠肺炎疫情的第二阶段行动，通过紧急调配全球资源，驰援日本、韩国、意大利等国家、地区抗疫。<span style="letter-spacing: 0px;"> </span></p>
+<p>复星国际董事长郭广昌表示，相知无远近，万里尚为邻。病毒虽然可怕，但是以全人类的智慧，只要团结起来，互相支持、帮助，我们对战胜病毒充满信心。</p>
+</div>";s:5:"theme";s:0:"";s:6:"praise";s:1:"0";s:7:"reading";s:1:"0";s:5:"favor";s:1:"0";s:3:"map";s:0:"";s:4:"data";s:94:"https://img1.qunliao.info/fastdfs5/M00/01/D4/280x210/crop/-/rB8CCl5ka5WASDKQAAd5EQYMq7A642.jpg";s:6:"status";s:1:"1";s:7:"addtime";s:10:"1583640010";s:7:"old_uid";s:1:"0";s:6:"old_id";s:1:"0";s:8:"zcontent";s:0:"";s:7:"is_open";s:1:"1";s:6:"is_top";s:1:"0";s:8:"top_time";s:1:"0";s:7:"is_club";s:1:"0";s:7:"is_head";s:1:"0";s:6:"is_hot";s:1:"0";s:9:"index_mol";s:1:"1";s:8:"sel_type";s:5:"10001";s:10:"sqs_status";s:1:"0";s:10:"identifshi";s:1:"1";s:8:"userInfo";b:0;}
+?>

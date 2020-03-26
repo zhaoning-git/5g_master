@@ -1,0 +1,47 @@
+<admintpl file="header" />
+
+<body>
+    <div class="wrap">
+        <ul class="nav nav-tabs">
+            <li class="active"><a >奖励列表</a></li>
+            <li><a href="{:U('Inviteconfig/setConfig')}">添加邀请奖励规则</a></li>
+            <li ><a href="{:U('Invitelog/index')}">奖励记录</a></li>
+        </ul>
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th align="center">ID</th>
+                    <th>邀请等级</th>
+                    <th>开始数</th>
+                    <th>结束数</th>
+                    <th>阶段用户数</th>
+                    <th>每个奖励{$configpub['name_coin']}</th>
+                    <th>奖励{$configpub['name_coin']}总数</th>
+                    <th align="center">{:L('ACTIONS')}</th>
+                </tr>
+            </thead>
+            <tbody>
+            <foreach name="lists" item="vo">
+                <tr>
+                    <td align="center">{$vo.id}</td>
+                    <td>{$vo['level']}</td>
+                    <td>{$vo['start']}</td>
+                    <td>{$vo['end']}</td>
+                    <td>{$vo['usernum']}</td>
+                    <td>{$vo['coin']}</td>
+                    <td>{$vo['allcoin']}</td>
+                    <td align="center">	
+                       <a href="{:U('Inviteconfig/setConfig',array('id'=>$vo['id']))}" >编辑</a>
+                       /
+                       <a href="{:U('Inviteconfig/delConfig',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+                    </td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        <div class="pagination">{$page}</div>
+
+    </div>
+    <script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

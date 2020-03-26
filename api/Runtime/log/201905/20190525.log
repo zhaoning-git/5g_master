@@ -1,0 +1,1 @@
+2019-05-25 00:41:53|DEBUG|failed to upload file to qiniu|{"Err":"incorrect region, please use up-z1.qiniup.com","Reqid":"cSIAAACgbe0LrKEV","Details":"","Code":400}

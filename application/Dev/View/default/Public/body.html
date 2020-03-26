@@ -1,0 +1,22 @@
+<block name="header">
+<nav class="tm-navbar uk-navbar uk-navbar-attached">
+    <div class="uk-container uk-container-center">
+
+        <a class="uk-navbar-brand uk-hidden-small" href="/index.php" style="color:#fff; font-size:25px">
+        <i class="uk-icon-code" style="font-size:20px; text-align:center; color:#fff; background:#3dc0f1; border-radius:100%; width:40px; height:40px; line-height:40px"></i> ApiTools
+        </a>
+
+        <ul class="uk-navbar-nav uk-hidden-small">
+            <php>if(session('ok') == 'php'){</php> <li <php>if(ACTION_NAME == 'php'){</php> class="uk-active" <php>}</php>><a href="{:U('Php')}">接口发布</a></li>  <php>}</php>
+     <li <if condition="ACTION_NAME eq app">class="uk-active"</if>><a href="{:U('App')}">接口调试</a></li>
+            <li <if condition="ACTION_NAME eq debug">class="uk-active"</if>><a href="{:U('Debug')}">接口日志</a></li>
+             <li><a href="###">待续...</a></li>
+        </ul>
+
+
+    </div>
+</nav>
+</block>
+<div style="max-width:1200px; margin:0 auto">
+<block name="body"></block>
+</div>

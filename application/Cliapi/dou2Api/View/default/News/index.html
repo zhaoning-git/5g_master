@@ -1,0 +1,65 @@
+<extend name="Public/base"/>
+<block name="body">
+<notempty name="tags">
+  <div class="avg-sm-{:sizeof($tags)+1} diy-tab ui-border-b" style="margin-bottom:3px">
+    <li><a href="{:U('Index')}" <empty name="_GET['tag']">class="active"</empty>>全部</a></li>
+    <foreach name="tags" item="vo">
+      <li><a href="{:U('Index',array('tag'=>$vo['tags']))}" <eq name="_GET['tag']" value="$vo.tags">class="active"</eq>>{$vo.tags}</a></li>
+    </foreach>
+  </div>
+</notempty>
+
+  <!--页面开始-->
+  <notempty name="slide">
+  <div class="swiper-container slide" style="margin-bottom:8px">      
+    <div class="swiper-wrapper">
+      <volist name="slide" id="vo">
+        <div class="swiper-slide" style="height:250px; overflow:hidden">
+        <a href="{:U('Detail',array('id'=>$vo['id']))}"><img data-src="{$vo.img|getThumbImageById=1200,700}" class="swiper-lazy" width="100%"></a>
+        <span class="slide-title">{$vo.title}</span>
+        </div>
+      </volist>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+ </notempty> 
+ <div id="news">
+  <div class="list-block media-list news-list">
+    <ul data-load='{ "url":"__SELF__","count":"{$count}"}'>
+      <volist name="list" id="vo">
+        <li class="row"><a href="{:U('Detail',array('id'=>$vo['id']))}" class="item-link item-content">
+          <div class="item-media">
+            <div class="{$vo.type}"><img width="120" height="95" src="{$vo.img|getThumbImageById=250,200}" style="border-radius:0px"></div>
+          </div>
+          <div class="item-inner">
+            <div class="item-title-row">
+              <div class="item-title" style="white-space:normal">{$vo.title}</div>
+            </div>
+            <div class="item-text">{$vo.description}</div>
+            <div class="item-subtitle"><i class="icon-uniF005"></i> {$vo.view} <i class="icon-uniF017"></i> {$vo.create_time|date='Y-m-d',###}</div>
+          </div>
+          </a></li>
+      </volist>
+    </ul>
+    <div class='infinite-scroll-preloader'></div>
+  </div></div>
+</block>
+
+
+<block name="script">
+<script type='text/javascript' src='__STATIC__/swiper/swiper.js' charset='utf-8'></script>
+<script>
+var swiper = new Swiper('.slide', {
+	pagination: '.slide .swiper-pagination',
+	preloadImages: false,
+    lazyLoading: true,
+	spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+	 paginationType: 'progress'
+
+});
+<empty name="list">Empty('一条文章也没有','#news')</empty>
+</script>
+</block>

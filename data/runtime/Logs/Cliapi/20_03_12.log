@@ -1,0 +1,36 @@
+[ 2020-03-12T16:40:33+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Server error: `GET https://www.dongqiudi.com/article/1362870` resulted in a `502 Bad Gateway` response:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" (truncated...)
+
+
+[ 2020-03-12T17:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-12T17:10:22+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Server error: `GET https://www.dongqiudi.com/article/1362898` resulted in a `502 Bad Gateway` response:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" (truncated...)
+
+
+[ 2020-03-12T17:30:19+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: Server error: `GET https://www.dongqiudi.com/article/1362920` resulted in a `502 Bad Gateway` response:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" (truncated...)
+
+
+[ 2020-03-12T18:00:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-12T19:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-12T20:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-12T21:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-12T22:00:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-12T23:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+

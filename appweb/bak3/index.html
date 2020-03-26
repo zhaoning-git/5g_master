@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>5g-sports</title><style>body{background:#fff;margin:0;font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;line-height:1.5;border-radius:20px}
+      body.inti-loading-lock{overflow:hidden}
+      #inti-loading-bg{height:100%;display:flex;flex-direction:column;align-items:center;flex-wrap:wrap;justify-content:center;order:1;height:100%;position:fixed;width:100%;z-index:9999999999999;-webkit-app-region:drag}
+      #inti-loading-bg::after{content:' ';position:fixed;width:100%;height:100%;left:0;top:0;z-index:1987;background:#fff}
+      @keyframes rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}
+      50%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+      100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+      }
+      .inti-loader{position:relative;margin:75px auto;width:100px;height:100px;display:block;overflow:hidden;z-index:1988}
+      .inti-loader div{height:100%;box-sizing:border-box;padding:4px}
+      .inti-loader1,.inti-loader1 div{border-radius:50%;padding:4px;border:2px solid transparent;-webkit-animation:rotate linear 6s infinite;animation:rotate linear 6s infinite;border-top-color:#ddb926;border-bottom-color:#00BFFE;line-height:20px;box-sizing:border-box}
+      .inti-loading-title{position:relative;z-index:99999;color:#000;top:-50px;font-size:16px}
+      .inti-fadeOut{animation:fadeOut 1s;animation-iteration-count:1;animation-fill-mode:forwards}
+      @keyframes fadeOut{0%{opacity:1}
+      100%{opacity:0}
+      }</style><script>window.userAgent = navigator.userAgent;
+      window.onload = function () {
+          setTimeout(() => {
+              document.getElementById("body").classList.remove("inti-loading-lock");
+              document.getElementById("inti-loading-bg").classList.add("inti-fadeOut");
+              setTimeout(() => {
+                  var loadingBg = document.getElementById("inti-loading-bg");
+                  loadingBg.parentNode.removeChild(loadingBg);
+              }, 500);
+          }, 500);
+      }
+
+      var setWindowDelay;
+      window.size = { width: document.documentElement.clientWidth, height: document.documentElement.clientHeight };
+      if (window.size.width > 1400) {
+          window.size.siderMax = true;
+      } else {
+          window.size.siderMax = false;
+      }
+      window.onresize = function () {
+          clearTimeout(setWindowDelay)
+          setWindowDelay = setTimeout(function () {
+              window.size.width = document.documentElement.clientWidth
+              window.size.height = document.documentElement.clientHeight
+              if (window.size.width > 1280) {
+                  window.size.siderMax = true;
+              } else {
+                  window.size.siderMax = false;
+              }
+          }, 50);
+      }</script><link href=./static/css/app.e9038cf8fa0be87029f8e9d2e454d0e5.css rel=stylesheet></head><body id=body class=inti-loading-lock><div id=inti-loading-bg><div class="inti-loader inti-loader1"><div><div><div><div><div><div></div></div></div></div></div></div></div><div class=inti-loading-title>内容努力加载中...</div></div><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.d5c46dc486771829e169.js></script><script type=text/javascript src=./static/js/app.85c50654c75d4baa7b55.js></script></body></html>

@@ -1,0 +1,83 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Classify/classifyshow')}">列表</a></li>
+			
+		</ul>
+		<form method="post" class="js-ajax-form" action="{:U('Chargerules/listorders')}">
+		  <div class="table-actions">
+				<button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+			</div>
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+					 
+						<th align="center">ID</th>
+						<th>企业名称</th>
+						<th>姓名	</th>
+						<th>省</th>
+						<th>市</th>
+						<th>手机号</th>
+						<th>类型</th>
+						
+
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="data" item="vo">
+					<tr>
+					 
+						<td align="center">{$vo.id}</td>
+						<td>{$vo['enterprise']}</td>
+						<td>{$vo['name']}</td>
+						<td>{$vo['areanmae']}</td>
+						<td>{$vo['areanmaee']}</td>
+						<td>{$vo['mobile']}</td>
+						
+						<if condition="$vo['types'] eq '1'">
+     							   <td>个人</td> 
+   						 </if>
+   						 <if condition="$vo['types'] eq '2'">
+     							   <td>企业</td> 
+   						 </if>
+						<td align="center">	
+							
+							<a href="{:U('Advertising/addel',array('id'=>$vo['id']))}"  class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+				<div class="table-actions">
+				<button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+			</div>
+		</form>
+		 <div id="laypage"></div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/laypage/1.2/laypage.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	var url = "{:U('Classify/classifyshow')}";
+     laypage({
+                 cont: 'laypage',//指向存放分页的容器，值可以是容器ID 
+                 pages: {$pageTo},//数据总数
+                 skin:'#5F8878',//皮肤
+                 curr: '{$dang}',//当前页
+                 jump: function ( e, first) {
+                     if (!first) {
+                          
+                         location.href=url+'&page='+e.curr;
+                         
+
+
+                    }
+                }
+            });
+
+</script>

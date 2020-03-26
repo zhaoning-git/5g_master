@@ -1,0 +1,50 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Order/OrderDetail')}">返回</a></li>
+			<li class="active"><a>收货信息</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Clubs/edit_do')}">
+		  <input type="hidden" name="id" value="{$club['id']}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">俱乐部名称</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$club['name']}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">创建者</label>
+					<div class="controls">
+						<input type="text" onkeyup ="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" value="{$chuang['user_nicename']}" readonly>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">俱乐部头像</label>
+					<div class="controls">
+							<img src="{$club['url']}" id="thumb_preview" width="50" style="cursor: hand" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">俱乐部状态</label>
+					<div class="controls">
+						<label class="radio inline" for="del1"><input type="radio" name="is_del" value="0" id="del1" <if condition="$club['is_del'] eq '0'">checked</if> >运行中</label>
+						<label class="radio inline" for="del2"><input type="radio" name="is_del" value="1" id="del2" <if condition="$club['is_del'] eq '1'">checked</if> >已删除</label>
+					</div>
+				</div>
+		
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="{:U('Clubs/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

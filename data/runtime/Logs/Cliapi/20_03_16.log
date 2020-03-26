@@ -1,0 +1,264 @@
+[ 2020-03-16T00:00:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-16T01:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-16T02:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-16T03:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-16T04:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-16T05:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-16T06:00:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Task&a=getData
+ERR: 无法加载控制器:Task
+
+[ 2020-03-16T06:06:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:07:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 126:Incorrect key file for table '/tmp/#sql_b3b_0.MYI'; try to repair it
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_library_team`
+
+[ 2020-03-16T06:08:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:09:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_library_team`
+
+[ 2020-03-16T06:10:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=Zixuncaiji
+ERR: 126:Incorrect key file for table '/tmp/#sql_b3b_0.MYI'; try to repair it
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_show`
+
+[ 2020-03-16T06:10:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:11:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:12:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:13:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:14:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:15:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:16:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:17:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 126:Incorrect key file for table '/tmp/#sql_b3b_0.MYI'; try to repair it
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_library_team`
+
+[ 2020-03-16T06:18:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:19:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 126:Incorrect key file for table '/tmp/#sql_b3b_0.MYI'; try to repair it
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_library_team`
+
+[ 2020-03-16T06:20:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:21:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:22:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:23:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:24:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:25:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 126:Incorrect key file for table '/tmp/#sql_b3b_0.MYI'; try to repair it
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_library_team`
+
+[ 2020-03-16T06:26:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:27:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:28:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 126:Incorrect key file for table '/tmp/#sql_b3b_0.MYI'; try to repair it
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_library_team`
+
+[ 2020-03-16T06:29:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:30:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:31:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:32:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:33:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:34:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:35:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:36:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:37:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:38:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:39:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:40:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:41:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+[ 2020-03-16T06:43:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T06:44:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T06:45:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T06:46:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FRO[ 2020-03-16T10:05:09+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Zixun&a=typeInfo
+ERR: 126:Incorrect key file for table '/tmp/#sql_b3b_1.MYI'; try to repair it
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_club_type`
+
+[ 2020-03-16T10:05:09+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Zixun&a=indexInfo
+ERR: 126:Incorrect key file for table '/tmp/#sql_b3b_0.MYI'; try to repair it
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_show`
+
+[ 2020-03-16T10:05:35+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Public&a=getSlide
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:05:35+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Zixun&a=typeInfo
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_club_type`
+
+[ 2020-03-16T10:05:35+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Match&a=saichengData
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:05:35+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Match&a=saichengData
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:05:35+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Zixun&a=typeInfo
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_club_type`
+
+[ 2020-03-16T10:05:35+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Match&a=bifenData
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:05:35+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Feijing&a=getSaiChengData
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:05:35+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Zixun&a=indexInfo
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_show`
+
+[ 2020-03-16T10:06:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T10:06:25+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Zixun&a=typeInfo
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_club_type`
+
+[ 2020-03-16T10:06:25+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Match&a=bifenData
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:06:25+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Zixun&a=typeInfo
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_club_type`
+
+[ 2020-03-16T10:06:25+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Public&a=getSlide
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:06:25+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Match&a=saichengData
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:06:25+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Match&a=saichengData
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:06:25+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Zixun&a=indexInfo
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_show`
+
+[ 2020-03-16T10:06:25+08:00 ] 202.57.46.94 /index.php?g=Cliapi&m=Feijing&a=getSaiChengData
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_options`
+
+[ 2020-03-16T10:07:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T10:08:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T10:09:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T10:10:01+08:00 ] 103.210.23[ 2020-03-16T23:53:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: SQLSTATE[HY000] [1040] Too many connections
+
+[ 2020-03-16T23:55:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T23:56:02+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T23:57:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T23:58:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+
+[ 2020-03-16T23:59:01+08:00 ] 103.210.236.106 /index.php?g=Cliapi&m=Autotask&a=scheduleDb
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_socket`
+

@@ -1,0 +1,32 @@
+<extend name="Public/base"/>
+<block name="body">
+
+
+<button type="button" onClick="sdf()">sdf</button>
+<script>
+
+function sdf(){
+
+pingpp.createPayment({$paytype}, function(result, error){
+    if (result == "success") {
+        // 只有微信公众账号 wx_pub 支付成功的结果会在这里返回，其他的 wap 支付结果都是在 extra 中对应的 URL 跳转。
+    } else if (result == "fail") {
+        // charge 不正确或者微信公众账号支付失败时会在此处返回
+    } else if (result == "cancel") {
+        // 微信公众账号支付取消支付
+    }
+});
+	
+}
+
+</script>
+
+</block>
+<block name="share">
+<script type="text/javascript">
+	wx.ready(function(){
+		wx.hideOptionMenu();
+		wx.hideAllNonBaseMenuItem();
+	});
+</script>
+</block>

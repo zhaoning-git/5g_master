@@ -1,0 +1,39 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>头衔级别所需金币/银币</a></li>
+		</ul>
+		<form method="post" class="js-ajax-form" >
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>头衔等级</th>
+						<th>等级名称</th>
+						<th>需要金币</th>
+						<th>需要银币</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="data" item="vo">
+					<tr>
+						<td>{$vo['level']}</td>
+						<td>{$vo['title_name']}</td>
+						<td>{$vo['send_gold_coin']}</td>
+						<td>{$vo['send_silver_coin']}</td>
+						<td align="center">
+						    <a href="{:U('Clubs/edit_title',array('id'=>$vo['id']))}" >编辑</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

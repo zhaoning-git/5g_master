@@ -1,0 +1,57 @@
+<extend name="Public/base"/>
+<block name="body">
+    <form action="__SELF__" method="post" class="car-form">
+      <div class="list-block media-list car-list">
+        <ul>
+          <volist name="Carlist" id="vo">
+            <li class=" item-content"> <a href="{:U('DelCar',array('id'=>$vo['id']))}" class="close close-default" style="top:-6px; right:3px" data-ajax="get" data-info='{"title":"温馨提示","desc":"确定要移除该商品吗","button":"确定"}' data-event='{"del":".item-content"}' data-callback='seecar'><i class="icon-uniE614"></i></a>
+              <label class="label-checkbox">
+                <input type="checkbox" name="ids[{$vo['id']}]" class="ids" value="{$vo.id}">
+                <span class="item-media"><i class="icon icon-form-checkbox"></i></span> </label>
+              <div class="item-goods-img"><img src="{:getThumbImageById($vo['goods_img'],240,240)}" width="100%"></div>
+              <div class="item-inner">
+              <div class="item-title">{$vo.goods_title}</div>
+              <div class="item-text"><span class="text-left text-danger price" style="font-size:14px; display:inline-block" data-price="{$vo.goods_price}">¥{$vo.goods_price}</span> <span class="fr">
+                <button type="button" class="ui-border plus"><i class="icon icon-uniF067"></i></button>
+                <input class="ui-border-b car-number" type="text" name="buy_num[{$vo['id']}]" value="1">
+                <button type="button"  class="ui-border minus"><i class="icon icon-uniF068"></i></button>
+                </span> </div>
+            </li>
+          </volist>
+        </ul>
+      </div>
+      <div class="car-subtall fc ui-border-t">
+        <div class="checkall fl " style="width:100px">
+          <label class="label-checkbox">
+            <input type="checkbox" class="check-all">
+            <span class="item-media"><i class="icon-form-checkbox"></i></span> 全选</label>
+        </div>
+        <div class="clearing fr">
+          <button type="submit" class="btn btn-danger" data-ajax="post">结算(<span id="CarNumber">0</span>)</button>
+        </div>
+        <div class="price fr">¥<span id="subtotal" class="text-danger">0</span><br>
+          (不含运费)</div>
+      </div>
+    </form>
+</block>
+<block name="script"> 
+<script type="text/javascript" src="__JS__/car.js"></script> 
+<script>
+  function seecar(data){
+	   var num = $('.item-content').length;
+	   $('.unred.Car .badge').html(num);
+	   if(num <= 0){
+		   $('.unred.Car .badge').remove();
+		   Alert('购物车里已经空了,随便逛逛吧','warning',1,"U('Shop/Index/Index')");
+	   }
+  }
+</script>
+</block>
+<block name="share">
+<script type="text/javascript">
+	wx.ready(function(){
+		wx.hideOptionMenu();
+		wx.hideAllNonBaseMenuItem();
+	});
+</script>
+</block>

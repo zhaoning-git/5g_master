@@ -1,0 +1,375 @@
+<admintpl file="header" />
+
+</head>
+
+<body>
+
+	<div class="wrap">
+
+		<ul class="nav nav-tabs">
+
+			<li class="active"><a href="{:U('Jifenduihuan/privacy')}">列表</a></li>
+			
+
+		</ul>
+
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Jifenduihuan/privacyedit')}">
+
+			<fieldset>
+
+				<!--
+				<div class="control-group">
+
+					<label class="control-label">隐私内容</label>
+
+				</div>
+                -->
+                
+                <input type="hidden" name="id" value="{$data['id']}" />
+
+				<div class="control-group">
+
+					<div class="formControls col-xs-8 col-sm-9">
+
+					  <script type="text/plain" id="content" name="post[post_content]" style="width:800px;height:400px;">{$data['content']}</script>
+
+                    </div>
+
+				</div>
+
+			</fieldset>
+
+			<div class="form-actions">
+
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+
+				<a class="btn" href="{:U('Jifenduihuan/privacy')}">{:L('BACK')}</a>
+
+			</div>
+
+		</form>
+
+	</div>
+
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+
+	<script type="text/javascript">
+
+
+	//编辑器路径定义
+
+	var editorURL = GV.DIMAUB;
+
+	</script>
+
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+
+	<script type="text/javascript">
+
+	$(function() {
+
+		$(".js-ajax-close-btn").on('click', function(e) {
+
+			e.preventDefault();
+
+			Wind.use("artDialog", function() {
+
+				art.dialog({
+
+					id : "question",
+
+					icon : "question",
+
+					fixed : true,
+
+					lock : true,
+
+					background : "#CCCCCC",
+
+					opacity : 0,
+
+					content : "您确定需要关闭当前页面嘛？",
+
+					ok : function() {
+
+						setCookie("refersh_time", 1);
+
+						window.close();
+
+						return true;
+
+					}
+
+				});
+
+			});
+
+		});
+
+		/////---------------------
+
+		Wind.use('validate','ajaxForm','artDialog',function() {
+
+			//编辑器
+
+			editorcontent = new baidu.editor.ui.Editor();
+
+			editorcontent.render('content');
+
+			try {
+
+				editorcontent.sync();
+
+			} catch (err) {}
+
+			//增加编辑器验证规则
+
+			jQuery.validator.addMethod('editorcontent',function() {
+
+				try {
+
+					editorcontent.sync();
+
+				} catch (err) {}
+
+				return editorcontent.hasContents();
+
+			});
+
+			
+
+			var form = $('form.js-ajax-forms');
+
+			//ie处理placeholder提交问题
+
+			if ($.browser.msie) {
+
+				form.find('[placeholder]').each(function() {
+
+					var input = $(this);
+
+					if (input.val() == input
+
+							.attr('placeholder')) {
+
+						input.val('');
+
+					}
+
+				});
+
+			}
+
+			//表单验证开始
+
+			form.validate({
+
+				//是否在获取焦点时验证
+
+				onfocusout : false,
+
+				//是否在敲击键盘时验证
+
+				onkeyup : false,
+
+				//当鼠标掉级时验证
+
+				onclick : false,
+
+				//验证错误
+
+				showErrors : function(errorMap,errorArr) {
+
+					//errorMap {'name':'错误信息'}
+
+					//errorArr [{'message':'错误信息',element:({})}]
+
+					try {
+
+						$(errorArr[0].element).focus();
+
+						art.dialog({
+
+							id : 'error',
+
+							icon : 'error',
+
+							lock : true,
+
+							fixed : true,
+
+							background : "#CCCCCC",
+
+							opacity : 0,
+
+							content : errorArr[0].message,
+
+							cancelVal : '确定',
+
+							cancel : function() {
+
+								$(errorArr[0].element).focus();
+
+							}
+
+						});
+
+					} catch (err) {}
+
+				},
+
+				//验证规则
+
+				rules : {
+
+					'post[post_title]' : {required : 1},
+
+					'post[post_content]' : {editorcontent : true}
+
+				},
+
+				//验证未通过提示消息
+
+				messages : {
+
+					'post[post_title]' : {required : '请输入标题'},
+
+					'post[post_content]' : {editorcontent : '内容不能为空'}
+
+				},
+
+				//给未通过验证的元素加效果,闪烁等
+
+				highlight : false,
+
+				//是否在获取焦点时验证
+
+				onfocusout : false,
+
+				//验证通过，提交表单
+
+				submitHandler : function(forms) {
+
+					$(forms).ajaxSubmit({
+
+						url : form.attr('action'), //按钮上是否自定义提交地址(多按钮情况)
+
+						dataType : 'json',
+
+						beforeSubmit : function(arr,$form,options) {
+
+							alert(form.attr('action'));
+
+						},
+
+						success : function(data,statusText,xhr,$form) {
+
+							if (data.status) {
+
+								setCookie("refersh_time",1);
+
+								//添加成功
+
+								Wind.use("artDialog",function() {
+
+									art.dialog({
+
+										id : "succeed",
+
+										icon : "succeed",
+
+										fixed : true,
+
+										lock : true,
+
+										background : "#CCCCCC",
+
+										opacity : 0,
+
+										content : data.info,
+
+										button : [
+
+										{
+
+											name : '继续添加？',
+
+											callback : function() {
+
+												reloadPage(window);
+
+												return true;
+
+											},
+
+											focus : true
+
+										},
+
+										{
+
+											name : '返回列表',
+
+											callback : function() {
+
+												location.href = "{:U('AdminPage/index')}";
+
+												return true;
+
+											}
+
+										}
+
+										]
+
+									});
+
+								});
+
+							} else {
+
+								alert(data.info);
+
+							}
+
+						}
+
+					});
+
+				}
+
+			});
+
+		});
+
+	////-------------------------
+
+	});
+
+	</script>
+	<script type="text/javascript">
+ 
+		//实例化编辑器
+		//建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+		var ue = UE.getEditor('content');
+	 
+	 
+	   
+		function getContent() {
+			var arr = [];
+			arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+			arr.push("内容为：");
+			arr.push(UE.getEditor('editor').getContent());
+			alert(arr.join("\n"));
+		}
+	   
+	</script>
+
+</body>
+
+</html>
+

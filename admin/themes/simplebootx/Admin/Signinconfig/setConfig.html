@@ -1,0 +1,44 @@
+<admintpl file="header" />
+</head>
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li><a href="{:U('Signinconfig/index')}">规则列表</a></li>
+      <li class="active"><a href="{:U('Signinconfig/setConfig')}">添加签到奖励规则</a></li>
+      <li ><a href="{:U('UserSignin/index')}">奖励记录</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Signinconfig/setConfig')}">
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label">签到天数</label>
+          <div class="controls">
+            <input type="text" name="day" value="{$info.day}">
+            <span class="form-required">*</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">奖励银币</label>
+          <div class="controls">
+            <input type="text" name="coin" value="{$info.coin}">
+            <span class="form-required">*</span>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">额外奖励</label>
+          <div class="controls">
+            <input type="text" name="extra_coin" value="{$info.extra_coin}">
+
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+        <a class="btn" href="{:U('Signinconfig/index')}">{:L('BACK')}</a>
+      </div>
+    </form>
+  </div>
+  <script src="__PUBLIC__/js/common.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

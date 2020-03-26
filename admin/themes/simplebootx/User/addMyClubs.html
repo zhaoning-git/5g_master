@@ -1,0 +1,66 @@
+<admintpl file="header"/>
+<style>
+  .controls img{
+      max-width:200px;
+  }
+  .formtxt{padding-top: 5px; display: inline-block;}
+  .radio input[type="radio"], .checkbox input[type="checkbox"] {margin-left: -15px;}
+  label img{width: 20px; height: 20px;}
+</style>
+</head>
+
+<body>
+  <div class="wrap js-check-wrap">
+
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('indexadmin/myClubs',array('id'=>$userinfo['id']))}">关注的俱乐部列表</a></li>
+        <li class="active"><a>添加关注</a></li>
+    </ul>
+
+    <form class="form-horizontal js-ajax-form" action="{:U('indexadmin/addMyClubs')}" method="post">
+
+      <fieldset>
+
+        <div class="control-group">
+          <label class="control-label">用户</label>
+          <div class="controls">
+            <span class="formtxt">
+             {$userinfo['user_login']}
+            </span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">选择关注俱乐部</label>
+          <div class="controls">
+            <Volist name="lists" id="item">
+              <label class="checkbox inline" style="width: 180; padding: 10px;">
+                <img src="{$item.url}">
+                <input type="checkbox"  value="{$item.id}" name="club_id[]" <eq name="item.is_checked" value="1">checked</eq>>{$item.name}
+              </label>
+            </Volist>
+            
+            
+          </div>
+        </div>
+
+      </fieldset>
+      <div class="form-actions">
+        <input type="hidden" name="uid" value="{$userinfo.id}">
+        <button type="submit" class="btn btn-primary js-ajax-submit">确定</button>
+        <a class="btn" href="{:U('indexadmin/index')}">{:L('BACK')}</a>
+      </div>
+
+      
+
+    </form>
+
+  </div>
+
+  <script src="__PUBLIC__/js/common.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+  
+
+</body>
+
+</html>

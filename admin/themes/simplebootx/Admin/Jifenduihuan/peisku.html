@@ -1,0 +1,110 @@
+<admintpl file="header" />
+<style type="text/css">
+  .hoverSTTTTTT{
+    background-color: #2eafbb;
+  }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="nav nav-tabs">
+            <li class="active"><a >商品列表</a></li>
+            <li><a href="{:U('Jifenduihuan/index')}">1</a></li>
+        </ul>
+        <form method="post" class="js-ajax-form" action="">
+            
+
+            <table class="table table-hover table-bordered">
+                <thead>
+                    
+                </thead>
+                <tbody class="ceshi">
+
+                <foreach name="data" item="vo" >
+                      <tr  >
+                          <td style="color: red">{$vo['attribute_name']}</td>
+                          <foreach name="vo['attrs']" item="vos">
+                           
+                               <!--  <td  onClick="att('{$vos['shuzhi']}')"><input type="" class="btn btn-primary " value=""> -->
+                               
+                                <td  class ="sd"><a onClick="att(this,'{$vos['shuzhi']}')" data-id="d12" class="btn">{$vos['shuzhi']}</a></td> 
+                               
+                           </td>
+                          </foreach>
+                      </tr>
+                        
+                    
+                </foreach>
+                <div>
+                    
+                </div>
+                </tbody>
+            </table>
+            <div class="pagination">{$page}</div>
+           
+        </form>
+      
+    </div>
+  <div class="wrap">
+        <div class="layui-row">
+            
+            <div class="layui-col-md3">
+                <table  class="table table-hover table-bordered">
+                   <tr class="ss">
+                        <foreach name="data" item="vo" >
+                            <td style="width: 100%" class="items">{$vo['attribute_name']}</td>
+                        </foreach>
+                        <td style="left: 1000px">库存</td>
+                        <td style="width: 100%">银币</td>
+                        <td style="width: 100%">金币</td>
+                   </tr>
+                    <tr class="op">
+
+                    </tr>
+                   
+                </table>
+                
+            </div>
+        </div>
+  </div>
+    
+    <script src="__PUBLIC__/js/common.js"></script>
+    <script src="__PUBLIC__/layui/layui.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+</body>
+</html>
+<script type="text/javascript">
+    let shu = []; 
+    let  su = 3;
+    let sku = 0;
+    function att(obj,shuzhi){
+     
+
+       $(obj).eq($(this).index()).css('background', '#2eafbb').siblings().css('background', '#fff');
+      
+        
+      
+        shu.push(shuzhi);
+          var option = '<td>'+'<input type="text" >'+'</td><td>'+'<input type="text" >'+'</td><td>'+'<input type="text" >'+'</td>'
+         for(var j = 0, len = shu.length; j < len; j++) {
+          var newcell = shu[j];
+          option += '<td style="width: 100px" class="item">'+newcell+'</td>'; //默认值
+           if(sku <= su){
+             //option +='<tr>'+23+'</tr>';
+           //  $(".op").html(option);
+          }
+
+          $(".op").html(option);
+        }
+          su++;
+        
+         
+       
+    }
+     //获取长度
+     let chu =  $(".ss").children(".items").length;
+     sku = Number(su) + Number(chu);
+    
+      
+    // console.log(shu) 
+</script>

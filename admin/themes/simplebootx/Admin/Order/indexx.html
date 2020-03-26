@@ -1,0 +1,65 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a >订单列表</a></li>
+        <li><a href="{:U('Order/add')}">添加订单</a></li>
+    </ul>
+
+    <form method="post" class="js-ajax-form tihuan">
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr>
+                <th align="center">ID</th>
+                <th>订单编号</th>
+                <th>所用金币</th>
+                <th>所用银币</th>
+                <!-- <th>分类</th> -->
+                <th>用户</th>
+                <th>状态</th>
+                <th align="center">{:L('ACTIONS')}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="info" item="vo">
+                <tr>
+                    <td align="center">{$vo.id}</td>
+                    <td>{$vo.order_no}</td>
+                    <td>{$vo.jinbi}</td>
+                    <td>{$vo.yinbi}</td>
+                    <td>{$vo.user_nicename}</td>
+                    <td>
+                        <if condition="$vo['status'] eq 1">
+                            待付款
+                            <elseif condition="$vo['status'] eq 2"/>
+                            待发货
+                            <elseif condition="$vo['status'] eq 3"/>
+                            待收货
+                            <elseif condition="$vo['status'] eq 4"/>
+                            待评价,具体请查看订单详情
+                        </if>
+                    </td>
+                    <td align="center">
+                       <a href="{:U('Order/orderDetail',array('order_id'=>$vo['id']))}" >订单详情</a>
+                        |
+                       <a href="{:U('Order/delOrder',array('order_no'=>$vo['order_no']))}" class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除订单</a>
+
+                    </td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+
+        <div class="layui-collapse">
+            <div class="pagination">{$page}</div>
+            <div class="table-actions">
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery.js"></script>

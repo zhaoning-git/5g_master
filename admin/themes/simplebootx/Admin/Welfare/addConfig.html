@@ -1,0 +1,58 @@
+<admintpl file="header" />
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li><a href="{:U('Welfare/index')}">优惠券列表</a></li>
+      <li class="active"><a href="{:U('Welfare/addConfig')}">编辑</a></li>
+      <li ><a href="{:U('Welfare/log')}">记录</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Welfare/addConfig')}">
+      <fieldset>
+        
+        <div class="control-group">
+          <label class="control-label">名称</label>
+          <div class="controls">
+            <input type="text" name="title" <notempty name="info.id">readonly </notempty> value="{$info.title}">
+            <span class="form-required">*</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">有效期</label>
+          <div class="controls">
+            <input type="text" name="youxiao_day" value="{$info.youxiao_day}">
+            <span class="form-required">*天</span>
+          </div>
+        </div>
+        <div class="control-group">
+          <eq name="info.id" value="3">
+             <label class="control-label">合并上限</label>
+          <else/>
+             <label class="control-label">每日上限</label>
+          </eq>
+          
+          <div class="controls">
+            <input type="text" name="limit" value="{$info.limit}">
+            0是不限制
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label">说明</label>
+          <div class="controls">
+            <textarea name="remark" rows="2" cols="20" id="remark" class="inputtext" style="height: 100px; width: 500px;">{$info['remark']}</textarea>
+          </div>
+        </div>
+        
+      </fieldset>
+      <div class="form-actions">
+        <input type="hidden" name="id" value="{$info.id}">
+        <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+        <a class="btn" href="{:U('Welfare/index')}">{:L('BACK')}</a>
+      </div>
+    </form>
+  </div>
+  <script src="__PUBLIC__/js/common.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

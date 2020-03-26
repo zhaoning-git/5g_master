@@ -1,0 +1,72 @@
+<admintpl file="header" />
+
+</head>
+<body>
+    <div class="wrap">
+        <ul class="nav nav-tabs">
+            <li class="active"><a >球队认证列表</a></li>
+            
+        </ul>
+        <form method="post" class="js-ajax-form" action="{:U('Gift/listorders')}">
+            <div class="table-actions">
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+            </div>
+
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th align="center">ID</th>
+                       
+                        <th>球队名称</th>
+                        <th>姓名</th>
+                        <th>身份证号</th>
+
+                        <th>手持身份证</th>
+                        <th>个人介绍</th>
+                        <th>图片证明</th>
+                       
+                        <th>手机号</th>
+                        <th>用户手机号</th>
+                        <th>审核状态</th>
+                        <th align="center">{:L('ACTIONS')}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <foreach name="data" item="vo">
+                    <tr>
+                        <td align="center">{$vo.ids}</td>
+                        <td>{$vo.team}</td>
+                     
+                        <td>{$vo.names}</td>
+                        <td>{$vo.idnumber}</td>
+                       
+                        <td><img src="{:C('url')}{$vo.cradselfs}" id="thumb1_preview" width="50" style="cursor: hand" /></td>
+                         <td>{$vo.introduction}</td>
+                        <td><img src="{:C('url')}{$vo.proves}" id="thumb1_preview" width="50" style="cursor: hand" /></td>
+                        <td>{$vo.mobiles}</td>
+                        <td>{$vo.usermobile}</td>
+                        <if condition="$vo['is_audit'] eq '1'">
+                            <td align="center">待审核</td>
+                        </if>
+                        <if condition="$vo['is_audit'] eq '2'">
+                            <td align="center">审核通过</td>
+                        </if>
+                    <td align="center">	
+                    
+                    <a href="{:U('Organicon/temdit',array('id'=>$vo['ids']))}" >编辑</a>
+                    |
+                    <a href="{:U('Order/del',array('id'=>$vo.id))}" class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+                    </td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+            <div class="pagination">{$page}</div>
+            <div class="table-actions">
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit">{:L('SORT')}</button>
+            </div>
+        </form>
+    </div>
+    <script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

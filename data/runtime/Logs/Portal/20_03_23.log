@@ -1,0 +1,48 @@
+[ 2020-03-23T18:21:55+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:06+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:07+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:08+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:08+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:12+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:12+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:12+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:12+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:13+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:18+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:18+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:18+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:19+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:22:21+08:00 ] 127.0.0.1 /
+ERR: Class 'Redis' not found
+
+[ 2020-03-23T18:25:10+08:00 ] 127.0.0.1 /
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'dongqiu'@'localhost' (using password: YES)
+

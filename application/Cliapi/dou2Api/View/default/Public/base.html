@@ -1,0 +1,19 @@
+<if condition="!$_GET['ajax_page']">
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file="Public/head"/>
+</head>
+<body>
+<if condition="is_wechat()">    <include file="Public/wechat"/> </if>
+<div  id="ajax-page-container">
+</if>
+  
+ <include file="Public/theme"/>
+  <include file="Public/body"/>
+  <if condition="!$_GET['ajax_page']">
+</div>
+<include file="Public/footer"/>
+</body>
+</html>
+</if>

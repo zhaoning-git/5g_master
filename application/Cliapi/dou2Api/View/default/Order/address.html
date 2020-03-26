@@ -1,0 +1,16 @@
+<div class="list-block media-list notop_line">
+  <ul>
+    <volist name="list" id="vo">
+      <li> <a href="{:U('Center',array('oid'=>$oid,'aid'=>$vo['id']))}" class="item-link item-content">
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">收货人：{$vo.truename}</div>
+          </div>
+          <div class="item-subtitle" style="margin-top:5px">手机： {$vo.mobile}</div>
+          <div class="item-subtitle">{$vo.address}</div>
+          <div class="item-subtitle">{$vo.town} {$vo.street_number}</div>
+        </div>
+        </a> </li>
+    </volist>
+  </ul>
+</div>

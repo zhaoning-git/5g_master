@@ -1,0 +1,63 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>成员列表</a></li>
+			<li><a href="{:U('Clubs/mem_add')}">俱乐部加入成员</a></li>
+		</ul>
+		<form method="post" class="js-ajax-form" >
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>所属俱乐部</th>
+						<th>用户名</th>
+						<th>最后一次登录的IP</th>
+						<th>所拥有的金币</th>
+						<th>所拥有的银币</th>
+						<th>用户在俱乐部中的状态</th>
+						<th>用户的状态</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="memInfo" item="vo">
+					<tr>
+						<td align="center">{$vo.id}</td>
+						<td>{$vo['name']}</td>
+						<td>{$vo['user_nicename']}</td>
+						<td>{$vo['last_login_ip']}</td>
+						<td>{$vo['gold_coin']}</td>
+						<td>{$vo['silver_coin']}</td>
+						<td>
+							<if condition="$vo['status'] eq 0">未审核
+							<elseif condition="$vo['status'] eq 1"/>已加入
+							<elseif condition="$vo['status'] eq 2" />已删除
+							<else/>已拒绝
+							</if>
+						</td>
+						<td>
+							<if condition="$vo['user_status'] eq 0">
+								用户已被禁用
+							<elseif condition="$vo['user_status'] eq 1"/>
+								正常
+							<else />
+								未验证
+							</if>
+						</td>
+						<td align="center">
+							<a href="{:U('Clubs/mem_check',array('id'=>$vo['id'],'uid'=>$vo['uid']))}">审核</a>
+							|<a href="{:U('Clubs/mem_del',array('id'=>$vo['id'],'cid'=>$vo['cid']))}" class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

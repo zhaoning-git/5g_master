@@ -1,0 +1,43 @@
+<form action="{:U()}" method="post" class="form-horizontal">
+
+    <table width="100%" border="0" class="table table-bordered">
+      <tr>
+        <td width="22%">订单ID</td>
+        <td width="78%">{$info.id}</td>
+      </tr>
+       <tr>
+        <td>商品名称</td>
+        <td>{:cid2name($info[goods_id])}</td>
+      </tr>
+       <tr>
+        <td>购买数量</td>
+        <td>{$info.goods_num}件</td>
+      </tr>
+       <tr>
+        <td>订单总价</td>
+        <td><span class="label label-danger">{$info.realprice}</span> 元</td>
+      </tr>
+      <tr>
+        <td>设置交易状态</td>
+      
+        <td style="padding:10px"><select name="status" class="form-control">
+            <option value="0" <eq name="info[status]" value="0">selected</eq>>用户未付款</option>
+            <option value="1" <eq name="info[status]" value="1">selected</eq>>用户已付款</option>
+            <option value="2" <eq name="info[status]" value="2">selected</eq>>已发货</option>
+            <option value="3" <eq name="info[status]" value="3">selected</eq>>用户已确认收货,交易成功</option>
+            <option value="-1" <eq name="info[status]" value="-1">selected</eq>>用户申请退货</option>
+            <option value="-2" <eq name="info[status]" value="-2">selected</eq>>同意退货退款</option>
+            <option value="-3" <eq name="info[status]" value="-3">selected</eq>>驳回退货请求</option>
+            <option  value="-4">删除订单</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>站内信通知用户</td>
+      
+        <td  style="padding:10px"><textarea name="message"  class="form-control input-4"></textarea></td>
+      </tr>
+    </table>
+    <input type="hidden" value="{$ids}" name="id">
+
+  <div class="modal-ajax-footer"> <a class="btn btn-primary ajax-post" href="{:U()}">确定</a> <a  class="btn btn-default" data-dismiss="modal">关闭</a> </div>
+</form>

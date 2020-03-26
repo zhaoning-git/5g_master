@@ -1,0 +1,41 @@
+<admintpl file="header" />
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li class="active"><a >会员抵扣券</a></li>
+    </ul>
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th align="center">ID</th>
+          <th>用户</th>
+          <th>抵扣金额</th>
+          <th>获得方式</th>
+          <th>获得时间</th>
+          <th>到期时间</th>
+          <th>使用时间</th>
+          
+          <th>状态</th>
+        </tr>
+      </thead>
+      <tbody>
+      <foreach name="lists" item="vo">
+        <tr>
+          <td align="center">{$vo.id}</td>
+          <td>{$vo['nickname']}</td>
+          <td>{$vo['money']}</td>
+          <td>{$vo['source_txt']}</td>
+          <td>{$vo['addtime_txt']}</td>
+          <td>{$vo['end_time_txt']}</td>
+          <td>{$vo['uptime_txt']}</td>
+          <td>{$vo['status_txt']}</td>
+        </tr>
+      </foreach>
+      </tbody>
+    </table>
+    <div class="pagination">{$page}</div>
+
+  </div>
+  <script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

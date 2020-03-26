@@ -1,0 +1,38 @@
+<admintpl file="header" />
+
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li><a href="{:U('Jingcaiconfig/index')}">奖励规则</a></li>
+      <li class="active"><a href="{:U('Jingcaiconfig/setConfig')}">添加竞猜奖励规则</a></li>
+      <li ><a href="{:U('Jingcaiconfig/index')}">奖励记录</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Jingcaiconfig/setConfig')}">
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label">竞猜次数</label>
+          <div class="controls">
+            <input type="text" name="number" value="{$info.number}">
+            <span class="form-required">*</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">奖励银币数量</label>
+          <div class="controls">
+            <input type="text" name="coin" value="{$info.coin}">
+            <span class="form-required">*</span>
+          </div>
+        </div>
+
+      </fieldset>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+        <a class="btn" href="{:U('Jingcaiconfig/index')}">{:L('BACK')}</a>
+      </div>
+    </form>
+  </div>
+  <script src="__PUBLIC__/js/common.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

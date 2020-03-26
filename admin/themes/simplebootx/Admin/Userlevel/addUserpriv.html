@@ -1,0 +1,57 @@
+<admintpl file="header" />
+<style>
+  .levelname{margin-top: 5px;font-size: 1.2em;color: red; font-weight:bold;}
+  .valBox{width: 50px;}
+</style>
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li class="active"><a>添加特权</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Userlevel/addUserpriv')}">
+      <fieldset>
+        
+        <div class="control-group">
+          <label class="control-label">等级名称:</label>
+          <div class="controls levelname">
+            {$info.name}
+          </div>
+        </div>
+        
+        <label class="control-label">请选择特权:</label>
+        <Volist name="priv" id="vo">
+          <div class="control-group">
+            <div class="controls">
+                <label class="checkbox inline" for="priv_{$vo.id}">
+                  <input type="checkbox" name="priv[{$vo.id}]" value="{$vo.id}" id="priv_{$vo.id}" {$vo.checked} >{$vo.priv_title}
+                </label>
+                <notempty name="vo.value">
+                  <input type="text" name="value[{$vo.id}]" value="{$vo.values|default=0}" class="valBox">
+                </notempty>
+            </div>
+          </div>
+        
+        </Volist>
+        
+        
+        
+      </fieldset>
+      <div class="form-actions">
+        <input type="hidden" name="id" value="{$info.id}">
+        <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+        <a class="btn" href="{:U('Userlevel/index')}">{:L('BACK')}</a>
+      </div>
+    </form>
+  </div>
+  <script src="__PUBLIC__/js/common.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+  
+  <script>
+  	
+	
+  </script>
+  
+  
+  
+</body>
+</html>

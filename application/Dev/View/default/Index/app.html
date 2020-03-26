@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<include file="Public/head"/>
+</head>
+<body>
+  <include file="Public/header"/>
+  
+  <include file="Public/appstyle"/>
+  
+  <table class="main-table"  width="100%" border="0" style=" ;margin-top:30px;">
+  <tr>
+    <td valign="top" style="border-right:1px solid #eee;" width="250">
+      <div class="hbox" style=" width:250px; min-height:750px; overflow:auto">
+          <ul class="uk-nav uk-nav-side" data-uk-nav="" style="overflow:auto">
+            <volist name="list" id="vo">
+              <li class="uk-nav-header" style="font-size:17px; font-weight:500">{$key}</li>
+              <volist name="vo" id="sub">
+                <li class="<eq name="_GET['id']" value="$sub['id']"> active </eq> ">
+                <a href="{:U('App',array('id'=>$sub['id']))}" style="font-size:13px">
+                  <span style="color:#999">└</span> {$sub.api_title}
+                </a>
+                </li>
+              </volist>
+              <li class="uk-nav-divider"></li>
+            </volist>
+          </ul>
+        </div>
+      <!--<div style="height:180px"></div>-->
+    </td>
+    <td style="padding:0px 30px" valign="top">
+       <empty name="info.id">
+        <include file="Public/clock"/>
+       <else/>
+        
+          <div class="uk-u-md-12 api-info uk-form">
+            <table  width="100%">
+            <tr>
+              <td width="82%" style="font-size:18px; padding-bottom:10px">
+                {$info.api_title} ({$info.api_category})
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <eq name="info.api_type" value="get">
+                <i style="font-size:30px; text-align:center; color:#fff; background: #996; border-radius:100%; width:90px; height:90px; line-height:90px; display: inline-block; margin-right:30px">{$info.api_type}</i>
+                </eq>
+                <eq name="info.api_type" value="post">
+                <i style="font-size:30px; text-align:center; color:#fff; background:#3dc0f1; border-radius:100%; width:90px; height:90px; line-height:90px; display: inline-block; margin-right:30px">{$info.api_type}</i>
+                </eq>
+                <eq name="info.api_token" value="1">
+                  <a href="javascript:showAlert();" title="点击查看Sign获取方法"><i class="iToken">Sign</i></a>
+                  <div class="uk-alert-primary uk-alert">
+                    <a class="uk-close uk-icon"></a>
+                    <p>
+                      需携带用户令牌的接口都必须传递以下参数:<br/>
+                      <strong>
+                        _uid:用户ID<br/>
+                        _sign:验证签名<br/>
+                      </strong>
+                      <hr/>
+                      _sign的生成方法: _sign = MD5(_uid.API接口.token);
+                      <br/>PS:用户登录(注册后)会获得用户详细信息,里面有字段<strong>token</strong>
+                      <br/>PS:API接口即不带域名的API接口访问地址,全部小写,本接口的API接口:<strong>{$info.api_name}</strong>
+                      <br/>
+                      <input type="text" name="Tuid" value="" style="width:60px;" placeholder="_uid">
+                      <input type="text" name="Tapi" value="{$info.api_name}" style="width:150px;" readonly>
+                      <input type="text" name="Ttoken" value="" style="width:350px;" placeholder="token">
+                      <button type="button" class="uk-button uk-button-block uk-button-default" >
+                        <i class="uk-icon-pencil"></i>生成_sign
+                      </button>
+                      <strong class="TestSignBox"></strong>
+                    </p>
+                  </div>                
+                </eq>
+              </td>
+            </tr>
+            <tr>
+              <td width="82%" style="padding:20px 0">
+                <span style="font-size:12px; color:#999">
+                  接口请使用{$info.api_type}请求
+                  <eq name="info.api_token" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需携带用户令牌</eq>
+                </span>
+                <notempty name="info.api_oauth">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                  <span style="font-size:12px; color:#999">负责人:{$info.api_oauth}</span>
+                </notempty>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="uk-form-row">
+                  <div class="uk-form-icon">
+                    <i class="uk-icon-link"></i>
+                    <input type="text" id="url" value="{$info.api_url}" style="width:600px" class="uk-input uk-form-large" />
+            <button class="uk-button uk-radius uk-button-default uk-button-large copy-url" data-clipboard-action="copy" data-clipboard-target="#url" id="copy_btn" type="button">
+              <i class="uk-icon-copy"></i> 复制
+            </button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </table>
+          </div>
+          <form  class="uk-form">
+            <notempty name="info.api_field">
+              <div class="uk-panel" style="margin-top:20px">
+                <div class="uk-panel-box" id="field-box">
+                  <Volist name="info.api_field" id="vo">
+                   <ul class="field-box">
+                      <li style="color:#aaa">
+                        <strong>{$vo.name}</strong>
+                       ({$vo.remark})
+                        <!--<span class="appType">{$vo.type}</span>-->
+                        <span class="uk-label uk-label-success">必填:{$vo[is_must]?'是':'否'}</span>
+                        <span class="uk-label uk-label-warning">{$vo.intro}</span>
+                      </li>
+<!--                      <li class="uk-label uk-label-warning" style="width:40%;white-space: normal;">{$vo.intro} </li>-->
+                      
+                      <li style="color:#aaa;">预览值：
+                      
+                        <input type="text" name="{$vo.name}" value='{$vo.value}' style="width:200px"/>
+                       </li>
+                    </ul>
+                  </Volist>
+                </div>
+                <eq name="info.api_token" value="1">
+                  <div class="uk-panel-box SignBox">
+                    <ul class="field-box">
+                      <li style="color:#aaa">
+                        <strong>_uid</strong>  (用户ID)
+                      </li>
+                      <li style="color:#aaa">参数值：</li>
+                      <li><input style="width:100px" type="text" name="_uid" value=""></li>
+                    </ul>
+                    <ul class="field-box">
+                      <li style="color:#aaa">
+                        <strong>_sign</strong>  (验证签名)
+                      </li>
+                      <li style="color:#aaa">参数值：</li>
+                      <li><input style="width:260px" type="text" name="_sign" value=""></li>
+                    </ul>
+                  </div>
+                </eq>
+                <button id="add" type="button" class="uk-button uk-button-block uk-button-default" style="margin-top:10px">
+                  <i class="uk-icon-pencil"></i>自定义参数
+                </button>
+              </div>
+            <else />
+              <div class="uk-panel" style="margin-top:20px">
+                <eq name="info.api_token" value="1">
+                  <div class="uk-panel-box SignBox">
+                    <ul class="field-box">
+                      <li style="color:#aaa">
+                        <strong>_uid</strong>  (用户ID)
+                      </li>
+                      <li style="color:#aaa">参数值：</li>
+                      <li><input style="width:100px" type="text" name="_uid" value=""></li>
+                    </ul>
+                    <ul class="field-box">
+                      <li style="color:#aaa">
+                        <strong>_sign</strong>  (验证签名)
+                      </li>
+                      <li style="color:#aaa">参数值：</li>
+                      <li><input style="width:260px" type="text" name="_sign" value=""></li>
+                    </ul>
+                  </div>
+                </eq>
+              </div>
+            </notempty>
+          
+            <button type="submit" id="post" class="uk-button uk-button-primary uk-radius uk-button-large" style="margin-top:20px">调试该接口
+            </button>
+            <textarea id="json" placeholder="接口返回信息"></textarea>
+            <notempty name="info.api_remark">
+              <div class="uk-panel" style="margin-top:20px">
+                <div class=" uk-panel-box">
+                  <h3 class="uk-panel-title">接口详细说明</h3>
+                  <div style="color:#888; font-size:12px; line-height:15px">
+                    
+                    <textarea readonly name="" rows="2" cols="20" style="width: 95%; min-height:200px;">{$info.api_remark}</textarea>
+                  </div>
+                </div>
+              </div>
+            </notempty>
+          </form>
+       </empty>
+    </td>
+  </tr>
+  </table>
+  <include file="Public/footer"/>
+  <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+  <script type="text/javascript">
+	$("#post").click(function(){
+		
+		var data = '&';
+		var len = $(".diy-box").length;
+		if(len>0){
+			$(".diy-box").each(function(index){
+				data+=$(this).find('.diy-field').val()+'='+$(this).find('.diy-value').val();
+				if(index !== len - 1){
+					data+='&';
+				}
+			});
+		}else{
+			data = '';	
+		}
+	 
+		
+		$.ajax({
+			async:true,
+			type: "{$info.api_type}",
+			data: $('form.uk-form').find('input,select,textarea').serialize()+data,
+			url: $('#url').val(),
+			dataType:'json',
+			beforeSend:function(){
+				OpenLoad();
+				$('#json').val('');
+			},
+			success:function(ret){
+				
+				if(!ret.info) ret.info = '接口通信成功'
+				if(ret.status == 0){
+					Alert(ret.info,'error')
+				}else if(!ret.status){
+					Alert(ret.info,'info')
+				}else if(ret.info && ret.status == 1){
+					Alert(ret.info,'success')
+				}
+				
+				var Json = JSON.stringify(ret, null, 4);
+				$('#json').val(Json);
+			},
+			complete:function(){
+				$('#json').css('height','500px')
+				CloseLoad();
+			},
+			error:function(ret){
+				$('#json').val(JSON.stringify(ret, null, 20));
+				if(!ret.statusText) ret.statusText = '系统致命错误'
+				Alert('系统发生致命错误或返回了非JSON格式数据，错误信息：'+ret.statusText,'error');
+			}
+		});
+		return false;
+	}); 
+	
+	$("#add").click(function(){
+		var html = '';
+		
+		html+='<ul class="field-box diy-box">';
+		html+='<li style="color:#aaa"><input type="text" class="diy-field" style="width:150px"/> (自定义字段名)</li>';
+		html+='<li style="color:#aaa">参数值：</li>';
+		html+='<li><input type="text" class="diy-value" style="width:200px"/></li>';
+		html+='</ul>';
+		
+		$('#field-box').append(html);
+	}); 
+	
+	
+	$(".uk-close").click(function(){
+		$(".uk-alert").hide();
+	});
+	
+	function showAlert(){
+		$(".uk-alert").show();	
+	}
+	
+	$(".uk-alert button").click(function(){
+		var uid = $("input[name='Tuid']").val();
+		var api = $("input[name='Tapi']").val();
+		var token = $("input[name='Ttoken']").val();
+		if(uid == '' || uid == 0){
+			alert('请输入正确的UID!');
+		}else if(api == ''){
+			alert('请输入正确的API接口!');
+		}else if(token == ''){
+			alert('请输入正确的Token!');
+		}
+		
+		$.post("{:U('index/getSign')}",{'uid':uid,'api':api,'token':token},function(data){
+			$(".TestSignBox").html(data.sign);
+			$("input[name='_uid']").val(uid);
+			$("input[name='_sign']").val(data.sign);
+		});
+		
+		
+		
+		
+	});
+	
+	$(document).ready(function(){      
+			var clipboard = new Clipboard('#copy_btn');    
+			clipboard.on('success', function(e) {    
+				alert("微信号复制成功",1500);
+				e.clearSelection();    
+				console.log(e.clearSelection);    
+			});    
+		});    
+  </script> 
+    
+</body>
+</html>

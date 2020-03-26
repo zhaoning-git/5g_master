@@ -1,0 +1,136 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-12-26 10:36:34
+ * @LastEditTime: 2020-03-04 18:09:09
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \Controller\index.html
+ -->
+<admintpl file="header" />
+
+
+
+</head>
+
+<body>
+
+	<div class="wrap">
+
+		<ul class="nav nav-tabs">
+
+			<li class="active"><a >球队列表</a></li>
+
+		</ul>
+
+        <form class="well form-search" method="post" action="{:U('LibraryLeague/index')}">
+
+			关键字
+
+			<input type="text" name="keyword" style="width: 200px;" value="{$keyword}" placeholder="{:L('PLEASE_ENTER_KEYWORD')}">
+
+			<button class="btn btn-primary">搜索</button>
+
+		</form>
+
+		<form method="post" class="js-ajax-form">
+
+			<input type="hidden" value="{$keyword}" id="keyword" />
+
+			<table class="table table-hover table-bordered">
+
+				<thead>
+
+					<tr>
+
+						<th align="center">ID</th>
+
+						<th>联赛ID</th>
+
+						<th>联赛简称（中文）</th>
+
+						<th>联赛全称（中文）</th>					
+
+						<th>当前赛季</th>
+
+						<th>联赛LOGO</th>
+
+						<th>国家LOGO</th>
+
+						<th>是否允许关注</th>
+
+						<th align="center">{:L('ACTIONS')}</th>
+
+					</tr>
+
+				</thead>
+
+				<tbody>
+
+					<foreach name="data" item="vo">
+
+					<tr>
+
+						<td align="center">{$vo['id']}</td>
+
+						<td>{$vo['leagueid']}</td>
+
+						<td>{$vo['namechsshort']}</td>
+						
+						<td>{$vo['namechs']}</td>
+
+						<td>{$vo['currseason']}</td>
+
+						<td><img style="max-height:60px;max-width:150px;" src="{$vo['leaguelogo']}" alt="{$vo['nameChs']}" /></td>
+
+						<td><img style="max-height:60px;max-width:150px;" src="{$vo['countrylogo']}" /></td>
+
+						<td><if condition="$vo['is_yesguanzhu'] eq 1 ">是<else/>否</if></td>
+
+						<td align="center">	
+
+							<a href="{:U('LibraryLeague/edit',array('id'=>$vo['id']))}" >编辑</a>
+
+						</td>
+
+					</tr>
+
+					</foreach>
+
+				</tbody>
+
+			</table>
+
+			<div class="pagination"></div>
+
+		</form>
+
+		<div id="laypage"></div>
+
+	</div>
+
+	<script src="__PUBLIC__/js/common.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/laypage/1.2/laypage.js"></script>
+
+</body>
+
+</html>
+<script type="text/javascript">
+    var url = "{:U('LibraryLeague/index')}";
+	var keyword = $.trim($("#keyword").val());
+     laypage({
+                 cont: 'laypage',//指向存放分页的容器，值可以是容器ID 
+                 pages: {$pageTo},//数据总数
+                 skin:'#5F8878',//皮肤
+                 curr: '{$dang}',//当前页
+                 jump: function ( e, first) {
+                     if (!first) {
+                          
+                         location.href=url+'&page='+e.curr+'&keyword='+keyword;
+                         
+
+
+                    }
+                }
+            });
+
+</script>

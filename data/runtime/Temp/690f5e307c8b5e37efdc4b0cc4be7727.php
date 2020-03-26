@@ -1,0 +1,8 @@
+<?php
+//000000000000a:30:{s:2:"id";s:4:"7613";s:3:"uid";s:1:"0";s:5:"uname";s:6:"阿漂";s:9:"region_id";s:1:"0";s:4:"type";s:1:"2";s:11:"is_supplier";s:1:"0";s:5:"title";s:84:"布尔基：近四场联赛就丢一球，我们状态不错；踢巴黎感觉良好";s:7:"content";s:1485:"<div >
+<p>北京时间今天凌晨，多特蒙德在本轮联赛中以2-1的比分击败了劲敌门兴格拉德巴赫，门将布尔基在赛后接受了采访。</p>
+<p><img src="https://img1.qunliao.info/fastdfs4/M00/06/26/720x-/-/-/ChMf8F5XMCGAdLDtAAC87J3vrZI161.jpg?watermark/1/image/aHR0cDovL2ltZzEuZG9uZ3FpdWRpLmNvbS9mYXN0ZGZzMi9NMDAvMkEvRTIvQ2hPcU0xb1MtZVdBUERxM0FBQkE1VWdyQlQ4MTQyLnBuZz9pbWFnZVZpZXcyLzAvdy8xMTA=/dissolve/100/dx/13/dy/10" data-width="660" data-height="400" orig-src="https://img1.qunliao.info/fastdfs4/M00/06/26/ChMf8F5XMCGAdLDtAAC87J3vrZI161.jpg?watermark/1/image/aHR0cDovL2ltZzEuZG9uZ3FpdWRpLmNvbS9mYXN0ZGZzMi9NMDAvMkEvRTIvQ2hPcU0xb1MtZVdBUERxM0FBQkE1VWdyQlQ4MTQyLnBuZz9pbWFnZVZpZXcyLzAvdy8xMTA=/dissolve/100/dx/13/dy/10"></p>
+<p>比赛的过程中，多特后防线有几次表现不够稳定，扎加杜在上半场结束前在禁区内撞飞霍夫曼，但是没有被判罚点球。布尔基在那之前扑出了普利亚的射门，但是中场休息后的一次角球，他没能阻止对手。</p>
+<p>布尔基表示：“通常情况下，大家不会经常在我们身上看到这种情况，像当时普利亚那样无人防守。重要的是我们去战斗了，取得了艰难的进球。我们也许没有那么多机会，但是抓住了。我们想击败直接竞争对手。对于即将到来的与巴黎的比赛，这给了我们良好的感觉。本场就丢了一球，之前三场零封，我们处于很好的道路上。”</p>
+</div>";s:5:"theme";s:0:"";s:6:"praise";s:1:"0";s:7:"reading";s:2:"11";s:5:"favor";s:1:"0";s:3:"map";s:0:"";s:4:"data";s:94:"https://img1.qunliao.info/fastdfs4/M00/06/26/280x210/crop/-/ChMf8F5XMCGAdLDtAAC87J3vrZI161.jpg";s:6:"status";s:1:"1";s:7:"addtime";s:10:"1583668160";s:7:"old_uid";s:1:"0";s:6:"old_id";s:1:"0";s:8:"zcontent";s:0:"";s:7:"is_open";s:1:"1";s:6:"is_top";s:1:"0";s:8:"top_time";s:1:"0";s:7:"is_club";s:1:"0";s:7:"is_head";s:1:"0";s:6:"is_hot";s:1:"0";s:9:"index_mol";s:1:"1";s:8:"sel_type";s:5:"10000";s:10:"sqs_status";s:1:"0";s:10:"identifshi";s:1:"1";s:8:"userInfo";b:0;}
+?>

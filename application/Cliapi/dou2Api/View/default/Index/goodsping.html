@@ -1,0 +1,35 @@
+<extend name="Public/base"/>
+<block name="body">
+<notempty name="TAB">
+<div class="avg-sm-{:sizeof($TAB)+1} diy-tab ui-border-b">
+	<li><a href="{:U(ACTION_NAME,array('goods_id'=>$_GET['goods_id']))}" data-page='false' <empty name="_GET['type']">class="active"</empty>>{$vo|default='全部'} <span class="badge badge-danger round">{$list.count}</span></a></li>
+    <foreach name="TAB" item="vo">
+      <li><a href="{:U(ACTION_NAME,array('goods_id'=>$_GET['goods_id'],'type'=>$key))}" data-page='false' <eq name="_GET['type']" value="$key">class="active"</eq>>{$vo} <span class="badge badge-danger round">{$list.level_count.$key}</span></a></li>
+    </foreach>
+</div>
+</notempty>
+  <notempty name="list['list']">
+    <div class="list-block media-list" style="margin:0px; position:relative">
+      <div class="title-block">商品评价 <span class="more">({$list.count})</span></div>
+      <ul data-load='{ "url":"__SELF__","count":"{$count}"}'>
+        <volist name="list['list']" id="vo">
+          <li class="row"><a href="javascript:void(0);" class="item-link item-content">
+            <div class="item-media"><img src="{$vo.user.avatar128}" width="75"></div>
+            <div class="item-inner"  style="background:none">
+              <div class="item-title-row">
+                <div class="item-title">{$vo.user.nickname}</div>
+                <div class="item-after">{$vo.create_time}</div>
+              </div>
+              <div class="item-subtitle text-red">
+                <for start="0" end="$vo['complex']">  <i class="icon-uniE608 text-warning"></i> </for>
+              </div>
+              <div class="item-text">{$vo.content}</div>
+            </div>
+            </a></li>
+        </volist>
+      </ul>
+     <div class='infinite-scroll-preloader'></div>
+    </div>
+   
+  </notempty>
+  </block>

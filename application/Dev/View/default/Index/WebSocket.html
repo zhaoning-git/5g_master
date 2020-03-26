@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <include file="Public/head"/>
+  <style>
+    .td1{border-right:1px solid #eee;width:45%;}
+    .td2{padding:0px 15px}
+	.uk-button:disabled{background-color: #999999;color: #fff;}
+	textarea[name='wsinfo']{width: 99%; min-height:300px;line-height:22px; font-size:14px;}
+	.apiBox{ padding:10px 15px}
+	h5.uk-panel-title{margin-bottom:0; font-size:1.1rem; padding:0 0 5px 10px;border-bottom: 1px solid #dddddd;}
+	dt{padding:5px 0;}
+	dt, dd{margin-bottom:3px;}
+	dd input{width:100%}
+  </style>
+</head>
+<body>
+  <!-- 头部 -->
+  <include file="Public/header"/>
+
+  <table class="main-table" width="100%" border="0" style="margin-top:30px;">
+    <tbody>
+      <tr>
+        <td valign="top" class="td1 uk-form">
+          <div class="uk-panel" style="margin-top:20px">
+            <div class=" uk-panel-box">
+              <input type="text" name="wsurl" style="width:75%;" value="ws://47.98.97.133:8912"/>
+              <button type="button" class="uk-button uk-button-success uk-radius uk-button-small">连接</button>
+              <button type="button" class="uk-button uk-button-danger uk-radius uk-button-small">断开</button>
+              
+              <!--绑定用户-->
+              <div class="uk-panel" style="margin-top:20px">
+                <div class="uk-panel-box" id="field-box">
+                  <h5 class="uk-panel-title uk-text-small uk-text-bold">绑定用户</h5>
+                  <div class="uk-alert">连接成功后请立即通过"WebSocket绑定用户"接口绑定用户。服务器返回内容:</div>
+                  <div class="apiBox uk-description-list-horizontal">
+                    
+                    <dt>type</dt>
+                    <dd><input type="text" readonly value='init'/></dd>
+                    
+                    <dt>data</dt>
+                    <dd><input type="text" readonly value='client_id'/></dd>
+                    
+                  </div>
+                </div>        
+              </div>
+              
+              <!--神秘红包-->
+              <div class="uk-panel" style="margin-top:20px">
+                <div class="uk-panel-box" id="field-box">
+                  <h5 class="uk-panel-title uk-text-small uk-text-bold">神秘红包</h5>
+                  <div class="uk-alert">
+                    满足条件后Websocket自动返回<br/>
+                  	返回数据说明:<br/>
+                    rplogid:神秘红包记录ID <br/>
+                    token:抢红包校验token <br/> 
+                    rednum:红包数量
+                  </div>
+                  <div class="apiBox uk-description-list-horizontal">
+                    
+                    <dt>type</dt>
+                    <dd><input type="text" readonly value='redpack'/></dd>
+                    
+                    <dt>data</dt>
+                    <dd><input type="text" readonly value='{"rplogid":"3","token":"xxx","rednum":"2"}'/></dd>
+                    <button class="uk-button uk-width-1-1 uk-button-primary" data-url="{:U('Cliapi/Webtest/Redpack')}">查看服务器返回信息</button>
+                  </div>
+                  
+                  
+                  
+                </div>        
+              </div>
+              
+              <!--系统消息-->
+              <div class="uk-panel" style="margin-top:20px">
+                <div class="uk-panel-box" id="field-box">
+                  
+                  <h5 class="uk-panel-title uk-text-small uk-text-bold">系统消息</h5>
+                  <div class="apiBox uk-description-list-horizontal">
+                    <dt>type</dt>
+                    <dd><input type="text" readonly value='system'/></dd>
+                    <dt>data</dt>
+                    <dd><input type="text" readonly value=''/></dd>
+                    <button class="uk-button uk-width-1-1 uk-button-primary">查看服务器返回信息</button>
+                  </div>
+                  
+                </div>        
+              </div>
+            </div>        
+          </div>
+        </td>
+        <td valign="top" class="td2">
+          <div class="uk-panel" style="margin-top:20px">
+            <div class=" uk-panel-box" style="min-height:320px;">
+                <h3 class="uk-panel-title" style="display:inline-block;">服务器返回消息</h3>
+                <button class="uk-button uk-button-primary clearinfo">清空</button>
+                <div style="color:#888; font-size:12px; line-height:15px">
+                  <textarea readonly name="wsinfo" rows="2" cols="20"></textarea>
+                </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <include file="Public/footer"/>
+  
+  <script type="text/javascript">
+	var ws;
+	//连接
+	$(".uk-button-success").click(function(){
+		var wsurl = $("input[name='wsurl']").val();
+		Socket(wsurl);
+	});
+	
+	//断开
+	$(".uk-button-danger").click(function(){
+		ws.close();
+		ws.onclose = function(){ 
+		    wsinfo('连接已断开...');
+			$(".uk-button-success").removeAttr('disabled');
+        };
+		
+	});
+	
+	$(".uk-width-1-1").click(function(){
+		var url = $(this).data("url");
+		$.post(url,{},function(data){
+                  if(!data.status && data.info != 'undefined'){
+                    wsinfo("\r\n收到接口返回数据:");
+                    wsinfo(data.info);
+                  }
+                });
+	});
+	
+	//清空服务器返回信息
+	$(".clearinfo").click(function(){
+		$("textarea[name='wsinfo']").html('');
+	});
+	
+    function Socket(wsurl){
+		wsinfo('等待服务器Websocket握手包...');
+		ws = new WebSocket(wsurl);
+		
+		ws.onopen = function(){
+        	
+			if(ws.readyState == 1){
+				wsinfo('收到服务器Websocket握手包...');
+				wsinfo('Websocket连接已建立，正在等待数据...');
+				$(".uk-button-success").attr('disabled',true);
+			}
+        };
+		
+		
+		ws.onmessage = function(e){
+		  // json数据转换成js对象
+		  //var data = eval('('+e.data+')');
+		  var data = JSON.parse(e.data);
+		  
+		  var type = data.type || '';
+		  console.log(data);
+		  
+		  if(type !='ping'){
+			  wsinfo("\r\n收到服务器数据:");
+		  }
+		  
+		  switch(type){
+			  
+			// Events.php中返回的init类型的消息，将client_id发给后台进行uid绑定
+			case 'init':
+			  // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+			  wsinfo('"type":'+data.type);
+			  wsinfo('"data":'+JSON.stringify(data.data));
+			  
+			break;
+			
+			case 'redpack':
+			  wsinfo('"type":'+data.type);
+			  wsinfo('"data":'+JSON.stringify(data.data));
+			break;
+			
+			
+			
+			case 'msg':
+			  wsinfo('"type":'+data.type);
+			  wsinfo('"msg":'+data.msg);
+			break;
+			
+			//好友上线
+			case 'test':
+			  wsinfo('"type":'+data.type);
+			  wsinfo('"data":'+data.data);
+			break;
+			
+			//好友下线
+			case 'offline':
+			  
+			
+			break;
+			
+			
+			default ://这里接收消息类型
+		  }
+		};
+    }
+  
+    function wsinfo(text){
+	    $("textarea[name='wsinfo']").append(text+"\r\n");
+	}
+  
+  
+  </script> 
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>{$info.writing_title}</title>
+<link rel="stylesheet" href="__PUBLIC__/css/norm.detail.css">
+</head>
+<body style="padding:0px 0 50px 0">
+
+<div id="js_article" class="rich_media">
+  <div class="rich_media_inner" style=" padding-top:0px">
+    <div id="page-content">
+      <div id="img-content" class="rich_media_area_primary">
+        <h2 class="rich_media_title ui-border-b" id="activity-name" style="padding-bottom:4px">{$info.writing_title}</h2>
+        <div class="rich_media_meta_list"><em id="post-date" class="rich_media_meta rich_media_meta_text">{$info.create_time|date='Y-m-d',###}</em><a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="{:WritingAuthorUrl(op_t($_GET['tid']))}" id="post-user">{:WritingAuthor(op_t($_GET['tid']))}</a></div>
+        <div class="rich_media_content " id="js_content">{$info.writing_content}</div>
+        <link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2c9cd6.css">
+        <div class="rich_media_tool" id="js_toobar3">
+          <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读<span id="readNum3"></span></div>
+          <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3"><i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span></span><a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ATTENTION-TIPS">
+	<a href="{:U('H5Spread',array('tid'=>op_t($_GET['tid'])))}"><img src="{:get_cover($Store['store_logo'],'path')}" width="35" height="35" class="logo">
+    <span class="site-title">{$Store.store_name} <small>{$Store.store_see_num}已关注</small></span>
+    <span class="site-keys">{$Store.store_keywords}</span>
+    <span class="site-link">了解一下</span>
+</div>
+<notempty name="info.writing_music">
+<a href="javascript:void(0);" id="audionone_btn" class="video_exist off edit_music1 musicshow" style="display: inline;text-indent: inherit;"></a>
+<audio loop src="{:get_media($info['writing_music'],'path')}" id="media_tym" autoplay preload=""></audio>
+</notempty> 
+ 
+
+ <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="application/javascript">
+  wx.config({
+    debug: false , 
+    appId: '{$wxJsSign.appid}', 
+    timestamp:'{$wxJsSign.timestamp}', 
+    nonceStr:'{$wxJsSign.noncestr}', 
+    signature:'{$wxJsSign.signature}',
+    jsApiList:[
+		'checkJsApi',
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo',
+        'hideMenuItems',
+        'showMenuItems',
+        'hideAllNonBaseMenuItem',
+        'showAllNonBaseMenuItem',
+        'hideOptionMenu',
+        'showOptionMenu',
+        'closeWindow',
+        'chooseWXPay',
+		'chooseImage',
+		'previewImage',
+		'uploadImage',
+		'downloadImage'
+	] 
+});
+
+wx.ready(function(){ 
+		wx.onMenuShareTimeline({
+			title: "{$info.writing_title}", // 分享标题
+			link: "{:U('Shop/News/SpreadDetail',array('id'=>$info['id'],'tid'=>op_t($_GET['tid'])),true,true)}", // 分享链接
+			imgUrl: "{:Host().get_cover($info['writing_img'],'path')}", // 分享图标
+			success: function () { 
+			  alert('已经成功分享到朋友圈','success');
+			}
+		});
+		
+		wx.onMenuShareAppMessage({
+			title: "{$info.writing_title}", // 分享标题
+			desc: "{$info.writing_brief}", // 分享描述
+			link: "{:U('Shop/News/SpreadDetail',array('id'=>$info['id'],'tid'=>op_t($_GET['tid'])),true,true)}", // 分享链接
+			imgUrl: "{:Host().get_cover($info['writing_img'],'path')}", // 分享图标
+			type: '', // 分享类型,music、video或link，不填默认为link
+			dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+			success: function () { 
+				alert('成功分享给好友','success');
+			}
+	});
+});
+</script>
+
+
+</body>
+</html>
+ 

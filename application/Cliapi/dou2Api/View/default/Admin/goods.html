@@ -1,0 +1,165 @@
+<extend name="Public/base"/>
+<block name="body">
+  <div class="main-title">
+    {$page_title}
+  </div>
+  <form class="search-form hide">
+    <p>商品状态：
+      <select name="status">
+        <option value="">所有</option>
+        <option value="1">已上架</option>
+        <option value="0">已下架</option>
+      </select>
+    </p>
+    <p> 商品标题：
+      <input type="text" name="title"  value="{:I('title')}" class="input-5" placeholder="请输入商品标题关键字或者商品ID号搜索">
+    </p>
+    <p> 商品货号：
+      <input type="text" name="goods_sn"  value="{:I('goods_sn')}" class="input-2" placeholder="商品货号">
+    </p>
+    <p>发布时间：
+      <input type="date" id="time-start" name="b_time" class="input-2 Wdate" value="{:I('b_time')}" placeholder="指定开始时间" />
+      <input type="date" id="time-end" name="e_time" class="input-2 Wdate" value="{:I('e_time')}" placeholder="截止发布时间" />
+    </p>
+     <p>价格区间：
+      <input type="text" name="start_price" class="input-1" value="{:I('start_price')}"  />
+      <input type="text" name="over_price" class="input-1" value="{:I('over_price')}" />
+    </p>
+    <p>库存低于：
+      <input type="text" name="stock"  class="input-1" value="{:I('stock')}" placeholder="件"> 件
+    </p>
+    <p>推荐筛选：
+      <label class="checkbox"><input type="checkbox" name="is_best"  value="1"  />精品</label>
+      <label class="checkbox"><input type="checkbox" name="is_star"  value="1" />推荐</label>
+      <label class="checkbox"><input type="checkbox" name="is_new"  value="1" />新品</label>
+      <label class="checkbox"><input type="checkbox" name="is_hot"  value="1"  />热销</label>
+      <label class="checkbox"><input type="checkbox" name="is_sell"  value="1" />特惠</label>
+      <label class="checkbox"><input type="checkbox" name="is_fare"  value="1" />免运费</label>
+    </p> 
+    <p>
+      <button type="submit" class="btn btn-primary">搜索</button> <a class="btn" href="{:U('Goods')}" >关闭</a>
+    </p>
+  </form>
+  
+  
+  <div class="diy-btn-list">
+    <div> <a class="btn" href="{:U('GoodsEdit')}">新增</a>
+    <button class="btn ajax-post" url="{:U('setStatus',array('table'=>'ShopGoods','status'=>1))}"  target-form="ids">启用</button>
+    <button class="btn ajax-post" url="{:U('setStatus',array('table'=>'ShopGoods','status'=>0))}" target-form="ids">禁用</button>
+    <button class="btn ajax-post confirm" url="{:U('setStatus',array('table'=>'ShopGoods','status'=>'-1'))}" target-form="ids">删除 </button>
+    <button  type="button"  class="btn" onclick="$('.search-form').toggle(400);">搜索</button>
+ 
+
+   <notempty name="Category">
+    <div class="btn-group">
+      <button type="button" class="btn">{$CategoryTitle|default='分类筛选'}</button>
+      <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+        <li> <a tabindex="-1" href="{:U('shop_goods/goodslist')}">全部分类</a> </li>
+        <volist name="Category" id="vo">
+          <li  <if condition="$vo[_child]">class="dropdown-submenu"</if> > <a tabindex="-1" href="{:U('shop_goods/goodslist',array('cid'=>$vo['id']))}">{$vo.title}</a>
+            <if condition="$vo[_child]">
+              <ul class="dropdown-menu">
+                <volist name="vo[_child]" id="vo2"> <li 
+                  <if condition="$vo2[_child]">class="dropdown-submenu"</if>
+                  > <a tabindex="-1" href="{:U('shop_goods/goodslist',array('cid'=>$vo2['id']))}">{$vo2.title}</a>
+                  <if condition="$vo2[_child]">
+                    <ul class="dropdown-menu">
+                      <volist name="vo2[_child]" id="vo3">
+                        <li> <a tabindex="-1" href="{:U('shop_goods/goodslist',array('cid'=>$vo3['id']))}">{$vo3.title}</a> </li>
+                      </volist>
+                    </ul>
+                  </if>
+                  </li>
+                </volist>
+              </ul>
+            </if>
+            </li>
+        </volist>
+      </ul>
+    </div>
+    </notempty>
+    
+      
+    </div>
+  </div>
+  
+  <!-- 数据列表 -->
+  
+  <div class="data-table with-padding">
+    <table class="table table-bordered table-striped  table-center">
+      <thead>
+        <tr>
+          <th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+          <th class="">ID</th>
+          <th class="">图片</th>
+          <th class="">商品名称</th>
+          <th class="">所属分类</th>
+          <th class="">销售价</th>
+          <th class="">库存</th>
+          <th class="">排序</th>
+          <th class="">上架</th>
+          <th class="">操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <notempty name="list">
+          <volist name="list" id="vo">
+            <tr class="tr">
+              <td><input class="ids" type="checkbox" name="ids[]" value="{$vo.id}"/></td>
+              <td>{$vo.id}</td>
+              <td><a href="{$vo.goods_goods_img}" data-toggle="lightbox"><img src="{$vo.goods_img_small}"  width="40" height="40"/></a></td>
+              <td style="text-align:left"><a href="{:U('Shop/Goods/detail',array('id'=>$vo['id']))}"  target="_blank">{$vo.goods_title|op_t}</a></td>
+              <td><a href="{:U('Shop/Goods/list',array('cid'=>$vo['cid']))}">{$vo.category}</a></td>
+              <td>{$vo.goods_price}</td>
+              <td>{$vo.goods_stock}</td>
+              <td>{$vo.goods_sort}</td>
+              <td><eq name="vo.status" value="1"> <a href="{:U('GoodsStatus',array('ids'=>$vo['id'],'status'=>0))}"  class="ajax-get text-info" >已上架</a>
+                  <else/>
+                  <a href="{:U('GoodsStatus',array('ids'=>$vo['id'],'status'=>1))}" class="ajax-get text-warning">已下架</a> </eq></td>
+              <td><a href="{:U('GoodsEdit',array('cid'=>$vo['cid'],'id'=>$vo['id']))}">编辑</a> 
+                 <a href="{:U('GoodsStatus',array('ids'=>$vo['id'],'status'=>-1))}" class="confirm ajax-get" del-dom="tr">删除</a></td>
+            </tr>
+          </volist>
+          <else/>
+          <tr>
+            <td colspan="10" class="text-center">{:C('NO_BODY_TLE')}</td>
+          </tr>
+        </notempty>
+      </tbody>
+    </table>
+  {$_page}
+  </div>
+</block>
+<block name="script"> 
+  <script type="text/javascript">
+$(function(){
+	
+	Think.setValue("is_best", "{$_GET['is_best']}");
+	Think.setValue("is_star", "{$_GET['is_star']}");
+	Think.setValue("is_new", "{$_GET['is_new']}");
+	Think.setValue("is_hot", "{$_GET['is_hot']}");
+	Think.setValue("is_sell", "{$_GET['is_sell']}");
+	Think.setValue("start_price", "{$_GET['start_price']}");
+	Think.setValue("over_price", "{$_GET['over_price']}");
+	Think.setValue("is_fare", "{$_GET['is_fare']}");
+	Think.setValue("status","{$_GET['status']|default=''}");
+	
+	
+	/*搜索状态检测,如果存在搜索内容，则展开搜索条件*/
+	$(".search-form").find("input,select").each(function(k, v){
+		 if (v.type == 'checkbox' || v.type == 'select') {
+			   if(v.checked == true){
+				  var other = $(this).val();
+			   }
+         }else{
+			   var text = $(this).val();
+		 }
+		if(text || other){
+			$('.search-form').show(400);
+		}
+	});
+
+})
+</script> 
+</block>

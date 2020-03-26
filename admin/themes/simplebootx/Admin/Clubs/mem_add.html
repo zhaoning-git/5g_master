@@ -1,0 +1,69 @@
+<admintpl file="header" />
+
+</head>
+
+<body>
+
+	<div class="wrap">
+
+		<ul class="nav nav-tabs">
+
+			<li><a href="{:U('Clubs/index')}">俱乐部列表</a></li>
+			<li><a href="{:U('Clubs/add_club')}">创建俱乐部</a></li>
+			<li class="active"><a>加入俱乐部</a></li>
+
+		</ul>
+
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Clubs/mem_add_post')}">
+
+			<fieldset>
+
+				<div class="control-group">
+
+					<label class="control-label">俱乐部id</label>
+
+					<div class="controls">
+
+						<input type="text" name="club_id" value="0">
+
+						<span class="form-required">*</span>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label">成员ID</label>
+
+					<div class="controls">
+
+						<input type="text" name="mem_id">
+
+						<span class="form-required">*</span>
+
+					</div>
+
+				</div>
+
+			</fieldset>
+
+			<div class="form-actions">
+
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+
+				<a class="btn" href="{:U('Clubs/users')}">{:L('BACK')}</a>
+
+			</div>
+
+		</form>
+
+	</div>
+
+	<script src="__PUBLIC__/js/common.js"></script>
+
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+
+</body>
+
+</html>
